@@ -4,7 +4,7 @@ import json, re, pathlib
 ROWS = """\
 Attention & Long Context|CSA compressed sparse attention|e36ba1f7295647b897468dc2b4d30590|https://arxiv.org/abs/2606.19348|DeepSeek V4
 Attention & Long Context|DeepSeek Sparse Attention (DSA) + Lightning Indexer|cf0641f4eac74fd9bd6c903a15b59ca3|https://arxiv.org/abs/2512.02556|DeepSeek V3.2, GLM-5 series
-Attention & Long Context|HCA highly-compressed attention + hybrid attention stacking|ceae2901ccd44561a14abacc7f6574bf|https://arxiv.org/abs/2606.19348|DeepSeek V4
+Attention & Long Context|HCA heavily-compressed attention + hybrid attention stacking|ceae2901ccd44561a14abacc7f6574bf|https://arxiv.org/abs/2606.19348|DeepSeek V4
 Attention & Long Context|IndexShare (cross-layer shared indexer)|e18d1e0afe6f4d3d9c37bfdf815b0738|https://arxiv.org/abs/2603.12201|GLM-5 series
 Attention & Long Context|Kimi Delta Attention (KDA)|0a25e512d50542b08af4e090523e14b2|https://arxiv.org/abs/2607.24653|Kimi K3
 Attention & Long Context|Staged context extension + annealing / cooldown|ff95a3d4ac0745728425571a7344ee70|https://arxiv.org/abs/2607.24653|Kimi K2, Kimi K3, GLM-4.5

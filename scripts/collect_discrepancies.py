@@ -12,8 +12,8 @@ out = [
     "",
     "While building each deck, the agent compared the Notion row (Core Mechanism, Impact / Measured Results) "
     "with the primary sources it read. The slides follow the sources; this page collects every difference found, "
-    "per technique, so the database can be corrected. Source locations for each point are in the deck's "
-    "`notes/sources.md`.",
+    "per technique. Source locations for each point are in the deck's `notes/sources.md`. The rows were "
+    "corrected on 2026-10-13; [`notion-corrections.md`](notion-corrections.md) has the before/after of each edit.",
     "",
 ]
 found = 0

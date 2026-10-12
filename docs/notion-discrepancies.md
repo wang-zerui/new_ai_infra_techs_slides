@@ -1,6 +1,6 @@
 # Notion rows vs. primary sources
 
-While building each deck, the agent compared the Notion row (Core Mechanism, Impact / Measured Results) with the primary sources it read. The slides follow the sources; this page collects every difference found, per technique, so the database can be corrected. Source locations for each point are in the deck's `notes/sources.md`.
+While building each deck, the agent compared the Notion row (Core Mechanism, Impact / Measured Results) with the primary sources it read. The slides follow the sources; this page collects every difference found, per technique. Source locations for each point are in the deck's `notes/sources.md`. The rows were corrected on 2026-10-13; [`notion-corrections.md`](notion-corrections.md) has the before/after of each edit.
 
 ## 01 · CSA compressed sparse attention
 
@@ -36,7 +36,7 @@ While building each deck, the agent compared the Notion row (Core Mechanism, Imp
    3.6× (prefill) / 8.7× (decode) cost reduction at 128K; they measure different things (attention FLOPs vs end-to-end
    serving cost per token at a given position). Slides use DeepSeek's measured costs and attribute them.
 
-## 03 · HCA highly-compressed attention + hybrid attention stacking
+## 03 · HCA heavily-compressed attention + hybrid attention stacking
 
 [deck](../decks/03-hca-highly-compressed-attention-hybrid-attention/) · [Notion row](https://app.notion.com/p/ceae2901ccd44561a14abacc7f6574bf)
 
