@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="330pt" viewBox="0 0 870 330" font-family="Helvetica, Arial, sans-serif">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker></defs>
+<text x="174.0" y="30.0" font-size="22" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-style="normal">Decay</text>
+<rect x="20.0" y="84.0" width="28" height="28" fill="#8CB9E2" stroke="#1F4E79" stroke-width="1.2"/>
+<rect x="48.0" y="84.0" width="28" height="28" fill="#ADCDEA" stroke="#1F4E79" stroke-width="1.2"/>
+<rect x="76.0" y="84.0" width="28" height="28" fill="#9DC3E6" stroke="#1F4E79" stroke-width="1.2"/>
+<rect x="104.0" y="84.0" width="28" height="28" fill="#7CAFDD" stroke="#1F4E79" stroke-width="1.2"/>
+<rect x="20.0" y="112.0" width="28" height="28" fill="#9DC3E6" stroke="#1F4E79" stroke-width="1.2"/>
+<rect x="48.0" y="112.0" width="28" height="28" fill="#7CAFDD" stroke="#1F4E79" stroke-width="1.2"/>
+<rect x="76.0" y="112.0" width="28" height="28" fill="#ADCDEA" stroke="#1F4E79" stroke-width="1.2"/>
+<rect x="104.0" y="112.0" width="28" height="28" fill="#8CB9E2" stroke="#1F4E79" stroke-width="1.2"/>
+<rect x="20.0" y="140.0" width="28" height="28" fill="#ADCDEA" stroke="#1F4E79" stroke-width="1.2"/>
+<rect x="48.0" y="140.0" width="28" height="28" fill="#9DC3E6" stroke="#1F4E79" stroke-width="1.2"/>
+<rect x="76.0" y="140.0" width="28" height="28" fill="#7CAFDD" stroke="#1F4E79" stroke-width="1.2"/>
+<rect x="104.0" y="140.0" width="28" height="28" fill="#9DC3E6" stroke="#1F4E79" stroke-width="1.2"/>
+<rect x="20.0" y="168.0" width="28" height="28" fill="#7CAFDD" stroke="#1F4E79" stroke-width="1.2"/>
+<rect x="48.0" y="168.0" width="28" height="28" fill="#8CB9E2" stroke="#1F4E79" stroke-width="1.2"/>
+<rect x="76.0" y="168.0" width="28" height="28" fill="#9DC3E6" stroke="#1F4E79" stroke-width="1.2"/>
+<rect x="104.0" y="168.0" width="28" height="28" fill="#ADCDEA" stroke="#1F4E79" stroke-width="1.2"/>
+<text x="76.0" y="72.0" font-size="19" font-weight="bold" fill="#222222" text-anchor="middle" font-style="normal">S<tspan font-size="14" dy="5">t−1</tspan><tspan dy="-5"></tspan></text>
+<line x1="134" y1="140" x2="158" y2="140" stroke="#222222" stroke-width="2.2" marker-end="url(#a)"/>
+<rect x="160.0" y="84.0" width="26" height="28" fill="#63A0D7" stroke="#595959" stroke-width="1.2"/>
+<rect x="160.0" y="112.0" width="26" height="28" fill="#D6E6F4" stroke="#595959" stroke-width="1.2"/>
+<rect x="160.0" y="140.0" width="26" height="28" fill="#5B9BD5" stroke="#595959" stroke-width="1.2"/>
+<rect x="160.0" y="168.0" width="26" height="28" fill="#9DC3E6" stroke="#595959" stroke-width="1.2"/>
+<text x="173.0" y="72.0" font-size="19" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-style="normal">α<tspan font-size="14" dy="5">t</tspan><tspan dy="-5"></tspan></text>
+<line x1="188" y1="140" x2="212" y2="140" stroke="#222222" stroke-width="2.2" marker-end="url(#a)"/>
+<rect x="214.0" y="84.0" width="28" height="28" fill="#92BCE3" stroke="#1F4E79" stroke-width="1.2"/>
+<rect x="242.0" y="84.0" width="28" height="28" fill="#B1D0EB" stroke="#1F4E79" stroke-width="1.2"/>
+<rect x="270.0" y="84.0" width="28" height="28" fill="#A2C6E7" stroke="#1F4E79" stroke-width="1.2"/>
+<rect x="298.0" y="84.0" width="28" height="28" fill="#82B3DF" stroke="#1F4E79" stroke-width="1.2"/>
+<rect x="214.0" y="112.0" width="28" height="28" fill="#E6F0F9" stroke="#1F4E79" stroke-width="1.2"/>
+<rect x="242.0" y="112.0" width="28" height="28" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.2"/>
+<rect x="270.0" y="112.0" width="28" height="28" fill="#EAF2FA" stroke="#1F4E79" stroke-width="1.2"/>
+<rect x="298.0" y="112.0" width="28" height="28" fill="#E2EEF8" stroke="#1F4E79" stroke-width="1.2"/>
+<rect x="214.0" y="140.0" width="28" height="28" fill="#ADCDEA" stroke="#1F4E79" stroke-width="1.2"/>
+<rect x="242.0" y="140.0" width="28" height="28" fill="#9DC3E6" stroke="#1F4E79" stroke-width="1.2"/>
+<rect x="270.0" y="140.0" width="28" height="28" fill="#7CAFDD" stroke="#1F4E79" stroke-width="1.2"/>
+<rect x="298.0" y="140.0" width="28" height="28" fill="#9DC3E6" stroke="#1F4E79" stroke-width="1.2"/>
+<rect x="214.0" y="168.0" width="28" height="28" fill="#B0CFEB" stroke="#1F4E79" stroke-width="1.2"/>
+<rect x="242.0" y="168.0" width="28" height="28" fill="#BAD5ED" stroke="#1F4E79" stroke-width="1.2"/>
+<rect x="270.0" y="168.0" width="28" height="28" fill="#C4DBF0" stroke="#1F4E79" stroke-width="1.2"/>
+<rect x="298.0" y="168.0" width="28" height="28" fill="#CEE1F2" stroke="#1F4E79" stroke-width="1.2"/>
+<text x="270.0" y="72.0" font-size="19" font-weight="bold" fill="#222222" text-anchor="middle" font-style="normal">S′</text>
+<text x="174.0" y="238.0" font-size="19" font-weight="normal" fill="#222222" text-anchor="middle" font-style="normal">S′ = Diag(α<tspan font-size="14" dy="5">t</tspan><tspan dy="-5">) S</tspan><tspan font-size="14" dy="5">t−1</tspan></text>
+<text x="174.0" y="276.0" font-size="18" font-weight="normal" fill="#595959" text-anchor="middle" font-style="italic">forget per key channel</text>
+<line x1="346" y1="20" x2="346" y2="290" stroke="#D9D9D9" stroke-width="1.2"/>
+<text x="470.0" y="30.0" font-size="22" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-style="normal">Predict</text>
+<text x="442.0" y="111.0" font-size="19" font-weight="normal" fill="#222222" text-anchor="end" font-style="normal">v<tspan font-size="14" dy="5">t</tspan><tspan dy="-5"></tspan></text>
+<rect x="452.0" y="92.0" width="26" height="26" fill="#74AADB" stroke="#595959" stroke-width="1.2"/>
+<rect x="478.0" y="92.0" width="26" height="26" fill="#C6DCF0" stroke="#595959" stroke-width="1.2"/>
+<rect x="504.0" y="92.0" width="26" height="26" fill="#84B4E0" stroke="#595959" stroke-width="1.2"/>
+<rect x="530.0" y="92.0" width="26" height="26" fill="#A5C8E8" stroke="#595959" stroke-width="1.2"/>
+<text x="442.0" y="159.0" font-size="19" font-weight="normal" fill="#222222" text-anchor="end" font-style="normal">S′ᵀk<tspan font-size="14" dy="5">t</tspan><tspan dy="-5"></tspan></text>
+<rect x="452.0" y="140.0" width="26" height="26" fill="#F7FAFD" stroke="#595959" stroke-width="1.2"/>
+<rect x="478.0" y="140.0" width="26" height="26" fill="#F7FAFD" stroke="#595959" stroke-width="1.2"/>
+<rect x="504.0" y="140.0" width="26" height="26" fill="#E6F0F9" stroke="#595959" stroke-width="1.2"/>
+<rect x="530.0" y="140.0" width="26" height="26" fill="#EFF5FB" stroke="#595959" stroke-width="1.2"/>
+<text x="442.0" y="207.0" font-size="19" font-weight="bold" fill="#1F4E79" text-anchor="end" font-style="normal">e<tspan font-size="14" dy="5">t</tspan><tspan dy="-5"></tspan></text>
+<rect x="452.0" y="188.0" width="26" height="26" fill="#7CAFDD" stroke="#1F4E79" stroke-width="2"/>
+<rect x="478.0" y="188.0" width="26" height="26" fill="#CEE1F2" stroke="#1F4E79" stroke-width="2"/>
+<rect x="504.0" y="188.0" width="26" height="26" fill="#9DC3E6" stroke="#1F4E79" stroke-width="2"/>
+<rect x="530.0" y="188.0" width="26" height="26" fill="#B5D2EC" stroke="#1F4E79" stroke-width="2"/>
+<text x="474.0" y="238.0" font-size="19" font-weight="normal" fill="#222222" text-anchor="middle" font-style="normal">e<tspan font-size="14" dy="5">t</tspan><tspan dy="-5"> = v</tspan><tspan font-size="14" dy="5">t</tspan><tspan dy="-5"> − S′ᵀ k</tspan><tspan font-size="14" dy="5">t</tspan></text>
+<text x="474.0" y="276.0" font-size="18" font-weight="normal" fill="#595959" text-anchor="middle" font-style="italic">what memory gets wrong</text>
+</svg>

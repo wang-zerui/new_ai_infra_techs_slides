@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="320pt" viewBox="0 0 870 320" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_ht_1: owner GPU1 pulls the sum of token t1 through the switch -->
+<text x="150.0" y="26.0" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">pull Σ: multicast ld_reduce</text>
+<rect x="20.0" y="52.0" width="259.0" height="46.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="149.5" y="81.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">NVSwitch</text>
+<rect x="20.0" y="248.0" width="58.0" height="46.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="49.0" y="276.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">GPU0</text>
+<rect x="87.0" y="248.0" width="58.0" height="46.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.5" />
+<text x="116.0" y="276.6" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">GPU1</text>
+<rect x="154.0" y="248.0" width="58.0" height="46.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="183.0" y="276.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">GPU2</text>
+<rect x="221.0" y="248.0" width="58.0" height="46.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="250.0" y="276.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">GPU3</text>
+<line x1="39.0" y1="246.0" x2="39.0" y2="101.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<line x1="106.0" y1="246.0" x2="106.0" y2="101.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<line x1="173.0" y1="246.0" x2="173.0" y2="101.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<line x1="240.0" y1="246.0" x2="240.0" y2="101.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<line x1="126.0" y1="100.0" x2="126.0" y2="245.0" stroke="#1F4E79" stroke-width="3" marker-end="url(#arrAcc)"/>
+<text x="134.0" y="176.0" text-anchor="start" font-size="22" fill="#1F4E79" font-weight="bold" font-style="normal" paint-order="stroke" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round">Σ</text>
+<text x="150.0" y="314.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="italic">partials of token t1</text>
+</svg>

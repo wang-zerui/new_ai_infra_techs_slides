@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="262pt" viewBox="0 0 870 262" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- module-level offload and layer-staggered reload, build 2 -->
+<text x="82.0" y="76.0" text-anchor="end" font-size="17" fill="#222222" font-weight="bold" font-style="normal">compute</text>
+<text x="82.0" y="138.0" text-anchor="end" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal">D2H</text>
+<text x="82.0" y="200.0" text-anchor="end" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal">H2D</text>
+<text x="254.0" y="30.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">forward</text>
+<rect x="92.0" y="50.0" width="54.0" height="40.0" rx="2" fill="#FFFFFF" stroke="#595959" stroke-width="1.6" />
+<text x="119.0" y="75.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">attn 1</text>
+<rect x="146.0" y="50.0" width="54.0" height="40.0" rx="2" fill="#FFFFFF" stroke="#595959" stroke-width="1.6" />
+<text x="173.0" y="75.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">fc1 1</text>
+<rect x="200.0" y="50.0" width="54.0" height="40.0" rx="2" fill="#FFFFFF" stroke="#595959" stroke-width="1.6" />
+<text x="227.0" y="75.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">attn 2</text>
+<rect x="254.0" y="50.0" width="54.0" height="40.0" rx="2" fill="#FFFFFF" stroke="#595959" stroke-width="1.6" />
+<text x="281.0" y="75.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">fc1 2</text>
+<rect x="308.0" y="50.0" width="54.0" height="40.0" rx="2" fill="#FFFFFF" stroke="#595959" stroke-width="1.6" />
+<text x="335.0" y="75.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">attn 3</text>
+<rect x="362.0" y="50.0" width="54.0" height="40.0" rx="2" fill="#FFFFFF" stroke="#595959" stroke-width="1.6" />
+<text x="389.0" y="75.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">fc1 3</text>
+<rect x="149.0" y="112.0" width="48.0" height="40.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.8" />
+<text x="173.0" y="137.2" text-anchor="middle" font-size="15" fill="#1F4E79" font-weight="normal" font-style="normal">attn 1</text>
+<rect x="203.0" y="112.0" width="48.0" height="40.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.8" />
+<text x="227.0" y="137.2" text-anchor="middle" font-size="15" fill="#1F4E79" font-weight="normal" font-style="normal">fc1 1</text>
+<rect x="257.0" y="112.0" width="48.0" height="40.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.8" />
+<text x="281.0" y="137.2" text-anchor="middle" font-size="15" fill="#1F4E79" font-weight="normal" font-style="normal">attn 2</text>
+<rect x="311.0" y="112.0" width="48.0" height="40.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.8" />
+<text x="335.0" y="137.2" text-anchor="middle" font-size="15" fill="#1F4E79" font-weight="normal" font-style="normal">fc1 2</text>
+<text x="389.0" y="130.0" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="italic">layer 3</text>
+<text x="389.0" y="148.0" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="italic">kept</text>
+<line x1="428.0" y1="36.0" x2="428.0" y2="222.0" stroke="#7F7F7F" stroke-width="1.4" stroke-dasharray="6,5"/>
+<text x="650.0" y="30.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">backward</text>
+<rect x="440.0" y="50.0" width="70.0" height="40.0" rx="2" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="475.0" y="75.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">fc1 3</text>
+<rect x="510.0" y="50.0" width="70.0" height="40.0" rx="2" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="545.0" y="75.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">attn 3</text>
+<rect x="580.0" y="50.0" width="70.0" height="40.0" rx="2" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="615.0" y="75.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">fc1 2</text>
+<rect x="650.0" y="50.0" width="70.0" height="40.0" rx="2" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="685.0" y="75.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">attn 2</text>
+<rect x="720.0" y="50.0" width="70.0" height="40.0" rx="2" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="755.0" y="75.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">fc1 1</text>
+<rect x="790.0" y="50.0" width="70.0" height="40.0" rx="2" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="825.0" y="75.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">attn 1</text>
+<rect x="513.0" y="174.0" width="64.0" height="40.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.8" />
+<text x="545.0" y="199.2" text-anchor="middle" font-size="15" fill="#1F4E79" font-weight="normal" font-style="normal">fc1 2</text>
+<path d="M577,182 C585,154 585,110 585,92" fill="none" stroke="#1F4E79" stroke-width="1.6" marker-end="url(#arrAcc)"/>
+<rect x="583.0" y="174.0" width="64.0" height="40.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.8" />
+<text x="615.0" y="199.2" text-anchor="middle" font-size="15" fill="#1F4E79" font-weight="normal" font-style="normal">attn 2</text>
+<path d="M647,182 C655,154 655,110 655,92" fill="none" stroke="#1F4E79" stroke-width="1.6" marker-end="url(#arrAcc)"/>
+<rect x="653.0" y="174.0" width="64.0" height="40.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.8" />
+<text x="685.0" y="199.2" text-anchor="middle" font-size="15" fill="#1F4E79" font-weight="normal" font-style="normal">fc1 1</text>
+<path d="M717,182 C725,154 725,110 725,92" fill="none" stroke="#1F4E79" stroke-width="1.6" marker-end="url(#arrAcc)"/>
+<rect x="723.0" y="174.0" width="64.0" height="40.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.8" />
+<text x="755.0" y="199.2" text-anchor="middle" font-size="15" fill="#1F4E79" font-weight="normal" font-style="normal">attn 1</text>
+<path d="M787,182 C795,154 795,110 795,92" fill="none" stroke="#1F4E79" stroke-width="1.6" marker-end="url(#arrAcc)"/>
+<line x1="88.0" y1="238.0" x2="862.0" y2="238.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<text x="858.0" y="258.0" text-anchor="end" font-size="16" fill="#222222" font-weight="normal" font-style="normal">time</text>
+</svg>

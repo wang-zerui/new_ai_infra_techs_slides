@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="292pt" viewBox="0 0 870 292" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#BFBFBF" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- pull dispatch, step 1 -->
+<text x="506.0" y="22.0" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal">symmetric buffer: same layout and offsets on every GPU</text>
+<text x="132.0" y="70.0" text-anchor="end" font-size="18" fill="#222222" font-weight="bold" font-style="normal">GPU s</text>
+<text x="132.0" y="90.0" text-anchor="end" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="italic">token&#x27;s rank</text>
+<text x="132.0" y="216.0" text-anchor="end" font-size="18" fill="#222222" font-weight="bold" font-style="normal">GPU r</text>
+<text x="132.0" y="236.0" text-anchor="end" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="italic">expert&#x27;s rank</text>
+<rect x="150.0" y="44.0" width="90.0" height="58.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="195.0" y="66.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">counters</text>
+<rect x="248.0" y="44.0" width="156.0" height="58.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="326.0" y="66.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">inputs: x, top-k</text>
+<rect x="261.0" y="76.0" width="20.0" height="16.0" rx="1" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="1.2" />
+<rect x="283.0" y="76.0" width="20.0" height="16.0" rx="1" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="1.2" />
+<rect x="305.0" y="76.0" width="20.0" height="16.0" rx="1" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="1.2" />
+<rect x="327.0" y="76.0" width="20.0" height="16.0" rx="1" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="1.2" />
+<rect x="349.0" y="76.0" width="20.0" height="16.0" rx="1" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="1.2" />
+<rect x="371.0" y="76.0" width="20.0" height="16.0" rx="1" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="1.2" />
+<rect x="412.0" y="44.0" width="136.0" height="58.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="480.0" y="66.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">L1 ring</text>
+<rect x="425.0" y="76.0" width="16.7" height="16.0" rx="1" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="1.2" />
+<rect x="443.7" y="76.0" width="16.7" height="16.0" rx="1" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="1.2" />
+<rect x="462.3" y="76.0" width="16.7" height="16.0" rx="1" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="1.2" />
+<rect x="481.0" y="76.0" width="16.7" height="16.0" rx="1" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="1.2" />
+<rect x="499.7" y="76.0" width="16.7" height="16.0" rx="1" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="1.2" />
+<rect x="518.3" y="76.0" width="16.7" height="16.0" rx="1" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="1.2" />
+<rect x="556.0" y="44.0" width="108.0" height="58.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="610.0" y="66.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">L2 ring</text>
+<rect x="672.0" y="44.0" width="190.0" height="58.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="767.0" y="66.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">combine slots</text>
+<rect x="150.0" y="190.0" width="90.0" height="58.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="195.0" y="212.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">counters</text>
+<rect x="248.0" y="190.0" width="156.0" height="58.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="326.0" y="212.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">inputs: x, top-k</text>
+<rect x="261.0" y="222.0" width="20.0" height="16.0" rx="1" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="1.2" />
+<rect x="283.0" y="222.0" width="20.0" height="16.0" rx="1" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="1.2" />
+<rect x="305.0" y="222.0" width="20.0" height="16.0" rx="1" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="1.2" />
+<rect x="327.0" y="222.0" width="20.0" height="16.0" rx="1" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="1.2" />
+<rect x="349.0" y="222.0" width="20.0" height="16.0" rx="1" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="1.2" />
+<rect x="371.0" y="222.0" width="20.0" height="16.0" rx="1" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="1.2" />
+<rect x="412.0" y="190.0" width="136.0" height="58.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="480.0" y="212.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">L1 ring</text>
+<rect x="425.0" y="222.0" width="16.7" height="16.0" rx="1" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="1.2" />
+<rect x="443.7" y="222.0" width="16.7" height="16.0" rx="1" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="1.2" />
+<rect x="462.3" y="222.0" width="16.7" height="16.0" rx="1" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="1.2" />
+<rect x="481.0" y="222.0" width="16.7" height="16.0" rx="1" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="1.2" />
+<rect x="499.7" y="222.0" width="16.7" height="16.0" rx="1" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="1.2" />
+<rect x="518.3" y="222.0" width="16.7" height="16.0" rx="1" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="1.2" />
+<rect x="556.0" y="190.0" width="108.0" height="58.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="610.0" y="212.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">L2 ring</text>
+<rect x="672.0" y="190.0" width="190.0" height="58.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="767.0" y="212.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">combine slots</text>
+<rect x="606.0" y="120.0" width="256.0" height="48.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.6" />
+<text x="734.0" y="140.2" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="normal" font-style="normal" font-family="Menlo, Courier New, monospace">peer addr = own addr</text>
+<text x="734.0" y="159.0" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="normal" font-style="normal" font-family="Menlo, Courier New, monospace">+ offset[peer]</text>
+</svg>

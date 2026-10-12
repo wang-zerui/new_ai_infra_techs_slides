@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="300pt" viewBox="0 0 870 300" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_twoshot: token ownership in a two-shot all-reduce (4 GPUs, 4 tokens) -->
+<text x="86.0" y="98.3" text-anchor="end" font-size="17" fill="#222222" font-weight="bold" font-style="normal">GPU 0</text>
+<text x="86.0" y="138.3" text-anchor="end" font-size="17" fill="#222222" font-weight="bold" font-style="normal">GPU 1</text>
+<text x="86.0" y="178.3" text-anchor="end" font-size="17" fill="#222222" font-weight="bold" font-style="normal">GPU 2</text>
+<text x="86.0" y="218.3" text-anchor="end" font-size="17" fill="#222222" font-weight="bold" font-style="normal">GPU 3</text>
+<text x="118.0" y="62.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">t0</text>
+<text x="162.0" y="62.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">t1</text>
+<text x="206.0" y="62.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">t2</text>
+<text x="250.0" y="62.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">t3</text>
+<rect x="96.0" y="72.0" width="44.0" height="40.0" rx="0" fill="#F2F2F2" stroke="#595959" stroke-width="1.5" />
+<text x="118.0" y="98.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">p</text>
+<rect x="140.0" y="72.0" width="44.0" height="40.0" rx="0" fill="#F2F2F2" stroke="#595959" stroke-width="1.5" />
+<text x="162.0" y="98.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">p</text>
+<rect x="184.0" y="72.0" width="44.0" height="40.0" rx="0" fill="#F2F2F2" stroke="#595959" stroke-width="1.5" />
+<text x="206.0" y="98.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">p</text>
+<rect x="228.0" y="72.0" width="44.0" height="40.0" rx="0" fill="#F2F2F2" stroke="#595959" stroke-width="1.5" />
+<text x="250.0" y="98.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">p</text>
+<rect x="96.0" y="112.0" width="44.0" height="40.0" rx="0" fill="#F2F2F2" stroke="#595959" stroke-width="1.5" />
+<text x="118.0" y="137.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">p</text>
+<rect x="140.0" y="112.0" width="44.0" height="40.0" rx="0" fill="#F2F2F2" stroke="#595959" stroke-width="1.5" />
+<text x="162.0" y="137.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">p</text>
+<rect x="184.0" y="112.0" width="44.0" height="40.0" rx="0" fill="#F2F2F2" stroke="#595959" stroke-width="1.5" />
+<text x="206.0" y="137.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">p</text>
+<rect x="228.0" y="112.0" width="44.0" height="40.0" rx="0" fill="#F2F2F2" stroke="#595959" stroke-width="1.5" />
+<text x="250.0" y="137.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">p</text>
+<rect x="96.0" y="152.0" width="44.0" height="40.0" rx="0" fill="#F2F2F2" stroke="#595959" stroke-width="1.5" />
+<text x="118.0" y="177.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">p</text>
+<rect x="140.0" y="152.0" width="44.0" height="40.0" rx="0" fill="#F2F2F2" stroke="#595959" stroke-width="1.5" />
+<text x="162.0" y="177.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">p</text>
+<rect x="184.0" y="152.0" width="44.0" height="40.0" rx="0" fill="#F2F2F2" stroke="#595959" stroke-width="1.5" />
+<text x="206.0" y="177.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">p</text>
+<rect x="228.0" y="152.0" width="44.0" height="40.0" rx="0" fill="#F2F2F2" stroke="#595959" stroke-width="1.5" />
+<text x="250.0" y="177.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">p</text>
+<rect x="96.0" y="192.0" width="44.0" height="40.0" rx="0" fill="#F2F2F2" stroke="#595959" stroke-width="1.5" />
+<text x="118.0" y="217.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">p</text>
+<rect x="140.0" y="192.0" width="44.0" height="40.0" rx="0" fill="#F2F2F2" stroke="#595959" stroke-width="1.5" />
+<text x="162.0" y="217.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">p</text>
+<rect x="184.0" y="192.0" width="44.0" height="40.0" rx="0" fill="#F2F2F2" stroke="#595959" stroke-width="1.5" />
+<text x="206.0" y="217.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">p</text>
+<rect x="228.0" y="192.0" width="44.0" height="40.0" rx="0" fill="#F2F2F2" stroke="#595959" stroke-width="1.5" />
+<text x="250.0" y="217.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">p</text>
+<text x="406.0" y="62.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">t0</text>
+<text x="450.0" y="62.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">t1</text>
+<text x="494.0" y="62.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">t2</text>
+<text x="538.0" y="62.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">t3</text>
+<rect x="384.0" y="72.0" width="44.0" height="40.0" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.5" />
+<text x="406.0" y="98.3" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">Σ</text>
+<rect x="428.0" y="72.0" width="44.0" height="40.0" rx="0" fill="#FFFFFF" stroke="#BFBFBF" stroke-width="1.2" />
+<text x="450.0" y="98.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal"></text>
+<rect x="472.0" y="72.0" width="44.0" height="40.0" rx="0" fill="#FFFFFF" stroke="#BFBFBF" stroke-width="1.2" />
+<text x="494.0" y="98.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal"></text>
+<rect x="516.0" y="72.0" width="44.0" height="40.0" rx="0" fill="#FFFFFF" stroke="#BFBFBF" stroke-width="1.2" />
+<text x="538.0" y="98.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal"></text>
+<rect x="384.0" y="112.0" width="44.0" height="40.0" rx="0" fill="#FFFFFF" stroke="#BFBFBF" stroke-width="1.2" />
+<text x="406.0" y="137.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal"></text>
+<rect x="428.0" y="112.0" width="44.0" height="40.0" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.5" />
+<text x="450.0" y="138.3" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">Σ</text>
+<rect x="472.0" y="112.0" width="44.0" height="40.0" rx="0" fill="#FFFFFF" stroke="#BFBFBF" stroke-width="1.2" />
+<text x="494.0" y="137.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal"></text>
+<rect x="516.0" y="112.0" width="44.0" height="40.0" rx="0" fill="#FFFFFF" stroke="#BFBFBF" stroke-width="1.2" />
+<text x="538.0" y="137.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal"></text>
+<rect x="384.0" y="152.0" width="44.0" height="40.0" rx="0" fill="#FFFFFF" stroke="#BFBFBF" stroke-width="1.2" />
+<text x="406.0" y="177.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal"></text>
+<rect x="428.0" y="152.0" width="44.0" height="40.0" rx="0" fill="#FFFFFF" stroke="#BFBFBF" stroke-width="1.2" />
+<text x="450.0" y="177.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal"></text>
+<rect x="472.0" y="152.0" width="44.0" height="40.0" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.5" />
+<text x="494.0" y="178.3" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">Σ</text>
+<rect x="516.0" y="152.0" width="44.0" height="40.0" rx="0" fill="#FFFFFF" stroke="#BFBFBF" stroke-width="1.2" />
+<text x="538.0" y="177.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal"></text>
+<rect x="384.0" y="192.0" width="44.0" height="40.0" rx="0" fill="#FFFFFF" stroke="#BFBFBF" stroke-width="1.2" />
+<text x="406.0" y="217.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal"></text>
+<rect x="428.0" y="192.0" width="44.0" height="40.0" rx="0" fill="#FFFFFF" stroke="#BFBFBF" stroke-width="1.2" />
+<text x="450.0" y="217.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal"></text>
+<rect x="472.0" y="192.0" width="44.0" height="40.0" rx="0" fill="#FFFFFF" stroke="#BFBFBF" stroke-width="1.2" />
+<text x="494.0" y="217.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal"></text>
+<rect x="516.0" y="192.0" width="44.0" height="40.0" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.5" />
+<text x="538.0" y="218.3" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">Σ</text>
+<text x="694.0" y="62.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">t0</text>
+<text x="738.0" y="62.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">t1</text>
+<text x="782.0" y="62.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">t2</text>
+<text x="826.0" y="62.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">t3</text>
+<rect x="672.0" y="72.0" width="44.0" height="40.0" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<text x="694.0" y="98.3" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">Σ</text>
+<rect x="716.0" y="72.0" width="44.0" height="40.0" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<text x="738.0" y="98.3" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">Σ</text>
+<rect x="760.0" y="72.0" width="44.0" height="40.0" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<text x="782.0" y="98.3" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">Σ</text>
+<rect x="804.0" y="72.0" width="44.0" height="40.0" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<text x="826.0" y="98.3" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">Σ</text>
+<rect x="672.0" y="112.0" width="44.0" height="40.0" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<text x="694.0" y="138.3" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">Σ</text>
+<rect x="716.0" y="112.0" width="44.0" height="40.0" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<text x="738.0" y="138.3" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">Σ</text>
+<rect x="760.0" y="112.0" width="44.0" height="40.0" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<text x="782.0" y="138.3" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">Σ</text>
+<rect x="804.0" y="112.0" width="44.0" height="40.0" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<text x="826.0" y="138.3" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">Σ</text>
+<rect x="672.0" y="152.0" width="44.0" height="40.0" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<text x="694.0" y="178.3" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">Σ</text>
+<rect x="716.0" y="152.0" width="44.0" height="40.0" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<text x="738.0" y="178.3" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">Σ</text>
+<rect x="760.0" y="152.0" width="44.0" height="40.0" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<text x="782.0" y="178.3" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">Σ</text>
+<rect x="804.0" y="152.0" width="44.0" height="40.0" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<text x="826.0" y="178.3" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">Σ</text>
+<rect x="672.0" y="192.0" width="44.0" height="40.0" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<text x="694.0" y="218.3" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">Σ</text>
+<rect x="716.0" y="192.0" width="44.0" height="40.0" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<text x="738.0" y="218.3" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">Σ</text>
+<rect x="760.0" y="192.0" width="44.0" height="40.0" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<text x="782.0" y="218.3" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">Σ</text>
+<rect x="804.0" y="192.0" width="44.0" height="40.0" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<text x="826.0" y="218.3" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">Σ</text>
+<line x1="280.0" y1="152.0" x2="376.0" y2="152.0" stroke="#1F4E79" stroke-width="2.6" marker-end="url(#arrAcc)"/>
+<text x="328.0" y="118.0" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal">shot 1</text>
+<text x="328.0" y="138.0" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="normal" font-style="normal">reduce-scatter</text>
+<line x1="568.0" y1="152.0" x2="664.0" y2="152.0" stroke="#1F4E79" stroke-width="2.6" marker-end="url(#arrAcc)"/>
+<text x="616.0" y="118.0" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal">shot 2</text>
+<text x="616.0" y="138.0" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="normal" font-style="normal">all-gather</text>
+<text x="184.0" y="262.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">(a) partial sums</text>
+<text x="472.0" y="262.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">(b) after shot 1</text>
+<text x="760.0" y="262.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">(c) after shot 2</text>
+<text x="472.0" y="286.0" text-anchor="middle" font-size="17" fill="#7F7F7F" font-weight="normal" font-style="italic">GPU r owns token r</text>
+</svg>

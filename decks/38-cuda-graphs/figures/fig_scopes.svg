@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="292pt" viewBox="0 0 870 292" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_scopes: capture scope per cuda_graph_impl -->
+<rect x="196.0" y="6.0" width="22.0" height="14.0" rx="2" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2.6" />
+<text x="224.0" y="18.0" text-anchor="start" font-size="15" fill="#222222" font-weight="normal" font-style="normal">one CUDA graph</text>
+<rect x="354.0" y="6.0" width="22.0" height="14.0" rx="2" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.4" />
+<text x="382.0" y="18.0" text-anchor="start" font-size="15" fill="#222222" font-weight="normal" font-style="normal">eager: dynamic shapes</text>
+<rect x="566.0" y="6.0" width="22.0" height="14.0" rx="2" fill="#F2F2F2" stroke="#595959" stroke-width="1.4" />
+<text x="594.0" y="18.0" text-anchor="start" font-size="15" fill="#222222" font-weight="normal" font-style="normal">eager</text>
+<text x="4.0" y="61.0" text-anchor="start" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal" font-family="Menlo, Courier New, monospace">full_iteration</text>
+<text x="4.0" y="81.0" text-anchor="start" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">one graph per step</text>
+<rect x="196.0" y="44.0" width="46.0" height="40.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="1.4" />
+<text x="219.0" y="69.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">F11</text>
+<rect x="246.0" y="44.0" width="46.0" height="40.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="1.4" />
+<text x="269.0" y="69.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">F12</text>
+<rect x="296.0" y="44.0" width="46.0" height="40.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="1.4" />
+<text x="319.0" y="69.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">F13</text>
+<rect x="346.0" y="44.0" width="46.0" height="40.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="1.4" />
+<text x="369.0" y="69.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">B13</text>
+<rect x="396.0" y="44.0" width="46.0" height="40.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="1.4" />
+<text x="419.0" y="69.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">B12</text>
+<rect x="446.0" y="44.0" width="46.0" height="40.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="1.4" />
+<text x="469.0" y="69.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">B11</text>
+<rect x="496.0" y="44.0" width="46.0" height="40.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="1.4" />
+<text x="519.0" y="69.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">F21</text>
+<rect x="546.0" y="44.0" width="46.0" height="40.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="1.4" />
+<text x="569.0" y="69.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">F22</text>
+<rect x="596.0" y="44.0" width="46.0" height="40.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="1.4" />
+<text x="619.0" y="69.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">F23</text>
+<rect x="646.0" y="44.0" width="46.0" height="40.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="1.4" />
+<text x="669.0" y="69.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">B23</text>
+<rect x="696.0" y="44.0" width="46.0" height="40.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="1.4" />
+<text x="719.0" y="69.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">B22</text>
+<rect x="746.0" y="44.0" width="46.0" height="40.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="1.4" />
+<text x="769.0" y="69.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">B21</text>
+<rect x="191.0" y="39.0" width="606.0" height="50.0" rx="5" fill="none" stroke="#1F4E79" stroke-width="2.8" />
+<rect x="804.0" y="44.0" width="52.0" height="40.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="830.0" y="69.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">opt</text>
+<text x="4.0" y="141.0" text-anchor="start" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal" font-family="Menlo, Courier New, monospace">local / TE</text>
+<text x="4.0" y="161.0" text-anchor="start" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">one graph per layer pass</text>
+<rect x="196.0" y="124.0" width="46.0" height="40.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2.6" />
+<text x="219.0" y="149.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">F11</text>
+<rect x="246.0" y="124.0" width="46.0" height="40.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2.6" />
+<text x="269.0" y="149.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">F12</text>
+<rect x="296.0" y="124.0" width="46.0" height="40.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2.6" />
+<text x="319.0" y="149.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">F13</text>
+<rect x="346.0" y="124.0" width="46.0" height="40.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2.6" />
+<text x="369.0" y="149.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">B13</text>
+<rect x="396.0" y="124.0" width="46.0" height="40.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2.6" />
+<text x="419.0" y="149.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">B12</text>
+<rect x="446.0" y="124.0" width="46.0" height="40.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2.6" />
+<text x="469.0" y="149.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">B11</text>
+<rect x="496.0" y="124.0" width="46.0" height="40.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2.6" />
+<text x="519.0" y="149.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">F21</text>
+<rect x="546.0" y="124.0" width="46.0" height="40.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2.6" />
+<text x="569.0" y="149.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">F22</text>
+<rect x="596.0" y="124.0" width="46.0" height="40.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2.6" />
+<text x="619.0" y="149.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">F23</text>
+<rect x="646.0" y="124.0" width="46.0" height="40.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2.6" />
+<text x="669.0" y="149.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">B23</text>
+<rect x="696.0" y="124.0" width="46.0" height="40.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2.6" />
+<text x="719.0" y="149.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">B22</text>
+<rect x="746.0" y="124.0" width="46.0" height="40.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2.6" />
+<text x="769.0" y="149.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">B21</text>
+<rect x="804.0" y="124.0" width="52.0" height="40.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="830.0" y="149.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">opt</text>
+<text x="4.0" y="221.0" text-anchor="start" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal" font-family="Menlo, Courier New, monospace">partial (MoE)</text>
+<text x="4.0" y="241.0" text-anchor="start" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">graph up to dispatch</text>
+<rect x="222.0" y="204.0" width="20.0" height="40.0" rx="2" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.4" />
+<rect x="196.0" y="204.0" width="26.0" height="40.0" rx="2" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2.6" />
+<rect x="272.0" y="204.0" width="20.0" height="40.0" rx="2" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.4" />
+<rect x="246.0" y="204.0" width="26.0" height="40.0" rx="2" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2.6" />
+<rect x="322.0" y="204.0" width="20.0" height="40.0" rx="2" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.4" />
+<rect x="296.0" y="204.0" width="26.0" height="40.0" rx="2" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2.6" />
+<rect x="346.0" y="204.0" width="20.0" height="40.0" rx="2" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.4" />
+<rect x="366.0" y="204.0" width="26.0" height="40.0" rx="2" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2.6" />
+<rect x="396.0" y="204.0" width="20.0" height="40.0" rx="2" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.4" />
+<rect x="416.0" y="204.0" width="26.0" height="40.0" rx="2" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2.6" />
+<rect x="446.0" y="204.0" width="20.0" height="40.0" rx="2" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.4" />
+<rect x="466.0" y="204.0" width="26.0" height="40.0" rx="2" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2.6" />
+<rect x="522.0" y="204.0" width="20.0" height="40.0" rx="2" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.4" />
+<rect x="496.0" y="204.0" width="26.0" height="40.0" rx="2" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2.6" />
+<rect x="572.0" y="204.0" width="20.0" height="40.0" rx="2" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.4" />
+<rect x="546.0" y="204.0" width="26.0" height="40.0" rx="2" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2.6" />
+<rect x="622.0" y="204.0" width="20.0" height="40.0" rx="2" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.4" />
+<rect x="596.0" y="204.0" width="26.0" height="40.0" rx="2" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2.6" />
+<rect x="646.0" y="204.0" width="20.0" height="40.0" rx="2" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.4" />
+<rect x="666.0" y="204.0" width="26.0" height="40.0" rx="2" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2.6" />
+<rect x="696.0" y="204.0" width="20.0" height="40.0" rx="2" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.4" />
+<rect x="716.0" y="204.0" width="26.0" height="40.0" rx="2" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2.6" />
+<rect x="746.0" y="204.0" width="20.0" height="40.0" rx="2" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.4" />
+<rect x="766.0" y="204.0" width="26.0" height="40.0" rx="2" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2.6" />
+<rect x="804.0" y="204.0" width="52.0" height="40.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="830.0" y="229.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">opt</text>
+<line x1="196.0" y1="258.0" x2="856.0" y2="258.0" stroke="#222222" stroke-width="1.8" marker-end="url(#arr)"/>
+<text x="196.0" y="284.0" text-anchor="start" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="italic">Fij / Bij: forward / backward of microbatch i, layer j</text>
+</svg>

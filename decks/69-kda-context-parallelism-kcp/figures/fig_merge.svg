@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="285pt" viewBox="0 0 870 285" font-family="Helvetica, Arial, sans-serif">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker><marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker><marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker><pattern id="hr" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" fill="#FBE5E5"/><line x1="0" y1="0" x2="0" y2="6" stroke="#C00000" stroke-width="1.6"/></pattern></defs>
+<text x="60.0" y="57.0" font-size="16" font-weight="bold" fill="#222222" text-anchor="end" font-style="normal">GPU 0</text>
+<rect x="68.0" y="34.0" width="60.0" height="34.0" rx="3" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2"/>
+<text x="98.0" y="57.0" font-size="16" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-style="normal">S̃<tspan font-size="14" dy="5">0</tspan><tspan dy="-5">​</tspan></text>
+<rect x="128.0" y="34.0" width="60.0" height="34.0" rx="3" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2"/>
+<text x="158.0" y="57.0" font-size="16" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-style="normal">M<tspan font-size="14" dy="5">0</tspan><tspan dy="-5">​</tspan></text>
+<line x1="190.0" y1="51.0" x2="222.0" y2="51.0" stroke="#222222" stroke-width="1.8" marker-end="url(#a)"/>
+<text x="60.0" y="101.0" font-size="16" font-weight="bold" fill="#222222" text-anchor="end" font-style="normal">GPU 1</text>
+<rect x="68.0" y="78.0" width="60.0" height="34.0" rx="3" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2"/>
+<text x="98.0" y="101.0" font-size="16" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-style="normal">S̃<tspan font-size="14" dy="5">1</tspan><tspan dy="-5">​</tspan></text>
+<rect x="128.0" y="78.0" width="60.0" height="34.0" rx="3" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2"/>
+<text x="158.0" y="101.0" font-size="16" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-style="normal">M<tspan font-size="14" dy="5">1</tspan><tspan dy="-5">​</tspan></text>
+<line x1="190.0" y1="95.0" x2="222.0" y2="95.0" stroke="#222222" stroke-width="1.8" marker-end="url(#a)"/>
+<text x="60.0" y="145.0" font-size="16" font-weight="bold" fill="#222222" text-anchor="end" font-style="normal">GPU 2</text>
+<rect x="68.0" y="122.0" width="60.0" height="34.0" rx="3" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2"/>
+<text x="98.0" y="145.0" font-size="16" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-style="normal">S̃<tspan font-size="14" dy="5">2</tspan><tspan dy="-5">​</tspan></text>
+<rect x="128.0" y="122.0" width="60.0" height="34.0" rx="3" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2"/>
+<text x="158.0" y="145.0" font-size="16" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-style="normal">M<tspan font-size="14" dy="5">2</tspan><tspan dy="-5">​</tspan></text>
+<line x1="190.0" y1="139.0" x2="222.0" y2="139.0" stroke="#222222" stroke-width="1.8" marker-end="url(#a)"/>
+<text x="60.0" y="189.0" font-size="16" font-weight="bold" fill="#222222" text-anchor="end" font-style="normal">GPU 3</text>
+<rect x="68.0" y="166.0" width="60.0" height="34.0" rx="3" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2"/>
+<text x="98.0" y="189.0" font-size="16" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-style="normal">S̃<tspan font-size="14" dy="5">3</tspan><tspan dy="-5">​</tspan></text>
+<rect x="128.0" y="166.0" width="60.0" height="34.0" rx="3" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2"/>
+<text x="158.0" y="189.0" font-size="16" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-style="normal">M<tspan font-size="14" dy="5">3</tspan><tspan dy="-5">​</tspan></text>
+<line x1="190.0" y1="183.0" x2="222.0" y2="183.0" stroke="#222222" stroke-width="1.8" marker-end="url(#a)"/>
+<rect x="224.0" y="34.0" width="46.0" height="166.0" rx="4" fill="#1F4E79" stroke="#1F4E79" stroke-width="1.5"/>
+<text x="247" y="117" font-size="17" font-weight="bold" fill="#FFFFFF" text-anchor="middle" transform="rotate(-90 247 117)">all-gather</text>
+<line x1="272.0" y1="117.0" x2="318.0" y2="117.0" stroke="#222222" stroke-width="2.5" marker-end="url(#a)"/>
+<text x="594.0" y="34.0" font-size="18" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-style="normal">merge on GPU 3 (needs ranks 0-2)</text>
+<circle cx="340" cy="117" r="16" fill="#FFFFFF" stroke="#222222" stroke-width="2"/>
+<text x="340.0" y="123.0" font-size="17" font-weight="bold" fill="#222222" text-anchor="middle" font-style="normal">0</text>
+<line x1="357.0" y1="117.0" x2="378.0" y2="117.0" stroke="#1F4E79" stroke-width="2.5" marker-end="url(#b)"/>
+<rect x="380.0" y="93.0" width="110.0" height="48.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2"/>
+<text x="435.0" y="123.0" font-size="17" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-style="normal">M<tspan font-size="14" dy="5">0</tspan><tspan dy="-5">​</tspan>·S + S̃<tspan font-size="14" dy="5">0</tspan><tspan dy="-5">​</tspan></text>
+<line x1="492.0" y1="117.0" x2="508.0" y2="117.0" stroke="#1F4E79" stroke-width="2.5" marker-end="url(#b)"/>
+<rect x="510.0" y="93.0" width="110.0" height="48.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2"/>
+<text x="565.0" y="123.0" font-size="17" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-style="normal">M<tspan font-size="14" dy="5">1</tspan><tspan dy="-5">​</tspan>·S + S̃<tspan font-size="14" dy="5">1</tspan><tspan dy="-5">​</tspan></text>
+<line x1="622.0" y1="117.0" x2="638.0" y2="117.0" stroke="#1F4E79" stroke-width="2.5" marker-end="url(#b)"/>
+<rect x="640.0" y="93.0" width="110.0" height="48.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2"/>
+<text x="695.0" y="123.0" font-size="17" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-style="normal">M<tspan font-size="14" dy="5">2</tspan><tspan dy="-5">​</tspan>·S + S̃<tspan font-size="14" dy="5">2</tspan><tspan dy="-5">​</tspan></text>
+<line x1="752.0" y1="117.0" x2="770.0" y2="117.0" stroke="#1F4E79" stroke-width="2.5" marker-end="url(#b)"/>
+<rect x="772.0" y="93.0" width="90.0" height="48.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.5"/>
+<text x="817.0" y="123.0" font-size="18" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-style="normal">S<tspan font-size="14" dy="5">in,3</tspan><tspan dy="-5">​</tspan></text>
+<text x="600.0" y="180.0" font-size="16" font-weight="normal" fill="#222222" text-anchor="middle" font-style="normal">small matmuls · no more communication</text>
+<text x="600.0" y="206.0" font-size="16" font-weight="normal" fill="#595959" text-anchor="middle" font-style="italic">backward: same chain in reverse with Mᵀ</text>
+<text x="435.0" y="262.0" font-size="17" font-weight="bold" fill="#222222" text-anchor="middle" font-style="normal">payload per GPU: H × d<tspan font-size="13" dy="4">k</tspan><tspan dy="-4"> × (d</tspan><tspan font-size="13" dy="4">k</tspan><tspan dy="-4"> + d</tspan><tspan font-size="13" dy="4">v</tspan><tspan dy="-4">) values · no dependence on length</tspan></text>
+</svg>

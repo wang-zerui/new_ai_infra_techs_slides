@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="285pt" viewBox="0 0 870 285" font-family="Helvetica, Arial, sans-serif">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker><marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker><marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker><pattern id="hr" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" fill="#FBE5E5"/><line x1="0" y1="0" x2="0" y2="6" stroke="#C00000" stroke-width="1.6"/></pattern></defs>
+<rect x="10.0" y="10.0" width="420.0" height="266.0" rx="6" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2"/>
+<text x="220.0" y="42.0" font-size="20" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-style="normal">In FlashKDA v1</text>
+<text x="34.0" y="80.0" font-size="19" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-style="normal">✓</text>
+<text x="52.0" y="80.0" font-size="18" font-weight="bold" fill="#222222" text-anchor="start" font-style="normal">Hopper and Blackwell</text>
+<text x="52.0" y="100.0" font-size="15" font-weight="normal" fill="#595959" text-anchor="start" font-style="normal">SM90+ · CUDA 12.9+</text>
+<text x="34.0" y="126.0" font-size="19" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-style="normal">✓</text>
+<text x="52.0" y="126.0" font-size="18" font-weight="bold" fill="#222222" text-anchor="start" font-style="normal">Head dims K = V = 128</text>
+<text x="52.0" y="146.0" font-size="15" font-weight="normal" fill="#595959" text-anchor="start" font-style="normal">only this shape</text>
+<text x="34.0" y="172.0" font-size="19" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-style="normal">✓</text>
+<text x="52.0" y="172.0" font-size="18" font-weight="bold" fill="#222222" text-anchor="start" font-style="normal">Bounded gate</text>
+<text x="52.0" y="192.0" font-size="15" font-weight="normal" fill="#595959" text-anchor="start" font-style="normal">lower bound in [−5, 0]</text>
+<text x="34.0" y="218.0" font-size="19" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-style="normal">✓</text>
+<text x="52.0" y="218.0" font-size="18" font-weight="bold" fill="#222222" text-anchor="start" font-style="normal">Forward pass and varlen</text>
+<text x="52.0" y="238.0" font-size="15" font-weight="normal" fill="#595959" text-anchor="start" font-style="normal">prefill · cu_seqlens batches</text>
+<rect x="440.0" y="10.0" width="420.0" height="266.0" rx="6" fill="#F2F2F2" stroke="#595959" stroke-width="2"/>
+<text x="650.0" y="42.0" font-size="20" font-weight="bold" fill="#222222" text-anchor="middle" font-style="normal">Not in the public v1</text>
+<text x="464.0" y="80.0" font-size="19" font-weight="bold" fill="#C00000" text-anchor="middle" font-style="normal">✗</text>
+<text x="482.0" y="80.0" font-size="18" font-weight="bold" fill="#222222" text-anchor="start" font-style="normal">Backward pass</text>
+<text x="482.0" y="100.0" font-size="15" font-weight="normal" fill="#595959" text-anchor="start" font-style="normal">K3 reports training use</text>
+<text x="464.0" y="126.0" font-size="19" font-weight="bold" fill="#C00000" text-anchor="middle" font-style="normal">✗</text>
+<text x="482.0" y="126.0" font-size="18" font-weight="bold" fill="#222222" text-anchor="start" font-style="normal">Decoding</text>
+<text x="482.0" y="146.0" font-size="15" font-weight="normal" fill="#595959" text-anchor="start" font-style="normal">separate fused kernel (K3 §5.4.2)</text>
+<text x="464.0" y="172.0" font-size="19" font-weight="bold" fill="#C00000" text-anchor="middle" font-style="normal">✗</text>
+<text x="482.0" y="172.0" font-size="18" font-weight="bold" fill="#222222" text-anchor="start" font-style="normal">Other head dims</text>
+<text x="482.0" y="192.0" font-size="15" font-weight="normal" fill="#595959" text-anchor="start" font-style="normal">and pre-Hopper GPUs</text>
+<text x="464.0" y="218.0" font-size="19" font-weight="bold" fill="#C00000" text-anchor="middle" font-style="normal">✗</text>
+<text x="482.0" y="218.0" font-size="18" font-weight="bold" fill="#222222" text-anchor="start" font-style="normal">Unbounded gates</text>
+<text x="482.0" y="238.0" font-size="15" font-weight="normal" fill="#595959" text-anchor="start" font-style="normal">the API requires a lower bound</text>
+</svg>

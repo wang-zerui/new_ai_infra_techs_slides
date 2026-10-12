@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="296pt" viewBox="0 0 870 296" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_layout: VA range = HBM segment + host-DRAM storage shards -->
+<rect x="40.0" y="128.0" width="64.0" height="50.0" rx="0" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="72.0" y="159.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">ws</text>
+<rect x="104.0" y="128.0" width="226.0" height="50.0" rx="0" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="217.0" y="159.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">GPU buffer</text>
+<rect x="330.0" y="128.0" width="125.0" height="50.0" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.4" />
+<text x="392.0" y="159.0" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal">shard 0</text>
+<rect x="455.0" y="128.0" width="125.0" height="50.0" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.6" />
+<text x="517.0" y="159.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">shard 1</text>
+<rect x="580.0" y="128.0" width="125.0" height="50.0" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.6" />
+<text x="642.0" y="159.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">shard 2</text>
+<rect x="705.0" y="128.0" width="125.0" height="50.0" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.6" />
+<text x="767.0" y="159.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">shard 3</text>
+<text x="24.0" y="159.0" text-anchor="middle" font-size="17" fill="#7F7F7F" font-weight="bold" font-style="normal">VA</text>
+<rect x="96.0" y="22.0" width="242.0" height="48.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="217.0" y="52.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">SMs and NVLink peers</text>
+<line x1="217.0" y1="72.0" x2="217.0" y2="125.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<text x="227.0" y="104.0" text-anchor="start" font-size="16" fill="#222222" font-weight="normal" font-style="italic">NCCL window</text>
+<rect x="524.0" y="22.0" width="112.0" height="48.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="580.0" y="52.3" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">RDMA NIC</text>
+<line x1="580.0" y1="72.0" x2="580.0" y2="125.0" stroke="#1F4E79" stroke-width="2.4" marker-end="url(#arrAcc)"/>
+<text x="590.0" y="104.0" text-anchor="start" font-size="16" fill="#1F4E79" font-weight="normal" font-style="italic">Gin-only windows</text>
+<circle cx="370.0" cy="98.0" r="13" fill="#222222"/>
+<text x="370.0" y="103.8" text-anchor="middle" font-size="16" fill="#FFFFFF" font-weight="bold" font-style="normal">2</text>
+<text x="390.0" y="104.0" text-anchor="start" font-size="16" fill="#222222" font-weight="normal" font-style="normal">two window kinds</text>
+<rect x="40.0" y="232.0" width="290.0" height="52.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="185.0" y="254.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">HBM pages</text>
+<text x="185.0" y="276.0" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal" font-family="Menlo, monospace">cuMemCreate on device</text>
+<rect x="420.0" y="232.0" width="410.0" height="52.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.6" />
+<text x="625.0" y="254.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="bold" font-style="normal">pinned host pages on the GPU&#x27;s NUMA node</text>
+<text x="625.0" y="276.0" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal" font-family="Menlo, monospace">cuMemCreate on HOST_NUMA</text>
+<line x1="40.0" y1="180.0" x2="40.0" y2="230.0" stroke="#595959" stroke-width="1.6" stroke-dasharray="5,4"/>
+<line x1="330.0" y1="180.0" x2="330.0" y2="230.0" stroke="#595959" stroke-width="1.6" stroke-dasharray="5,4"/>
+<line x1="330.0" y1="180.0" x2="420.0" y2="230.0" stroke="#1F4E79" stroke-width="1.6" stroke-dasharray="5,4"/>
+<line x1="830.0" y1="180.0" x2="830.0" y2="230.0" stroke="#1F4E79" stroke-width="1.6" stroke-dasharray="5,4"/>
+<circle cx="62.0" cy="206.0" r="13" fill="#222222"/>
+<text x="62.0" y="211.8" text-anchor="middle" font-size="16" fill="#FFFFFF" font-weight="bold" font-style="normal">1</text>
+<text x="80.0" y="212.0" text-anchor="start" font-size="16" fill="#222222" font-weight="normal" font-style="normal">one VA range with two backings</text>
+<path d="M459,186 L459,192 L826,192 L826,186" fill="none" stroke="#222222" stroke-width="1.6"/>
+<circle cx="560.0" cy="210.0" r="13" fill="#222222"/>
+<text x="560.0" y="215.8" text-anchor="middle" font-size="16" fill="#FFFFFF" font-weight="bold" font-style="normal">3</text>
+<text x="578.0" y="216.0" text-anchor="start" font-size="16" fill="#222222" font-weight="normal" font-style="normal">node peers&#x27; shards</text>
+</svg>

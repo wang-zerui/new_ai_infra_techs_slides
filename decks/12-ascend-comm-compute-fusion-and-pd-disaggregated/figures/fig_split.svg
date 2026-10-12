@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="252pt" viewBox="0 0 870 252" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_split: the sharded window between ReduceScatter and AllGather -->
+<text x="12.0" y="47.0" text-anchor="start" font-size="19" fill="#222222" font-weight="bold" font-style="normal">Before</text>
+<rect x="118.0" y="18.0" width="170.0" height="46.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="203.0" y="47.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">Attention + o_proj</text>
+<rect x="296.0" y="18.0" width="150.0" height="46.0" rx="3" fill="#FBE5E5" stroke="#C00000" stroke-width="2.4" />
+<text x="371.0" y="47.0" text-anchor="middle" font-size="18" fill="#C00000" font-weight="bold" font-style="normal">AllReduce</text>
+<rect x="454.0" y="18.0" width="190.0" height="46.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="549.0" y="47.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">RMSNorm + router</text>
+<rect x="652.0" y="18.0" width="206.0" height="46.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="755.0" y="47.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">All-to-all + experts</text>
+<line x1="288.0" y1="41.0" x2="294.0" y2="41.0" stroke="#222222" stroke-width="2.2"/>
+<line x1="446.0" y1="41.0" x2="452.0" y2="41.0" stroke="#222222" stroke-width="2.2"/>
+<line x1="644.0" y1="41.0" x2="650.0" y2="41.0" stroke="#222222" stroke-width="2.2"/>
+<text x="549.0" y="86.0" text-anchor="middle" font-size="18" fill="#C00000" font-weight="bold" font-style="normal">every rank holds all tokens</text>
+<line x1="12.0" y1="108.0" x2="858.0" y2="108.0" stroke="#7F7F7F" stroke-width="1.2" stroke-dasharray="6,4"/>
+<text x="12.0" y="157.0" text-anchor="start" font-size="19" fill="#1F4E79" font-weight="bold" font-style="normal">After</text>
+<rect x="118.0" y="128.0" width="170.0" height="46.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="203.0" y="157.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">Attention + o_proj</text>
+<rect x="296.0" y="128.0" width="150.0" height="46.0" rx="3" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.4" />
+<text x="371.0" y="157.0" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">ReduceScatter</text>
+<rect x="454.0" y="128.0" width="190.0" height="46.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="549.0" y="157.3" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="normal" font-style="normal">RMSNorm + router</text>
+<rect x="652.0" y="128.0" width="112.0" height="46.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="708.0" y="157.3" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="normal" font-style="normal">All-to-all</text>
+<rect x="772.0" y="128.0" width="86.0" height="46.0" rx="3" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.4" />
+<text x="815.0" y="157.0" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal">AllGather</text>
+<line x1="288.0" y1="151.0" x2="294.0" y2="151.0" stroke="#222222" stroke-width="2.2"/>
+<line x1="446.0" y1="151.0" x2="452.0" y2="151.0" stroke="#222222" stroke-width="2.2"/>
+<line x1="644.0" y1="151.0" x2="650.0" y2="151.0" stroke="#222222" stroke-width="2.2"/>
+<line x1="764.0" y1="151.0" x2="770.0" y2="151.0" stroke="#222222" stroke-width="2.2"/>
+<line x1="452.0" y1="192.0" x2="452.0" y2="206.0" stroke="#1F4E79" stroke-width="2"/>
+<line x1="766.0" y1="192.0" x2="766.0" y2="206.0" stroke="#1F4E79" stroke-width="2"/>
+<line x1="452.0" y1="206.0" x2="766.0" y2="206.0" stroke="#1F4E79" stroke-width="2"/>
+<text x="609.0" y="230.0" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">sharded window: 1/TP of the tokens</text>
+</svg>

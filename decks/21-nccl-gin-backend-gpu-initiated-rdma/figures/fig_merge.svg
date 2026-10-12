@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480pt" height="266pt"
+     viewBox="0 0 480 266" font-family="Helvetica, Arial, sans-serif">
+  <!-- fig_merge: V1 drove the NIC from two runtimes; with Gin one NCCL communicator carries both
+       collectives and device-initiated RDMA. 1 unit = 1pt -->
+  <defs>
+    <marker id="arrK" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9"
+            markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#333333"/>
+    </marker>
+    <marker id="arrR" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9"
+            markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#C00000"/>
+    </marker>
+    <marker id="arrA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9"
+            markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/>
+    </marker>
+  </defs>
+
+  <!-- V1 row -->
+  <text x="4" y="62" font-size="20" font-weight="bold" fill="#C00000">V1</text>
+  <rect x="56" y="12" width="150" height="40" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.5"/>
+  <text x="131" y="38.3" text-anchor="middle" font-size="18" fill="#222222">NCCL</text>
+  <rect x="56" y="64" width="150" height="40" rx="4" fill="#FBE5E5" stroke="#C00000" stroke-width="1.5"/>
+  <text x="131" y="90.3" text-anchor="middle" font-size="18" font-weight="bold" fill="#C00000">NVSHMEM</text>
+  <rect x="356" y="36" width="120" height="44" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.5"/>
+  <text x="416" y="64.3" text-anchor="middle" font-size="18" fill="#222222">NIC</text>
+  <path d="M207,32 H290 V52 H355" fill="none" stroke="#333333" stroke-width="2.5" marker-end="url(#arrK)"/>
+  <path d="M207,84 H290 V64 H355" fill="none" stroke="#C00000" stroke-width="2.5" marker-end="url(#arrR)"/>
+
+  <line x1="4" y1="128" x2="476" y2="128" stroke="#BFBFBF" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- V2 row -->
+  <text x="4" y="206" font-size="20" font-weight="bold" fill="#1F4E79">V2</text>
+  <rect x="56" y="146" width="250" height="114" rx="6" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.8"/>
+  <text x="181" y="170" text-anchor="middle" font-size="18" font-weight="bold" fill="#1F4E79">one NCCL communicator</text>
+  <rect x="70" y="186" width="106" height="58" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.5"/>
+  <text x="123" y="220.3" text-anchor="middle" font-size="17" fill="#222222">collectives</text>
+  <rect x="186" y="186" width="106" height="58" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5"/>
+  <text x="239" y="211" text-anchor="middle" font-size="17" font-weight="bold" fill="#1F4E79">Gin</text>
+  <text x="239" y="234" text-anchor="middle" font-size="16" fill="#222222">GPU-driven</text>
+  <rect x="356" y="182" width="120" height="44" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.5"/>
+  <text x="416" y="210.3" text-anchor="middle" font-size="18" fill="#222222">NIC</text>
+  <line x1="307" y1="204" x2="355" y2="204" stroke="#1F4E79" stroke-width="2.5" marker-end="url(#arrA)"/>
+</svg>

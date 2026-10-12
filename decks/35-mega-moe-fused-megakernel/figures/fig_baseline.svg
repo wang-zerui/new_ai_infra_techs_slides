@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="292pt" viewBox="0 0 870 292" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#BFBFBF" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- five-kernel MoE layer timeline -->
+<line x1="470.0" y1="13.0" x2="500.0" y2="13.0" stroke="#C00000" stroke-width="2.2" stroke-dasharray="6,4"/>
+<text x="506.0" y="18.0" text-anchor="start" font-size="16" fill="#222222" font-weight="normal" font-style="normal">kernel boundary</text>
+<rect x="650.0" y="5.0" width="26.0" height="16.0" rx="3" fill="#FBE5E5" stroke="#C00000" stroke-width="1.5" />
+<text x="682.0" y="18.0" text-anchor="start" font-size="16" fill="#222222" font-weight="normal" font-style="normal">HBM round trip</text>
+<text x="122.0" y="62.0" text-anchor="end" font-size="18" fill="#222222" font-weight="bold" font-style="normal">Compute</text>
+<text x="122.0" y="144.0" text-anchor="end" font-size="18" fill="#222222" font-weight="bold" font-style="normal">HBM</text>
+<text x="122.0" y="226.0" text-anchor="end" font-size="18" fill="#222222" font-weight="bold" font-style="normal">NVLink</text>
+<rect x="132.0" y="34.0" width="120.0" height="44.0" rx="3" fill="url(#hatchGray)" stroke="#BFBFBF" stroke-width="1" />
+<text x="192.0" y="62.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="italic" paint-order="stroke" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round">idle</text>
+<rect x="692.0" y="34.0" width="120.0" height="44.0" rx="3" fill="url(#hatchGray)" stroke="#BFBFBF" stroke-width="1" />
+<text x="752.0" y="62.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="italic" paint-order="stroke" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round">idle</text>
+<rect x="262.0" y="198.0" width="420.0" height="44.0" rx="3" fill="url(#hatchGray)" stroke="#BFBFBF" stroke-width="1" />
+<text x="472.0" y="226.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="italic" paint-order="stroke" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round">idle</text>
+<rect x="262.0" y="34.0" width="170.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="347.0" y="62.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">Linear 1</text>
+<rect x="442.0" y="34.0" width="80.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="482.0" y="62.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">SwiGLU</text>
+<rect x="532.0" y="34.0" width="150.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="607.0" y="62.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">Linear 2</text>
+<rect x="132.0" y="198.0" width="120.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="192.0" y="226.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">dispatch</text>
+<rect x="692.0" y="198.0" width="120.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="752.0" y="226.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">combine</text>
+<line x1="257.0" y1="26.0" x2="257.0" y2="252.0" stroke="#C00000" stroke-width="2.2" stroke-dasharray="6,4"/>
+<line x1="437.0" y1="26.0" x2="437.0" y2="252.0" stroke="#C00000" stroke-width="2.2" stroke-dasharray="6,4"/>
+<line x1="527.0" y1="26.0" x2="527.0" y2="252.0" stroke="#C00000" stroke-width="2.2" stroke-dasharray="6,4"/>
+<line x1="687.0" y1="26.0" x2="687.0" y2="252.0" stroke="#C00000" stroke-width="2.2" stroke-dasharray="6,4"/>
+<rect x="380.0" y="120.0" width="114.0" height="36.0" rx="4" fill="#FBE5E5" stroke="#C00000" stroke-width="2" />
+<text x="437.0" y="143.9" text-anchor="middle" font-size="17" fill="#C00000" font-weight="normal" font-style="normal">BF16 [n, 2I]</text>
+<line x1="408.0" y1="78.0" x2="408.0" y2="119.0" stroke="#C00000" stroke-width="2.2" marker-end="url(#arrPrb)"/>
+<line x1="470.0" y1="120.0" x2="470.0" y2="79.0" stroke="#C00000" stroke-width="2.2" marker-end="url(#arrPrb)"/>
+<rect x="634.0" y="120.0" width="108.0" height="36.0" rx="4" fill="#FBE5E5" stroke="#C00000" stroke-width="2" />
+<text x="688.0" y="143.9" text-anchor="middle" font-size="17" fill="#C00000" font-weight="normal" font-style="normal">BF16 [n, d]</text>
+<line x1="660.0" y1="78.0" x2="660.0" y2="119.0" stroke="#C00000" stroke-width="2.2" marker-end="url(#arrPrb)"/>
+<line x1="716.0" y1="156.0" x2="716.0" y2="197.0" stroke="#C00000" stroke-width="2.2" marker-end="url(#arrPrb)"/>
+<line x1="132.0" y1="266.0" x2="856.0" y2="266.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<text x="856.0" y="286.0" text-anchor="end" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="italic">time</text>
+<text x="132.0" y="286.0" text-anchor="start" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="italic">one MoE layer on one GPU (schematic)</text>
+</svg>

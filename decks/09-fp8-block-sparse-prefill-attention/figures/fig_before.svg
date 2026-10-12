@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="300pt" viewBox="0 0 870 300" font-family="Helvetica, Arial, sans-serif">
+  <!-- fig_before: dense FP8 computes every causal tile; BF16 block-sparse skips tiles but computes kept ones in BF16 (slide figure, 1 unit = 1pt) -->
+  <defs>
+    <marker id="a_neu" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+    <marker id="a_ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+    <marker id="a_prb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+    <marker id="a_acc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+    <marker id="a_good" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2E7D32"/></marker>
+    <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="1.6"/></pattern>
+    <pattern id="hatchNeu" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="1.6"/></pattern>
+  </defs>
+  <text x="4.0" y="22.0" font-size="19" fill="#222222" text-anchor="start" font-weight="bold">Dense FP8 (HPC-Dense, FA3)</text>
+  <rect x="40.0" y="66.0" width="30.0" height="30.0" rx="2" fill="#F2F2F2" stroke="#7F7F7F" stroke-width="1.4" />
+  <rect x="40.0" y="100.0" width="30.0" height="30.0" rx="2" fill="#F2F2F2" stroke="#7F7F7F" stroke-width="1.4" />
+  <rect x="74.0" y="100.0" width="30.0" height="30.0" rx="2" fill="#F2F2F2" stroke="#7F7F7F" stroke-width="1.4" />
+  <rect x="40.0" y="134.0" width="30.0" height="30.0" rx="2" fill="#F2F2F2" stroke="#7F7F7F" stroke-width="1.4" />
+  <rect x="74.0" y="134.0" width="30.0" height="30.0" rx="2" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.6" />
+  <rect x="108.0" y="134.0" width="30.0" height="30.0" rx="2" fill="#F2F2F2" stroke="#7F7F7F" stroke-width="1.4" />
+  <rect x="40.0" y="168.0" width="30.0" height="30.0" rx="2" fill="#F2F2F2" stroke="#7F7F7F" stroke-width="1.4" />
+  <rect x="74.0" y="168.0" width="30.0" height="30.0" rx="2" fill="#F2F2F2" stroke="#7F7F7F" stroke-width="1.4" />
+  <rect x="108.0" y="168.0" width="30.0" height="30.0" rx="2" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.6" />
+  <rect x="142.0" y="168.0" width="30.0" height="30.0" rx="2" fill="#F2F2F2" stroke="#7F7F7F" stroke-width="1.4" />
+  <rect x="40.0" y="202.0" width="30.0" height="30.0" rx="2" fill="#F2F2F2" stroke="#7F7F7F" stroke-width="1.4" />
+  <rect x="74.0" y="202.0" width="30.0" height="30.0" rx="2" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.6" />
+  <rect x="108.0" y="202.0" width="30.0" height="30.0" rx="2" fill="#F2F2F2" stroke="#7F7F7F" stroke-width="1.4" />
+  <rect x="142.0" y="202.0" width="30.0" height="30.0" rx="2" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.6" />
+  <rect x="176.0" y="202.0" width="30.0" height="30.0" rx="2" fill="#F2F2F2" stroke="#7F7F7F" stroke-width="1.4" />
+  <rect x="40.0" y="236.0" width="30.0" height="30.0" rx="2" fill="#F2F2F2" stroke="#7F7F7F" stroke-width="1.4" />
+  <rect x="74.0" y="236.0" width="30.0" height="30.0" rx="2" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.6" />
+  <rect x="108.0" y="236.0" width="30.0" height="30.0" rx="2" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.6" />
+  <rect x="142.0" y="236.0" width="30.0" height="30.0" rx="2" fill="#F2F2F2" stroke="#7F7F7F" stroke-width="1.4" />
+  <rect x="176.0" y="236.0" width="30.0" height="30.0" rx="2" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.6" />
+  <rect x="210.0" y="236.0" width="30.0" height="30.0" rx="2" fill="#F2F2F2" stroke="#7F7F7F" stroke-width="1.4" />
+  <text x="142.0" y="56.0" font-size="17" fill="#595959" text-anchor="middle">KV tiles</text>
+  <text x="30" y="168" font-size="17" fill="#595959" text-anchor="middle" transform="rotate(-90 30 168)">Q tiles</text>
+  <rect x="270.0" y="96.0" width="22.0" height="22.0" rx="2" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.6" />
+  <text x="300.0" y="113.0" font-size="17" fill="#C00000" text-anchor="start">irrelevant tiles</text>
+  <text x="300.0" y="135.0" font-size="17" fill="#C00000" text-anchor="start">still computed</text>
+  <rect x="270.0" y="166.0" width="22.0" height="22.0" rx="2" fill="#F2F2F2" stroke="#7F7F7F" stroke-width="1.4" />
+  <text x="300.0" y="183.0" font-size="17" fill="#222222" text-anchor="start">needed tiles</text>
+  <text x="4.0" y="292.0" font-size="18" fill="#C00000" text-anchor="start" font-weight="bold">every causal tile, at FP8 rate</text>
+  <line x1="440.0" y1="8.0" x2="440.0" y2="292.0" stroke="#BFBFBF" stroke-width="1.2"/>
+  <text x="458.0" y="22.0" font-size="19" fill="#222222" text-anchor="start" font-weight="bold">BF16 block-sparse (MIT-BSA)</text>
+  <rect x="494.0" y="66.0" width="30.0" height="30.0" rx="2" fill="#FBE5E5" stroke="#C00000" stroke-width="1.6" />
+  <rect x="494.0" y="100.0" width="30.0" height="30.0" rx="2" fill="#FBE5E5" stroke="#C00000" stroke-width="1.6" />
+  <rect x="528.0" y="100.0" width="30.0" height="30.0" rx="2" fill="#FBE5E5" stroke="#C00000" stroke-width="1.6" />
+  <rect x="494.0" y="134.0" width="30.0" height="30.0" rx="2" fill="#FBE5E5" stroke="#C00000" stroke-width="1.6" />
+  <rect x="528.0" y="134.0" width="30.0" height="30.0" rx="2" fill="#FFFFFF" stroke="#BFBFBF" stroke-width="1.2" stroke-dasharray="3,3" />
+  <rect x="562.0" y="134.0" width="30.0" height="30.0" rx="2" fill="#FBE5E5" stroke="#C00000" stroke-width="1.6" />
+  <rect x="494.0" y="168.0" width="30.0" height="30.0" rx="2" fill="#FBE5E5" stroke="#C00000" stroke-width="1.6" />
+  <rect x="528.0" y="168.0" width="30.0" height="30.0" rx="2" fill="#FBE5E5" stroke="#C00000" stroke-width="1.6" />
+  <rect x="562.0" y="168.0" width="30.0" height="30.0" rx="2" fill="#FFFFFF" stroke="#BFBFBF" stroke-width="1.2" stroke-dasharray="3,3" />
+  <rect x="596.0" y="168.0" width="30.0" height="30.0" rx="2" fill="#FBE5E5" stroke="#C00000" stroke-width="1.6" />
+  <rect x="494.0" y="202.0" width="30.0" height="30.0" rx="2" fill="#FBE5E5" stroke="#C00000" stroke-width="1.6" />
+  <rect x="528.0" y="202.0" width="30.0" height="30.0" rx="2" fill="#FFFFFF" stroke="#BFBFBF" stroke-width="1.2" stroke-dasharray="3,3" />
+  <rect x="562.0" y="202.0" width="30.0" height="30.0" rx="2" fill="#FBE5E5" stroke="#C00000" stroke-width="1.6" />
+  <rect x="596.0" y="202.0" width="30.0" height="30.0" rx="2" fill="#FFFFFF" stroke="#BFBFBF" stroke-width="1.2" stroke-dasharray="3,3" />
+  <rect x="630.0" y="202.0" width="30.0" height="30.0" rx="2" fill="#FBE5E5" stroke="#C00000" stroke-width="1.6" />
+  <rect x="494.0" y="236.0" width="30.0" height="30.0" rx="2" fill="#FBE5E5" stroke="#C00000" stroke-width="1.6" />
+  <rect x="528.0" y="236.0" width="30.0" height="30.0" rx="2" fill="#FFFFFF" stroke="#BFBFBF" stroke-width="1.2" stroke-dasharray="3,3" />
+  <rect x="562.0" y="236.0" width="30.0" height="30.0" rx="2" fill="#FFFFFF" stroke="#BFBFBF" stroke-width="1.2" stroke-dasharray="3,3" />
+  <rect x="596.0" y="236.0" width="30.0" height="30.0" rx="2" fill="#FBE5E5" stroke="#C00000" stroke-width="1.6" />
+  <rect x="630.0" y="236.0" width="30.0" height="30.0" rx="2" fill="#FFFFFF" stroke="#BFBFBF" stroke-width="1.2" stroke-dasharray="3,3" />
+  <rect x="664.0" y="236.0" width="30.0" height="30.0" rx="2" fill="#FBE5E5" stroke="#C00000" stroke-width="1.6" />
+  <text x="596.0" y="56.0" font-size="17" fill="#595959" text-anchor="middle">KV tiles</text>
+  <text x="484" y="168" font-size="17" fill="#595959" text-anchor="middle" transform="rotate(-90 484 168)">Q tiles</text>
+  <rect x="724.0" y="96.0" width="22.0" height="22.0" rx="2" fill="#FFFFFF" stroke="#BFBFBF" stroke-width="1.2" stroke-dasharray="3,3" />
+  <text x="754.0" y="113.0" font-size="17" fill="#595959" text-anchor="start">skipped</text>
+  <rect x="724.0" y="140.0" width="22.0" height="22.0" rx="2" fill="#FBE5E5" stroke="#C00000" stroke-width="1.6" />
+  <text x="754.0" y="157.0" font-size="17" fill="#C00000" text-anchor="start">kept tiles</text>
+  <text x="754.0" y="179.0" font-size="17" fill="#C00000" text-anchor="start">in BF16</text>
+  <text x="458.0" y="292.0" font-size="18" fill="#C00000" text-anchor="start" font-weight="bold">only kept tiles, at BF16 rate</text>
+</svg>

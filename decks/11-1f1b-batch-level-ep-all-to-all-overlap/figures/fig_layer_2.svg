@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="262pt" viewBox="0 0 870 262" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_layer_2: merged layer pair with W/D split; attention wgrad delayed -->
+<rect x="160.0" y="12.0" width="26.0" height="18.0" rx="3" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="194.0" y="27.0" text-anchor="start" font-size="17" fill="#222222" font-weight="normal" font-style="normal">F = forward of micro-batch n+1</text>
+<rect x="500.0" y="12.0" width="26.0" height="18.0" rx="3" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="534.0" y="27.0" text-anchor="start" font-size="17" fill="#222222" font-weight="normal" font-style="normal">B = backward of micro-batch n</text>
+<text x="148.0" y="101.3" text-anchor="end" font-size="18" fill="#222222" font-weight="bold" font-style="normal">compute</text>
+<text x="148.0" y="181.3" text-anchor="end" font-size="18" fill="#222222" font-weight="bold" font-style="normal">comm</text>
+<text x="148.0" y="201.0" text-anchor="end" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="italic">(a2a stream)</text>
+<line x1="156.0" y1="228.0" x2="862.0" y2="228.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<text x="858.0" y="254.0" text-anchor="end" font-size="18" fill="#222222" font-weight="normal" font-style="normal">time</text>
+<rect x="160.0" y="70.0" width="130.0" height="50.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="225.0" y="101.3" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="normal" font-style="normal">F/attn</text>
+<rect x="290.0" y="70.0" width="130.0" height="50.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="355.0" y="101.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">D/mlp</text>
+<rect x="420.0" y="70.0" width="130.0" height="50.0" rx="4" fill="#F2F2F2" stroke="#1F4E79" stroke-width="3" />
+<text x="485.0" y="101.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">W/mlp</text>
+<rect x="550.0" y="70.0" width="65.0" height="50.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="582.5" y="101.3" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="normal" font-style="normal">F/mlp</text>
+<rect x="615.0" y="70.0" width="104.0" height="50.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="667.0" y="101.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">D/attn</text>
+<rect x="719.0" y="70.0" width="117.0" height="50.0" rx="4" fill="#F2F2F2" stroke="#1F4E79" stroke-width="3" />
+<text x="777.5" y="101.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">W/attn</text>
+<rect x="160.0" y="150.0" width="104.0" height="50.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="212.0" y="181.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">B/combine</text>
+<rect x="290.0" y="150.0" width="104.0" height="50.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="342.0" y="181.3" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="normal" font-style="normal">F/dispatch</text>
+<rect x="420.0" y="150.0" width="104.0" height="50.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="472.0" y="181.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">B/dispatch</text>
+<rect x="615.0" y="150.0" width="104.0" height="50.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="667.0" y="181.3" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="normal" font-style="normal">F/combine</text>
+<rect x="719.0" y="150.0" width="117.0" height="50.0" rx="4" fill="#FFFFFF" stroke="#A6A6A6" stroke-width="2" stroke-dasharray="6,4" />
+<text x="777.5" y="181.3" text-anchor="middle" font-size="18" fill="#7F7F7F" font-weight="normal" font-style="normal">next pair</text>
+<line x1="420.0" y1="122.0" x2="420.0" y2="149.0" stroke="#1F4E79" stroke-width="2.4" marker-end="url(#arrAcc)"/>
+<line x1="862.0" y1="52.0" x2="862.0" y2="206.0" stroke="#7F7F7F" stroke-width="1.8" stroke-dasharray="5,5"/>
+<text x="862.0" y="46.0" text-anchor="end" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="italic">without split</text>
+</svg>

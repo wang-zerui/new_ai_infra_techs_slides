@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="344pt"
+     viewBox="0 0 870 344" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="6" markerHeight="6"
+            orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#222222"/>
+    </marker>
+  </defs>
+
+  <!-- band labels (left margin) -->
+  <text transform="rotate(-90 26 40)" x="26" y="40" text-anchor="middle" font-size="16"
+        fill="#595959">API</text>
+  <text transform="rotate(-90 26 118)" x="26" y="118" text-anchor="middle" font-size="16"
+        fill="#595959">Kernels</text>
+  <text transform="rotate(-90 26 198)" x="26" y="198" text-anchor="middle" font-size="16"
+        fill="#595959">Shared</text>
+  <text transform="rotate(-90 26 256)" x="26" y="256" text-anchor="middle" font-size="16"
+        fill="#595959">JIT</text>
+  <text transform="rotate(-90 26 312)" x="26" y="312" text-anchor="middle" font-size="16"
+        fill="#595959">GPU</text>
+
+  <!-- API row -->
+  <rect x="44" y="16" width="816" height="42" rx="5" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.4"/>
+  <text x="452" y="43" text-anchor="middle" font-size="18" fill="#222222">
+    One Python module: <tspan font-family="Menlo, 'Courier New', monospace" font-size="17">fp8_gemm_nt</tspan> · <tspan font-family="Menlo, 'Courier New', monospace" font-size="17">m_grouped_*</tspan> · <tspan font-family="Menlo, 'Courier New', monospace" font-size="17">fp8_fp4_mega_moe</tspan> · <tspan font-family="Menlo, 'Courier New', monospace" font-size="17">mqa_logits</tspan>
+  </text>
+
+  <!-- kernel family row -->
+  <rect x="44" y="72" width="156" height="92" rx="5" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.4"/>
+  <text x="122" y="100" text-anchor="middle" font-size="18" font-weight="bold" fill="#222222">Dense GEMM</text>
+  <text x="122" y="122" text-anchor="middle" font-size="17" fill="#222222">FP8 · FP4 · BF16</text>
+  <text x="122" y="150" text-anchor="middle" font-size="16" font-weight="bold" fill="#1F4E79">deck 30</text>
+
+  <rect x="209" y="72" width="156" height="92" rx="5" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.4"/>
+  <text x="287" y="100" text-anchor="middle" font-size="18" font-weight="bold" fill="#222222">Grouped GEMM</text>
+  <text x="287" y="122" text-anchor="middle" font-size="17" fill="#222222">M · K · masked</text>
+  <text x="287" y="150" text-anchor="middle" font-size="16" font-weight="bold" fill="#1F4E79">decks 32-34</text>
+
+  <rect x="374" y="72" width="156" height="92" rx="5" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.4"/>
+  <text x="452" y="100" text-anchor="middle" font-size="18" font-weight="bold" fill="#222222">Mega MoE</text>
+  <text x="452" y="122" text-anchor="middle" font-size="17" fill="#222222">with EP comm</text>
+  <text x="452" y="150" text-anchor="middle" font-size="16" font-weight="bold" fill="#1F4E79">deck 35</text>
+
+  <rect x="539" y="72" width="156" height="92" rx="5" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.4"/>
+  <text x="617" y="100" text-anchor="middle" font-size="18" font-weight="bold" fill="#222222">Indexer scoring</text>
+  <text x="617" y="122" text-anchor="middle" font-size="17" fill="#222222">MQA logits · sparse</text>
+  <text x="617" y="150" text-anchor="middle" font-size="16" font-weight="bold" fill="#1F4E79">deck 10</text>
+
+  <rect x="704" y="72" width="156" height="92" rx="5" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.4"/>
+  <text x="782" y="100" text-anchor="middle" font-size="18" font-weight="bold" fill="#222222">Mega Gate</text>
+  <text x="782" y="122" text-anchor="middle" font-size="17" fill="#222222">routing · mHC</text>
+  <text x="782" y="150" text-anchor="middle" font-size="16" font-weight="bold" fill="#1F4E79">deck 41</text>
+
+  <!-- shared components row -->
+  <rect x="44" y="176" width="816" height="46" rx="5" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.4"/>
+  <text x="166" y="205" text-anchor="middle" font-size="18" fill="#222222">Block scheduler</text>
+  <line x1="288" y1="180" x2="288" y2="218" stroke="#A6A6A6" stroke-width="1"/>
+  <text x="404" y="205" text-anchor="middle" font-size="18" fill="#222222">TMA · tcgen05 pipeline</text>
+  <line x1="520" y1="180" x2="520" y2="218" stroke="#A6A6A6" stroke-width="1"/>
+  <text x="614" y="205" text-anchor="middle" font-size="18" fill="#222222">UE8M0 SF layout</text>
+  <line x1="708" y1="180" x2="708" y2="218" stroke="#A6A6A6" stroke-width="1"/>
+  <text x="784" y="205" text-anchor="middle" font-size="18" fill="#222222">Epilogue</text>
+
+  <!-- runtime row -->
+  <rect x="44" y="234" width="816" height="46" rx="5" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.4"/>
+  <text x="452" y="256" text-anchor="middle" font-size="18" font-weight="bold" fill="#222222">DeepJIT runtime</text>
+  <text x="452" y="274" text-anchor="middle" font-size="17" fill="#222222">compile per shape · disk cache · SM budget · PDL · determinism switch</text>
+  <text x="820" y="263" text-anchor="middle" font-size="16" font-weight="bold" fill="#1F4E79">deck 39</text>
+
+  <!-- hardware row -->
+  <rect x="44" y="292" width="398" height="40" rx="3" fill="#F2F2F2" stroke="#595959" stroke-width="1.2"/>
+  <text x="243" y="317" text-anchor="middle" font-size="18" fill="#222222">SM90 Hopper</text>
+  <rect x="451" y="292" width="226" height="40" rx="3" fill="#F2F2F2" stroke="#595959" stroke-width="1.2"/>
+  <text x="564" y="317" text-anchor="middle" font-size="18" fill="#222222">SM100 Blackwell</text>
+  <rect x="686" y="292" width="174" height="40" rx="3" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="1.2"
+        stroke-dasharray="4,2.5"/>
+  <text x="773" y="317" text-anchor="middle" font-size="17" fill="#595959">Ascend port</text>
+
+  <!-- call arrows -->
+  <line x1="122" y1="58" x2="122" y2="70" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="287" y1="58" x2="287" y2="70" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="452" y1="58" x2="452" y2="70" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="617" y1="58" x2="617" y2="70" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="782" y1="58" x2="782" y2="70" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+
+  <line x1="122" y1="164" x2="122" y2="174" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="287" y1="164" x2="287" y2="174" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="452" y1="164" x2="452" y2="174" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="617" y1="164" x2="617" y2="174" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="782" y1="164" x2="782" y2="174" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+
+  <line x1="452" y1="222" x2="452" y2="232" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="243" y1="280" x2="243" y2="290" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="564" y1="280" x2="564" y2="290" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+</svg>

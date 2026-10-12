@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="270pt" viewBox="0 0 870 270" font-family="Helvetica, Arial, sans-serif">
+  <defs><pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2.5"/></pattern><pattern id="hatchRed" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#E6A0A0" stroke-width="2.5"/></pattern></defs>
+  <rect x="218" y="10" width="310" height="26" rx="3" fill="none" stroke="#A6A6A6" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="373.0" y="28.6" font-size="16" text-anchor="middle" font-weight="normal" fill="#7F7F7F">tile 1  (128 values, 4 shown)</text>
+  <rect x="536" y="10" width="310" height="26" rx="3" fill="none" stroke="#A6A6A6" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="691.0" y="28.6" font-size="16" text-anchor="middle" font-weight="normal" fill="#7F7F7F">tile 2  (128 values, 4 shown)</text>
+  <text x="208" y="80" font-size="19" text-anchor="end" font-weight="bold" fill="#222222">BF16 input</text>
+  <rect x="222" y="46" width="74" height="62" rx="3" fill="#FFFFFF" stroke="#595959" stroke-width="1.6"/>
+  <text x="259.0" y="83.3" font-size="18" text-anchor="middle" font-weight="normal" fill="#222222">0.012</text>
+  <rect x="298" y="46" width="74" height="62" rx="3" fill="#FFFFFF" stroke="#595959" stroke-width="1.6"/>
+  <text x="335.0" y="83.3" font-size="18" text-anchor="middle" font-weight="normal" fill="#222222">−0.004</text>
+  <rect x="374" y="46" width="74" height="62" rx="3" fill="#FFFFFF" stroke="#595959" stroke-width="1.6"/>
+  <text x="411.0" y="83.3" font-size="18" text-anchor="middle" font-weight="normal" fill="#222222">0.021</text>
+  <rect x="450" y="46" width="74" height="62" rx="3" fill="#FFFFFF" stroke="#595959" stroke-width="1.6"/>
+  <text x="487.0" y="83.3" font-size="18" text-anchor="middle" font-weight="normal" fill="#222222">0.0007</text>
+  <rect x="540" y="46" width="74" height="62" rx="3" fill="#FFFFFF" stroke="#595959" stroke-width="1.6"/>
+  <text x="577.0" y="83.3" font-size="18" text-anchor="middle" font-weight="normal" fill="#222222">1.5</text>
+  <rect x="616" y="46" width="74" height="62" rx="3" fill="#FFFFFF" stroke="#595959" stroke-width="1.6"/>
+  <text x="653.0" y="83.3" font-size="18" text-anchor="middle" font-weight="normal" fill="#222222">−0.9</text>
+  <rect x="692" y="46" width="74" height="62" rx="3" fill="#FFFFFF" stroke="#C00000" stroke-width="2.2"/>
+  <text x="729.0" y="83.3" font-size="18" text-anchor="middle" font-weight="bold" fill="#C00000">2400</text>
+  <rect x="768" y="46" width="74" height="62" rx="3" fill="#FFFFFF" stroke="#595959" stroke-width="1.6"/>
+  <text x="805.0" y="83.3" font-size="18" text-anchor="middle" font-weight="normal" fill="#222222">0.6</text>
+  <text x="208" y="146" font-size="19" text-anchor="end" font-weight="bold" fill="#222222">per-tensor E4M3</text>
+  <text x="208" y="170" font-size="16" text-anchor="end" font-weight="normal" fill="#7F7F7F">1 scale = 448 / 2400</text>
+  <rect x="222" y="120" width="74" height="62" rx="3" fill="#FFFFFF" stroke="#595959" stroke-width="1.6"/>
+  <text x="259.0" y="157.3" font-size="18" text-anchor="middle" font-weight="normal" fill="#222222">0.0105</text>
+  <rect x="298" y="120" width="74" height="62" rx="3" fill="#FBE5E5" stroke="#C00000" stroke-width="2.2"/>
+  <text x="335.0" y="157.3" font-size="18" text-anchor="middle" font-weight="bold" fill="#C00000">0</text>
+  <rect x="374" y="120" width="74" height="62" rx="3" fill="#FFFFFF" stroke="#595959" stroke-width="1.6"/>
+  <text x="411.0" y="157.3" font-size="18" text-anchor="middle" font-weight="normal" fill="#222222">0.0209</text>
+  <rect x="450" y="120" width="74" height="62" rx="3" fill="#FBE5E5" stroke="#C00000" stroke-width="2.2"/>
+  <text x="487.0" y="157.3" font-size="18" text-anchor="middle" font-weight="bold" fill="#C00000">0</text>
+  <rect x="540" y="120" width="74" height="62" rx="3" fill="#FFFFFF" stroke="#595959" stroke-width="1.6"/>
+  <text x="577.0" y="157.3" font-size="18" text-anchor="middle" font-weight="normal" fill="#222222">1.51</text>
+  <rect x="616" y="120" width="74" height="62" rx="3" fill="#FFFFFF" stroke="#595959" stroke-width="1.6"/>
+  <text x="653.0" y="157.3" font-size="18" text-anchor="middle" font-weight="normal" fill="#222222">−0.92</text>
+  <rect x="692" y="120" width="74" height="62" rx="3" fill="#FFFFFF" stroke="#595959" stroke-width="1.6"/>
+  <text x="729.0" y="157.3" font-size="18" text-anchor="middle" font-weight="normal" fill="#222222">2400</text>
+  <rect x="768" y="120" width="74" height="62" rx="3" fill="#FFFFFF" stroke="#595959" stroke-width="1.6"/>
+  <text x="805.0" y="157.3" font-size="18" text-anchor="middle" font-weight="normal" fill="#222222">0.59</text>
+  <text x="208" y="220" font-size="19" text-anchor="end" font-weight="bold" fill="#222222">per-tile E4M3</text>
+  <text x="208" y="244" font-size="16" text-anchor="end" font-weight="normal" fill="#7F7F7F">1 scale per tile</text>
+  <rect x="222" y="194" width="74" height="62" rx="3" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.2"/>
+  <text x="259.0" y="231.3" font-size="18" text-anchor="middle" font-weight="bold" fill="#1F4E79">0.012</text>
+  <rect x="298" y="194" width="74" height="62" rx="3" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.2"/>
+  <text x="335.0" y="231.3" font-size="18" text-anchor="middle" font-weight="bold" fill="#1F4E79">−0.0041</text>
+  <rect x="374" y="194" width="74" height="62" rx="3" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.2"/>
+  <text x="411.0" y="231.3" font-size="18" text-anchor="middle" font-weight="bold" fill="#1F4E79">0.021</text>
+  <rect x="450" y="194" width="74" height="62" rx="3" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.2"/>
+  <text x="487.0" y="231.3" font-size="18" text-anchor="middle" font-weight="bold" fill="#1F4E79">0.0007</text>
+  <rect x="540" y="194" width="74" height="62" rx="3" fill="#FFFFFF" stroke="#595959" stroke-width="1.6"/>
+  <text x="577.0" y="231.3" font-size="18" text-anchor="middle" font-weight="normal" fill="#222222">1.51</text>
+  <rect x="616" y="194" width="74" height="62" rx="3" fill="#FFFFFF" stroke="#595959" stroke-width="1.6"/>
+  <text x="653.0" y="231.3" font-size="18" text-anchor="middle" font-weight="normal" fill="#222222">−0.92</text>
+  <rect x="692" y="194" width="74" height="62" rx="3" fill="#FFFFFF" stroke="#595959" stroke-width="1.6"/>
+  <text x="729.0" y="231.3" font-size="18" text-anchor="middle" font-weight="normal" fill="#222222">2400</text>
+  <rect x="768" y="194" width="74" height="62" rx="3" fill="#FFFFFF" stroke="#595959" stroke-width="1.6"/>
+  <text x="805.0" y="231.3" font-size="18" text-anchor="middle" font-weight="normal" fill="#222222">0.59</text>
+</svg>

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="256pt" viewBox="0 0 870 256" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_sbo: combine send waits for the whole Down GEMM (a) vs streams per block_m with signals (b) -->
+<text x="8.0" y="20.0" text-anchor="start" font-size="18" fill="#222222" font-weight="bold" font-style="normal">(a) before</text>
+<text x="166.0" y="51.0" text-anchor="end" font-size="17" fill="#222222" font-weight="normal" font-style="normal">Down GEMM</text>
+<text x="166.0" y="97.0" text-anchor="end" font-size="17" fill="#222222" font-weight="normal" font-style="normal">combine send</text>
+<rect x="176.0" y="28.0" width="90.0" height="34.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="221.0" y="50.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">block 1</text>
+<rect x="268.0" y="28.0" width="90.0" height="34.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="313.0" y="50.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">block 2</text>
+<rect x="360.0" y="28.0" width="90.0" height="34.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="405.0" y="50.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">block 3</text>
+<rect x="452.0" y="28.0" width="90.0" height="34.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="497.0" y="50.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">block 4</text>
+<rect x="546.0" y="74.0" width="70.0" height="34.0" rx="4" fill="#FFFFFF" stroke="#404040" stroke-width="2" />
+<text x="581.0" y="96.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">send 1</text>
+<rect x="618.0" y="74.0" width="70.0" height="34.0" rx="4" fill="#FFFFFF" stroke="#404040" stroke-width="2" />
+<text x="653.0" y="96.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">send 2</text>
+<rect x="690.0" y="74.0" width="70.0" height="34.0" rx="4" fill="#FFFFFF" stroke="#404040" stroke-width="2" />
+<text x="725.0" y="96.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">send 3</text>
+<rect x="762.0" y="74.0" width="70.0" height="34.0" rx="4" fill="#FFFFFF" stroke="#404040" stroke-width="2" />
+<text x="797.0" y="96.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">send 4</text>
+<text x="8.0" y="142.0" text-anchor="start" font-size="18" fill="#222222" font-weight="bold" font-style="normal">(b) SBO</text>
+<text x="166.0" y="173.0" text-anchor="end" font-size="17" fill="#222222" font-weight="normal" font-style="normal">Down GEMM</text>
+<text x="166.0" y="219.0" text-anchor="end" font-size="17" fill="#222222" font-weight="normal" font-style="normal">combine send</text>
+<rect x="176.0" y="150.0" width="90.0" height="34.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="221.0" y="172.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">block 1</text>
+<rect x="268.0" y="150.0" width="90.0" height="34.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="313.0" y="172.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">block 2</text>
+<rect x="360.0" y="150.0" width="90.0" height="34.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="405.0" y="172.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">block 3</text>
+<rect x="452.0" y="150.0" width="90.0" height="34.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="497.0" y="172.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">block 4</text>
+<rect x="268.0" y="196.0" width="70.0" height="34.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="303.0" y="218.2" text-anchor="middle" font-size="15" fill="#1F4E79" font-weight="normal" font-style="normal">send 1</text>
+<circle cx="266" cy="185" r="6" fill="#1F4E79"/>
+<line x1="266.0" y1="191.0" x2="266.0" y2="194.0" stroke="#1F4E79" stroke-width="1.6" stroke-dasharray="3,3"/>
+<rect x="360.0" y="196.0" width="70.0" height="34.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="395.0" y="218.2" text-anchor="middle" font-size="15" fill="#1F4E79" font-weight="normal" font-style="normal">send 2</text>
+<circle cx="358" cy="185" r="6" fill="#1F4E79"/>
+<line x1="358.0" y1="191.0" x2="358.0" y2="194.0" stroke="#1F4E79" stroke-width="1.6" stroke-dasharray="3,3"/>
+<rect x="452.0" y="196.0" width="70.0" height="34.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="487.0" y="218.2" text-anchor="middle" font-size="15" fill="#1F4E79" font-weight="normal" font-style="normal">send 3</text>
+<circle cx="450" cy="185" r="6" fill="#1F4E79"/>
+<line x1="450.0" y1="191.0" x2="450.0" y2="194.0" stroke="#1F4E79" stroke-width="1.6" stroke-dasharray="3,3"/>
+<rect x="544.0" y="196.0" width="70.0" height="34.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="579.0" y="218.2" text-anchor="middle" font-size="15" fill="#1F4E79" font-weight="normal" font-style="normal">send 4</text>
+<circle cx="542" cy="185" r="6" fill="#1F4E79"/>
+<line x1="542.0" y1="191.0" x2="542.0" y2="194.0" stroke="#1F4E79" stroke-width="1.6" stroke-dasharray="3,3"/>
+<text x="258.0" y="248.0" text-anchor="start" font-size="15" fill="#1F4E79" font-weight="normal" font-style="italic">signal per block_m tokens</text>
+<line x1="834.0" y1="20.0" x2="834.0" y2="112.0" stroke="#404040" stroke-width="2" stroke-dasharray="6,4"/>
+<line x1="616.0" y1="142.0" x2="616.0" y2="234.0" stroke="#1F4E79" stroke-width="2.4" stroke-dasharray="6,4"/>
+</svg>

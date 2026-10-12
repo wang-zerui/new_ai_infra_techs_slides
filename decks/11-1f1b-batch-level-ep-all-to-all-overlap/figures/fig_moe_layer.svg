@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480pt" height="300pt" viewBox="0 0 480 300" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_moe_layer: MoE layer = attention -> dispatch a2a -> experts -> combine a2a -->
+<text x="114.0" y="32.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="italic">attention</text>
+<text x="203.0" y="32.0" text-anchor="middle" font-size="18" fill="#C00000" font-weight="bold" font-style="normal">dispatch</text>
+<text x="357.0" y="32.0" text-anchor="middle" font-size="18" fill="#C00000" font-weight="bold" font-style="normal">combine</text>
+<text x="283.0" y="32.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="italic">experts</text>
+<text x="64.0" y="76.3" text-anchor="end" font-size="18" fill="#222222" font-weight="normal" font-style="normal">GPU 0</text>
+<rect x="74.0" y="48.0" width="80.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="114.0" y="76.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">Attn</text>
+<rect x="252.0" y="48.0" width="62.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="283.0" y="76.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">E0</text>
+<rect x="400.0" y="48.0" width="72.0" height="44.0" rx="4" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="2" stroke-dasharray="6,4" />
+<text x="436.0" y="76.3" text-anchor="middle" font-size="18" fill="#7F7F7F" font-weight="normal" font-style="normal">Attn</text>
+<text x="64.0" y="133.3" text-anchor="end" font-size="18" fill="#222222" font-weight="normal" font-style="normal">GPU 1</text>
+<rect x="74.0" y="105.0" width="80.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="114.0" y="133.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">Attn</text>
+<rect x="252.0" y="105.0" width="62.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="283.0" y="133.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">E1</text>
+<rect x="400.0" y="105.0" width="72.0" height="44.0" rx="4" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="2" stroke-dasharray="6,4" />
+<text x="436.0" y="133.3" text-anchor="middle" font-size="18" fill="#7F7F7F" font-weight="normal" font-style="normal">Attn</text>
+<text x="64.0" y="190.3" text-anchor="end" font-size="18" fill="#222222" font-weight="normal" font-style="normal">GPU 2</text>
+<rect x="74.0" y="162.0" width="80.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="114.0" y="190.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">Attn</text>
+<rect x="252.0" y="162.0" width="62.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="283.0" y="190.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">E2</text>
+<rect x="400.0" y="162.0" width="72.0" height="44.0" rx="4" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="2" stroke-dasharray="6,4" />
+<text x="436.0" y="190.3" text-anchor="middle" font-size="18" fill="#7F7F7F" font-weight="normal" font-style="normal">Attn</text>
+<text x="64.0" y="247.3" text-anchor="end" font-size="18" fill="#222222" font-weight="normal" font-style="normal">GPU 3</text>
+<rect x="74.0" y="219.0" width="80.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="114.0" y="247.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">Attn</text>
+<rect x="252.0" y="219.0" width="62.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="283.0" y="247.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">E3</text>
+<rect x="400.0" y="219.0" width="72.0" height="44.0" rx="4" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="2" stroke-dasharray="6,4" />
+<text x="436.0" y="247.3" text-anchor="middle" font-size="18" fill="#7F7F7F" font-weight="normal" font-style="normal">Attn</text>
+<line x1="158.0" y1="56.5" x2="247.5" y2="56.5" stroke="#C00000" stroke-width="1.5" marker-end="url(#arrPrb)"/>
+<line x1="158.0" y1="65.5" x2="247.5" y2="113.5" stroke="#C00000" stroke-width="1.5" marker-end="url(#arrPrb)"/>
+<line x1="158.0" y1="74.5" x2="247.5" y2="170.5" stroke="#C00000" stroke-width="1.5" marker-end="url(#arrPrb)"/>
+<line x1="158.0" y1="83.5" x2="247.5" y2="227.5" stroke="#C00000" stroke-width="1.5" marker-end="url(#arrPrb)"/>
+<line x1="158.0" y1="113.5" x2="247.5" y2="65.5" stroke="#C00000" stroke-width="1.5" marker-end="url(#arrPrb)"/>
+<line x1="158.0" y1="122.5" x2="247.5" y2="122.5" stroke="#C00000" stroke-width="1.5" marker-end="url(#arrPrb)"/>
+<line x1="158.0" y1="131.5" x2="247.5" y2="179.5" stroke="#C00000" stroke-width="1.5" marker-end="url(#arrPrb)"/>
+<line x1="158.0" y1="140.5" x2="247.5" y2="236.5" stroke="#C00000" stroke-width="1.5" marker-end="url(#arrPrb)"/>
+<line x1="158.0" y1="170.5" x2="247.5" y2="74.5" stroke="#C00000" stroke-width="1.5" marker-end="url(#arrPrb)"/>
+<line x1="158.0" y1="179.5" x2="247.5" y2="131.5" stroke="#C00000" stroke-width="1.5" marker-end="url(#arrPrb)"/>
+<line x1="158.0" y1="188.5" x2="247.5" y2="188.5" stroke="#C00000" stroke-width="1.5" marker-end="url(#arrPrb)"/>
+<line x1="158.0" y1="197.5" x2="247.5" y2="245.5" stroke="#C00000" stroke-width="1.5" marker-end="url(#arrPrb)"/>
+<line x1="158.0" y1="227.5" x2="247.5" y2="83.5" stroke="#C00000" stroke-width="1.5" marker-end="url(#arrPrb)"/>
+<line x1="158.0" y1="236.5" x2="247.5" y2="140.5" stroke="#C00000" stroke-width="1.5" marker-end="url(#arrPrb)"/>
+<line x1="158.0" y1="245.5" x2="247.5" y2="197.5" stroke="#C00000" stroke-width="1.5" marker-end="url(#arrPrb)"/>
+<line x1="158.0" y1="254.5" x2="247.5" y2="254.5" stroke="#C00000" stroke-width="1.5" marker-end="url(#arrPrb)"/>
+<line x1="318.0" y1="56.5" x2="395.5" y2="56.5" stroke="#C00000" stroke-width="1.5" marker-end="url(#arrPrb)"/>
+<line x1="318.0" y1="65.5" x2="395.5" y2="113.5" stroke="#C00000" stroke-width="1.5" marker-end="url(#arrPrb)"/>
+<line x1="318.0" y1="74.5" x2="395.5" y2="170.5" stroke="#C00000" stroke-width="1.5" marker-end="url(#arrPrb)"/>
+<line x1="318.0" y1="83.5" x2="395.5" y2="227.5" stroke="#C00000" stroke-width="1.5" marker-end="url(#arrPrb)"/>
+<line x1="318.0" y1="113.5" x2="395.5" y2="65.5" stroke="#C00000" stroke-width="1.5" marker-end="url(#arrPrb)"/>
+<line x1="318.0" y1="122.5" x2="395.5" y2="122.5" stroke="#C00000" stroke-width="1.5" marker-end="url(#arrPrb)"/>
+<line x1="318.0" y1="131.5" x2="395.5" y2="179.5" stroke="#C00000" stroke-width="1.5" marker-end="url(#arrPrb)"/>
+<line x1="318.0" y1="140.5" x2="395.5" y2="236.5" stroke="#C00000" stroke-width="1.5" marker-end="url(#arrPrb)"/>
+<line x1="318.0" y1="170.5" x2="395.5" y2="74.5" stroke="#C00000" stroke-width="1.5" marker-end="url(#arrPrb)"/>
+<line x1="318.0" y1="179.5" x2="395.5" y2="131.5" stroke="#C00000" stroke-width="1.5" marker-end="url(#arrPrb)"/>
+<line x1="318.0" y1="188.5" x2="395.5" y2="188.5" stroke="#C00000" stroke-width="1.5" marker-end="url(#arrPrb)"/>
+<line x1="318.0" y1="197.5" x2="395.5" y2="245.5" stroke="#C00000" stroke-width="1.5" marker-end="url(#arrPrb)"/>
+<line x1="318.0" y1="227.5" x2="395.5" y2="83.5" stroke="#C00000" stroke-width="1.5" marker-end="url(#arrPrb)"/>
+<line x1="318.0" y1="236.5" x2="395.5" y2="140.5" stroke="#C00000" stroke-width="1.5" marker-end="url(#arrPrb)"/>
+<line x1="318.0" y1="245.5" x2="395.5" y2="197.5" stroke="#C00000" stroke-width="1.5" marker-end="url(#arrPrb)"/>
+<line x1="318.0" y1="254.5" x2="395.5" y2="254.5" stroke="#C00000" stroke-width="1.5" marker-end="url(#arrPrb)"/>
+<text x="436.0" y="32.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="italic">layer ℓ+1</text>
+<text x="240.0" y="290.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="italic">repeats in all 58 MoE layers and again in backward</text>
+</svg>

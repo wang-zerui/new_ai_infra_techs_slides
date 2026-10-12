@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="286pt" viewBox="0 0 870 286" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_param -->
+<rect x="4.0" y="82.0" width="84.0" height="14.0" rx="2" fill="#F2F2F2" stroke="#595959" stroke-width="1.4" />
+<rect x="4.0" y="102.0" width="84.0" height="14.0" rx="2" fill="#F2F2F2" stroke="#595959" stroke-width="1.4" />
+<rect x="4.0" y="122.0" width="84.0" height="14.0" rx="2" fill="#F2F2F2" stroke="#595959" stroke-width="1.4" />
+<rect x="4.0" y="142.0" width="84.0" height="14.0" rx="2" fill="#F2F2F2" stroke="#595959" stroke-width="1.4" />
+<text x="46.0" y="70.0" text-anchor="middle" font-size="21" fill="#222222" font-weight="bold">x<tspan font-size="16" baseline-shift="sub">l</tspan></text>
+<text x="46.0" y="186.0" text-anchor="middle" font-size="17" fill="#7F7F7F" font-weight="normal" font-style="normal">4 × 7168</text>
+<line x1="96.0" y1="120.0" x2="146.0" y2="120.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<text x="121.0" y="104.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="normal">flatten</text>
+<rect x="150.0" y="112.0" width="150.0" height="16.0" rx="2" fill="#F2F2F2" stroke="#595959" stroke-width="1.4" />
+<text x="225.0" y="100.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="bold" font-style="normal">1 × 28,672</text>
+<text x="225.0" y="152.0" text-anchor="middle" font-size="17" fill="#7F7F7F" font-weight="normal" font-style="normal">RMSNorm</text>
+<line x1="304.0" y1="120.0" x2="338.0" y2="120.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="342.0" y="84.0" width="118.0" height="72.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.4" />
+<text x="401.0" y="126.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal"></text>
+<text x="401.0" y="116.0" text-anchor="middle" font-size="24" fill="#1F4E79" font-weight="bold" font-style="normal">× φ</text>
+<text x="401.0" y="142.0" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">28,672 × 24</text>
+<line x1="464.0" y1="120.0" x2="494.0" y2="120.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="498.0" y="22.0" width="22.0" height="40.0" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<line x1="498.0" y1="32.0" x2="520.0" y2="32.0" stroke="#9DC3E6" stroke-width="1"/>
+<line x1="498.0" y1="42.0" x2="520.0" y2="42.0" stroke="#9DC3E6" stroke-width="1"/>
+<line x1="498.0" y1="52.0" x2="520.0" y2="52.0" stroke="#9DC3E6" stroke-width="1"/>
+<text x="492.0" y="48.0" text-anchor="end" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">4</text>
+<rect x="498.0" y="62.0" width="22.0" height="40.0" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<line x1="498.0" y1="72.0" x2="520.0" y2="72.0" stroke="#9DC3E6" stroke-width="1"/>
+<line x1="498.0" y1="82.0" x2="520.0" y2="82.0" stroke="#9DC3E6" stroke-width="1"/>
+<line x1="498.0" y1="92.0" x2="520.0" y2="92.0" stroke="#9DC3E6" stroke-width="1"/>
+<text x="492.0" y="88.0" text-anchor="end" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">4</text>
+<rect x="498.0" y="102.0" width="22.0" height="160.0" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<line x1="498.0" y1="112.0" x2="520.0" y2="112.0" stroke="#9DC3E6" stroke-width="1"/>
+<line x1="498.0" y1="122.0" x2="520.0" y2="122.0" stroke="#9DC3E6" stroke-width="1"/>
+<line x1="498.0" y1="132.0" x2="520.0" y2="132.0" stroke="#9DC3E6" stroke-width="1"/>
+<line x1="498.0" y1="142.0" x2="520.0" y2="142.0" stroke="#9DC3E6" stroke-width="1"/>
+<line x1="498.0" y1="152.0" x2="520.0" y2="152.0" stroke="#9DC3E6" stroke-width="1"/>
+<line x1="498.0" y1="162.0" x2="520.0" y2="162.0" stroke="#9DC3E6" stroke-width="1"/>
+<line x1="498.0" y1="172.0" x2="520.0" y2="172.0" stroke="#9DC3E6" stroke-width="1"/>
+<line x1="498.0" y1="182.0" x2="520.0" y2="182.0" stroke="#9DC3E6" stroke-width="1"/>
+<line x1="498.0" y1="192.0" x2="520.0" y2="192.0" stroke="#9DC3E6" stroke-width="1"/>
+<line x1="498.0" y1="202.0" x2="520.0" y2="202.0" stroke="#9DC3E6" stroke-width="1"/>
+<line x1="498.0" y1="212.0" x2="520.0" y2="212.0" stroke="#9DC3E6" stroke-width="1"/>
+<line x1="498.0" y1="222.0" x2="520.0" y2="222.0" stroke="#9DC3E6" stroke-width="1"/>
+<line x1="498.0" y1="232.0" x2="520.0" y2="232.0" stroke="#9DC3E6" stroke-width="1"/>
+<line x1="498.0" y1="242.0" x2="520.0" y2="242.0" stroke="#9DC3E6" stroke-width="1"/>
+<line x1="498.0" y1="252.0" x2="520.0" y2="252.0" stroke="#9DC3E6" stroke-width="1"/>
+<text x="492.0" y="188.0" text-anchor="end" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">16</text>
+<line x1="522.0" y1="42.0" x2="584.0" y2="42.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="586.0" y="25.0" width="112.0" height="34.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2" />
+<text x="642.0" y="48.3" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">σ</text>
+<line x1="700.0" y1="42.0" x2="728.0" y2="42.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<text x="732.0" y="49.0" text-anchor="start" font-size="21" fill="#222222" font-weight="bold">H<tspan font-size="16" baseline-shift="super">pre</tspan></text>
+<text x="800.0" y="49.0" text-anchor="start" font-size="17" fill="#7F7F7F" font-weight="normal" font-style="normal">1 × 4</text>
+<line x1="522.0" y1="82.0" x2="584.0" y2="82.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="586.0" y="65.0" width="112.0" height="34.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2" />
+<text x="642.0" y="88.3" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">2σ</text>
+<line x1="700.0" y1="82.0" x2="728.0" y2="82.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<text x="732.0" y="89.0" text-anchor="start" font-size="21" fill="#222222" font-weight="bold">H<tspan font-size="16" baseline-shift="super">post</tspan></text>
+<text x="800.0" y="89.0" text-anchor="start" font-size="17" fill="#7F7F7F" font-weight="normal" font-style="normal">4 × 1</text>
+<line x1="522.0" y1="182.0" x2="584.0" y2="182.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="586.0" y="165.0" width="112.0" height="34.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2" />
+<text x="642.0" y="188.3" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">Sinkhorn</text>
+<line x1="700.0" y1="182.0" x2="728.0" y2="182.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<text x="732.0" y="189.0" text-anchor="start" font-size="21" fill="#222222" font-weight="bold">H<tspan font-size="16" baseline-shift="super">res</tspan></text>
+<text x="800.0" y="189.0" text-anchor="start" font-size="17" fill="#7F7F7F" font-weight="normal" font-style="normal">4 × 4</text>
+<text x="4.0" y="238.0" text-anchor="start" font-size="17" fill="#222222" font-weight="normal" font-style="normal">each output = α · dynamic part + static bias b</text>
+<text x="4.0" y="262.0" text-anchor="start" font-size="17" fill="#7F7F7F" font-weight="normal" font-style="normal">α gates start near zero (0.01 in the mHC runs)</text>
+</svg>

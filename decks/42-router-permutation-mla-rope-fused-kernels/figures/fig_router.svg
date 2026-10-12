@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="268pt" viewBox="0 0 870 268" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_router: one warp routes one token -->
+<rect x="2.0" y="112.0" width="118.0" height="52.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="61.0" y="134.4" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">logits</text>
+<text x="61.0" y="152.8" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">1 token</text>
+<line x1="122.0" y1="138.0" x2="146.0" y2="138.0" stroke="#1F4E79" stroke-width="2.4" marker-end="url(#arrAcc)"/>
+<rect x="148.0" y="22.0" width="494.0" height="242.0" rx="6" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2.6" />
+<text x="395.0" y="14.0" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal">one warp = one token, scores in shared memory</text>
+<text x="166.0" y="50.0" text-anchor="start" font-size="16" fill="#222222" font-weight="normal" font-style="normal">sigmoid + bias: 256 scores in 8 groups</text>
+<rect x="166.0" y="58.0" width="50.0" height="30.0" rx="3" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.8" />
+<text x="191.0" y="79.0" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">G1</text>
+<rect x="222.0" y="58.0" width="50.0" height="30.0" rx="3" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.8" />
+<text x="247.0" y="79.0" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">G2</text>
+<rect x="278.0" y="58.0" width="50.0" height="30.0" rx="3" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.8" />
+<text x="303.0" y="79.0" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">G3</text>
+<rect x="334.0" y="58.0" width="50.0" height="30.0" rx="3" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.8" />
+<text x="359.0" y="79.0" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">G4</text>
+<rect x="390.0" y="58.0" width="50.0" height="30.0" rx="3" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.8" />
+<text x="415.0" y="79.0" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">G5</text>
+<rect x="446.0" y="58.0" width="50.0" height="30.0" rx="3" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.8" />
+<text x="471.0" y="79.0" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">G6</text>
+<rect x="502.0" y="58.0" width="50.0" height="30.0" rx="3" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.8" />
+<text x="527.0" y="79.0" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">G7</text>
+<rect x="558.0" y="58.0" width="50.0" height="30.0" rx="3" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.8" />
+<text x="583.0" y="79.0" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">G8</text>
+<text x="166.0" y="120.0" text-anchor="start" font-size="16" fill="#222222" font-weight="normal" font-style="normal">group score = top-2 sum, keep 4 groups</text>
+<rect x="166.0" y="128.0" width="50.0" height="30.0" rx="3" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.8" />
+<text x="191.0" y="149.0" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">G1</text>
+<rect x="222.0" y="128.0" width="50.0" height="30.0" rx="3" fill="#FFFFFF" stroke="#A6A6A6" stroke-width="1.4" stroke-dasharray="4,3" />
+<text x="247.0" y="149.0" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">G2</text>
+<rect x="278.0" y="128.0" width="50.0" height="30.0" rx="3" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.8" />
+<text x="303.0" y="149.0" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">G3</text>
+<rect x="334.0" y="128.0" width="50.0" height="30.0" rx="3" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.8" />
+<text x="359.0" y="149.0" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">G4</text>
+<rect x="390.0" y="128.0" width="50.0" height="30.0" rx="3" fill="#FFFFFF" stroke="#A6A6A6" stroke-width="1.4" stroke-dasharray="4,3" />
+<text x="415.0" y="149.0" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">G5</text>
+<rect x="446.0" y="128.0" width="50.0" height="30.0" rx="3" fill="#FFFFFF" stroke="#A6A6A6" stroke-width="1.4" stroke-dasharray="4,3" />
+<text x="471.0" y="149.0" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">G6</text>
+<rect x="502.0" y="128.0" width="50.0" height="30.0" rx="3" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.8" />
+<text x="527.0" y="149.0" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">G7</text>
+<rect x="558.0" y="128.0" width="50.0" height="30.0" rx="3" fill="#FFFFFF" stroke="#A6A6A6" stroke-width="1.4" stroke-dasharray="4,3" />
+<text x="583.0" y="149.0" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">G8</text>
+<text x="166.0" y="190.0" text-anchor="start" font-size="16" fill="#222222" font-weight="normal" font-style="normal">top-8 inside kept groups, normalize</text>
+<rect x="166.0" y="198.0" width="50.0" height="30.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.8" />
+<text x="191.0" y="218.2" text-anchor="middle" font-size="15" fill="#1F4E79" font-weight="bold" font-style="normal">e3</text>
+<rect x="222.0" y="198.0" width="50.0" height="30.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.8" />
+<text x="247.0" y="218.2" text-anchor="middle" font-size="15" fill="#1F4E79" font-weight="bold" font-style="normal">e9</text>
+<rect x="278.0" y="198.0" width="50.0" height="30.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.8" />
+<text x="303.0" y="218.2" text-anchor="middle" font-size="15" fill="#1F4E79" font-weight="bold" font-style="normal">e70</text>
+<rect x="334.0" y="198.0" width="50.0" height="30.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.8" />
+<text x="359.0" y="218.2" text-anchor="middle" font-size="15" fill="#1F4E79" font-weight="bold" font-style="normal">e81</text>
+<rect x="390.0" y="198.0" width="50.0" height="30.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.8" />
+<text x="415.0" y="218.2" text-anchor="middle" font-size="15" fill="#1F4E79" font-weight="bold" font-style="normal">e100</text>
+<rect x="446.0" y="198.0" width="50.0" height="30.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.8" />
+<text x="471.0" y="218.2" text-anchor="middle" font-size="15" fill="#1F4E79" font-weight="bold" font-style="normal">e193</text>
+<rect x="502.0" y="198.0" width="50.0" height="30.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.8" />
+<text x="527.0" y="218.2" text-anchor="middle" font-size="15" fill="#1F4E79" font-weight="bold" font-style="normal">e200</text>
+<rect x="558.0" y="198.0" width="50.0" height="30.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.8" />
+<text x="583.0" y="218.2" text-anchor="middle" font-size="15" fill="#1F4E79" font-weight="bold" font-style="normal">e214</text>
+<text x="387.0" y="254.0" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="italic">weights sum to 1</text>
+<line x1="624.0" y1="91.0" x2="624.0" y2="126.0" stroke="#222222" stroke-width="1.8" marker-end="url(#arr)"/>
+<line x1="624.0" y1="161.0" x2="624.0" y2="196.0" stroke="#222222" stroke-width="1.8" marker-end="url(#arr)"/>
+<rect x="684.0" y="54.0" width="182.0" height="52.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="775.0" y="76.4" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">probs</text>
+<text x="775.0" y="94.8" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">[T × 256]</text>
+<line x1="644.0" y1="80.0" x2="682.0" y2="80.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="684.0" y="124.0" width="182.0" height="52.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="775.0" y="146.4" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">routing map</text>
+<text x="775.0" y="164.8" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">or top-k ids</text>
+<line x1="644.0" y1="150.0" x2="682.0" y2="150.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="684.0" y="198.0" width="182.0" height="30.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.8" />
+<text x="775.0" y="218.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">aux-loss scores</text>
+<rect x="684.0" y="234.0" width="182.0" height="30.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.8" />
+<text x="775.0" y="254.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">aux loss</text>
+<text x="775.0" y="192.0" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="italic">2 more fused kernels</text>
+</svg>

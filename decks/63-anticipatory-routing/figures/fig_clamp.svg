@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480pt" height="312pt" viewBox="0 0 480 312" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_clamp -->
+<rect x="190.0" y="4.0" width="100.0" height="34.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="1.8" />
+<text x="240.0" y="27.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">token x</text>
+<path d="M240,40 L240,48 L119.0,48 L119.0,56" fill="none" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<path d="M240,48 L361.0,48 L361.0,56" fill="none" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="24.0" y="58.0" width="190.0" height="38.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="119.0" y="83.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">gate projection</text>
+<rect x="266.0" y="58.0" width="190.0" height="38.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="361.0" y="83.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">up projection</text>
+<rect x="24.0" y="114.0" width="190.0" height="38.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.2" />
+<text x="119.0" y="139.3" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">cap at 10</text>
+<rect x="266.0" y="114.0" width="190.0" height="38.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.2" />
+<text x="361.0" y="139.3" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">clamp to [−10, 10]</text>
+<rect x="24.0" y="170.0" width="190.0" height="38.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="119.0" y="194.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">SiLU</text>
+<line x1="119.0" y1="98.0" x2="119.0" y2="112.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<line x1="361.0" y1="98.0" x2="361.0" y2="112.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<line x1="119.0" y1="154.0" x2="119.0" y2="168.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<path d="M119.0,210 L119.0,236 L225,236" fill="none" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<path d="M361.0,154 L361.0,236 L255,236" fill="none" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<circle cx="240.0" cy="236.0" r="13" fill="#FFFFFF" stroke="#222222" stroke-width="2"/>
+<text x="240.0" y="243.2" text-anchor="middle" font-size="20" fill="#222222" font-weight="bold" font-style="normal">×</text>
+<line x1="240.0" y1="250.0" x2="240.0" y2="266.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="150.0" y="268.0" width="180.0" height="38.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="240.0" y="292.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">down projection</text>
+</svg>

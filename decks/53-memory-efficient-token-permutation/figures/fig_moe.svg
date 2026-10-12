@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="236pt" viewBox="0 0 870 236" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- MoE layer: router weights applied after the expert, at unpermute -->
+<text x="30.0" y="121.0" text-anchor="middle" font-size="22" fill="#222222" font-weight="normal" font-style="italic" font-family="Times New Roman, Times, serif">x</text>
+<line x1="44.0" y1="114.0" x2="68.0" y2="114.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="70.0" y="92.0" width="104.0" height="44.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="122.0" y="120.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">permute</text>
+<rect x="196.0" y="92.0" width="104.0" height="44.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="248.0" y="120.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">dispatch</text>
+<rect x="322.0" y="92.0" width="174.0" height="44.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="409.0" y="120.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">experts</text>
+<rect x="518.0" y="92.0" width="104.0" height="44.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="570.0" y="120.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">combine</text>
+<rect x="644.0" y="92.0" width="150.0" height="44.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="719.0" y="120.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">unpermute</text>
+<line x1="175.0" y1="114.0" x2="195.0" y2="114.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<line x1="301.0" y1="114.0" x2="321.0" y2="114.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<line x1="497.0" y1="114.0" x2="517.0" y2="114.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<line x1="623.0" y1="114.0" x2="643.0" y2="114.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<line x1="795.0" y1="114.0" x2="830.0" y2="114.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<text x="846.0" y="121.0" text-anchor="middle" font-size="22" fill="#222222" font-weight="normal" font-style="italic" font-family="Times New Roman, Times, serif">y</text>
+<text x="409.0" y="158.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="italic">fc1 · SwiGLU · fc2</text>
+<rect x="70.0" y="14.0" width="104.0" height="40.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="122.0" y="40.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">router</text>
+<path d="M52,114 L52,34 L68,34" fill="none" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<line x1="122.0" y1="56.0" x2="122.0" y2="91.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<text x="130.0" y="78.0" text-anchor="start" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="italic">map</text>
+<path d="M176,34 L719,34 L719,90" fill="none" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<text x="450.0" y="26.0" text-anchor="middle" font-size="18" fill="#222222" font-family="Helvetica, Arial, sans-serif"><tspan font-style="normal">routing weights </tspan><tspan font-style="italic">p</tspan></text>
+<text x="719.0" y="158.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="italic">weight by p, then sum</text>
+<text x="435.0" y="212.0" text-anchor="middle" font-size="26" fill="#222222" font-family="Times New Roman, Times, serif"><tspan font-style="italic">y</tspan><tspan font-style="normal"> = Σ</tspan><tspan baseline-shift="sub" font-size="17.7" font-style="italic">i</tspan><tspan font-style="italic">  p</tspan><tspan baseline-shift="sub" font-size="17.7" font-style="italic">i</tspan><tspan font-style="italic"> · E</tspan><tspan baseline-shift="sub" font-size="17.7" font-style="italic">i</tspan><tspan font-style="italic">(x),  E</tspan><tspan baseline-shift="sub" font-size="17.7" font-style="italic">i</tspan><tspan font-style="italic">(x) = W</tspan><tspan baseline-shift="sub" font-size="17.7" font-style="normal">2</tspan><tspan font-style="italic"> φ(W</tspan><tspan baseline-shift="sub" font-size="17.7" font-style="normal">1</tspan><tspan font-style="italic"> x)</tspan></text>
+</svg>

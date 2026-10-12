@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="300pt" viewBox="0 0 870 300" font-family="Helvetica, Arial, sans-serif">
+<defs><marker id="a222222" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker><marker id="a1F4E79" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker><marker id="aC00000" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker><marker id="a595959" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#595959"/></marker><marker id="a7F7F7F" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker><marker id="a2E7D32" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2E7D32"/></marker><pattern id="hatchRed" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#FBE5E5"/><line x1="0" y1="0" x2="0" y2="8" stroke="#C00000" stroke-width="2.5"/></pattern><pattern id="hatchGray" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#fff"/><line x1="0" y1="0" x2="0" y2="8" stroke="#A6A6A6" stroke-width="2"/></pattern></defs>
+<rect width="870" height="300" fill="#fff"/>
+<text x="76.0" y="31.0" font-size="18" font-weight="bold" fill="#7F7F7F" text-anchor="end">caller</text>
+<text x="76.0" y="88.0" font-size="18" font-weight="bold" fill="#7F7F7F" text-anchor="end">API</text>
+<text x="76.0" y="155.0" font-size="18" font-weight="bold" fill="#7F7F7F" text-anchor="end">kernels</text>
+<text x="76.0" y="231.0" font-size="18" font-weight="bold" fill="#7F7F7F" text-anchor="end">buffers</text>
+<text x="76.0" y="290.0" font-size="18" font-weight="bold" fill="#7F7F7F" text-anchor="end">fabric</text>
+<rect x="86.0" y="4.0" width="784.0" height="42.0" rx="5" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="478.0" y="31.3" font-size="18" font-weight="normal" fill="#222222" text-anchor="middle">Framework MoE layer: router · grouped expert GEMM</text>
+<rect x="86.0" y="60.0" width="282.0" height="44.0" rx="5" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="227.0" y="87.6" font-size="16" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-family="Menlo, Courier New, monospace">dispatch()</text>
+<rect x="378.0" y="60.0" width="152.0" height="44.0" rx="5" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="454.0" y="87.6" font-size="16" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-family="Menlo, Courier New, monospace">combine()</text>
+<rect x="540.0" y="60.0" width="180.0" height="44.0" rx="5" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="630.0" y="87.6" font-size="16" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-family="Menlo, Courier New, monospace">prefetch_weight()</text>
+<rect x="730.0" y="60.0" width="140.0" height="44.0" rx="5" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="800.0" y="87.6" font-size="16" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-family="Menlo, Courier New, monospace">reduce_grad()</text>
+<rect x="86.0" y="118.0" width="124.0" height="62.0" rx="5" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="156.0" y="147.9" font-size="17" font-weight="normal" fill="#222222" text-anchor="middle">planning</text>
+<text x="156.0" y="168.0" font-size="17" font-weight="normal" fill="#222222" text-anchor="middle">kernel</text>
+<circle cx="100.0" cy="132.0" r="11" fill="#1F4E79"/>
+<text x="100.0" y="137.4" font-size="15" font-weight="bold" fill="#fff" text-anchor="middle">2</text>
+<rect x="220.0" y="118.0" width="148.0" height="62.0" rx="5" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="302.0" y="147.9" font-size="17" font-weight="normal" fill="#222222" text-anchor="middle">dispatch</text>
+<text x="302.0" y="168.0" font-size="17" font-weight="normal" fill="#222222" text-anchor="middle">fused permute</text>
+<circle cx="234.0" cy="132.0" r="11" fill="#1F4E79"/>
+<text x="234.0" y="137.4" font-size="15" font-weight="bold" fill="#fff" text-anchor="middle">3</text>
+<rect x="378.0" y="118.0" width="152.0" height="62.0" rx="5" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="462.0" y="147.9" font-size="17" font-weight="normal" fill="#222222" text-anchor="middle">combine</text>
+<text x="462.0" y="168.0" font-size="17" font-weight="normal" fill="#222222" text-anchor="middle">fused unpermute</text>
+<circle cx="392.0" cy="132.0" r="11" fill="#1F4E79"/>
+<text x="392.0" y="137.4" font-size="15" font-weight="bold" fill="#fff" text-anchor="middle">3</text>
+<rect x="540.0" y="118.0" width="180.0" height="62.0" rx="5" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="638.0" y="147.9" font-size="17" font-weight="normal" fill="#222222" text-anchor="middle">weight</text>
+<text x="638.0" y="168.0" font-size="17" font-weight="normal" fill="#222222" text-anchor="middle">prefetch</text>
+<circle cx="554.0" cy="132.0" r="11" fill="#1F4E79"/>
+<text x="554.0" y="137.4" font-size="15" font-weight="bold" fill="#fff" text-anchor="middle">1</text>
+<rect x="730.0" y="118.0" width="140.0" height="62.0" rx="5" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="808.0" y="147.9" font-size="17" font-weight="normal" fill="#222222" text-anchor="middle">grad</text>
+<text x="808.0" y="168.0" font-size="17" font-weight="normal" fill="#222222" text-anchor="middle">reduce</text>
+<circle cx="744.0" cy="132.0" r="11" fill="#1F4E79"/>
+<text x="744.0" y="137.4" font-size="15" font-weight="bold" fill="#fff" text-anchor="middle">1</text>
+<rect x="86.0" y="194.0" width="124.0" height="62.0" rx="5" fill="#fff" stroke="#1F4E79" stroke-width="2" stroke-dasharray="7,4" />
+<text x="148.0" y="220.9" font-size="17" font-weight="normal" fill="#222222" text-anchor="middle">plan</text>
+<text x="148.0" y="241.0" font-size="17" font-weight="normal" fill="#222222" text-anchor="middle">(multicast)</text>
+<rect x="220.0" y="194.0" width="310.0" height="62.0" rx="5" fill="#fff" stroke="#1F4E79" stroke-width="2" stroke-dasharray="7,4" />
+<text x="375.0" y="220.9" font-size="17" font-weight="normal" fill="#222222" text-anchor="middle">token buffer [NvS, H]</text>
+<text x="375.0" y="241.0" font-size="17" font-weight="normal" fill="#222222" text-anchor="middle">fixed S×K slots</text>
+<rect x="540.0" y="194.0" width="180.0" height="62.0" rx="5" fill="#fff" stroke="#1F4E79" stroke-width="2" stroke-dasharray="7,4" />
+<text x="630.0" y="220.9" font-size="17" font-weight="normal" fill="#222222" text-anchor="middle">weight pool</text>
+<text x="630.0" y="241.0" font-size="17" font-weight="normal" fill="#222222" text-anchor="middle">[E/R, H, H′]</text>
+<rect x="730.0" y="194.0" width="140.0" height="62.0" rx="5" fill="#fff" stroke="#1F4E79" stroke-width="2" stroke-dasharray="7,4" />
+<text x="800.0" y="220.9" font-size="17" font-weight="normal" fill="#222222" text-anchor="middle">FP32 grad</text>
+<text x="800.0" y="241.0" font-size="17" font-weight="normal" fill="#222222" text-anchor="middle">pool</text>
+<rect x="86.0" y="270.0" width="784.0" height="28.0" rx="5" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="478.0" y="289.9" font-size="17" font-weight="normal" fill="#222222" text-anchor="middle">One NVLink domain: peer-mapped memory + NVSwitch multicast</text>
+</svg>

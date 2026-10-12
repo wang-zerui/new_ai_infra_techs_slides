@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="214pt" viewBox="0 0 870 214" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_te: _order capture sequence and FP8 handling -->
+<text x="4.0" y="44.0" text-anchor="start" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal" font-family="Menlo, Courier New, monospace">_order</text>
+<text x="4.0" y="84.0" text-anchor="start" font-size="17" fill="#222222" font-weight="bold" font-style="normal">pass</text>
+<text x="4.0" y="124.0" text-anchor="start" font-size="17" fill="#222222" font-weight="bold" font-style="normal">FP8 weights</text>
+<rect x="132.0" y="22.0" width="56.0" height="34.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.2" />
+<text x="160.0" y="45.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">1</text>
+<text x="160.0" y="84.0" text-anchor="middle" font-size="15.5" fill="#222222" font-weight="normal" font-style="normal">F1 m0</text>
+<rect x="134.0" y="104.0" width="52.0" height="30.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="160.0" y="124.4" text-anchor="middle" font-size="15.5" fill="#222222" font-weight="bold" font-style="normal">cast</text>
+<rect x="193.5" y="22.0" width="56.0" height="34.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.2" />
+<text x="221.5" y="45.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">2</text>
+<text x="221.5" y="84.0" text-anchor="middle" font-size="15.5" fill="#222222" font-weight="normal" font-style="normal">F2 m0</text>
+<rect x="195.5" y="104.0" width="52.0" height="30.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="221.5" y="124.4" text-anchor="middle" font-size="15.5" fill="#222222" font-weight="bold" font-style="normal">cast</text>
+<rect x="255.0" y="22.0" width="56.0" height="34.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.2" />
+<text x="283.0" y="45.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">1</text>
+<text x="283.0" y="84.0" text-anchor="middle" font-size="15.5" fill="#222222" font-weight="normal" font-style="normal">F1 m1</text>
+<rect x="257.0" y="104.0" width="52.0" height="30.0" rx="4" fill="#FFFFFF" stroke="#A6A6A6" stroke-width="2" stroke-dasharray="4,3" />
+<text x="283.0" y="124.4" text-anchor="middle" font-size="15.5" fill="#7F7F7F" font-weight="normal" font-style="normal">reuse</text>
+<rect x="316.5" y="22.0" width="56.0" height="34.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.2" />
+<text x="344.5" y="45.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">2</text>
+<text x="344.5" y="84.0" text-anchor="middle" font-size="15.5" fill="#222222" font-weight="normal" font-style="normal">F2 m1</text>
+<rect x="318.5" y="104.0" width="52.0" height="30.0" rx="4" fill="#FFFFFF" stroke="#A6A6A6" stroke-width="2" stroke-dasharray="4,3" />
+<text x="344.5" y="124.4" text-anchor="middle" font-size="15.5" fill="#7F7F7F" font-weight="normal" font-style="normal">reuse</text>
+<rect x="378.0" y="22.0" width="56.0" height="34.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.2" />
+<text x="406.0" y="45.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">1</text>
+<text x="406.0" y="84.0" text-anchor="middle" font-size="15.5" fill="#222222" font-weight="normal" font-style="normal">F1 m2</text>
+<rect x="380.0" y="104.0" width="52.0" height="30.0" rx="4" fill="#FFFFFF" stroke="#A6A6A6" stroke-width="2" stroke-dasharray="4,3" />
+<text x="406.0" y="124.4" text-anchor="middle" font-size="15.5" fill="#7F7F7F" font-weight="normal" font-style="normal">reuse</text>
+<rect x="439.5" y="22.0" width="56.0" height="34.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.2" />
+<text x="467.5" y="45.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">2</text>
+<text x="467.5" y="84.0" text-anchor="middle" font-size="15.5" fill="#222222" font-weight="normal" font-style="normal">F2 m2</text>
+<rect x="441.5" y="104.0" width="52.0" height="30.0" rx="4" fill="#FFFFFF" stroke="#A6A6A6" stroke-width="2" stroke-dasharray="4,3" />
+<text x="467.5" y="124.4" text-anchor="middle" font-size="15.5" fill="#7F7F7F" font-weight="normal" font-style="normal">reuse</text>
+<rect x="501.0" y="22.0" width="56.0" height="34.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2.2" />
+<text x="529.0" y="45.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">−2</text>
+<text x="529.0" y="84.0" text-anchor="middle" font-size="15.5" fill="#222222" font-weight="normal" font-style="normal">B2 m0</text>
+<rect x="562.5" y="22.0" width="56.0" height="34.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2.2" />
+<text x="590.5" y="45.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">−1</text>
+<text x="590.5" y="84.0" text-anchor="middle" font-size="15.5" fill="#222222" font-weight="normal" font-style="normal">B1 m0</text>
+<rect x="624.0" y="22.0" width="56.0" height="34.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2.2" />
+<text x="652.0" y="45.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">−2</text>
+<text x="652.0" y="84.0" text-anchor="middle" font-size="15.5" fill="#222222" font-weight="normal" font-style="normal">B2 m1</text>
+<rect x="685.5" y="22.0" width="56.0" height="34.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2.2" />
+<text x="713.5" y="45.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">−1</text>
+<text x="713.5" y="84.0" text-anchor="middle" font-size="15.5" fill="#222222" font-weight="normal" font-style="normal">B1 m1</text>
+<rect x="747.0" y="22.0" width="56.0" height="34.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2.2" />
+<text x="775.0" y="45.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">−2</text>
+<text x="775.0" y="84.0" text-anchor="middle" font-size="15.5" fill="#222222" font-weight="normal" font-style="normal">B2 m2</text>
+<rect x="808.5" y="22.0" width="56.0" height="34.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2.2" />
+<text x="836.5" y="45.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">−1</text>
+<text x="836.5" y="84.0" text-anchor="middle" font-size="15.5" fill="#222222" font-weight="normal" font-style="normal">B1 m2</text>
+<line x1="132.0" y1="150.0" x2="866.0" y2="150.0" stroke="#222222" stroke-width="1.8" marker-end="url(#arr)"/>
+<text x="866.0" y="168.0" text-anchor="end" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="italic">capture and replay order</text>
+<rect x="132.0" y="176.0" width="732.5" height="34.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2.2" />
+<text x="498.2" y="198.6" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">FP8 amax all-reduce: once per step, not once per graph</text>
+</svg>

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="292pt" viewBox="0 0 870 292" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_kernel: Mega MoE data path and warp roles -->
+<rect x="10.0" y="70.0" width="850.0" height="140.0" rx="6" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2" stroke-dasharray="7,4" />
+<text x="22.0" y="202.0" text-anchor="start" font-size="16" fill="#1F4E79" font-weight="normal" font-style="italic">rank r · one persistent kernel</text>
+<rect x="30.0" y="100.0" width="150.0" height="52.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2" />
+<text x="105.0" y="132.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">token pool</text>
+<text x="105.0" y="174.0" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">dispatch warps</text>
+<rect x="236.0" y="100.0" width="160.0" height="52.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="316.0" y="132.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">Linear-1 GEMM</text>
+<text x="316.0" y="174.0" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">MMA warps</text>
+<rect x="452.0" y="100.0" width="170.0" height="52.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="537.0" y="122.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">SwiGLU +</text>
+<text x="537.0" y="142.7" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">FP8 cast</text>
+<text x="537.0" y="174.0" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">epilogue warps</text>
+<rect x="678.0" y="100.0" width="160.0" height="52.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="758.0" y="132.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">Linear-2 GEMM</text>
+<text x="758.0" y="174.0" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">MMA warps</text>
+<line x1="182.0" y1="126.0" x2="234.0" y2="126.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<line x1="398.0" y1="126.0" x2="450.0" y2="126.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<line x1="624.0" y1="126.0" x2="676.0" y2="126.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<path d="M758,98 C758,78 316,78 316,97" fill="none" stroke="#1F4E79" stroke-width="2" marker-end="url(#arrAcc)" stroke-dasharray="5,4"/>
+<text x="537.0" y="84.0" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="normal" font-style="italic" paint-order="stroke" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round">next wave</text>
+<rect x="20.0" y="4.0" width="260.0" height="38.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.8" />
+<text x="150.0" y="28.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">token owner · FP8 tokens</text>
+<line x1="105.0" y1="44.0" x2="105.0" y2="98.0" stroke="#1F4E79" stroke-width="2.6" marker-end="url(#arrAcc)"/>
+<text x="115.0" y="60.0" text-anchor="start" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal" paint-order="stroke" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round">pull · TMA over NVLink</text>
+<path d="M840,126.0 L842,126.0 L842,248" fill="none" stroke="#1F4E79" stroke-width="2.6" marker-end="url(#arrAcc)"/>
+<text x="834.0" y="236.0" text-anchor="end" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal" paint-order="stroke" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round">write BF16</text>
+<rect x="640.0" y="250.0" width="220.0" height="38.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.8" />
+<text x="750.0" y="274.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">owner · combine buffer</text>
+<rect x="370.0" y="250.0" width="210.0" height="38.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.8" />
+<text x="475.0" y="274.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">top-k reduce</text>
+<line x1="638.0" y1="269.0" x2="582.0" y2="269.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<line x1="368.0" y1="269.0" x2="300.0" y2="269.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<text x="292.0" y="275.0" text-anchor="end" font-size="17" fill="#222222" font-weight="normal" font-style="normal">output y</text>
+<text x="475.0" y="242.0" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="italic">after NVLink barrier</text>
+</svg>

@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="285pt" viewBox="0 0 870 285" font-family="Helvetica, Arial, sans-serif">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker><marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker><marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker><pattern id="hr" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" fill="#FBE5E5"/><line x1="0" y1="0" x2="0" y2="6" stroke="#C00000" stroke-width="1.6"/></pattern></defs>
+<text x="112.0" y="54.0" font-size="16" font-weight="normal" fill="#595959" text-anchor="end" font-style="normal">local chunks</text>
+<text x="112.0" y="128.0" font-size="18" font-weight="bold" fill="#1F4E79" text-anchor="end" font-style="normal">S̃ chain</text>
+<text x="112.0" y="200.0" font-size="18" font-weight="bold" fill="#1F4E79" text-anchor="end" font-style="normal">M chain</text>
+<rect x="150.0" y="32.0" width="110.0" height="36.0" rx="3" fill="#F2F2F2" stroke="#595959" stroke-width="1.5"/>
+<text x="205.0" y="56.0" font-size="16" font-weight="normal" fill="#222222" text-anchor="middle" font-style="normal">chunk 1</text>
+<line x1="205.0" y1="70.0" x2="205.0" y2="102.0" stroke="#595959" stroke-width="1.5" marker-end="url(#a)"/>
+<line x1="205.0" y1="70.0" x2="205.0" y2="174.0" stroke="#595959" stroke-width="1.2" stroke-dasharray="3,3"/>
+<rect x="170.0" y="104.0" width="70.0" height="40.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2"/>
+<text x="205.0" y="130.0" font-size="15" font-weight="normal" fill="#1F4E79" text-anchor="middle" font-style="normal">step</text>
+<rect x="170.0" y="176.0" width="70.0" height="40.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2"/>
+<text x="205.0" y="202.0" font-size="16" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-style="normal">× M<tspan font-size="14" dy="5">[t]</tspan><tspan dy="-5">​</tspan></text>
+<rect x="290.0" y="32.0" width="110.0" height="36.0" rx="3" fill="#F2F2F2" stroke="#595959" stroke-width="1.5"/>
+<text x="345.0" y="56.0" font-size="16" font-weight="normal" fill="#222222" text-anchor="middle" font-style="normal">chunk 2</text>
+<line x1="345.0" y1="70.0" x2="345.0" y2="102.0" stroke="#595959" stroke-width="1.5" marker-end="url(#a)"/>
+<line x1="345.0" y1="70.0" x2="345.0" y2="174.0" stroke="#595959" stroke-width="1.2" stroke-dasharray="3,3"/>
+<rect x="310.0" y="104.0" width="70.0" height="40.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2"/>
+<text x="345.0" y="130.0" font-size="15" font-weight="normal" fill="#1F4E79" text-anchor="middle" font-style="normal">step</text>
+<rect x="310.0" y="176.0" width="70.0" height="40.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2"/>
+<text x="345.0" y="202.0" font-size="16" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-style="normal">× M<tspan font-size="14" dy="5">[t]</tspan><tspan dy="-5">​</tspan></text>
+<rect x="430.0" y="32.0" width="110.0" height="36.0" rx="3" fill="#F2F2F2" stroke="#595959" stroke-width="1.5"/>
+<text x="485.0" y="56.0" font-size="16" font-weight="normal" fill="#222222" text-anchor="middle" font-style="normal">chunk 3</text>
+<line x1="485.0" y1="70.0" x2="485.0" y2="102.0" stroke="#595959" stroke-width="1.5" marker-end="url(#a)"/>
+<line x1="485.0" y1="70.0" x2="485.0" y2="174.0" stroke="#595959" stroke-width="1.2" stroke-dasharray="3,3"/>
+<rect x="450.0" y="104.0" width="70.0" height="40.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2"/>
+<text x="485.0" y="130.0" font-size="15" font-weight="normal" fill="#1F4E79" text-anchor="middle" font-style="normal">step</text>
+<rect x="450.0" y="176.0" width="70.0" height="40.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2"/>
+<text x="485.0" y="202.0" font-size="16" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-style="normal">× M<tspan font-size="14" dy="5">[t]</tspan><tspan dy="-5">​</tspan></text>
+<rect x="570.0" y="32.0" width="110.0" height="36.0" rx="3" fill="#F2F2F2" stroke="#595959" stroke-width="1.5"/>
+<text x="625.0" y="56.0" font-size="16" font-weight="normal" fill="#222222" text-anchor="middle" font-style="normal">chunk 4</text>
+<line x1="625.0" y1="70.0" x2="625.0" y2="102.0" stroke="#595959" stroke-width="1.5" marker-end="url(#a)"/>
+<line x1="625.0" y1="70.0" x2="625.0" y2="174.0" stroke="#595959" stroke-width="1.2" stroke-dasharray="3,3"/>
+<rect x="590.0" y="104.0" width="70.0" height="40.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2"/>
+<text x="625.0" y="130.0" font-size="15" font-weight="normal" fill="#1F4E79" text-anchor="middle" font-style="normal">step</text>
+<rect x="590.0" y="176.0" width="70.0" height="40.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2"/>
+<text x="625.0" y="202.0" font-size="16" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-style="normal">× M<tspan font-size="14" dy="5">[t]</tspan><tspan dy="-5">​</tspan></text>
+<circle cx="138" cy="124" r="15" fill="#FFFFFF" stroke="#222222" stroke-width="2"/>
+<text x="138.0" y="130.0" font-size="17" font-weight="bold" fill="#222222" text-anchor="middle" font-style="normal">0</text>
+<line x1="154.0" y1="124.0" x2="168.0" y2="124.0" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+<line x1="242.0" y1="124.0" x2="308.0" y2="124.0" stroke="#1F4E79" stroke-width="2.5" marker-end="url(#b)"/>
+<line x1="382.0" y1="124.0" x2="448.0" y2="124.0" stroke="#1F4E79" stroke-width="2.5" marker-end="url(#b)"/>
+<line x1="522.0" y1="124.0" x2="588.0" y2="124.0" stroke="#1F4E79" stroke-width="2.5" marker-end="url(#b)"/>
+<line x1="662.0" y1="124.0" x2="732.0" y2="124.0" stroke="#1F4E79" stroke-width="2.5" marker-end="url(#b)"/>
+<circle cx="138" cy="196" r="15" fill="#FFFFFF" stroke="#222222" stroke-width="2"/>
+<text x="138.0" y="202.0" font-size="17" font-weight="bold" fill="#222222" text-anchor="middle" font-style="normal">I</text>
+<line x1="154.0" y1="196.0" x2="168.0" y2="196.0" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+<line x1="242.0" y1="196.0" x2="308.0" y2="196.0" stroke="#1F4E79" stroke-width="2.5" marker-end="url(#b)"/>
+<line x1="382.0" y1="196.0" x2="448.0" y2="196.0" stroke="#1F4E79" stroke-width="2.5" marker-end="url(#b)"/>
+<line x1="522.0" y1="196.0" x2="588.0" y2="196.0" stroke="#1F4E79" stroke-width="2.5" marker-end="url(#b)"/>
+<line x1="662.0" y1="196.0" x2="732.0" y2="196.0" stroke="#1F4E79" stroke-width="2.5" marker-end="url(#b)"/>
+<rect x="734.0" y="104.0" width="120.0" height="40.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.5"/>
+<text x="794.0" y="131.0" font-size="19" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-style="normal">S̃<tspan font-size="14" dy="5">i</tspan><tspan dy="-5">​</tspan></text>
+<rect x="734.0" y="176.0" width="120.0" height="40.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.5"/>
+<text x="794.0" y="203.0" font-size="19" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-style="normal">M<tspan font-size="14" dy="5">i</tspan><tspan dy="-5">​</tspan></text>
+<text x="435.0" y="252.0" font-size="17" font-weight="normal" fill="#222222" text-anchor="middle" font-style="normal">step: S̃ ← Diag(γ)·S̃ + (Γ⊙K)ᵀ·(U − W·S̃)</text>
+<text x="435.0" y="277.0" font-size="17" font-weight="normal" fill="#222222" text-anchor="middle" font-style="normal">M<tspan font-size="14" dy="5">[t]</tspan><tspan dy="-5">​</tspan> = Diag(γ) − (Γ⊙K)ᵀ·W</text>
+</svg>

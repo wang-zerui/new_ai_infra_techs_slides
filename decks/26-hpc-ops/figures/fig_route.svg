@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="262pt" viewBox="0 0 870 262" font-family="Helvetica, Arial, sans-serif">
+  <!-- fig_route: FP32 router weight split into two BF16 parts, two Tensor-Core MMAs in one kernel (slide figure, 1 unit = 1pt) -->
+  <defs>
+    <marker id="a_neu" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+    <marker id="a_ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+    <marker id="a_prb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+    <marker id="a_acc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+    <marker id="a_good" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2E7D32"/></marker>
+    <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="1.6"/></pattern>
+    <pattern id="hatchNeu" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="1.6"/></pattern>
+  </defs>
+  <rect x="4.0" y="26.0" width="318.0" height="230.0" rx="6" fill="none" stroke="#7F7F7F" stroke-width="1.5" stroke-dasharray="6,4" />
+  <text x="14.0" y="18.0" font-size="18" fill="#595959" text-anchor="start" font-weight="bold">At model load</text>
+  <rect x="394.0" y="26.0" width="472.0" height="230.0" rx="6" fill="none" stroke="#1F4E79" stroke-width="1.8" stroke-dasharray="6,4" />
+  <text x="404.0" y="18.0" font-size="18" fill="#1F4E79" text-anchor="start" font-weight="bold">Per forward: one kernel</text>
+  <rect x="16.0" y="120.0" width="104.0" height="48.0" rx="4" fill="#F2F2F2" stroke="#7F7F7F" stroke-width="1.5" />
+  <text x="68.0" y="150.3" font-size="18" fill="#222222" text-anchor="middle"></text>
+  <text x="68.0" y="150.0" font-size="18" fill="#222222" text-anchor="middle">W (FP32)</text>
+  <rect x="170.0" y="50.0" width="140.0" height="52.0" rx="4" fill="#F2F2F2" stroke="#7F7F7F" stroke-width="1.5" />
+  <text x="240.0" y="82.3" font-size="18" fill="#222222" text-anchor="middle"></text>
+  <text x="240.0" y="74.0" font-size="18" fill="#222222" text-anchor="middle">W<tspan font-size="13.0" dy="4.5">hi</tspan><tspan dy="-4.5"> (BF16)</tspan></text>
+  <text x="240.0" y="94.0" font-size="16" fill="#595959" text-anchor="middle">truncated</text>
+  <rect x="170.0" y="188.0" width="140.0" height="52.0" rx="4" fill="#F2F2F2" stroke="#7F7F7F" stroke-width="1.5" />
+  <text x="240.0" y="220.3" font-size="18" fill="#222222" text-anchor="middle"></text>
+  <text x="240.0" y="212.0" font-size="18" fill="#222222" text-anchor="middle">W<tspan font-size="13.0" dy="4.5">lo</tspan><tspan dy="-4.5"> (BF16)</tspan></text>
+  <text x="240.0" y="232.0" font-size="16" fill="#595959" text-anchor="middle">residual × 256</text>
+  <path d="M121,136 L145,136 L145,76 L168,76" stroke="#7F7F7F" stroke-width="2" fill="none" marker-end="url(#a_neu)"/>
+  <path d="M121,152 L145,152 L145,214 L168,214" stroke="#7F7F7F" stroke-width="2" fill="none" marker-end="url(#a_neu)"/>
+  <rect x="412.0" y="119.0" width="140.0" height="50.0" rx="4" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="1.5" />
+  <text x="482.0" y="150.3" font-size="18" fill="#222222" text-anchor="middle"></text>
+  <text x="482.0" y="141.0" font-size="18" fill="#222222" text-anchor="middle">X tile (BF16)</text>
+  <text x="482.0" y="161.0" font-size="16" fill="#595959" text-anchor="middle">loaded once</text>
+  <rect x="412.0" y="50.0" width="140.0" height="52.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+  <text x="482.0" y="82.3" font-size="18" fill="#1F4E79" text-anchor="middle"></text>
+  <text x="482.0" y="72.0" font-size="18" fill="#1F4E79" text-anchor="middle" font-weight="bold">BF16 MMA</text>
+  <text x="482.0" y="93.0" font-size="17" fill="#1F4E79" text-anchor="middle">X·W<tspan font-size="12.2" dy="4.2">hi</tspan><tspan dy="-4.2"></tspan></text>
+  <rect x="412.0" y="188.0" width="140.0" height="52.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+  <text x="482.0" y="220.3" font-size="18" fill="#1F4E79" text-anchor="middle"></text>
+  <text x="482.0" y="210.0" font-size="18" fill="#1F4E79" text-anchor="middle" font-weight="bold">BF16 MMA</text>
+  <text x="482.0" y="231.0" font-size="17" fill="#1F4E79" text-anchor="middle">X·W<tspan font-size="12.2" dy="4.2">lo</tspan><tspan dy="-4.2"></tspan></text>
+  <line x1="311.0" y1="76.0" x2="410.0" y2="76.0" stroke="#7F7F7F" stroke-width="2" marker-end="url(#a_neu)"/>
+  <line x1="311.0" y1="214.0" x2="410.0" y2="214.0" stroke="#7F7F7F" stroke-width="2" marker-end="url(#a_neu)"/>
+  <line x1="482.0" y1="118.0" x2="482.0" y2="104.0" stroke="#1F4E79" stroke-width="2" marker-end="url(#a_acc)"/>
+  <line x1="482.0" y1="170.0" x2="482.0" y2="186.0" stroke="#1F4E79" stroke-width="2" marker-end="url(#a_acc)"/>
+  <rect x="594.0" y="50.0" width="150.0" height="190.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+  <text x="669.0" y="151.3" font-size="18" fill="#1F4E79" text-anchor="middle"></text>
+  <text x="669.0" y="120.0" font-size="17" fill="#1F4E79" text-anchor="middle">FP32 registers</text>
+  <text x="669.0" y="150.0" font-size="18" fill="#1F4E79" text-anchor="middle" font-weight="bold">acc<tspan font-size="13.0" dy="4.5">hi</tspan><tspan dy="-4.5"> +</tspan></text>
+  <text x="669.0" y="176.0" font-size="18" fill="#1F4E79" text-anchor="middle" font-weight="bold">acc<tspan font-size="13.0" dy="4.5">lo</tspan><tspan dy="-4.5"> / 256</tspan></text>
+  <line x1="553.0" y1="76.0" x2="592.0" y2="76.0" stroke="#1F4E79" stroke-width="2" marker-end="url(#a_acc)"/>
+  <line x1="553.0" y1="214.0" x2="592.0" y2="214.0" stroke="#1F4E79" stroke-width="2" marker-end="url(#a_acc)"/>
+  <line x1="745.0" y1="145.0" x2="766.0" y2="145.0" stroke="#1F4E79" stroke-width="2" marker-end="url(#a_acc)"/>
+  <rect x="768.0" y="119.0" width="92.0" height="52.0" rx="4" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="1.5" />
+  <text x="814.0" y="151.3" font-size="18" fill="#222222" text-anchor="middle"></text>
+  <text x="814.0" y="141.0" font-size="18" fill="#222222" text-anchor="middle">FP32</text>
+  <text x="814.0" y="162.0" font-size="18" fill="#222222" text-anchor="middle">scores</text>
+</svg>

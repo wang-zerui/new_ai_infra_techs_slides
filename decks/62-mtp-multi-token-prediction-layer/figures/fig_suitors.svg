@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="290pt" viewBox="0 0 870 290" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_suitors: separate drafter vs parallel independent heads -->
+<rect x="20.0" y="70.0" width="150.0" height="60.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="95.0" y="106.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">Draft model</text>
+<rect x="250.0" y="50.0" width="170.0" height="100.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="335.0" y="96.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">Target</text>
+<text x="335.0" y="116.7" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">model</text>
+<line x1="172.0" y1="88.0" x2="248.0" y2="88.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<text x="210.0" y="78.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="italic">drafts</text>
+<line x1="248.0" y1="114.0" x2="172.0" y2="114.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<text x="210.0" y="136.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="italic">verdict</text>
+<rect x="20.0" y="164.0" width="160.0" height="38.0" rx="4" fill="#FBE5E5" stroke="#C00000" stroke-width="2" />
+<text x="100.0" y="188.9" text-anchor="middle" font-size="17" fill="#C00000" font-weight="bold" font-style="normal">own training run</text>
+<rect x="20.0" y="212.0" width="160.0" height="38.0" rx="4" fill="#FBE5E5" stroke="#C00000" stroke-width="2" />
+<text x="100.0" y="236.9" text-anchor="middle" font-size="17" fill="#C00000" font-weight="bold" font-style="normal">own serving copy</text>
+<line x1="95.0" y1="132.0" x2="95.0" y2="162.0" stroke="#C00000" stroke-width="2" stroke-dasharray="4,3"/>
+<text x="214.0" y="282.0" text-anchor="middle" font-size="19" fill="#222222" font-weight="bold" font-style="normal">(a) Separate draft model</text>
+<line x1="438.0" y1="18.0" x2="438.0" y2="290.0" stroke="#BFBFBF" stroke-width="1.2"/>
+<rect x="470.0" y="196.0" width="380.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="660.0" y="224.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">Shared trunk → hᵢ</text>
+<rect x="474.0" y="92.0" width="96.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="522.0" y="120.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">head 1</text>
+<line x1="522.0" y1="194.0" x2="522.0" y2="138.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<line x1="522.0" y1="90.0" x2="522.0" y2="64.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<text x="522.0" y="54.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">t+1</text>
+<rect x="614.0" y="92.0" width="96.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="662.0" y="120.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">head 2</text>
+<line x1="662.0" y1="194.0" x2="662.0" y2="138.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<line x1="662.0" y1="90.0" x2="662.0" y2="64.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<text x="662.0" y="54.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">t+2</text>
+<rect x="754.0" y="92.0" width="96.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="802.0" y="120.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">head 3</text>
+<line x1="802.0" y1="194.0" x2="802.0" y2="138.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<line x1="802.0" y1="90.0" x2="802.0" y2="64.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<text x="802.0" y="54.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">t+3</text>
+<line x1="714.0" y1="114.0" x2="750.0" y2="114.0" stroke="#C00000" stroke-width="2.4" stroke-dasharray="5,4"/>
+<text x="732.0" y="121.0" text-anchor="middle" font-size="22" fill="#C00000" font-weight="bold" font-style="normal" paint-order="stroke" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round">✗</text>
+<text x="712.0" y="24.0" text-anchor="middle" font-size="17" fill="#C00000" font-weight="bold" font-style="normal">head 3 never sees t+2</text>
+<text x="654.0" y="282.0" text-anchor="middle" font-size="19" fill="#222222" font-weight="bold" font-style="normal">(b) Parallel independent heads</text>
+</svg>

@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="280pt"
+     viewBox="0 0 870 280" font-family="Helvetica, Arial, sans-serif">
+  <!-- fig_v1: the DeepEP V1 stack (status quo), problems in red. 1 unit = 1pt -->
+
+  <!-- row labels -->
+  <text x="8" y="74" font-size="20" font-weight="bold" fill="#222222">API</text>
+  <text x="8" y="164" font-size="20" font-weight="bold" fill="#222222">Tuning</text>
+  <text x="8" y="254" font-size="20" font-weight="bold" fill="#222222">Transport</text>
+  <line x1="8" y1="104" x2="862" y2="104" stroke="#BFBFBF" stroke-width="1" stroke-dasharray="4,3"/>
+  <line x1="8" y1="194" x2="862" y2="194" stroke="#BFBFBF" stroke-width="1" stroke-dasharray="4,3"/>
+
+  <!-- API row: two kernel families -->
+  <rect x="122" y="14" width="356" height="80" rx="5" fill="#F2F2F2" stroke="#595959" stroke-width="1.5"/>
+  <text x="300" y="47" text-anchor="middle" font-size="17" font-family="Menlo, 'Courier New', monospace" fill="#222222">Buffer.dispatch / combine</text>
+  <text x="300" y="76" text-anchor="middle" font-size="18" fill="#222222">train + prefill kernels</text>
+  <rect x="494" y="14" width="368" height="80" rx="5" fill="#F2F2F2" stroke="#595959" stroke-width="1.5"/>
+  <text x="678" y="47" text-anchor="middle" font-size="17" font-family="Menlo, 'Courier New', monospace" fill="#222222">low_latency_dispatch / combine</text>
+  <text x="678" y="76" text-anchor="middle" font-size="18" fill="#222222">decode kernels on pure RDMA</text>
+
+  <!-- Tuning row: three knobs, all problems -->
+  <rect x="122" y="114" width="228" height="70" rx="5" fill="#FBE5E5" stroke="#C00000" stroke-width="1.5"/>
+  <text x="236" y="143" text-anchor="middle" font-size="18" font-weight="bold" fill="#C00000">Fixed SM count</text>
+  <text x="236" y="170" text-anchor="middle" font-size="16" font-family="Menlo, 'Courier New', monospace" fill="#222222">set_num_sms(24)</text>
+  <rect x="362" y="114" width="244" height="70" rx="5" fill="#FBE5E5" stroke="#C00000" stroke-width="1.5"/>
+  <text x="484" y="143" text-anchor="middle" font-size="18" font-weight="bold" fill="#C00000">Chunk-size table</text>
+  <text x="484" y="170" text-anchor="middle" font-size="18" fill="#222222">10 hand-tuned EP sizes</text>
+  <rect x="618" y="114" width="244" height="70" rx="5" fill="#FBE5E5" stroke="#C00000" stroke-width="1.5"/>
+  <text x="740" y="143" text-anchor="middle" font-size="18" font-weight="bold" fill="#C00000">Pinned QP count</text>
+  <text x="740" y="170" text-anchor="middle" font-size="18" fill="#222222">QPs = local experts</text>
+
+  <!-- Transport row: three runtimes -->
+  <rect x="122" y="204" width="228" height="70" rx="5" fill="#F2F2F2" stroke="#595959" stroke-width="1.5"/>
+  <text x="236" y="233" text-anchor="middle" font-size="18" font-weight="bold" fill="#222222">CUDA IPC handles</text>
+  <text x="236" y="260" text-anchor="middle" font-size="18" fill="#222222">NVLink buffers</text>
+  <rect x="362" y="204" width="244" height="70" rx="5" fill="#FBE5E5" stroke="#C00000" stroke-width="1.5"/>
+  <text x="484" y="233" text-anchor="middle" font-size="18" font-weight="bold" fill="#C00000">NVSHMEM IBGDA</text>
+  <text x="484" y="260" text-anchor="middle" font-size="18" fill="#222222">RDMA heap + bootstrap</text>
+  <rect x="618" y="204" width="244" height="70" rx="5" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="740" y="233" text-anchor="middle" font-size="18" font-weight="bold" fill="#595959">NCCL</text>
+  <text x="740" y="260" text-anchor="middle" font-size="18" fill="#595959">framework collectives</text>
+</svg>

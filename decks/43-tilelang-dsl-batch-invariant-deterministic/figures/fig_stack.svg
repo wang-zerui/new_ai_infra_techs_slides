@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="346pt" viewBox="0 0 870 346" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_stack -->
+<rect x="10.0" y="4.0" width="270.0" height="38.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.8" />
+<text x="145.0" y="29.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">pre-training</text>
+<line x1="145.0" y1="66.0" x2="145.0" y2="44.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="300.0" y="4.0" width="270.0" height="38.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.8" />
+<text x="435.0" y="29.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">RL rollout + trainer</text>
+<line x1="435.0" y1="66.0" x2="435.0" y2="44.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="590.0" y="4.0" width="270.0" height="38.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.8" />
+<text x="725.0" y="29.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">inference serving</text>
+<line x1="725.0" y1="66.0" x2="725.0" y2="44.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="4.0" y="68.0" width="862.0" height="182.0" rx="8" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.5" stroke-dasharray="6,4" />
+<rect x="10.0" y="78.0" width="300.0" height="164.0" rx="6" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="22.0" y="102.0" text-anchor="start" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">Attention kernels</text>
+<rect x="20.0" y="114.0" width="280.0" height="34.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.5" />
+<text x="32.0" y="137.0" text-anchor="start" font-size="16" fill="#222222" font-weight="normal" font-style="normal">dual-kernel decoding</text>
+<circle cx="284.0" cy="131.0" r="11" fill="#1F4E79"/>
+<text x="284.0" y="136.4" text-anchor="middle" font-size="15" fill="#FFFFFF" font-weight="bold" font-style="normal">2</text>
+<rect x="20.0" y="156.0" width="280.0" height="34.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.5" />
+<text x="32.0" y="179.0" text-anchor="start" font-size="16" fill="#222222" font-weight="normal" font-style="normal">per-SM dKV buffers</text>
+<circle cx="284.0" cy="173.0" r="11" fill="#1F4E79"/>
+<text x="284.0" y="178.4" text-anchor="middle" font-size="15" fill="#FFFFFF" font-weight="bold" font-style="normal">3</text>
+<rect x="322.0" y="78.0" width="300.0" height="164.0" rx="6" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="334.0" y="102.0" text-anchor="start" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">DeepGEMM GEMMs</text>
+<rect x="332.0" y="114.0" width="280.0" height="34.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.5" />
+<text x="344.0" y="137.0" text-anchor="start" font-size="16" fill="#222222" font-weight="normal" font-style="normal">no cuBLAS</text>
+<circle cx="596.0" cy="131.0" r="11" fill="#1F4E79"/>
+<text x="596.0" y="136.4" text-anchor="middle" font-size="15" fill="#FFFFFF" font-weight="bold" font-style="normal">2</text>
+<rect x="332.0" y="156.0" width="280.0" height="34.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.5" />
+<text x="344.0" y="179.0" text-anchor="start" font-size="16" fill="#222222" font-weight="normal" font-style="normal">no split-K by default</text>
+<circle cx="596.0" cy="173.0" r="11" fill="#1F4E79"/>
+<text x="596.0" y="178.4" text-anchor="middle" font-size="15" fill="#FFFFFF" font-weight="bold" font-style="normal">2</text>
+<rect x="332.0" y="198.0" width="280.0" height="34.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.5" />
+<text x="344.0" y="221.0" text-anchor="start" font-size="16" fill="#222222" font-weight="normal" font-style="normal">mHC: fixed 16-way split</text>
+<circle cx="596.0" cy="215.0" r="11" fill="#1F4E79"/>
+<text x="596.0" y="220.4" text-anchor="middle" font-size="15" fill="#FFFFFF" font-weight="bold" font-style="normal">3</text>
+<circle cx="570.0" cy="215.0" r="11" fill="#1F4E79"/>
+<text x="570.0" y="220.4" text-anchor="middle" font-size="15" fill="#FFFFFF" font-weight="bold" font-style="normal">2</text>
+<rect x="634.0" y="78.0" width="226.0" height="164.0" rx="6" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="646.0" y="102.0" text-anchor="start" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">MoE backward</text>
+<rect x="644.0" y="114.0" width="206.0" height="34.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.5" />
+<text x="656.0" y="137.0" text-anchor="start" font-size="16" fill="#222222" font-weight="normal" font-style="normal">fixed token order</text>
+<circle cx="834.0" cy="131.0" r="11" fill="#1F4E79"/>
+<text x="834.0" y="136.4" text-anchor="middle" font-size="15" fill="#FFFFFF" font-weight="bold" font-style="normal">3</text>
+<rect x="644.0" y="156.0" width="206.0" height="34.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.5" />
+<text x="656.0" y="179.0" text-anchor="start" font-size="16" fill="#222222" font-weight="normal" font-style="normal">isolated rank buffers</text>
+<circle cx="834.0" cy="173.0" r="11" fill="#1F4E79"/>
+<text x="834.0" y="178.4" text-anchor="middle" font-size="15" fill="#FFFFFF" font-weight="bold" font-style="normal">3</text>
+<rect x="10.0" y="276.0" width="400.0" height="66.0" rx="6" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2" />
+<text x="22.0" y="297.0" text-anchor="start" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">TileLang compiler</text>
+<circle cx="390.0" cy="292.0" r="11" fill="#1F4E79"/>
+<text x="390.0" y="297.4" text-anchor="middle" font-size="15" fill="#FFFFFF" font-weight="bold" font-style="normal">1</text>
+<rect x="20.0" y="306.0" width="122.0" height="30.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<text x="81.0" y="326.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">host codegen</text>
+<rect x="150.0" y="306.0" width="112.0" height="30.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<text x="206.0" y="326.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">Z3 analysis</text>
+<rect x="270.0" y="306.0" width="130.0" height="30.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<text x="335.0" y="326.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">exact numerics</text>
+<line x1="160.0" y1="274.0" x2="160.0" y2="244.0" stroke="#1F4E79" stroke-width="2.4" marker-end="url(#arrAcc)"/>
+<text x="172.0" y="265.0" text-anchor="start" font-size="16" fill="#1F4E79" font-weight="normal" font-style="italic">builds most fused kernels</text>
+<circle cx="450.0" cy="290.0" r="11" fill="#1F4E79"/>
+<text x="450.0" y="295.4" text-anchor="middle" font-size="15" fill="#FFFFFF" font-weight="bold" font-style="normal">1</text>
+<text x="468.0" y="296.0" text-anchor="start" font-size="16" fill="#222222" font-weight="normal" font-style="normal">compiler and numerics</text>
+<circle cx="450.0" cy="312.0" r="11" fill="#1F4E79"/>
+<text x="450.0" y="317.4" text-anchor="middle" font-size="15" fill="#FFFFFF" font-weight="bold" font-style="normal">2</text>
+<text x="468.0" y="318.0" text-anchor="start" font-size="16" fill="#222222" font-weight="normal" font-style="normal">batch-invariant forward</text>
+<circle cx="450.0" cy="334.0" r="11" fill="#1F4E79"/>
+<text x="450.0" y="339.4" text-anchor="middle" font-size="15" fill="#FFFFFF" font-weight="bold" font-style="normal">3</text>
+<text x="468.0" y="340.0" text-anchor="start" font-size="16" fill="#222222" font-weight="normal" font-style="normal">deterministic backward</text>
+</svg>

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="268pt"
+     viewBox="0 0 870 268" font-family="Helvetica, Arial, sans-serif">
+  <!-- fig_gin: one warp reaches a remote node through NCCL Gin (GDAKI: WQE + doorbell, the NIC does the RDMA
+       write and then the signal add) and a same-node peer through an LSA pointer (TMA store over NVLink). 1 unit = 1pt -->
+  <defs>
+    <marker id="arrA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9"
+            markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/>
+    </marker>
+    <marker id="arrK" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9"
+            markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#595959"/>
+    </marker>
+  </defs>
+
+  <!-- local GPU -->
+  <rect x="2" y="24" width="390" height="238" rx="6" fill="none" stroke="#7F7F7F" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <text x="290" y="252" text-anchor="middle" font-size="17" font-weight="bold" fill="#595959">local GPU</text>
+  <rect x="14" y="40" width="150" height="196" rx="5" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5"/>
+  <text x="89" y="132" text-anchor="middle" font-size="18" font-weight="bold" fill="#1F4E79">warp</text>
+  <text x="89" y="156" text-anchor="middle" font-size="17" fill="#222222">channel c</text>
+  <rect x="236" y="64" width="144" height="48" rx="4" fill="#FFF2CC" stroke="#7F6000" stroke-width="1.5"/>
+  <text x="308" y="94.3" text-anchor="middle" font-size="18" fill="#222222">WQE in HBM</text>
+
+  <!-- NIC -->
+  <rect x="480" y="40" width="120" height="86" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.5"/>
+  <text x="540" y="82" text-anchor="middle" font-size="18" font-weight="bold" fill="#222222">NIC</text>
+  <text x="540" y="106" text-anchor="middle" font-size="16" fill="#222222">QP = context c</text>
+
+  <!-- remote node -->
+  <rect x="650" y="20" width="216" height="142" rx="6" fill="none" stroke="#7F7F7F" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <text x="758" y="154" text-anchor="middle" font-size="17" font-weight="bold" fill="#595959">remote node</text>
+  <rect x="666" y="32" width="184" height="40" rx="4" fill="#FFF2CC" stroke="#7F6000" stroke-width="1.5"/>
+  <text x="758" y="58.3" text-anchor="middle" font-size="18" fill="#222222">window</text>
+  <rect x="666" y="86" width="184" height="40" rx="4" fill="#FFF2CC" stroke="#7F6000" stroke-width="1.5"/>
+  <text x="758" y="112.3" text-anchor="middle" font-size="18" fill="#222222">signal</text>
+
+  <!-- same-node peer -->
+  <rect x="650" y="170" width="216" height="92" rx="6" fill="none" stroke="#7F7F7F" stroke-width="1.5" stroke-dasharray="6,4"/>
+  <text x="758" y="252" text-anchor="middle" font-size="17" font-weight="bold" fill="#595959">NVLink peer</text>
+  <rect x="666" y="178" width="184" height="42" rx="4" fill="#FFF2CC" stroke="#7F6000" stroke-width="1.5"/>
+  <text x="758" y="204.3" text-anchor="middle" font-size="18" fill="#222222">window</text>
+
+  <!-- RDMA path -->
+  <line x1="165" y1="88" x2="235" y2="88" stroke="#1F4E79" stroke-width="2.5" marker-end="url(#arrA)"/>
+  <text x="200" y="79" text-anchor="middle" font-size="17" font-family="Menlo, 'Courier New', monospace" fill="#1F4E79">put</text>
+  <line x1="381" y1="88" x2="479" y2="88" stroke="#1F4E79" stroke-width="2.5" marker-end="url(#arrA)"/>
+  <text x="432" y="79" text-anchor="middle" font-size="17" fill="#1F4E79">doorbell</text>
+  <line x1="601" y1="52" x2="665" y2="52" stroke="#595959" stroke-width="2.5" marker-end="url(#arrK)"/>
+  <text x="625" y="44" text-anchor="middle" font-size="17" fill="#595959">data</text>
+  <line x1="601" y1="106" x2="665" y2="106" stroke="#595959" stroke-width="2.5" marker-end="url(#arrK)"/>
+  <text x="625" y="98" text-anchor="middle" font-size="17" fill="#595959">+1</text>
+
+  <!-- NVLink path -->
+  <line x1="165" y1="199" x2="665" y2="199" stroke="#1F4E79" stroke-width="2.5" marker-end="url(#arrA)"/>
+  <text x="520" y="188" text-anchor="middle" font-size="17" fill="#1F4E79">TMA store · LSA pointer</text>
+</svg>

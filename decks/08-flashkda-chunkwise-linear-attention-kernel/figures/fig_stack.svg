@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480pt" height="300pt" viewBox="0 0 480 300" font-family="Helvetica, Arial, sans-serif">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker><marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker><marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker><pattern id="hr" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" fill="#FBE5E5"/><line x1="0" y1="0" x2="0" y2="6" stroke="#C00000" stroke-width="1.6"/></pattern></defs>
+<rect x="10.0" y="8.0" width="460.0" height="58.0" rx="5" fill="#F2F2F2" stroke="#595959" stroke-width="1.5"/>
+<text x="240.0" y="34.0" font-size="20" font-weight="bold" fill="#222222" text-anchor="middle" font-style="normal">Kimi K3: 69 KDA layers</text>
+<text x="240.0" y="56.0" font-size="17" font-weight="normal" fill="#595959" text-anchor="middle" font-style="italic">training and prefill</text>
+<line x1="240.0" y1="68.0" x2="240.0" y2="92.0" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+<rect x="10.0" y="94.0" width="460.0" height="58.0" rx="5" fill="#FFFFFF" stroke="#595959" stroke-width="1.5"/>
+<text x="240.0" y="120.0" font-size="20" font-weight="bold" fill="#222222" text-anchor="middle" font-style="normal">flash-linear-attention</text>
+<text x="240.0" y="142.0" font-size="17" font-weight="normal" fill="#595959" text-anchor="middle" font-style="normal">chunk_kda API</text>
+<path d="M150,154 V196" fill="none" stroke="#1F4E79" stroke-width="3" marker-end="url(#b)"/>
+<text x="160.0" y="182.0" font-size="16" font-weight="bold" fill="#1F4E79" text-anchor="start" font-style="normal">auto-dispatch</text>
+<path d="M370,154 V196" fill="none" stroke="#595959" stroke-width="2" marker-end="url(#a)" stroke-dasharray="5,4"/>
+<text x="362.0" y="182.0" font-size="16" font-weight="normal" fill="#595959" text-anchor="end" font-style="normal">opt-out</text>
+<rect x="10.0" y="198.0" width="280.0" height="92.0" rx="5" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.5"/>
+<text x="150.0" y="232.0" font-size="22" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-style="normal">FlashKDA</text>
+<text x="150.0" y="258.0" font-size="17" font-weight="normal" fill="#222222" text-anchor="middle" font-style="normal">CUTLASS · SM90+</text>
+<text x="150.0" y="280.0" font-size="17" font-weight="normal" fill="#222222" text-anchor="middle" font-style="normal">two fused kernels</text>
+<rect x="306.0" y="198.0" width="164.0" height="92.0" rx="5" fill="#F2F2F2" stroke="#595959" stroke-width="1.5"/>
+<text x="388.0" y="238.0" font-size="19" font-weight="bold" fill="#222222" text-anchor="middle" font-style="normal">Triton</text>
+<text x="388.0" y="262.0" font-size="17" font-weight="normal" fill="#222222" text-anchor="middle" font-style="normal">reference</text>
+</svg>

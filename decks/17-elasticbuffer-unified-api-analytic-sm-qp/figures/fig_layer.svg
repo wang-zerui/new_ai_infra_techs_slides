@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="244pt"
+     viewBox="0 0 870 244" font-family="Helvetica, Arial, sans-serif">
+  <!-- fig_layer: where EPBuffer sits in one MoE layer; the dispatch handle is reused by forward combine and by
+       both backward ops (combine backward = dispatch, dispatch backward = combine). 1 unit = 1pt -->
+  <defs>
+    <marker id="arrK" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9"
+            markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#333333"/>
+    </marker>
+    <marker id="arrY" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9"
+            markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#7F6000"/>
+    </marker>
+  </defs>
+
+  <text x="8" y="24" font-size="18" font-weight="bold" fill="#595959">Forward</text>
+  <text x="8" y="236" font-size="18" font-weight="bold" fill="#595959">Backward</text>
+
+  <!-- forward row -->
+  <rect x="8" y="38" width="130" height="48" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.5"/>
+  <text x="73" y="68.3" text-anchor="middle" font-size="18" fill="#222222">router</text>
+  <rect x="182" y="38" width="180" height="48" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5"/>
+  <text x="272" y="68" text-anchor="middle" font-size="17" font-weight="bold" font-family="Menlo, 'Courier New', monospace" fill="#1F4E79">dispatch</text>
+  <rect x="406" y="38" width="150" height="48" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.5"/>
+  <text x="481" y="68.3" text-anchor="middle" font-size="18" fill="#222222">expert GEMM</text>
+  <rect x="600" y="38" width="180" height="48" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5"/>
+  <text x="690" y="68" text-anchor="middle" font-size="17" font-weight="bold" font-family="Menlo, 'Courier New', monospace" fill="#1F4E79">combine</text>
+  <text x="866" y="68.3" text-anchor="end" font-size="18" fill="#222222">output</text>
+  <line x1="139" y1="62" x2="181" y2="62" stroke="#333333" stroke-width="2.5" marker-end="url(#arrK)"/>
+  <line x1="363" y1="62" x2="405" y2="62" stroke="#333333" stroke-width="2.5" marker-end="url(#arrK)"/>
+  <line x1="557" y1="62" x2="599" y2="62" stroke="#333333" stroke-width="2.5" marker-end="url(#arrK)"/>
+  <line x1="781" y1="62" x2="806" y2="62" stroke="#333333" stroke-width="2.5" marker-end="url(#arrK)"/>
+
+  <!-- backward row (gradients flow right to left) -->
+  <rect x="8" y="160" width="130" height="48" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.5"/>
+  <text x="73" y="190.3" text-anchor="middle" font-size="18" fill="#222222">router grad</text>
+  <rect x="182" y="160" width="180" height="48" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5"/>
+  <text x="272" y="190" text-anchor="middle" font-size="16" font-weight="bold" font-family="Menlo, 'Courier New', monospace" fill="#1F4E79">combine(handle)</text>
+  <rect x="406" y="160" width="150" height="48" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.5"/>
+  <text x="481" y="190.3" text-anchor="middle" font-size="18" fill="#222222">GEMM grad</text>
+  <rect x="600" y="160" width="180" height="48" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5"/>
+  <text x="690" y="190" text-anchor="middle" font-size="16" font-weight="bold" font-family="Menlo, 'Courier New', monospace" fill="#1F4E79">dispatch(handle)</text>
+  <text x="866" y="190.3" text-anchor="end" font-size="18" fill="#222222">grad</text>
+  <line x1="181" y1="184" x2="139" y2="184" stroke="#333333" stroke-width="2.5" marker-end="url(#arrK)"/>
+  <line x1="405" y1="184" x2="363" y2="184" stroke="#333333" stroke-width="2.5" marker-end="url(#arrK)"/>
+  <line x1="599" y1="184" x2="557" y2="184" stroke="#333333" stroke-width="2.5" marker-end="url(#arrK)"/>
+  <line x1="826" y1="184" x2="781" y2="184" stroke="#333333" stroke-width="2.5" marker-end="url(#arrK)"/>
+
+  <!-- the routing handle, produced once, reused three times -->
+  <rect x="420" y="104" width="122" height="38" rx="4" fill="#FFF2CC" stroke="#7F6000" stroke-width="1.5"/>
+  <text x="481" y="129" text-anchor="middle" font-size="17" font-family="Menlo, 'Courier New', monospace" fill="#222222">handle</text>
+  <path d="M272,87 V123 H419" fill="none" stroke="#7F6000" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrY)"/>
+  <path d="M543,123 H690 V88" fill="none" stroke="#7F6000" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrY)"/>
+  <path d="M690,123 V159" fill="none" stroke="#7F6000" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrY)"/>
+  <path d="M460,143 V150 H310 V159" fill="none" stroke="#7F6000" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrY)"/>
+</svg>

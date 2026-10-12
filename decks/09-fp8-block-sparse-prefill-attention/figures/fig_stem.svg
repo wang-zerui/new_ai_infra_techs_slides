@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="306pt" viewBox="0 0 870 306" font-family="Helvetica, Arial, sans-serif">
+  <!-- fig_stem: Stem mask generation on GPU: pool, OAM GEMM block logits, TPD top-k with fixed retention (slide figure, 1 unit = 1pt) -->
+  <defs>
+    <marker id="a_neu" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+    <marker id="a_ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+    <marker id="a_prb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+    <marker id="a_acc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+    <marker id="a_good" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2E7D32"/></marker>
+    <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="1.6"/></pattern>
+    <pattern id="hatchNeu" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="1.6"/></pattern>
+  </defs>
+  <rect x="4.0" y="30.0" width="172.0" height="70.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+  <text x="90.0" y="60.7" font-size="18" fill="#1F4E79" text-anchor="middle">Pool each</text>
+  <text x="90.0" y="81.9" font-size="18" fill="#1F4E79" text-anchor="middle">128-token block</text>
+  <line x1="90.0" y1="101.0" x2="90.0" y2="136.0" stroke="#1F4E79" stroke-width="2.2" marker-end="url(#a_acc)"/>
+  <text x="98.0" y="124.0" font-size="16" fill="#1F4E79" text-anchor="start">Q̄  K̄  V bias</text>
+  <rect x="4.0" y="138.0" width="172.0" height="70.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+  <text x="90.0" y="168.7" font-size="18" fill="#1F4E79" text-anchor="middle">OAM GEMM</text>
+  <text x="90.0" y="189.9" font-size="18" fill="#1F4E79" text-anchor="middle">Q̄·K̄ᵀ + V bias</text>
+  <text x="4.0" y="238.0" font-size="17" fill="#595959" text-anchor="start">anti-diagonal, stride 16</text>
+  <text x="4.0" y="262.0" font-size="17" fill="#595959" text-anchor="start">blocks = kernel tiles</text>
+  <rect x="226.0" y="50.0" width="27.0" height="27.0" rx="1" fill="#2E6699" stroke="#7F7F7F" stroke-width="0.8" />
+  <rect x="226.0" y="80.0" width="27.0" height="27.0" rx="1" fill="#6FA0CC" stroke="#7F7F7F" stroke-width="0.8" />
+  <rect x="256.0" y="80.0" width="27.0" height="27.0" rx="1" fill="#2E6699" stroke="#7F7F7F" stroke-width="0.8" />
+  <rect x="226.0" y="110.0" width="27.0" height="27.0" rx="1" fill="#6FA0CC" stroke="#7F7F7F" stroke-width="0.8" />
+  <rect x="256.0" y="110.0" width="27.0" height="27.0" rx="1" fill="#EEF4FA" stroke="#7F7F7F" stroke-width="0.8" />
+  <rect x="286.0" y="110.0" width="27.0" height="27.0" rx="1" fill="#2E6699" stroke="#7F7F7F" stroke-width="0.8" />
+  <rect x="226.0" y="140.0" width="27.0" height="27.0" rx="1" fill="#6FA0CC" stroke="#7F7F7F" stroke-width="0.8" />
+  <rect x="256.0" y="140.0" width="27.0" height="27.0" rx="1" fill="#6FA0CC" stroke="#7F7F7F" stroke-width="0.8" />
+  <rect x="286.0" y="140.0" width="27.0" height="27.0" rx="1" fill="#EEF4FA" stroke="#7F7F7F" stroke-width="0.8" />
+  <rect x="316.0" y="140.0" width="27.0" height="27.0" rx="1" fill="#2E6699" stroke="#7F7F7F" stroke-width="0.8" />
+  <rect x="226.0" y="170.0" width="27.0" height="27.0" rx="1" fill="#6FA0CC" stroke="#7F7F7F" stroke-width="0.8" />
+  <rect x="256.0" y="170.0" width="27.0" height="27.0" rx="1" fill="#EEF4FA" stroke="#7F7F7F" stroke-width="0.8" />
+  <rect x="286.0" y="170.0" width="27.0" height="27.0" rx="1" fill="#BDD7EE" stroke="#7F7F7F" stroke-width="0.8" />
+  <rect x="316.0" y="170.0" width="27.0" height="27.0" rx="1" fill="#EEF4FA" stroke="#7F7F7F" stroke-width="0.8" />
+  <rect x="346.0" y="170.0" width="27.0" height="27.0" rx="1" fill="#2E6699" stroke="#7F7F7F" stroke-width="0.8" />
+  <rect x="226.0" y="200.0" width="27.0" height="27.0" rx="1" fill="#6FA0CC" stroke="#7F7F7F" stroke-width="0.8" />
+  <rect x="256.0" y="200.0" width="27.0" height="27.0" rx="1" fill="#EEF4FA" stroke="#7F7F7F" stroke-width="0.8" />
+  <rect x="286.0" y="200.0" width="27.0" height="27.0" rx="1" fill="#EEF4FA" stroke="#7F7F7F" stroke-width="0.8" />
+  <rect x="316.0" y="200.0" width="27.0" height="27.0" rx="1" fill="#6FA0CC" stroke="#7F7F7F" stroke-width="0.8" />
+  <rect x="346.0" y="200.0" width="27.0" height="27.0" rx="1" fill="#BDD7EE" stroke="#7F7F7F" stroke-width="0.8" />
+  <rect x="376.0" y="200.0" width="27.0" height="27.0" rx="1" fill="#2E6699" stroke="#7F7F7F" stroke-width="0.8" />
+  <text x="316.0" y="38.0" font-size="17" fill="#222222" text-anchor="middle" font-weight="bold">block logits</text>
+  <line x1="177.0" y1="173.0" x2="220.0" y2="173.0" stroke="#1F4E79" stroke-width="2.2" marker-end="url(#a_acc)"/>
+  <line x1="406.0" y1="140.0" x2="422.0" y2="140.0" stroke="#1F4E79" stroke-width="2.2" marker-end="url(#a_acc)"/>
+  <rect x="424.0" y="96.0" width="120.0" height="88.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+  <text x="484.0" y="125.1" font-size="18" fill="#1F4E79" text-anchor="middle">TPD</text>
+  <text x="484.0" y="146.3" font-size="18" fill="#1F4E79" text-anchor="middle">top-k per row</text>
+  <text x="484.0" y="167.5" font-size="18" fill="#1F4E79" text-anchor="middle">+ fixed keeps</text>
+  <line x1="545.0" y1="140.0" x2="568.0" y2="140.0" stroke="#1F4E79" stroke-width="2.2" marker-end="url(#a_acc)"/>
+  <rect x="574.0" y="50.0" width="27.0" height="27.0" rx="2" fill="#1F4E79" stroke="#1F4E79" stroke-width="1.2" />
+  <rect x="574.0" y="80.0" width="27.0" height="27.0" rx="2" fill="#1F4E79" stroke="#1F4E79" stroke-width="1.2" />
+  <rect x="604.0" y="80.0" width="27.0" height="27.0" rx="2" fill="#1F4E79" stroke="#1F4E79" stroke-width="1.2" />
+  <rect x="574.0" y="110.0" width="27.0" height="27.0" rx="2" fill="#1F4E79" stroke="#1F4E79" stroke-width="1.2" />
+  <rect x="604.0" y="110.0" width="27.0" height="27.0" rx="2" fill="#FFFFFF" stroke="#BFBFBF" stroke-width="1.2" stroke-dasharray="3,3" />
+  <rect x="634.0" y="110.0" width="27.0" height="27.0" rx="2" fill="#1F4E79" stroke="#1F4E79" stroke-width="1.2" />
+  <rect x="574.0" y="140.0" width="27.0" height="27.0" rx="2" fill="#1F4E79" stroke="#1F4E79" stroke-width="1.2" />
+  <rect x="604.0" y="140.0" width="27.0" height="27.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.6" />
+  <rect x="634.0" y="140.0" width="27.0" height="27.0" rx="2" fill="#FFFFFF" stroke="#BFBFBF" stroke-width="1.2" stroke-dasharray="3,3" />
+  <rect x="664.0" y="140.0" width="27.0" height="27.0" rx="2" fill="#1F4E79" stroke="#1F4E79" stroke-width="1.2" />
+  <rect x="574.0" y="170.0" width="27.0" height="27.0" rx="2" fill="#1F4E79" stroke="#1F4E79" stroke-width="1.2" />
+  <rect x="604.0" y="170.0" width="27.0" height="27.0" rx="2" fill="#FFFFFF" stroke="#BFBFBF" stroke-width="1.2" stroke-dasharray="3,3" />
+  <rect x="634.0" y="170.0" width="27.0" height="27.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.6" />
+  <rect x="664.0" y="170.0" width="27.0" height="27.0" rx="2" fill="#FFFFFF" stroke="#BFBFBF" stroke-width="1.2" stroke-dasharray="3,3" />
+  <rect x="694.0" y="170.0" width="27.0" height="27.0" rx="2" fill="#1F4E79" stroke="#1F4E79" stroke-width="1.2" />
+  <rect x="574.0" y="200.0" width="27.0" height="27.0" rx="2" fill="#1F4E79" stroke="#1F4E79" stroke-width="1.2" />
+  <rect x="604.0" y="200.0" width="27.0" height="27.0" rx="2" fill="#FFFFFF" stroke="#BFBFBF" stroke-width="1.2" stroke-dasharray="3,3" />
+  <rect x="634.0" y="200.0" width="27.0" height="27.0" rx="2" fill="#FFFFFF" stroke="#BFBFBF" stroke-width="1.2" stroke-dasharray="3,3" />
+  <rect x="664.0" y="200.0" width="27.0" height="27.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.6" />
+  <rect x="694.0" y="200.0" width="27.0" height="27.0" rx="2" fill="#FFFFFF" stroke="#BFBFBF" stroke-width="1.2" stroke-dasharray="3,3" />
+  <rect x="724.0" y="200.0" width="27.0" height="27.0" rx="2" fill="#1F4E79" stroke="#1F4E79" stroke-width="1.2" />
+  <text x="664.0" y="38.0" font-size="17" fill="#222222" text-anchor="middle" font-weight="bold">uint8 block mask</text>
+  <rect x="454.0" y="244.0" width="20.0" height="20.0" rx="2" fill="#1F4E79" stroke="#1F4E79" stroke-width="1.2" />
+  <text x="480.0" y="260.0" font-size="17" fill="#222222" text-anchor="start">always kept: first and diagonal</text>
+  <rect x="454.0" y="274.0" width="20.0" height="20.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.6" />
+  <text x="480.0" y="290.0" font-size="17" fill="#222222" text-anchor="start">top-k by score</text>
+</svg>

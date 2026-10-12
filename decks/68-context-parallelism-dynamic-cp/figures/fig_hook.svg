@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480pt" height="352pt" viewBox="0 0 480 352" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_hook: strip of 8 token chunks (linear ops) vs 8x8 causal triangle (attention) -->
+<text x="52.0" y="22.0" text-anchor="start" font-size="19" fill="#222222" font-weight="bold" font-style="normal">Linear / LayerNorm / MLP</text>
+<rect x="52.0" y="34.0" width="26.0" height="30.0" rx="0" fill="#F2F2F2" stroke="#595959" stroke-width="1.5" />
+<rect x="78.0" y="34.0" width="26.0" height="30.0" rx="0" fill="#F2F2F2" stroke="#595959" stroke-width="1.5" />
+<rect x="104.0" y="34.0" width="26.0" height="30.0" rx="0" fill="#F2F2F2" stroke="#595959" stroke-width="1.5" />
+<rect x="130.0" y="34.0" width="26.0" height="30.0" rx="0" fill="#F2F2F2" stroke="#595959" stroke-width="1.5" />
+<rect x="156.0" y="34.0" width="26.0" height="30.0" rx="0" fill="#F2F2F2" stroke="#595959" stroke-width="1.5" />
+<rect x="182.0" y="34.0" width="26.0" height="30.0" rx="0" fill="#F2F2F2" stroke="#595959" stroke-width="1.5" />
+<rect x="208.0" y="34.0" width="26.0" height="30.0" rx="0" fill="#F2F2F2" stroke="#595959" stroke-width="1.5" />
+<rect x="234.0" y="34.0" width="26.0" height="30.0" rx="0" fill="#F2F2F2" stroke="#595959" stroke-width="1.5" />
+<text x="278.0" y="45.0" text-anchor="start" font-size="18" fill="#222222" font-weight="normal" font-style="normal">work grows</text>
+<text x="278.0" y="67.0" text-anchor="start" font-size="18" fill="#222222" font-weight="normal" font-style="normal">with S</text>
+<text x="52.0" y="100.0" text-anchor="start" font-size="19" fill="#222222" font-weight="bold" font-style="normal">Attention (causal)</text>
+<text x="156.0" y="120.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="italic">keys and values</text>
+<text x="40" y="232.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-style="italic" transform="rotate(-90 40 232.0)">queries</text>
+<rect x="52.0" y="128.0" width="26.0" height="26.0" rx="0" fill="#FFFFFF" stroke="#D9D9D9" stroke-width="1" />
+<path d="M52.0,128.0 L52.0,154.0 L78.0,154.0 z" fill="#FBE5E5" stroke="#C00000" stroke-width="1.2"/>
+<rect x="78.0" y="128.0" width="26.0" height="26.0" rx="0" fill="#FFFFFF" stroke="#D9D9D9" stroke-width="1" />
+<rect x="104.0" y="128.0" width="26.0" height="26.0" rx="0" fill="#FFFFFF" stroke="#D9D9D9" stroke-width="1" />
+<rect x="130.0" y="128.0" width="26.0" height="26.0" rx="0" fill="#FFFFFF" stroke="#D9D9D9" stroke-width="1" />
+<rect x="156.0" y="128.0" width="26.0" height="26.0" rx="0" fill="#FFFFFF" stroke="#D9D9D9" stroke-width="1" />
+<rect x="182.0" y="128.0" width="26.0" height="26.0" rx="0" fill="#FFFFFF" stroke="#D9D9D9" stroke-width="1" />
+<rect x="208.0" y="128.0" width="26.0" height="26.0" rx="0" fill="#FFFFFF" stroke="#D9D9D9" stroke-width="1" />
+<rect x="234.0" y="128.0" width="26.0" height="26.0" rx="0" fill="#FFFFFF" stroke="#D9D9D9" stroke-width="1" />
+<rect x="52.0" y="154.0" width="26.0" height="26.0" rx="0" fill="#FBE5E5" stroke="#C00000" stroke-width="1.2" />
+<rect x="78.0" y="154.0" width="26.0" height="26.0" rx="0" fill="#FFFFFF" stroke="#D9D9D9" stroke-width="1" />
+<path d="M78.0,154.0 L78.0,180.0 L104.0,180.0 z" fill="#FBE5E5" stroke="#C00000" stroke-width="1.2"/>
+<rect x="104.0" y="154.0" width="26.0" height="26.0" rx="0" fill="#FFFFFF" stroke="#D9D9D9" stroke-width="1" />
+<rect x="130.0" y="154.0" width="26.0" height="26.0" rx="0" fill="#FFFFFF" stroke="#D9D9D9" stroke-width="1" />
+<rect x="156.0" y="154.0" width="26.0" height="26.0" rx="0" fill="#FFFFFF" stroke="#D9D9D9" stroke-width="1" />
+<rect x="182.0" y="154.0" width="26.0" height="26.0" rx="0" fill="#FFFFFF" stroke="#D9D9D9" stroke-width="1" />
+<rect x="208.0" y="154.0" width="26.0" height="26.0" rx="0" fill="#FFFFFF" stroke="#D9D9D9" stroke-width="1" />
+<rect x="234.0" y="154.0" width="26.0" height="26.0" rx="0" fill="#FFFFFF" stroke="#D9D9D9" stroke-width="1" />
+<rect x="52.0" y="180.0" width="26.0" height="26.0" rx="0" fill="#FBE5E5" stroke="#C00000" stroke-width="1.2" />
+<rect x="78.0" y="180.0" width="26.0" height="26.0" rx="0" fill="#FBE5E5" stroke="#C00000" stroke-width="1.2" />
+<rect x="104.0" y="180.0" width="26.0" height="26.0" rx="0" fill="#FFFFFF" stroke="#D9D9D9" stroke-width="1" />
+<path d="M104.0,180.0 L104.0,206.0 L130.0,206.0 z" fill="#FBE5E5" stroke="#C00000" stroke-width="1.2"/>
+<rect x="130.0" y="180.0" width="26.0" height="26.0" rx="0" fill="#FFFFFF" stroke="#D9D9D9" stroke-width="1" />
+<rect x="156.0" y="180.0" width="26.0" height="26.0" rx="0" fill="#FFFFFF" stroke="#D9D9D9" stroke-width="1" />
+<rect x="182.0" y="180.0" width="26.0" height="26.0" rx="0" fill="#FFFFFF" stroke="#D9D9D9" stroke-width="1" />
+<rect x="208.0" y="180.0" width="26.0" height="26.0" rx="0" fill="#FFFFFF" stroke="#D9D9D9" stroke-width="1" />
+<rect x="234.0" y="180.0" width="26.0" height="26.0" rx="0" fill="#FFFFFF" stroke="#D9D9D9" stroke-width="1" />
+<rect x="52.0" y="206.0" width="26.0" height="26.0" rx="0" fill="#FBE5E5" stroke="#C00000" stroke-width="1.2" />
+<rect x="78.0" y="206.0" width="26.0" height="26.0" rx="0" fill="#FBE5E5" stroke="#C00000" stroke-width="1.2" />
+<rect x="104.0" y="206.0" width="26.0" height="26.0" rx="0" fill="#FBE5E5" stroke="#C00000" stroke-width="1.2" />
+<rect x="130.0" y="206.0" width="26.0" height="26.0" rx="0" fill="#FFFFFF" stroke="#D9D9D9" stroke-width="1" />
+<path d="M130.0,206.0 L130.0,232.0 L156.0,232.0 z" fill="#FBE5E5" stroke="#C00000" stroke-width="1.2"/>
+<rect x="156.0" y="206.0" width="26.0" height="26.0" rx="0" fill="#FFFFFF" stroke="#D9D9D9" stroke-width="1" />
+<rect x="182.0" y="206.0" width="26.0" height="26.0" rx="0" fill="#FFFFFF" stroke="#D9D9D9" stroke-width="1" />
+<rect x="208.0" y="206.0" width="26.0" height="26.0" rx="0" fill="#FFFFFF" stroke="#D9D9D9" stroke-width="1" />
+<rect x="234.0" y="206.0" width="26.0" height="26.0" rx="0" fill="#FFFFFF" stroke="#D9D9D9" stroke-width="1" />
+<rect x="52.0" y="232.0" width="26.0" height="26.0" rx="0" fill="#FBE5E5" stroke="#C00000" stroke-width="1.2" />
+<rect x="78.0" y="232.0" width="26.0" height="26.0" rx="0" fill="#FBE5E5" stroke="#C00000" stroke-width="1.2" />
+<rect x="104.0" y="232.0" width="26.0" height="26.0" rx="0" fill="#FBE5E5" stroke="#C00000" stroke-width="1.2" />
+<rect x="130.0" y="232.0" width="26.0" height="26.0" rx="0" fill="#FBE5E5" stroke="#C00000" stroke-width="1.2" />
+<rect x="156.0" y="232.0" width="26.0" height="26.0" rx="0" fill="#FFFFFF" stroke="#D9D9D9" stroke-width="1" />
+<path d="M156.0,232.0 L156.0,258.0 L182.0,258.0 z" fill="#FBE5E5" stroke="#C00000" stroke-width="1.2"/>
+<rect x="182.0" y="232.0" width="26.0" height="26.0" rx="0" fill="#FFFFFF" stroke="#D9D9D9" stroke-width="1" />
+<rect x="208.0" y="232.0" width="26.0" height="26.0" rx="0" fill="#FFFFFF" stroke="#D9D9D9" stroke-width="1" />
+<rect x="234.0" y="232.0" width="26.0" height="26.0" rx="0" fill="#FFFFFF" stroke="#D9D9D9" stroke-width="1" />
+<rect x="52.0" y="258.0" width="26.0" height="26.0" rx="0" fill="#FBE5E5" stroke="#C00000" stroke-width="1.2" />
+<rect x="78.0" y="258.0" width="26.0" height="26.0" rx="0" fill="#FBE5E5" stroke="#C00000" stroke-width="1.2" />
+<rect x="104.0" y="258.0" width="26.0" height="26.0" rx="0" fill="#FBE5E5" stroke="#C00000" stroke-width="1.2" />
+<rect x="130.0" y="258.0" width="26.0" height="26.0" rx="0" fill="#FBE5E5" stroke="#C00000" stroke-width="1.2" />
+<rect x="156.0" y="258.0" width="26.0" height="26.0" rx="0" fill="#FBE5E5" stroke="#C00000" stroke-width="1.2" />
+<rect x="182.0" y="258.0" width="26.0" height="26.0" rx="0" fill="#FFFFFF" stroke="#D9D9D9" stroke-width="1" />
+<path d="M182.0,258.0 L182.0,284.0 L208.0,284.0 z" fill="#FBE5E5" stroke="#C00000" stroke-width="1.2"/>
+<rect x="208.0" y="258.0" width="26.0" height="26.0" rx="0" fill="#FFFFFF" stroke="#D9D9D9" stroke-width="1" />
+<rect x="234.0" y="258.0" width="26.0" height="26.0" rx="0" fill="#FFFFFF" stroke="#D9D9D9" stroke-width="1" />
+<rect x="52.0" y="284.0" width="26.0" height="26.0" rx="0" fill="#FBE5E5" stroke="#C00000" stroke-width="1.2" />
+<rect x="78.0" y="284.0" width="26.0" height="26.0" rx="0" fill="#FBE5E5" stroke="#C00000" stroke-width="1.2" />
+<rect x="104.0" y="284.0" width="26.0" height="26.0" rx="0" fill="#FBE5E5" stroke="#C00000" stroke-width="1.2" />
+<rect x="130.0" y="284.0" width="26.0" height="26.0" rx="0" fill="#FBE5E5" stroke="#C00000" stroke-width="1.2" />
+<rect x="156.0" y="284.0" width="26.0" height="26.0" rx="0" fill="#FBE5E5" stroke="#C00000" stroke-width="1.2" />
+<rect x="182.0" y="284.0" width="26.0" height="26.0" rx="0" fill="#FBE5E5" stroke="#C00000" stroke-width="1.2" />
+<rect x="208.0" y="284.0" width="26.0" height="26.0" rx="0" fill="#FFFFFF" stroke="#D9D9D9" stroke-width="1" />
+<path d="M208.0,284.0 L208.0,310.0 L234.0,310.0 z" fill="#FBE5E5" stroke="#C00000" stroke-width="1.2"/>
+<rect x="234.0" y="284.0" width="26.0" height="26.0" rx="0" fill="#FFFFFF" stroke="#D9D9D9" stroke-width="1" />
+<rect x="52.0" y="310.0" width="26.0" height="26.0" rx="0" fill="#FBE5E5" stroke="#C00000" stroke-width="1.2" />
+<rect x="78.0" y="310.0" width="26.0" height="26.0" rx="0" fill="#FBE5E5" stroke="#C00000" stroke-width="1.2" />
+<rect x="104.0" y="310.0" width="26.0" height="26.0" rx="0" fill="#FBE5E5" stroke="#C00000" stroke-width="1.2" />
+<rect x="130.0" y="310.0" width="26.0" height="26.0" rx="0" fill="#FBE5E5" stroke="#C00000" stroke-width="1.2" />
+<rect x="156.0" y="310.0" width="26.0" height="26.0" rx="0" fill="#FBE5E5" stroke="#C00000" stroke-width="1.2" />
+<rect x="182.0" y="310.0" width="26.0" height="26.0" rx="0" fill="#FBE5E5" stroke="#C00000" stroke-width="1.2" />
+<rect x="208.0" y="310.0" width="26.0" height="26.0" rx="0" fill="#FBE5E5" stroke="#C00000" stroke-width="1.2" />
+<rect x="234.0" y="310.0" width="26.0" height="26.0" rx="0" fill="#FFFFFF" stroke="#D9D9D9" stroke-width="1" />
+<path d="M234.0,310.0 L234.0,336.0 L260.0,336.0 z" fill="#FBE5E5" stroke="#C00000" stroke-width="1.2"/>
+<text x="278.0" y="228.0" text-anchor="start" font-size="18" fill="#C00000" font-weight="bold" font-style="normal">work grows</text>
+<text x="278.0" y="252.0" text-anchor="start" font-size="18" fill="#C00000" font-weight="bold" font-style="normal">with S²</text>
+</svg>

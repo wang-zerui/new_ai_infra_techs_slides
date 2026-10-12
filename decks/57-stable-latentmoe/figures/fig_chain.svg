@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="248pt" viewBox="0 0 870 248" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_chain: vanilla latent routed path, problems in red -->
+<text x="30.0" y="103.0" text-anchor="middle" font-size="22"><tspan fill="#222222" font-weight="bold" font-style="italic">x</tspan></text>
+<line x1="46.0" y1="96.0" x2="74.0" y2="96.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="76.0" y="64.0" width="116.0" height="64.0" rx="5" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="134.0" y="92.0" text-anchor="middle" font-size="20"><tspan fill="#222222" font-weight="bold" font-style="normal">W</tspan><tspan fill="#222222" font-weight="bold" font-style="normal">↓</tspan></text>
+<text x="134.0" y="116.0" text-anchor="middle" font-size="17" fill="#7F7F7F" font-weight="normal" font-style="normal">7168 → 3584</text>
+<circle cx="134.0" cy="46.0" r="12" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="1.6"/>
+<text x="134.0" y="52.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="bold" font-style="normal">1</text>
+<rect x="262.0" y="14.0" width="316.0" height="124.0" rx="6" fill="#FFFFFF" stroke="#A6A6A6" stroke-width="1.4" />
+<rect x="258.0" y="18.0" width="316.0" height="124.0" rx="6" fill="#FFFFFF" stroke="#A6A6A6" stroke-width="1.4" />
+<rect x="254.0" y="22.0" width="316.0" height="124.0" rx="6" fill="#FFFFFF" stroke="#595959" stroke-width="1.8" stroke-dasharray="6,4" />
+<text x="562.0" y="162.0" text-anchor="end" font-size="17" fill="#7F7F7F" font-weight="normal" font-style="italic">16 of 896 experts</text>
+<line x1="194.0" y1="96.0" x2="253.0" y2="96.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<text x="220.0" y="84.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="italic">dispatch</text>
+<rect x="266.0" y="64.0" width="112.0" height="64.0" rx="5" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="322.0" y="92.0" text-anchor="middle" font-size="20"><tspan fill="#222222" font-weight="bold" font-style="normal">W</tspan><tspan fill="#222222" font-weight="bold" font-size="13.6" baseline-shift="-0.28em">g</tspan><tspan fill="#222222" font-weight="bold" font-style="normal">, W</tspan><tspan fill="#222222" font-weight="bold" font-size="13.6" baseline-shift="-0.28em">u</tspan></text>
+<text x="322.0" y="116.0" text-anchor="middle" font-size="17" fill="#7F7F7F" font-weight="normal" font-style="normal">3584 → 3072</text>
+<circle cx="322.0" cy="46.0" r="12" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="1.6"/>
+<text x="322.0" y="52.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="bold" font-style="normal">2</text>
+<circle cx="412.0" cy="96.0" r="17" fill="#FBE5E5" stroke="#C00000" stroke-width="2.2"/>
+<text x="412.0" y="103.0" text-anchor="middle" font-size="22" fill="#C00000" font-weight="bold" font-style="normal">×</text>
+<line x1="380.0" y1="96.0" x2="394.0" y2="96.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="442.0" y="64.0" width="112.0" height="64.0" rx="5" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="498.0" y="92.0" text-anchor="middle" font-size="20"><tspan fill="#222222" font-weight="bold" font-style="normal">W</tspan><tspan fill="#222222" font-weight="bold" font-size="13.6" baseline-shift="-0.28em">d</tspan></text>
+<text x="498.0" y="116.0" text-anchor="middle" font-size="17" fill="#7F7F7F" font-weight="normal" font-style="normal">3072 → 3584</text>
+<circle cx="498.0" cy="46.0" r="12" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="1.6"/>
+<text x="498.0" y="52.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="bold" font-style="normal">3</text>
+<line x1="430.0" y1="96.0" x2="441.0" y2="96.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<line x1="580.0" y1="96.0" x2="618.0" y2="96.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<circle cx="640.0" cy="96.0" r="21" fill="#FBE5E5" stroke="#C00000" stroke-width="2.2"/>
+<text x="640.0" y="104.0" text-anchor="middle" font-size="22" fill="#C00000" font-weight="bold" font-style="normal">Σ</text>
+<text x="605.5" y="84.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="italic">combine</text>
+<line x1="662.0" y1="96.0" x2="699.0" y2="96.0" stroke="#C00000" stroke-width="2.4" marker-end="url(#arrPrb)" stroke-dasharray="5,4"/>
+<rect x="700.0" y="64.0" width="118.0" height="64.0" rx="5" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="759.0" y="92.0" text-anchor="middle" font-size="20"><tspan fill="#222222" font-weight="bold" font-style="normal">W</tspan><tspan fill="#222222" font-weight="bold" font-style="normal">↑</tspan></text>
+<text x="759.0" y="116.0" text-anchor="middle" font-size="17" fill="#7F7F7F" font-weight="normal" font-style="normal">3584 → 7168</text>
+<circle cx="759.0" cy="46.0" r="12" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="1.6"/>
+<text x="759.0" y="52.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="bold" font-style="normal">4</text>
+<line x1="820.0" y1="96.0" x2="866.0" y2="96.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<line x1="412.0" y1="114.0" x2="412.0" y2="188.0" stroke="#C00000" stroke-width="1.8"/>
+<text x="412.0" y="210.0" text-anchor="middle" font-size="18" fill="#C00000" font-weight="bold" font-style="normal">SwiGLU: unbounded</text>
+<text x="412.0" y="232.0" text-anchor="middle" font-size="18" fill="#C00000" font-weight="bold" font-style="normal">× unbounded</text>
+<line x1="640.0" y1="118.0" x2="640.0" y2="188.0" stroke="#C00000" stroke-width="1.8"/>
+<text x="644.0" y="210.0" text-anchor="middle" font-size="18" fill="#C00000" font-weight="bold" font-style="normal">scale depends on</text>
+<text x="644.0" y="232.0" text-anchor="middle" font-size="18" fill="#C00000" font-weight="bold" font-style="normal">which experts fire</text>
+<text x="672.0" y="54.0" text-anchor="middle" font-size="17" fill="#C00000" font-weight="bold" font-style="normal">no norm</text>
+</svg>

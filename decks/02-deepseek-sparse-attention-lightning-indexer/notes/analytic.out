@@ -1,0 +1,7 @@
+per cached key: indexer 8,192 MACs; MQA-mode attention 139,264 (17.0x); MHA-mode attention 40,960 (5.0x)
+L = 131,072: dense MQA 18.25 G ; DSA indexer 1.074 G + core 0.285 G = 1.359 G -> 13.4x fewer MACs; indexer share of DSA = 79%
+keys attended per query at 128K: 2048 / 131072 = 1.56%
+indexer K cache 132 B/token/layer vs MLA 656 B -> +20%
+GLM-5 adaptation tokens vs DeepSeek: 943.7B / 20B = 47x
+DeepSeek warm-up tokens: 1000 x 16 x 128K = 2.10B ; sparse: 15000 x 480 x 128K = 943.7B
+GLM-5 warm-up tokens: 1000 x 14 x 202,752 = 2.84B

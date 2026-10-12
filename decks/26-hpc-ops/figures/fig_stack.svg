@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="322pt" viewBox="0 0 870 322" font-family="Helvetica, Arial, sans-serif">
+  <!-- fig_stack: HPC-Ops layered architecture, operators grouped by design principle, sibling deck numbers (slide figure, 1 unit = 1pt) -->
+  <defs>
+    <marker id="a_neu" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+    <marker id="a_ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+    <marker id="a_prb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+    <marker id="a_acc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+    <marker id="a_good" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2E7D32"/></marker>
+    <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="1.6"/></pattern>
+    <pattern id="hatchNeu" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="1.6"/></pattern>
+  </defs>
+  <rect x="4.0" y="2.0" width="862.0" height="36.0" rx="4" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="1.5" />
+  <text x="435.0" y="26.3" font-size="18" fill="#222222" text-anchor="middle"></text>
+  <text x="435.0" y="26.0" font-size="18" fill="#222222" text-anchor="middle">Serving runtime: SGLang backends · Tencent production serving</text>
+  <line x1="435.0" y1="39.0" x2="435.0" y2="49.0" stroke="#7F7F7F" stroke-width="2" marker-end="url(#a_neu)"/>
+  <rect x="4.0" y="50.0" width="862.0" height="34.0" rx="4" fill="#F2F2F2" stroke="#7F7F7F" stroke-width="1.5" />
+  <text x="435.0" y="73.3" font-size="18" fill="#222222" text-anchor="middle"></text>
+  <text x="435.0" y="73.0" font-size="18" fill="#222222" text-anchor="middle">Python API  hpc.*  →  torch.ops.hpc  →  entry.cc with per-arch dispatch</text>
+  <line x1="435.0" y1="85.0" x2="435.0" y2="95.0" stroke="#7F7F7F" stroke-width="2" marker-end="url(#a_neu)"/>
+  <rect x="4.0" y="96.0" width="862.0" height="178.0" rx="6" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2" />
+  <circle cx="29.0" cy="120.0" r="12" fill="#1F4E79"/>
+  <text x="29.0" y="125.6" font-size="16" fill="#FFFFFF" text-anchor="middle" font-weight="bold">1</text>
+  <text x="48.0" y="126.0" font-size="19" fill="#1F4E79" text-anchor="start" font-weight="bold">Schedule by live work</text>
+  <rect x="16.0" y="140.0" width="272.7" height="34.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+  <text x="26.0" y="163.3" font-size="18" fill="#222222" text-anchor="start">Dynamic decode attention</text>
+  <rect x="245.7" y="145.0" width="38.0" height="24.0" rx="12" fill="#1F4E79" stroke="#1F4E79" stroke-width="1" />
+  <text x="264.7" y="162.6" font-size="16" fill="#FFFFFF" text-anchor="middle" font-weight="bold">07</text>
+  <rect x="16.0" y="182.0" width="272.7" height="34.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+  <text x="26.0" y="205.3" font-size="18" fill="#222222" text-anchor="start">Block-sparse FP8 prefill</text>
+  <rect x="245.7" y="187.0" width="38.0" height="24.0" rx="12" fill="#1F4E79" stroke="#1F4E79" stroke-width="1" />
+  <text x="264.7" y="204.6" font-size="16" fill="#FFFFFF" text-anchor="middle" font-weight="bold">09</text>
+  <rect x="16.0" y="224.0" width="272.7" height="34.0" rx="4" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="1.5" />
+  <text x="26.0" y="247.3" font-size="18" fill="#222222" text-anchor="start">Paged BF16 / FP8 attention</text>
+  <circle cx="311.7" cy="120.0" r="12" fill="#1F4E79"/>
+  <text x="311.7" y="125.6" font-size="16" fill="#FFFFFF" text-anchor="middle" font-weight="bold">2</text>
+  <text x="330.7" y="126.0" font-size="19" fill="#1F4E79" text-anchor="start" font-weight="bold">Fuse the glue</text>
+  <rect x="298.7" y="140.0" width="272.7" height="34.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+  <text x="308.7" y="163.3" font-size="18" fill="#222222" text-anchor="start">Fused FP8 MoE</text>
+  <rect x="528.3" y="145.0" width="38.0" height="24.0" rx="12" fill="#1F4E79" stroke="#1F4E79" stroke-width="1" />
+  <text x="547.3" y="162.6" font-size="16" fill="#FFFFFF" text-anchor="middle" font-weight="bold">31</text>
+  <rect x="298.7" y="182.0" width="272.7" height="34.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+  <text x="308.7" y="205.3" font-size="18" fill="#222222" text-anchor="start">AllReduce + RMSNorm</text>
+  <rect x="528.3" y="187.0" width="38.0" height="24.0" rx="12" fill="#1F4E79" stroke="#1F4E79" stroke-width="1" />
+  <text x="547.3" y="204.6" font-size="16" fill="#FFFFFF" text-anchor="middle" font-weight="bold">13</text>
+  <rect x="298.7" y="224.0" width="272.7" height="34.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+  <text x="308.7" y="247.3" font-size="18" fill="#222222" text-anchor="start">Fused sampler</text>
+  <rect x="528.3" y="229.0" width="38.0" height="24.0" rx="12" fill="#1F4E79" stroke="#1F4E79" stroke-width="1" />
+  <text x="547.3" y="246.6" font-size="16" fill="#FFFFFF" text-anchor="middle" font-weight="bold">40</text>
+  <circle cx="594.3" cy="120.0" r="12" fill="#1F4E79"/>
+  <text x="594.3" y="125.6" font-size="16" fill="#FFFFFF" text-anchor="middle" font-weight="bold">3</text>
+  <text x="613.3" y="126.0" font-size="19" fill="#1F4E79" text-anchor="start" font-weight="bold">Precision per operator</text>
+  <rect x="581.3" y="140.0" width="272.7" height="34.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+  <text x="591.3" y="163.3" font-size="18" fill="#222222" text-anchor="start">Route GEMM BF16×FP32</text>
+  <rect x="811.0" y="145.0" width="38.0" height="24.0" rx="12" fill="#1F4E79" stroke="#1F4E79" stroke-width="1" />
+  <text x="830.0" y="162.6" font-size="16" fill="#FFFFFF" text-anchor="middle" font-weight="bold">36</text>
+  <rect x="581.3" y="182.0" width="272.7" height="34.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+  <text x="591.3" y="205.3" font-size="18" fill="#222222" text-anchor="start">FP8 GroupGEMM</text>
+  <rect x="811.0" y="187.0" width="38.0" height="24.0" rx="12" fill="#1F4E79" stroke="#1F4E79" stroke-width="1" />
+  <text x="830.0" y="204.6" font-size="16" fill="#FFFFFF" text-anchor="middle" font-weight="bold">29</text>
+  <rect x="581.3" y="224.0" width="272.7" height="34.0" rx="4" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="1.5" />
+  <text x="591.3" y="247.3" font-size="18" fill="#222222" text-anchor="start">FP8 activation quant</text>
+  <line x1="435.0" y1="275.0" x2="435.0" y2="285.0" stroke="#7F7F7F" stroke-width="2" marker-end="url(#a_neu)"/>
+  <rect x="4.0" y="286.0" width="560.0" height="34.0" rx="4" fill="#F2F2F2" stroke="#7F7F7F" stroke-width="1.5" />
+  <text x="284.0" y="309.3" font-size="18" fill="#222222" text-anchor="middle"></text>
+  <text x="284.0" y="309.0" font-size="18" fill="#222222" text-anchor="middle">CuTe / CUTLASS · TMA · cp.async · PDL · multicast</text>
+  <rect x="574.0" y="286.0" width="292.0" height="34.0" rx="4" fill="#F2F2F2" stroke="#7F7F7F" stroke-width="1.5" />
+  <text x="720.0" y="309.3" font-size="18" fill="#222222" text-anchor="middle"></text>
+  <text x="720.0" y="309.0" font-size="18" fill="#222222" text-anchor="middle">H20 (SM90) · NVLink</text>
+</svg>

@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="270pt" viewBox="0 0 870 270" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_padding: token-major tiles pad small experts -->
+<rect x="190.0" y="12.0" width="22.0" height="16.0" rx="2" fill="#F2F2F2" stroke="#595959" stroke-width="1.5" />
+<text x="218.0" y="26.0" text-anchor="start" font-size="16" fill="#222222" font-weight="normal" font-style="normal">token rows</text>
+<rect x="350.0" y="12.0" width="22.0" height="16.0" rx="2" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.5" />
+<text x="378.0" y="26.0" text-anchor="start" font-size="16" fill="#222222" font-weight="normal" font-style="normal">padding rows</text>
+<text x="178.0" y="84.0" text-anchor="end" font-size="18" fill="#222222" font-weight="bold" font-style="normal">64-row tiles</text>
+<text x="178.0" y="106.0" text-anchor="end" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="italic">masked layout</text>
+<text x="266.8" y="60.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">E0: 8 tok</text>
+<rect x="190.0" y="68.0" width="153.6" height="44.0" rx="0" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.8" />
+<rect x="190.0" y="68.0" width="19.2" height="44.0" rx="0" fill="#F2F2F2" stroke="#595959" stroke-width="1.8" />
+<text x="434.4" y="60.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">E1: 3 tok</text>
+<rect x="357.6" y="68.0" width="153.6" height="44.0" rx="0" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.8" />
+<rect x="357.6" y="68.0" width="7.2" height="44.0" rx="0" fill="#F2F2F2" stroke="#595959" stroke-width="1.8" />
+<text x="602.0" y="60.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">E2: 13 tok</text>
+<rect x="525.2" y="68.0" width="153.6" height="44.0" rx="0" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.8" />
+<rect x="525.2" y="68.0" width="31.2" height="44.0" rx="0" fill="#F2F2F2" stroke="#595959" stroke-width="1.8" />
+<text x="769.6" y="60.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">E3: 1 tok</text>
+<rect x="692.8" y="68.0" width="153.6" height="44.0" rx="0" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.8" />
+<rect x="692.8" y="68.0" width="2.4" height="44.0" rx="0" fill="#F2F2F2" stroke="#595959" stroke-width="1.8" />
+<text x="178.0" y="192.0" text-anchor="end" font-size="18" fill="#222222" font-weight="bold" font-style="normal">128-row segments</text>
+<text x="178.0" y="214.0" text-anchor="end" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="italic">contiguous layout</text>
+<rect x="190.0" y="176.0" width="164.1" height="44.0" rx="0" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.8" />
+<rect x="190.0" y="176.0" width="10.3" height="44.0" rx="0" fill="#F2F2F2" stroke="#595959" stroke-width="1.8" />
+<text x="272.1" y="168.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">E0</text>
+<rect x="354.1" y="176.0" width="164.1" height="44.0" rx="0" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.8" />
+<rect x="354.1" y="176.0" width="3.8" height="44.0" rx="0" fill="#F2F2F2" stroke="#595959" stroke-width="1.8" />
+<text x="436.2" y="168.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">E1</text>
+<rect x="518.2" y="176.0" width="164.1" height="44.0" rx="0" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.8" />
+<rect x="518.2" y="176.0" width="16.7" height="44.0" rx="0" fill="#F2F2F2" stroke="#595959" stroke-width="1.8" />
+<text x="600.2" y="168.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">E2</text>
+<rect x="682.3" y="176.0" width="164.1" height="44.0" rx="0" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.8" />
+<rect x="682.3" y="176.0" width="2.5" height="44.0" rx="0" fill="#F2F2F2" stroke="#595959" stroke-width="1.8" />
+<text x="764.3" y="168.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">E3</text>
+<line x1="190.0" y1="240.0" x2="846.4" y2="240.0" stroke="#7F7F7F" stroke-width="1.4" marker-end="url(#arrGray)" marker-start="url(#arrGray)"/>
+<text x="518.2" y="262.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="italic">rows the MMA computes</text>
+</svg>

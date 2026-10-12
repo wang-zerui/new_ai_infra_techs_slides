@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="280pt" viewBox="0 0 870 280" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_warmup: plain 1F1B pairs are dependent; +1 warmup micro-batch decouples them -->
+<text x="152.0" y="99.3" text-anchor="end" font-size="18" fill="#222222" font-weight="bold" font-style="normal">plain 1F1B</text>
+<text x="152.0" y="197.3" text-anchor="end" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">+1 warmup</text>
+<rect x="166.0" y="70.0" width="62.0" height="46.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="197.0" y="99.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">F0</text>
+<rect x="228.0" y="70.0" width="108.0" height="46.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="282.0" y="99.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">B0</text>
+<path d="M197.0,68 C197.0,36 282.0,36 282.0,67" fill="none" stroke="#C00000" stroke-width="2.2" marker-end="url(#arrPrb)"/>
+<rect x="336.0" y="70.0" width="62.0" height="46.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="367.0" y="99.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">F1</text>
+<rect x="398.0" y="70.0" width="108.0" height="46.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="452.0" y="99.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">B1</text>
+<path d="M367.0,68 C367.0,36 452.0,36 452.0,67" fill="none" stroke="#C00000" stroke-width="2.2" marker-end="url(#arrPrb)"/>
+<rect x="506.0" y="70.0" width="62.0" height="46.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="537.0" y="99.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">F2</text>
+<rect x="568.0" y="70.0" width="108.0" height="46.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="622.0" y="99.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">B2</text>
+<path d="M537.0,68 C537.0,36 622.0,36 622.0,67" fill="none" stroke="#C00000" stroke-width="2.2" marker-end="url(#arrPrb)"/>
+<rect x="676.0" y="70.0" width="62.0" height="46.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="707.0" y="99.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">F3</text>
+<rect x="738.0" y="70.0" width="108.0" height="46.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="792.0" y="99.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">B3</text>
+<path d="M707.0,68 C707.0,36 792.0,36 792.0,67" fill="none" stroke="#C00000" stroke-width="2.2" marker-end="url(#arrPrb)"/>
+<text x="166" y="24" font-size="17" font-weight="bold" fill="#C00000">B<tspan dy="4" font-size="15">k</tspan><tspan dy="-4"> needs the output of F</tspan><tspan dy="4" font-size="15">k</tspan><tspan dy="-4"> of the same micro-batch</tspan></text>
+<rect x="166.0" y="168.0" width="62.0" height="46.0" rx="4" fill="#FBE5E5" stroke="#C00000" stroke-width="2" />
+<text x="197.0" y="197.3" text-anchor="middle" font-size="18" fill="#C00000" font-weight="normal" font-style="normal">F0</text>
+<text x="197.0" y="240.0" text-anchor="middle" font-size="17" fill="#C00000" font-weight="bold" font-style="normal">exposed</text>
+<rect x="236.0" y="168.0" width="136.0" height="46.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="304.0" y="197.3" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">F1 + B0</text>
+<rect x="380.0" y="168.0" width="136.0" height="46.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="448.0" y="197.3" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">F2 + B1</text>
+<rect x="524.0" y="168.0" width="136.0" height="46.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="592.0" y="197.3" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">F3 + B2</text>
+<rect x="668.0" y="168.0" width="108.0" height="46.0" rx="4" fill="#FBE5E5" stroke="#C00000" stroke-width="2" />
+<text x="722.0" y="197.3" text-anchor="middle" font-size="18" fill="#C00000" font-weight="normal" font-style="normal">B3</text>
+<text x="722.0" y="240.0" text-anchor="middle" font-size="17" fill="#C00000" font-weight="bold" font-style="normal">exposed</text>
+<line x1="162.0" y1="252.0" x2="862.0" y2="252.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<text x="858.0" y="276.0" text-anchor="end" font-size="18" fill="#222222" font-weight="normal" font-style="normal">time</text>
+</svg>

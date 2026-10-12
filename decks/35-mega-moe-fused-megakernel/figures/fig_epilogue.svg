@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="292pt" viewBox="0 0 870 292" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#BFBFBF" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- epilogues absorb SwiGLU, FP8 cast, combine send and reduce -->
+<text x="146.0" y="42.0" text-anchor="end" font-size="18" fill="#222222" font-weight="bold" font-style="normal">L1 epilogue</text>
+<text x="146.0" y="62.0" text-anchor="end" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="italic">expert&#x27;s GPU</text>
+<rect x="160.0" y="16.0" width="150.0" height="56.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="235.0" y="39.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">TMEM</text>
+<text x="235.0" y="59.4" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">FP32 gate, up</text>
+<rect x="336.0" y="16.0" width="160.0" height="56.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="416.0" y="39.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">silu(gate) · up</text>
+<text x="416.0" y="59.4" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">× routing weight</text>
+<rect x="522.0" y="16.0" width="160.0" height="56.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="602.0" y="39.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">amax per 32</text>
+<text x="602.0" y="59.4" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">→ UE8M0 scale</text>
+<rect x="708.0" y="16.0" width="150.0" height="56.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="783.0" y="39.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">FP8 row</text>
+<text x="783.0" y="59.4" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">→ L2 ring</text>
+<line x1="310.0" y1="44.0" x2="335.0" y2="44.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<line x1="496.0" y1="44.0" x2="521.0" y2="44.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<line x1="682.0" y1="44.0" x2="707.0" y2="44.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<text x="146.0" y="142.0" text-anchor="end" font-size="18" fill="#222222" font-weight="bold" font-style="normal">L2 epilogue</text>
+<text x="146.0" y="162.0" text-anchor="end" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="italic">expert&#x27;s GPU</text>
+<rect x="160.0" y="116.0" width="150.0" height="56.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="235.0" y="139.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">TMEM</text>
+<text x="235.0" y="159.4" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">FP32 row</text>
+<rect x="336.0" y="116.0" width="150.0" height="56.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="411.0" y="139.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">BF16 row</text>
+<text x="411.0" y="159.4" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">in shared mem</text>
+<line x1="310.0" y1="144.0" x2="335.0" y2="144.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<text x="146.0" y="246.0" text-anchor="end" font-size="18" fill="#222222" font-weight="bold" font-style="normal">combine</text>
+<text x="146.0" y="266.0" text-anchor="end" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="italic">token&#x27;s GPU</text>
+<rect x="160.0" y="230.0" width="34.0" height="36.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2" />
+<text x="177.0" y="253.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">S</text>
+<rect x="200.0" y="230.0" width="34.0" height="36.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2" />
+<text x="217.0" y="253.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">0</text>
+<rect x="240.0" y="230.0" width="34.0" height="36.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2" />
+<text x="257.0" y="253.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">1</text>
+<rect x="280.0" y="230.0" width="34.0" height="36.0" rx="4" fill="#1F4E79" stroke="#1F4E79" stroke-width="2" />
+<text x="297.0" y="253.9" text-anchor="middle" font-size="17" fill="#FFFFFF" font-weight="bold" font-style="normal">2</text>
+<rect x="320.0" y="230.0" width="34.0" height="36.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2" />
+<text x="337.0" y="253.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">3</text>
+<rect x="360.0" y="230.0" width="34.0" height="36.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2" />
+<text x="377.0" y="253.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">4</text>
+<rect x="400.0" y="230.0" width="34.0" height="36.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2" />
+<text x="417.0" y="253.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">5</text>
+<text x="297.0" y="286.0" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="italic">slots: shared + top-6</text>
+<line x1="436.0" y1="248.0" x2="459.0" y2="248.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="460.0" y="220.0" width="200.0" height="56.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="560.0" y="243.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">Σ in FP32</text>
+<text x="560.0" y="263.4" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">fixed slot order</text>
+<line x1="660.0" y1="248.0" x2="685.0" y2="248.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="686.0" y="220.0" width="110.0" height="56.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="741.0" y="243.7" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">y</text>
+<text x="741.0" y="263.7" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">BF16</text>
+<path d="M 441.0 172 L 303.0 229" fill="none" stroke="#1F4E79" stroke-width="2.8" marker-end="url(#arrAcc)"/>
+<text x="300.0" y="196.0" text-anchor="end" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal">NVLink store</text>
+<text x="300.0" y="215.0" text-anchor="end" font-size="16" fill="#1F4E79" font-weight="normal" font-style="normal">into slot k of token t</text>
+</svg>

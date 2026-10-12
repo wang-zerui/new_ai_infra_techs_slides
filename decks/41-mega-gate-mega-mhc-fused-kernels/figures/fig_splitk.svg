@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="292pt" viewBox="0 0 870 292" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#BFBFBF" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- split-K finishing inside Mega mHC -->
+<text x="10.0" y="26.0" text-anchor="start" font-size="17" fill="#222222" font-weight="bold" font-style="normal">one 64-token block, K = 4d in 16 splits</text>
+<rect x="10.0" y="38.0" width="21.0" height="24.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.4" />
+<line x1="20.5" y1="62.0" x2="20.5" y2="107.0" stroke="#1F4E79" stroke-width="1.6" marker-end="url(#arrAcc)"/>
+<rect x="10.0" y="108.0" width="21.0" height="24.0" rx="2" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.4" />
+<rect x="34.0" y="38.0" width="21.0" height="24.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.4" />
+<line x1="44.5" y1="62.0" x2="44.5" y2="107.0" stroke="#1F4E79" stroke-width="1.6" marker-end="url(#arrAcc)"/>
+<rect x="34.0" y="108.0" width="21.0" height="24.0" rx="2" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.4" />
+<rect x="58.0" y="38.0" width="21.0" height="24.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.4" />
+<line x1="68.5" y1="62.0" x2="68.5" y2="107.0" stroke="#1F4E79" stroke-width="1.6" marker-end="url(#arrAcc)"/>
+<rect x="58.0" y="108.0" width="21.0" height="24.0" rx="2" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.4" />
+<rect x="82.0" y="38.0" width="21.0" height="24.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.4" />
+<line x1="92.5" y1="62.0" x2="92.5" y2="107.0" stroke="#1F4E79" stroke-width="1.6" marker-end="url(#arrAcc)"/>
+<rect x="82.0" y="108.0" width="21.0" height="24.0" rx="2" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.4" />
+<rect x="106.0" y="38.0" width="21.0" height="24.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.4" />
+<line x1="116.5" y1="62.0" x2="116.5" y2="107.0" stroke="#1F4E79" stroke-width="1.6" marker-end="url(#arrAcc)"/>
+<rect x="106.0" y="108.0" width="21.0" height="24.0" rx="2" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.4" />
+<rect x="130.0" y="38.0" width="21.0" height="24.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.4" />
+<line x1="140.5" y1="62.0" x2="140.5" y2="107.0" stroke="#1F4E79" stroke-width="1.6" marker-end="url(#arrAcc)"/>
+<rect x="130.0" y="108.0" width="21.0" height="24.0" rx="2" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.4" />
+<rect x="154.0" y="38.0" width="21.0" height="24.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.4" />
+<line x1="164.5" y1="62.0" x2="164.5" y2="107.0" stroke="#1F4E79" stroke-width="1.6" marker-end="url(#arrAcc)"/>
+<rect x="154.0" y="108.0" width="21.0" height="24.0" rx="2" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.4" />
+<rect x="178.0" y="38.0" width="21.0" height="24.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.4" />
+<line x1="188.5" y1="62.0" x2="188.5" y2="107.0" stroke="#1F4E79" stroke-width="1.6" marker-end="url(#arrAcc)"/>
+<rect x="178.0" y="108.0" width="21.0" height="24.0" rx="2" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.4" />
+<rect x="202.0" y="38.0" width="21.0" height="24.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.4" />
+<line x1="212.5" y1="62.0" x2="212.5" y2="107.0" stroke="#1F4E79" stroke-width="1.6" marker-end="url(#arrAcc)"/>
+<rect x="202.0" y="108.0" width="21.0" height="24.0" rx="2" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.4" />
+<rect x="226.0" y="38.0" width="21.0" height="24.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.4" />
+<line x1="236.5" y1="62.0" x2="236.5" y2="107.0" stroke="#1F4E79" stroke-width="1.6" marker-end="url(#arrAcc)"/>
+<rect x="226.0" y="108.0" width="21.0" height="24.0" rx="2" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.4" />
+<rect x="250.0" y="38.0" width="21.0" height="24.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.4" />
+<line x1="260.5" y1="62.0" x2="260.5" y2="107.0" stroke="#1F4E79" stroke-width="1.6" marker-end="url(#arrAcc)"/>
+<rect x="250.0" y="108.0" width="21.0" height="24.0" rx="2" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.4" />
+<rect x="274.0" y="38.0" width="21.0" height="24.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.4" />
+<line x1="284.5" y1="62.0" x2="284.5" y2="107.0" stroke="#1F4E79" stroke-width="1.6" marker-end="url(#arrAcc)"/>
+<rect x="274.0" y="108.0" width="21.0" height="24.0" rx="2" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.4" />
+<rect x="298.0" y="38.0" width="21.0" height="24.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.4" />
+<line x1="308.5" y1="62.0" x2="308.5" y2="107.0" stroke="#1F4E79" stroke-width="1.6" marker-end="url(#arrAcc)"/>
+<rect x="298.0" y="108.0" width="21.0" height="24.0" rx="2" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.4" />
+<rect x="322.0" y="38.0" width="21.0" height="24.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.4" />
+<line x1="332.5" y1="62.0" x2="332.5" y2="107.0" stroke="#1F4E79" stroke-width="1.6" marker-end="url(#arrAcc)"/>
+<rect x="322.0" y="108.0" width="21.0" height="24.0" rx="2" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.4" />
+<rect x="346.0" y="38.0" width="21.0" height="24.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.4" />
+<line x1="356.5" y1="62.0" x2="356.5" y2="107.0" stroke="#1F4E79" stroke-width="1.6" marker-end="url(#arrAcc)"/>
+<rect x="346.0" y="108.0" width="21.0" height="24.0" rx="2" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.4" />
+<rect x="370.0" y="38.0" width="21.0" height="24.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.4" />
+<line x1="380.5" y1="62.0" x2="380.5" y2="107.0" stroke="#1F4E79" stroke-width="1.6" marker-end="url(#arrAcc)"/>
+<rect x="370.0" y="108.0" width="21.0" height="24.0" rx="2" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.4" />
+<text x="10.0" y="154.0" text-anchor="start" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="italic">24 sums + Σx² per split, in workspace</text>
+<text x="10.0" y="176.0" text-anchor="start" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="italic">splits are tasks spread over all SMs</text>
+<line x1="394.0" y1="120.0" x2="419.0" y2="120.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="420.0" y="96.0" width="62.0" height="48.0" rx="4" fill="#FFFFFF" stroke="#222222" stroke-width="2" />
+<text x="451.0" y="116.4" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">split</text>
+<text x="451.0" y="134.1" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">barrier</text>
+<line x1="482.0" y1="120.0" x2="501.0" y2="120.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="502.0" y="74.0" width="186.0" height="92.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="595.0" y="106.8" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">Mix warps</text>
+<text x="595.0" y="126.3" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">fixed-order sum, ÷ RMS</text>
+<text x="595.0" y="144.0" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">× α + b, σ, Sinkhorn</text>
+<line x1="688.0" y1="120.0" x2="711.0" y2="120.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="712.0" y="92.0" width="154.0" height="56.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="789.0" y="115.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">next mixes</text>
+<text x="789.0" y="134.8" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">H_post, H_res 4×4</text>
+<line x1="595.0" y1="166.0" x2="595.0" y2="197.0" stroke="#1F4E79" stroke-width="2.4" marker-end="url(#arrAcc)"/>
+<text x="603.0" y="186.0" text-anchor="start" font-size="15" fill="#1F4E79" font-weight="normal" font-style="normal">H_pre</text>
+<rect x="502.0" y="198.0" width="186.0" height="72.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="595.0" y="229.7" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">Norm warps</text>
+<text x="595.0" y="249.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">Σ H_pre·row → RMSNorm</text>
+<line x1="688.0" y1="234.0" x2="711.0" y2="234.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="712.0" y="206.0" width="154.0" height="56.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="789.0" y="230.2" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">y: BF16 and/or</text>
+<text x="789.0" y="249.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">FP8 + UE8M0</text>
+</svg>

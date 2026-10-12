@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="276pt" viewBox="0 0 870 276" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchAcc" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#DEEBF7"/><line x1="0" y1="0" x2="0" y2="7" stroke="#1F4E79" stroke-width="1.6"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_models: attention type, optimizer and logit control per model -->
+<text x="8.0" y="25.0" text-anchor="start" font-size="19" fill="#7F7F7F" font-weight="bold" font-style="normal">Model</text>
+<text x="280.0" y="25.0" text-anchor="middle" font-size="19" fill="#7F7F7F" font-weight="bold" font-style="normal">Attention</text>
+<text x="455.0" y="25.0" text-anchor="middle" font-size="19" fill="#7F7F7F" font-weight="bold" font-style="normal">Optimizer</text>
+<text x="705.0" y="25.0" text-anchor="middle" font-size="19" fill="#7F7F7F" font-weight="bold" font-style="normal">Logit control</text>
+<line x1="0.0" y1="36.0" x2="870.0" y2="36.0" stroke="#595959" stroke-width="1.6"/>
+<text x="8.0" y="67.0" text-anchor="start" font-size="20" fill="#222222" font-weight="bold" font-style="normal">DeepSeek-V3</text>
+<text x="280.0" y="67.0" text-anchor="middle" font-size="20" fill="#222222" font-weight="normal" font-style="normal">MLA</text>
+<text x="455.0" y="67.0" text-anchor="middle" font-size="20" fill="#222222" font-weight="normal" font-style="normal">AdamW</text>
+<text x="705.0" y="67.0" text-anchor="middle" font-size="20" fill="#7F7F7F" font-weight="normal" font-style="normal">none</text>
+<line x1="0.0" y1="84.0" x2="870.0" y2="84.0" stroke="#D0D0D0" stroke-width="1"/>
+<text x="8.0" y="115.0" text-anchor="start" font-size="20" fill="#222222" font-weight="bold" font-style="normal">Kimi K2</text>
+<text x="280.0" y="115.0" text-anchor="middle" font-size="20" fill="#222222" font-weight="normal" font-style="normal">MLA</text>
+<text x="455.0" y="115.0" text-anchor="middle" font-size="20" fill="#222222" font-weight="normal" font-style="normal">Muon</text>
+<text x="705.0" y="115.0" text-anchor="middle" font-size="20" fill="#222222" font-weight="normal" font-style="normal">QK-Clip (deck 65)</text>
+<rect x="2.0" y="135.0" width="866.0" height="42.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.2" />
+<text x="8.0" y="163.0" text-anchor="start" font-size="20" fill="#1F4E79" font-weight="bold" font-style="normal">GLM-4.5</text>
+<text x="280.0" y="163.0" text-anchor="middle" font-size="20" fill="#1F4E79" font-weight="bold" font-style="normal">GQA</text>
+<text x="455.0" y="163.0" text-anchor="middle" font-size="20" fill="#1F4E79" font-weight="bold" font-style="normal">Muon</text>
+<text x="705.0" y="163.0" text-anchor="middle" font-size="20" fill="#1F4E79" font-weight="bold" font-style="normal">QK-Norm</text>
+<text x="8.0" y="211.0" text-anchor="start" font-size="20" fill="#222222" font-weight="bold" font-style="normal">GLM-5</text>
+<text x="280.0" y="211.0" text-anchor="middle" font-size="20" fill="#222222" font-weight="normal" font-style="normal">MLA</text>
+<text x="455.0" y="211.0" text-anchor="middle" font-size="20" fill="#222222" font-weight="normal" font-style="normal">Muon</text>
+<text x="705.0" y="211.0" text-anchor="middle" font-size="20" fill="#222222" font-weight="normal" font-style="normal">Muon Split</text>
+<line x1="0.0" y1="228.0" x2="870.0" y2="228.0" stroke="#D0D0D0" stroke-width="1"/>
+<text x="8.0" y="259.0" text-anchor="start" font-size="20" fill="#222222" font-weight="bold" font-style="normal">DeepSeek-V4</text>
+<text x="280.0" y="259.0" text-anchor="middle" font-size="20" fill="#222222" font-weight="normal" font-style="normal">CSA / HCA</text>
+<text x="455.0" y="259.0" text-anchor="middle" font-size="20" fill="#222222" font-weight="normal" font-style="normal">Muon</text>
+<text x="705.0" y="259.0" text-anchor="middle" font-size="20" fill="#222222" font-weight="normal" font-style="normal">RMSNorm on q and KV</text>
+</svg>

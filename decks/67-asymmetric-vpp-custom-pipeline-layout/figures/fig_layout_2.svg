@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="318pt" viewBox="0 0 870 318" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_layout_2: rank x chunk table of the H100 DeepSeek-V3 layout -->
+<text x="14.0" y="24.0" text-anchor="start" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal" font-family="Menlo, 'Courier New', monospace">--pipeline-model-parallel-layout  Et*3|(tt|)*29m|L</text>
+<text x="128.0" y="54.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="bold" font-style="normal">PP 0</text>
+<text x="224.0" y="54.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="bold" font-style="normal">PP 1</text>
+<text x="320.0" y="54.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="bold" font-style="normal">PP 2</text>
+<text x="416.0" y="54.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="bold" font-style="normal">PP 3</text>
+<text x="512.0" y="54.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="bold" font-style="normal">PP 4</text>
+<text x="608.0" y="54.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="bold" font-style="normal">PP 5</text>
+<text x="704.0" y="54.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="bold" font-style="normal">PP 6</text>
+<text x="800.0" y="54.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="bold" font-style="normal">PP 7</text>
+<text x="74.0" y="94.0" text-anchor="end" font-size="16" fill="#222222" font-weight="normal" font-style="normal">chunk 0</text>
+<rect x="84.0" y="66.0" width="88.0" height="44.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.4" />
+<text x="90.0" y="81.0" text-anchor="start" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">s0</text>
+<text x="128.0" y="103.0" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">E+3 dense</text>
+<rect x="180.0" y="66.0" width="88.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="186.0" y="81.0" text-anchor="start" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">s1</text>
+<text x="224.0" y="103.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">2 MoE</text>
+<rect x="276.0" y="66.0" width="88.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="282.0" y="81.0" text-anchor="start" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">s2</text>
+<text x="320.0" y="103.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">2 MoE</text>
+<rect x="372.0" y="66.0" width="88.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="378.0" y="81.0" text-anchor="start" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">s3</text>
+<text x="416.0" y="103.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">2 MoE</text>
+<rect x="468.0" y="66.0" width="88.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="474.0" y="81.0" text-anchor="start" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">s4</text>
+<text x="512.0" y="103.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">2 MoE</text>
+<rect x="564.0" y="66.0" width="88.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="570.0" y="81.0" text-anchor="start" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">s5</text>
+<text x="608.0" y="103.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">2 MoE</text>
+<rect x="660.0" y="66.0" width="88.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="666.0" y="81.0" text-anchor="start" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">s6</text>
+<text x="704.0" y="103.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">2 MoE</text>
+<rect x="756.0" y="66.0" width="88.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="762.0" y="81.0" text-anchor="start" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">s7</text>
+<text x="800.0" y="103.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">2 MoE</text>
+<text x="74.0" y="146.0" text-anchor="end" font-size="16" fill="#222222" font-weight="normal" font-style="normal">chunk 1</text>
+<rect x="84.0" y="118.0" width="88.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="90.0" y="133.0" text-anchor="start" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">s8</text>
+<text x="128.0" y="155.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">2 MoE</text>
+<rect x="180.0" y="118.0" width="88.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="186.0" y="133.0" text-anchor="start" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">s9</text>
+<text x="224.0" y="155.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">2 MoE</text>
+<rect x="276.0" y="118.0" width="88.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="282.0" y="133.0" text-anchor="start" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">s10</text>
+<text x="320.0" y="155.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">2 MoE</text>
+<rect x="372.0" y="118.0" width="88.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="378.0" y="133.0" text-anchor="start" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">s11</text>
+<text x="416.0" y="155.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">2 MoE</text>
+<rect x="468.0" y="118.0" width="88.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="474.0" y="133.0" text-anchor="start" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">s12</text>
+<text x="512.0" y="155.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">2 MoE</text>
+<rect x="564.0" y="118.0" width="88.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="570.0" y="133.0" text-anchor="start" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">s13</text>
+<text x="608.0" y="155.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">2 MoE</text>
+<rect x="660.0" y="118.0" width="88.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="666.0" y="133.0" text-anchor="start" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">s14</text>
+<text x="704.0" y="155.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">2 MoE</text>
+<rect x="756.0" y="118.0" width="88.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="762.0" y="133.0" text-anchor="start" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">s15</text>
+<text x="800.0" y="155.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">2 MoE</text>
+<text x="74.0" y="198.0" text-anchor="end" font-size="16" fill="#222222" font-weight="normal" font-style="normal">chunk 2</text>
+<rect x="84.0" y="170.0" width="88.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="90.0" y="185.0" text-anchor="start" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">s16</text>
+<text x="128.0" y="207.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">2 MoE</text>
+<rect x="180.0" y="170.0" width="88.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="186.0" y="185.0" text-anchor="start" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">s17</text>
+<text x="224.0" y="207.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">2 MoE</text>
+<rect x="276.0" y="170.0" width="88.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="282.0" y="185.0" text-anchor="start" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">s18</text>
+<text x="320.0" y="207.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">2 MoE</text>
+<rect x="372.0" y="170.0" width="88.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="378.0" y="185.0" text-anchor="start" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">s19</text>
+<text x="416.0" y="207.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">2 MoE</text>
+<rect x="468.0" y="170.0" width="88.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="474.0" y="185.0" text-anchor="start" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">s20</text>
+<text x="512.0" y="207.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">2 MoE</text>
+<rect x="564.0" y="170.0" width="88.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="570.0" y="185.0" text-anchor="start" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">s21</text>
+<text x="608.0" y="207.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">2 MoE</text>
+<rect x="660.0" y="170.0" width="88.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="666.0" y="185.0" text-anchor="start" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">s22</text>
+<text x="704.0" y="207.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">2 MoE</text>
+<rect x="756.0" y="170.0" width="88.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="762.0" y="185.0" text-anchor="start" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">s23</text>
+<text x="800.0" y="207.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">2 MoE</text>
+<text x="74.0" y="250.0" text-anchor="end" font-size="16" fill="#222222" font-weight="normal" font-style="normal">chunk 3</text>
+<rect x="84.0" y="222.0" width="88.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="90.0" y="237.0" text-anchor="start" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">s24</text>
+<text x="128.0" y="259.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">2 MoE</text>
+<rect x="180.0" y="222.0" width="88.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="186.0" y="237.0" text-anchor="start" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">s25</text>
+<text x="224.0" y="259.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">2 MoE</text>
+<rect x="276.0" y="222.0" width="88.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="282.0" y="237.0" text-anchor="start" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">s26</text>
+<text x="320.0" y="259.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">2 MoE</text>
+<rect x="372.0" y="222.0" width="88.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="378.0" y="237.0" text-anchor="start" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">s27</text>
+<text x="416.0" y="259.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">2 MoE</text>
+<rect x="468.0" y="222.0" width="88.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="474.0" y="237.0" text-anchor="start" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">s28</text>
+<text x="512.0" y="259.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">2 MoE</text>
+<rect x="564.0" y="222.0" width="88.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="570.0" y="237.0" text-anchor="start" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">s29</text>
+<text x="608.0" y="259.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">2 MoE</text>
+<rect x="660.0" y="222.0" width="88.0" height="44.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.4" />
+<text x="666.0" y="237.0" text-anchor="start" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">s30</text>
+<text x="704.0" y="259.0" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">MTP</text>
+<rect x="756.0" y="222.0" width="88.0" height="44.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.4" />
+<text x="762.0" y="237.0" text-anchor="start" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">s31</text>
+<text x="800.0" y="259.0" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">loss</text>
+<path d="M86,282 v8 h84 v-8" fill="none" stroke="#7F7F7F" stroke-width="1.5"/>
+<text x="128.0" y="312.0" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">E+3d+6M</text>
+<path d="M182,282 v8 h84 v-8" fill="none" stroke="#7F7F7F" stroke-width="1.5"/>
+<text x="224.0" y="312.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">8 MoE</text>
+<path d="M278,282 v8 h84 v-8" fill="none" stroke="#7F7F7F" stroke-width="1.5"/>
+<text x="320.0" y="312.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">8 MoE</text>
+<path d="M374,282 v8 h84 v-8" fill="none" stroke="#7F7F7F" stroke-width="1.5"/>
+<text x="416.0" y="312.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">8 MoE</text>
+<path d="M470,282 v8 h84 v-8" fill="none" stroke="#7F7F7F" stroke-width="1.5"/>
+<text x="512.0" y="312.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">8 MoE</text>
+<path d="M566,282 v8 h84 v-8" fill="none" stroke="#7F7F7F" stroke-width="1.5"/>
+<text x="608.0" y="312.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">8 MoE</text>
+<path d="M662,282 v8 h84 v-8" fill="none" stroke="#7F7F7F" stroke-width="1.5"/>
+<text x="704.0" y="312.0" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">6M+MTP</text>
+<path d="M758,282 v8 h84 v-8" fill="none" stroke="#7F7F7F" stroke-width="1.5"/>
+<text x="800.0" y="312.0" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">6M+loss</text>
+</svg>

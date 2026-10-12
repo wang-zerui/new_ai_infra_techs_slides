@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="292pt" viewBox="0 0 870 292" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_kstatusquo: per-expert wgrad launches vs pad-to-max -->
+<text x="10.0" y="24.0" text-anchor="start" font-size="19" fill="#222222" font-weight="bold" font-style="normal">(a) One Wgrad GEMM per expert</text>
+<text x="470.0" y="50.0" text-anchor="end" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">L = kernel launch</text>
+<text x="62.0" y="76.0" text-anchor="end" font-size="17" fill="#222222" font-weight="bold" font-style="normal">host</text>
+<text x="62.0" y="156.0" text-anchor="end" font-size="17" fill="#222222" font-weight="bold" font-style="normal">GPU</text>
+<rect x="70.0" y="58.0" width="96.0" height="30.0" rx="4" fill="#FBE5E5" stroke="#C00000" stroke-width="2" />
+<text x="118.0" y="78.6" text-anchor="middle" font-size="16" fill="#C00000" font-weight="bold" font-style="normal">K list</text>
+<rect x="176.0" y="60.0" width="26.0" height="26.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="189.0" y="78.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">L</text>
+<rect x="206.0" y="138.0" width="104.0" height="30.0" rx="0" fill="#E2F0D9" stroke="#548235" stroke-width="1.4" />
+<text x="258.0" y="159.0" text-anchor="middle" font-size="15" fill="#222222" font-weight="bold" font-style="normal">dW0</text>
+<rect x="310.0" y="138.0" width="26.0" height="30.0" rx="0" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1" />
+<rect x="306.0" y="60.0" width="26.0" height="26.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="319.0" y="78.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">L</text>
+<rect x="336.0" y="138.0" width="40.0" height="30.0" rx="0" fill="#FCE4D6" stroke="#C55A11" stroke-width="1.4" />
+<text x="356.0" y="159.0" text-anchor="middle" font-size="15" fill="#222222" font-weight="bold" font-style="normal">dW1</text>
+<rect x="376.0" y="138.0" width="26.0" height="30.0" rx="0" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1" />
+<rect x="372.0" y="60.0" width="26.0" height="26.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="385.0" y="78.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">L</text>
+<rect x="402.0" y="138.0" width="70.0" height="30.0" rx="0" fill="#E4DFEC" stroke="#7030A0" stroke-width="1.4" />
+<text x="437.0" y="159.0" text-anchor="middle" font-size="15" fill="#222222" font-weight="bold" font-style="normal">dW2</text>
+<line x1="70.0" y1="196.0" x2="478.0" y2="196.0" stroke="#222222" stroke-width="1.6" marker-end="url(#arr)"/>
+<text x="474.0" y="214.0" text-anchor="end" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">time</text>
+<text x="250.0" y="246.0" text-anchor="middle" font-size="17" fill="#C00000" font-weight="bold" font-style="normal">G launches per weight per layer</text>
+<text x="250.0" y="268.0" text-anchor="middle" font-size="16" fill="#C00000" font-weight="normal" font-style="normal">token counts must reach the host</text>
+<line x1="488.0" y1="14.0" x2="488.0" y2="286.0" stroke="#999999" stroke-width="1"/>
+<text x="508.0" y="24.0" text-anchor="start" font-size="19" fill="#222222" font-weight="bold" font-style="normal">(b) Pad every expert to the longest</text>
+<rect x="540.0" y="34.0" width="70.0" height="180.0" rx="0" fill="#E2F0D9" stroke="#548235" stroke-width="1.6" />
+<text x="575.0" y="129.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="bold" font-style="normal">E0</text>
+<rect x="540.0" y="34.0" width="70.0" height="180.0" rx="0" fill="none" stroke="#222222" stroke-width="1.8" />
+<rect x="640.0" y="34.0" width="70.0" height="36.0" rx="0" fill="#FCE4D6" stroke="#C55A11" stroke-width="1.6" />
+<text x="675.0" y="58.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="bold" font-style="normal">E1</text>
+<rect x="640.0" y="70.0" width="70.0" height="144.0" rx="0" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.4" />
+<rect x="640.0" y="34.0" width="70.0" height="180.0" rx="0" fill="none" stroke="#222222" stroke-width="1.8" />
+<rect x="740.0" y="34.0" width="70.0" height="120.0" rx="0" fill="#E4DFEC" stroke="#7030A0" stroke-width="1.6" />
+<text x="775.0" y="100.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="bold" font-style="normal">E2</text>
+<rect x="740.0" y="154.0" width="70.0" height="60.0" rx="0" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.4" />
+<rect x="740.0" y="34.0" width="70.0" height="180.0" rx="0" fill="none" stroke="#222222" stroke-width="1.8" />
+<text x="524.0" y="130.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="bold" font-style="normal">K</text>
+<text x="675.0" y="246.0" text-anchor="middle" font-size="17" fill="#C00000" font-weight="bold" font-style="normal">zero tokens cost full FLOPs</text>
+<text x="675.0" y="268.0" text-anchor="middle" font-size="16" fill="#C00000" font-weight="normal" font-style="normal">K = longest expert for all</text>
+</svg>

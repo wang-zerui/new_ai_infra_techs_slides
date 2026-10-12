@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="876pt" height="296pt" viewBox="0 0 876 296" font-family="Helvetica, Arial, sans-serif">
+<defs><marker id="m222222" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker><pattern id="hatchRed" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#FBE5E5"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2"/></pattern><pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#fff"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/></pattern></defs>
+<rect width="876" height="296" fill="#fff"/>
+<g transform="translate(3,3)">
+<text x="0" y="52" font-size="18" font-weight="bold" fill="#222222" text-anchor="start">Compressed</text>
+<text x="0" y="74" font-size="18" font-weight="bold" fill="#222222" text-anchor="start">blocks</text>
+<rect x="150" y="40" width="28" height="36" rx="3" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<rect x="184" y="40" width="28" height="36" rx="3" fill="#1F4E79" stroke="#1F4E79" stroke-width="2" />
+<rect x="218" y="40" width="28" height="36" rx="3" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<rect x="252" y="40" width="28" height="36" rx="3" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<rect x="286" y="40" width="28" height="36" rx="3" fill="#1F4E79" stroke="#1F4E79" stroke-width="2" />
+<rect x="320" y="40" width="28" height="36" rx="3" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<rect x="354" y="40" width="28" height="36" rx="3" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<rect x="388" y="40" width="28" height="36" rx="3" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<rect x="422" y="40" width="28" height="36" rx="3" fill="#1F4E79" stroke="#1F4E79" stroke-width="2" />
+<rect x="456" y="40" width="28" height="36" rx="3" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<rect x="490" y="40" width="28" height="36" rx="3" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<rect x="524" y="40" width="28" height="36" rx="3" fill="#1F4E79" stroke="#1F4E79" stroke-width="2" />
+<rect x="558" y="40" width="28" height="36" rx="3" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<rect x="592" y="40" width="28" height="36" rx="3" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<rect x="626" y="40" width="28" height="36" rx="3" fill="#1F4E79" stroke="#1F4E79" stroke-width="2" />
+<rect x="660" y="40" width="28" height="36" rx="3" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<rect x="694" y="40" width="28" height="36" rx="3" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<rect x="728" y="40" width="28" height="36" rx="3" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<rect x="762" y="40" width="56" height="36" rx="3" fill="url(#hatchRed)" stroke="#C00000" stroke-width="2" />
+<text x="0" y="128" font-size="18" font-weight="bold" fill="#222222" text-anchor="start">Window</text>
+<text x="0" y="150" font-size="18" font-weight="normal" fill="#222222" text-anchor="start">128 tokens</text>
+<rect x="559.0" y="118" width="8.818181818181818" height="30" rx="1" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="570.8181818181819" y="118" width="8.818181818181818" height="30" rx="1" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="582.6363636363636" y="118" width="8.818181818181818" height="30" rx="1" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="594.4545454545455" y="118" width="8.818181818181818" height="30" rx="1" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="606.2727272727273" y="118" width="8.818181818181818" height="30" rx="1" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="618.0909090909091" y="118" width="8.818181818181818" height="30" rx="1" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="629.9090909090909" y="118" width="8.818181818181818" height="30" rx="1" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="641.7272727272727" y="118" width="8.818181818181818" height="30" rx="1" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="653.5454545454545" y="118" width="8.818181818181818" height="30" rx="1" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="665.3636363636364" y="118" width="8.818181818181818" height="30" rx="1" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="677.1818181818182" y="118" width="8.818181818181818" height="30" rx="1" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="689.0" y="118" width="8.818181818181818" height="30" rx="1" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="700.8181818181818" y="118" width="8.818181818181818" height="30" rx="1" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="712.6363636363636" y="118" width="8.818181818181818" height="30" rx="1" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="724.4545454545455" y="118" width="8.818181818181818" height="30" rx="1" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="736.2727272727273" y="118" width="8.818181818181818" height="30" rx="1" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="748.0909090909091" y="118" width="8.818181818181818" height="30" rx="1" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="759.9090909090909" y="118" width="8.818181818181818" height="30" rx="1" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="771.7272727272727" y="118" width="8.818181818181818" height="30" rx="1" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="783.5454545454545" y="118" width="8.818181818181818" height="30" rx="1" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="795.3636363636364" y="118" width="8.818181818181818" height="30" rx="1" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="807.1818181818182" y="118" width="8.818181818181818" height="30" rx="1" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<text x="544" y="142" font-size="20" font-weight="bold" fill="#595959" text-anchor="middle">…</text>
+<path d="M832,158 L832,8" fill="none" stroke="#222222" stroke-width="2"/>
+<text x="828" y="178" font-size="16" font-weight="bold" fill="#222222" text-anchor="end">query t</text>
+<text x="824" y="26" font-size="16" font-weight="bold" fill="#C00000" text-anchor="end">own block · not yet compressed</text>
+<path d="M0,192 L870,192" fill="none" stroke="#BFBFBF" stroke-width="1.2" stroke-dasharray="5,4"/>
+<text x="150" y="102" font-size="16" font-weight="normal" fill="#595959" text-anchor="start">top-k picks: filled</text>
+<rect x="0" y="206" width="190" height="64" rx="6" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.5" />
+<text x="95.0" y="234.0" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">1,024 + 128</text>
+<text x="95.0" y="256.0" font-size="18" font-weight="normal" fill="#222222" text-anchor="middle">entries × 512</text>
+<rect x="240" y="206" width="270" height="64" rx="6" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.5" />
+<text x="375.0" y="234.0" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">Shared-KV MQA</text>
+<text x="375.0" y="256.0" font-size="18" font-weight="normal" fill="#222222" text-anchor="middle">128 heads · K = V</text>
+<rect x="560" y="206" width="306" height="64" rx="6" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.5" />
+<text x="713.0" y="234.0" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">Grouped out-proj</text>
+<text x="713.0" y="256.0" font-size="18" font-weight="normal" fill="#222222" text-anchor="middle">16 groups → 7,168</text>
+<path d="M192,238.0 L238,238.0" fill="none" stroke="#222222" stroke-width="2.2" marker-end="url(#m222222)"/>
+<path d="M512,238.0 L558,238.0" fill="none" stroke="#222222" stroke-width="2.2" marker-end="url(#m222222)"/>
+</g>
+</svg>

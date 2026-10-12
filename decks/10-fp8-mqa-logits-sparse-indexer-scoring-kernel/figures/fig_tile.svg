@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="282pt" viewBox="0 0 870 282" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- MQA logits tile mapping -->
+<rect x="196.0" y="8.0" width="130.0" height="46.0" rx="3" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<rect x="326.0" y="8.0" width="130.0" height="46.0" rx="3" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="261.0" y="28.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="bold" font-style="normal">token t</text>
+<text x="261.0" y="47.0" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">64 heads</text>
+<text x="391.0" y="28.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="bold" font-style="normal">token t+1</text>
+<text x="391.0" y="47.0" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">64 heads</text>
+<text x="186.0" y="30.0" text-anchor="end" font-size="17" fill="#222222" font-weight="bold" font-style="normal">Q tile</text>
+<text x="186.0" y="50.0" text-anchor="end" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="normal">K = 128</text>
+<rect x="96.0" y="70.0" width="64.0" height="46.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="128.0" y="99.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="bold" font-style="normal">WG0</text>
+<text x="88.0" y="99.0" text-anchor="end" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">0–63</text>
+<rect x="96.0" y="116.0" width="64.0" height="46.0" rx="2" fill="#C9DDF0" stroke="#1F4E79" stroke-width="2" />
+<text x="128.0" y="145.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="bold" font-style="normal">WG1</text>
+<text x="88.0" y="145.0" text-anchor="end" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">64–127</text>
+<rect x="96.0" y="162.0" width="64.0" height="46.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="128.0" y="191.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="bold" font-style="normal">WG2</text>
+<text x="88.0" y="191.0" text-anchor="end" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">128–191</text>
+<rect x="96.0" y="208.0" width="64.0" height="46.0" rx="2" fill="#C9DDF0" stroke="#1F4E79" stroke-width="2" />
+<text x="128.0" y="237.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="bold" font-style="normal">WG3</text>
+<text x="88.0" y="237.0" text-anchor="end" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">192–255</text>
+<text x="108.0" y="272.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="normal">256 keys × 128</text>
+<rect x="196.0" y="70.0" width="130.0" height="46.0" rx="0" fill="#F4F8FC" stroke="#9DB7D5" stroke-width="1.2" />
+<rect x="326.0" y="70.0" width="130.0" height="46.0" rx="0" fill="#F4F8FC" stroke="#9DB7D5" stroke-width="1.2" />
+<rect x="196.0" y="116.0" width="130.0" height="46.0" rx="0" fill="#F4F8FC" stroke="#9DB7D5" stroke-width="1.2" />
+<rect x="326.0" y="116.0" width="130.0" height="46.0" rx="0" fill="#F4F8FC" stroke="#9DB7D5" stroke-width="1.2" />
+<rect x="196.0" y="162.0" width="130.0" height="46.0" rx="0" fill="#F4F8FC" stroke="#9DB7D5" stroke-width="1.2" />
+<rect x="326.0" y="162.0" width="130.0" height="46.0" rx="0" fill="#F4F8FC" stroke="#9DB7D5" stroke-width="1.2" />
+<rect x="196.0" y="208.0" width="130.0" height="46.0" rx="0" fill="#F4F8FC" stroke="#9DB7D5" stroke-width="1.2" />
+<rect x="326.0" y="208.0" width="130.0" height="46.0" rx="0" fill="#F4F8FC" stroke="#9DB7D5" stroke-width="1.2" />
+<rect x="196.0" y="70.0" width="260.0" height="184.0" rx="0" fill="none" stroke="#595959" stroke-width="2" />
+<text x="326.0" y="156.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">FP32 accumulators</text>
+<text x="326.0" y="178.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">256 × 128 (token, head)</text>
+<text x="326.0" y="272.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="normal">registers (SM90) · TMEM (SM100)</text>
+<line x1="460.0" y1="162.0" x2="562.0" y2="162.0" stroke="#1F4E79" stroke-width="2.6" marker-end="url(#arrAcc)"/>
+<text x="510.0" y="126.0" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal">ReLU · w</text>
+<text x="510.0" y="148.0" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal">Σ 64 heads</text>
+<rect x="568.0" y="70.0" width="34.0" height="184.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="585.0" y="62.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="bold" font-style="normal">t</text>
+<rect x="602.0" y="70.0" width="34.0" height="184.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="619.0" y="62.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="bold" font-style="normal">t+1</text>
+<text x="602.0" y="272.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">256 × 2 logits</text>
+<text x="664.0" y="100.0" text-anchor="start" font-size="17" fill="#222222" font-weight="bold" font-style="normal">M = keys</text>
+<text x="664.0" y="122.0" text-anchor="start" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="normal">64 per warpgroup</text>
+<text x="664.0" y="162.0" text-anchor="start" font-size="17" fill="#222222" font-weight="bold" font-style="normal">N = token × head</text>
+<text x="664.0" y="184.0" text-anchor="start" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="normal">128 = (128 / H) × H</text>
+<text x="664.0" y="224.0" text-anchor="start" font-size="17" fill="#222222" font-weight="bold" font-style="normal">one key read</text>
+<text x="664.0" y="246.0" text-anchor="start" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="normal">feeds 128 scores</text>
+</svg>

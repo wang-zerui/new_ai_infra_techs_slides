@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="300pt" viewBox="0 0 870 300" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- output-discarding checkpoint, build 1 -->
+<text x="138.0" y="90.0" text-anchor="end" font-size="18" fill="#222222" font-weight="bold" font-style="normal">compute</text>
+<text x="138.0" y="190.0" text-anchor="end" font-size="18" fill="#222222" font-weight="bold" font-style="normal">storage</text>
+<text x="138.0" y="210.0" text-anchor="end" font-size="18" fill="#222222" font-weight="bold" font-style="normal">of a</text>
+<text x="300.0" y="30.0" text-anchor="middle" font-size="19" fill="#222222" font-weight="bold" font-style="normal">forward</text>
+<line x1="472.0" y1="40.0" x2="472.0" y2="236.0" stroke="#7F7F7F" stroke-width="1.5" stroke-dasharray="6,5"/>
+<rect x="150.0" y="62.0" width="108.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="204.0" y="90.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">SwiGLU</text>
+<rect x="262.0" y="62.0" width="100.0" height="44.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="312.0" y="90.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">fc2</text>
+<rect x="366.0" y="62.0" width="100.0" height="44.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="416.0" y="90.3" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">free a</text>
+<rect x="258.0" y="170.0" width="208.0" height="40.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="362.0" y="195.9" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="normal" font-style="normal">a on GPU</text>
+<rect x="466.0" y="170.0" width="236.0" height="40.0" rx="4" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="1.8" stroke-dasharray="6,4" />
+<text x="584.0" y="195.9" text-anchor="middle" font-size="17" fill="#7F7F7F" font-weight="normal" font-style="normal">0 bytes · metadata kept</text>
+<text x="150.0" y="252.0" text-anchor="start" font-size="17" fill="#7F7F7F" font-weight="normal" font-style="italic">kept on GPU: z and the RNG state</text>
+<line x1="146.0" y1="270.0" x2="862.0" y2="270.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<text x="858.0" y="294.0" text-anchor="end" font-size="18" fill="#222222" font-weight="normal" font-style="normal">time</text>
+</svg>

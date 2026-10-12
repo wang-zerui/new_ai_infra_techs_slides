@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="262pt" viewBox="0 0 870 262" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchAcc" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#DEEBF7"/><line x1="0" y1="0" x2="0" y2="7" stroke="#1F4E79" stroke-width="1.6"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_where: forward-pass op vs optimizer hook -->
+<text x="0.0" y="64.0" text-anchor="start" font-size="20" fill="#222222" font-weight="bold" font-style="normal">forward</text>
+<text x="0.0" y="216.0" text-anchor="start" font-size="20" fill="#222222" font-weight="bold" font-style="normal">optimizer</text>
+<line x1="0.0" y1="134.0" x2="870.0" y2="134.0" stroke="#BFBFBF" stroke-width="1.2" stroke-dasharray="4,4"/>
+<rect x="124.0" y="24.0" width="110.0" height="68.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="179.0" y="53.9" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">q, k</text>
+<text x="179.0" y="74.6" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">proj</text>
+<rect x="262.0" y="24.0" width="124.0" height="68.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.4" />
+<text x="324.0" y="64.3" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">QK-Norm</text>
+<rect x="414.0" y="24.0" width="90.0" height="68.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="459.0" y="64.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">RoPE</text>
+<rect x="532.0" y="24.0" width="160.0" height="68.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="612.0" y="53.9" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">attention</text>
+<text x="612.0" y="74.6" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">kernel</text>
+<rect x="720.0" y="24.0" width="110.0" height="68.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="775.0" y="64.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">loss</text>
+<line x1="236.0" y1="58.0" x2="260.0" y2="58.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<line x1="388.0" y1="58.0" x2="412.0" y2="58.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<line x1="506.0" y1="58.0" x2="530.0" y2="58.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<line x1="694.0" y1="58.0" x2="718.0" y2="58.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<circle cx="264.0" cy="26.0" r="12" fill="#1F4E79"/>
+<text x="264.0" y="31.6" text-anchor="middle" font-size="16" fill="#FFFFFF" font-weight="bold" font-style="normal">3</text>
+<rect x="124.0" y="176.0" width="110.0" height="68.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="179.0" y="216.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">gradients</text>
+<rect x="262.0" y="176.0" width="124.0" height="68.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="324.0" y="206.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">Muon</text>
+<text x="324.0" y="226.7" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">update</text>
+<rect x="414.0" y="176.0" width="220.0" height="68.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" stroke-dasharray="6,4" />
+<text x="524.0" y="206.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">QK-Clip: rescale</text>
+<text x="524.0" y="226.7" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">Wq and Wk</text>
+<rect x="662.0" y="176.0" width="110.0" height="68.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="717.0" y="206.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">next</text>
+<text x="717.0" y="226.7" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">weights</text>
+<line x1="236.0" y1="210.0" x2="260.0" y2="210.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<line x1="388.0" y1="210.0" x2="412.0" y2="210.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<line x1="636.0" y1="210.0" x2="660.0" y2="210.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<line x1="612.0" y1="94.0" x2="612.0" y2="174.0" stroke="#7F7F7F" stroke-width="2" marker-end="url(#arrGray)" stroke-dasharray="6,4"/>
+<text x="620.0" y="158.0" text-anchor="start" font-size="17" fill="#7F7F7F" font-weight="normal" font-style="italic">per-head max logit</text>
+<text x="524.0" y="260.0" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="italic">deck 65</text>
+</svg>

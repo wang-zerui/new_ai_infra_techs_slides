@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="470pt" height="290pt" viewBox="0 0 470 290" font-family="Helvetica, Arial, sans-serif">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker><marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker><marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker><pattern id="hr" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" fill="#FBE5E5"/><line x1="0" y1="0" x2="0" y2="6" stroke="#C00000" stroke-width="1.6"/></pattern></defs>
+<rect x="110.0" y="8.0" width="250.0" height="40.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.5"/>
+<text x="235.0" y="34.0" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle" font-style="normal">rank i: local tokens only</text>
+<line x1="170.0" y1="50.0" x2="170.0" y2="76.0" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+<rect x="116.0" y="78.0" width="108.0" height="50.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.5"/>
+<text x="170.0" y="101.0" font-size="20" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-style="normal">M<tspan font-size="14" dy="5">i</tspan><tspan dy="-5">​</tspan></text>
+<text x="170.0" y="121.0" font-size="15" font-weight="normal" fill="#222222" text-anchor="middle" font-style="normal">d<tspan font-size="12" dy="4">k</tspan><tspan dy="-4"> × d</tspan><tspan font-size="12" dy="4">k</tspan></text>
+<line x1="170.0" y1="130.0" x2="170.0" y2="152.0" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+<line x1="310.0" y1="50.0" x2="310.0" y2="76.0" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+<rect x="256.0" y="78.0" width="108.0" height="50.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.5"/>
+<text x="310.0" y="101.0" font-size="20" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-style="normal">S̃<tspan font-size="14" dy="5">i</tspan><tspan dy="-5">​</tspan></text>
+<text x="310.0" y="121.0" font-size="15" font-weight="normal" fill="#222222" text-anchor="middle" font-style="normal">d<tspan font-size="12" dy="4">k</tspan><tspan dy="-4"> × d</tspan><tspan font-size="12" dy="4">v</tspan></text>
+<line x1="310.0" y1="130.0" x2="310.0" y2="152.0" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+<text x="58.0" y="179.0" font-size="20" font-weight="bold" fill="#222222" text-anchor="end" font-style="normal">S<tspan font-size="14" dy="5">in</tspan><tspan dy="-5">​</tspan></text>
+<line x1="64.0" y1="172.0" x2="150.0" y2="172.0" stroke="#222222" stroke-width="2.5" marker-end="url(#a)"/>
+<circle cx="170" cy="172" r="18" fill="#FFFFFF" stroke="#222222" stroke-width="2"/>
+<text x="170.0" y="179.0" font-size="22" font-weight="bold" fill="#222222" text-anchor="middle" font-style="normal">×</text>
+<line x1="188.0" y1="172.0" x2="290.0" y2="172.0" stroke="#222222" stroke-width="2.5" marker-end="url(#a)"/>
+<circle cx="310" cy="172" r="18" fill="#FFFFFF" stroke="#222222" stroke-width="2"/>
+<text x="310.0" y="179.0" font-size="22" font-weight="bold" fill="#222222" text-anchor="middle" font-style="normal">+</text>
+<line x1="328.0" y1="172.0" x2="398.0" y2="172.0" stroke="#222222" stroke-width="2.5" marker-end="url(#a)"/>
+<text x="404.0" y="179.0" font-size="20" font-weight="bold" fill="#222222" text-anchor="start" font-style="normal">S<tspan font-size="14" dy="5">out</tspan><tspan dy="-5">​</tspan></text>
+<text x="235.0" y="234.0" font-size="20" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-style="normal">S<tspan font-size="14" dy="5">out</tspan><tspan dy="-5">​</tspan> = M<tspan font-size="14" dy="5">i</tspan><tspan dy="-5">​</tspan> · S<tspan font-size="14" dy="5">in</tspan><tspan dy="-5">​</tspan> + S̃<tspan font-size="14" dy="5">i</tspan><tspan dy="-5">​</tspan></text>
+<text x="235.0" y="266.0" font-size="17" font-weight="normal" fill="#595959" text-anchor="middle" font-style="italic">affine maps compose: prefix scan</text>
+</svg>

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500pt" height="336pt" viewBox="0 0 500 336" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#BFBFBF" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- mHC around one layer -->
+<text x="60.0" y="148.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="bold" font-style="normal">x_l: 4 × d</text>
+<text x="445.0" y="148.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="bold" font-style="normal">x_l+1: 4 × d</text>
+<rect x="8.0" y="160.0" width="104.0" height="16.0" rx="2" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<rect x="394.0" y="160.0" width="102.0" height="16.0" rx="2" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<rect x="8.0" y="182.0" width="104.0" height="16.0" rx="2" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<rect x="394.0" y="182.0" width="102.0" height="16.0" rx="2" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<rect x="8.0" y="204.0" width="104.0" height="16.0" rx="2" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<rect x="394.0" y="204.0" width="102.0" height="16.0" rx="2" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<rect x="8.0" y="226.0" width="104.0" height="16.0" rx="2" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<rect x="394.0" y="226.0" width="102.0" height="16.0" rx="2" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<rect x="126.0" y="46.0" width="70.0" height="40.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="161.0" y="72.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">H_pre</text>
+<rect x="214.0" y="38.0" width="88.0" height="56.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="258.0" y="61.2" text-anchor="middle" font-size="20" fill="#222222" font-weight="bold" font-style="normal">F</text>
+<text x="258.0" y="81.8" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">attn / MoE</text>
+<rect x="320.0" y="46.0" width="72.0" height="40.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="356.0" y="72.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">H_post</text>
+<rect x="170.0" y="171.0" width="146.0" height="60.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="243.0" y="196.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">H_res 4×4</text>
+<text x="243.0" y="215.8" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">doubly stochastic</text>
+<line x1="112.0" y1="201.0" x2="169.0" y2="201.0" stroke="#222222" stroke-width="2.4" marker-end="url(#arr)"/>
+<circle cx="138" cy="201.0" r="3.5" fill="#222222"/>
+<line x1="316.0" y1="201.0" x2="361.0" y2="201.0" stroke="#222222" stroke-width="2.4" marker-end="url(#arr)"/>
+<text x="338.0" y="193.0" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="italic">4 × d</text>
+<circle cx="372" cy="201.0" r="10" fill="#FFFFFF" stroke="#222222" stroke-width="2"/>
+<line x1="366.0" y1="201.0" x2="378.0" y2="201.0" stroke="#222222" stroke-width="1.8"/>
+<line x1="372.0" y1="195.0" x2="372.0" y2="207.0" stroke="#222222" stroke-width="1.8"/>
+<line x1="382.0" y1="201.0" x2="393.0" y2="201.0" stroke="#222222" stroke-width="2.4" marker-end="url(#arr)"/>
+<path d="M 138 201.0 L 160 87" fill="none" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<text x="142.0" y="128.0" text-anchor="end" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="italic">4 × d</text>
+<line x1="196.0" y1="66.0" x2="213.0" y2="66.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<text x="205.0" y="58.0" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="italic">d</text>
+<line x1="302.0" y1="66.0" x2="319.0" y2="66.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<text x="311.0" y="58.0" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="italic">d</text>
+<path d="M 356 87 L 372 190.0" fill="none" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<text x="372.0" y="124.0" text-anchor="start" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="italic">4 × d</text>
+<text x="250.0" y="296.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="italic">24 coefficients per token and layer, from x_l:</text>
+<text x="250.0" y="318.0" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">RMSNorm · [4d → 24] GEMM · σ and Sinkhorn</text>
+</svg>

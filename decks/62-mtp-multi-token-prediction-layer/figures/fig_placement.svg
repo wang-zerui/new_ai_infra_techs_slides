@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="284pt" viewBox="0 0 870 284" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_placement: MTP placement in pipeline parallelism, three designs -->
+<rect x="8.0" y="30.0" width="262.0" height="206.0" rx="6" fill="#FFFFFF" stroke="#595959" stroke-width="1.6" stroke-dasharray="6,4" />
+<text x="20.0" y="52.0" text-anchor="start" font-size="17" fill="#222222" font-weight="bold" font-style="normal">one PP rank</text>
+<rect x="24.0" y="66.0" width="230.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="139.0" y="94.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">Embedding + first layers</text>
+<rect x="24.0" y="120.0" width="230.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="139.0" y="147.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">Last layers + head</text>
+<rect x="24.0" y="174.0" width="230.0" height="44.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="139.0" y="201.9" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal">MTP module</text>
+<text x="139.0" y="262.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">(a) DeepSeek-V3: DualPipe</text>
+<line x1="284.0" y1="20.0" x2="284.0" y2="284.0" stroke="#BFBFBF" stroke-width="1.2"/>
+<line x1="584.0" y1="20.0" x2="584.0" y2="284.0" stroke="#BFBFBF" stroke-width="1.2"/>
+<text x="409.0" y="40.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="italic">VPP 0</text>
+<text x="527.0" y="40.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="italic">VPP 1</text>
+<text x="348.0" y="79.0" text-anchor="end" font-size="16" fill="#222222" font-weight="normal" font-style="normal">rank 0</text>
+<rect x="354.0" y="52.0" width="110.0" height="42.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="409.0" y="79.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">Emb + 3 dec</text>
+<rect x="470.0" y="52.0" width="110.0" height="42.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="525.0" y="79.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">2 dec</text>
+<text x="348.0" y="161.0" text-anchor="end" font-size="16" fill="#222222" font-weight="normal" font-style="normal">rank 14</text>
+<rect x="354.0" y="134.0" width="110.0" height="42.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="409.0" y="160.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">2 dec</text>
+<rect x="470.0" y="134.0" width="110.0" height="42.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="525.0" y="160.9" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal">MTP</text>
+<text x="348.0" y="213.0" text-anchor="end" font-size="16" fill="#222222" font-weight="normal" font-style="normal">rank 15</text>
+<rect x="354.0" y="186.0" width="110.0" height="42.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="409.0" y="212.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">2 dec</text>
+<rect x="470.0" y="186.0" width="110.0" height="42.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="525.0" y="212.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">loss</text>
+<text x="467.0" y="118.0" text-anchor="middle" font-size="22" fill="#7F7F7F" font-weight="normal" font-style="normal">⋯</text>
+<text x="434.0" y="262.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">(b) MCore: own virtual stage</text>
+<rect x="600.0" y="30.0" width="262.0" height="98.0" rx="6" fill="#FFFFFF" stroke="#595959" stroke-width="1.6" stroke-dasharray="6,4" />
+<text x="610.0" y="52.0" text-anchor="start" font-size="17" fill="#222222" font-weight="bold" font-style="normal">stage N−1</text>
+<rect x="612.0" y="64.0" width="238.0" height="50.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="731.0" y="95.0" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal">MTP emb + block</text>
+<rect x="600.0" y="138.0" width="262.0" height="98.0" rx="6" fill="#FFFFFF" stroke="#595959" stroke-width="1.6" stroke-dasharray="6,4" />
+<text x="610.0" y="160.0" text-anchor="start" font-size="17" fill="#222222" font-weight="bold" font-style="normal">stage N (last)</text>
+<rect x="612.0" y="172.0" width="238.0" height="50.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="731.0" y="193.2" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">Output head</text>
+<text x="731.0" y="212.7" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">main + MTP</text>
+<text x="731.0" y="262.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">(c) GLM-5: split MTP</text>
+</svg>

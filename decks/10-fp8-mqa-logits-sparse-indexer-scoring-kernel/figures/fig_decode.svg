@@ -1,0 +1,135 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="266pt" viewBox="0 0 870 266" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- paged decode split-KV schedule -->
+<text x="0.0" y="18.0" text-anchor="start" font-size="17" fill="#222222" font-weight="bold" font-style="normal">requests cut into 256-key splits (4 pages of 64)</text>
+<rect x="30.0" y="28.0" width="54.0" height="44.0" rx="3" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.8" />
+<line x1="43.5" y1="32.0" x2="43.5" y2="68.0" stroke="#9DB7D5" stroke-width="1"/>
+<line x1="57.0" y1="32.0" x2="57.0" y2="68.0" stroke="#9DB7D5" stroke-width="1"/>
+<line x1="70.5" y1="32.0" x2="70.5" y2="68.0" stroke="#9DB7D5" stroke-width="1"/>
+<text x="57.0" y="56.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="bold" font-style="normal">R0</text>
+<rect x="88.0" y="28.0" width="54.0" height="44.0" rx="3" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.8" />
+<line x1="101.5" y1="32.0" x2="101.5" y2="68.0" stroke="#9DB7D5" stroke-width="1"/>
+<line x1="115.0" y1="32.0" x2="115.0" y2="68.0" stroke="#9DB7D5" stroke-width="1"/>
+<line x1="128.5" y1="32.0" x2="128.5" y2="68.0" stroke="#9DB7D5" stroke-width="1"/>
+<text x="115.0" y="56.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="bold" font-style="normal">R0</text>
+<rect x="146.0" y="28.0" width="54.0" height="44.0" rx="3" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.8" />
+<line x1="159.5" y1="32.0" x2="159.5" y2="68.0" stroke="#9DB7D5" stroke-width="1"/>
+<line x1="173.0" y1="32.0" x2="173.0" y2="68.0" stroke="#9DB7D5" stroke-width="1"/>
+<line x1="186.5" y1="32.0" x2="186.5" y2="68.0" stroke="#9DB7D5" stroke-width="1"/>
+<text x="173.0" y="56.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="bold" font-style="normal">R0</text>
+<rect x="204.0" y="28.0" width="54.0" height="44.0" rx="3" fill="#BDD7EE" stroke="#1F4E79" stroke-width="1.8" />
+<line x1="217.5" y1="32.0" x2="217.5" y2="68.0" stroke="#9DB7D5" stroke-width="1"/>
+<line x1="231.0" y1="32.0" x2="231.0" y2="68.0" stroke="#9DB7D5" stroke-width="1"/>
+<line x1="244.5" y1="32.0" x2="244.5" y2="68.0" stroke="#9DB7D5" stroke-width="1"/>
+<text x="231.0" y="56.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="bold" font-style="normal">R0</text>
+<rect x="262.0" y="28.0" width="54.0" height="44.0" rx="3" fill="#BDD7EE" stroke="#1F4E79" stroke-width="1.8" />
+<line x1="275.5" y1="32.0" x2="275.5" y2="68.0" stroke="#9DB7D5" stroke-width="1"/>
+<line x1="289.0" y1="32.0" x2="289.0" y2="68.0" stroke="#9DB7D5" stroke-width="1"/>
+<line x1="302.5" y1="32.0" x2="302.5" y2="68.0" stroke="#9DB7D5" stroke-width="1"/>
+<text x="289.0" y="56.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="bold" font-style="normal">R0</text>
+<rect x="320.0" y="28.0" width="54.0" height="44.0" rx="3" fill="#BDD7EE" stroke="#1F4E79" stroke-width="1.8" />
+<line x1="333.5" y1="32.0" x2="333.5" y2="68.0" stroke="#9DB7D5" stroke-width="1"/>
+<line x1="347.0" y1="32.0" x2="347.0" y2="68.0" stroke="#9DB7D5" stroke-width="1"/>
+<line x1="360.5" y1="32.0" x2="360.5" y2="68.0" stroke="#9DB7D5" stroke-width="1"/>
+<text x="347.0" y="56.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="bold" font-style="normal">R1</text>
+<rect x="378.0" y="28.0" width="54.0" height="44.0" rx="3" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.8" />
+<line x1="391.5" y1="32.0" x2="391.5" y2="68.0" stroke="#9DB7D5" stroke-width="1"/>
+<line x1="405.0" y1="32.0" x2="405.0" y2="68.0" stroke="#9DB7D5" stroke-width="1"/>
+<line x1="418.5" y1="32.0" x2="418.5" y2="68.0" stroke="#9DB7D5" stroke-width="1"/>
+<text x="405.0" y="56.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="bold" font-style="normal">R1</text>
+<rect x="436.0" y="28.0" width="54.0" height="44.0" rx="3" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.8" />
+<line x1="449.5" y1="32.0" x2="449.5" y2="68.0" stroke="#9DB7D5" stroke-width="1"/>
+<line x1="463.0" y1="32.0" x2="463.0" y2="68.0" stroke="#9DB7D5" stroke-width="1"/>
+<line x1="476.5" y1="32.0" x2="476.5" y2="68.0" stroke="#9DB7D5" stroke-width="1"/>
+<text x="463.0" y="56.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="bold" font-style="normal">R2</text>
+<rect x="494.0" y="28.0" width="54.0" height="44.0" rx="3" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.8" />
+<line x1="507.5" y1="32.0" x2="507.5" y2="68.0" stroke="#9DB7D5" stroke-width="1"/>
+<line x1="521.0" y1="32.0" x2="521.0" y2="68.0" stroke="#9DB7D5" stroke-width="1"/>
+<line x1="534.5" y1="32.0" x2="534.5" y2="68.0" stroke="#9DB7D5" stroke-width="1"/>
+<text x="521.0" y="56.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="bold" font-style="normal">R2</text>
+<rect x="552.0" y="28.0" width="54.0" height="44.0" rx="3" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.8" />
+<line x1="565.5" y1="32.0" x2="565.5" y2="68.0" stroke="#9DB7D5" stroke-width="1"/>
+<line x1="579.0" y1="32.0" x2="579.0" y2="68.0" stroke="#9DB7D5" stroke-width="1"/>
+<line x1="592.5" y1="32.0" x2="592.5" y2="68.0" stroke="#9DB7D5" stroke-width="1"/>
+<text x="579.0" y="56.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="bold" font-style="normal">R2</text>
+<rect x="610.0" y="28.0" width="54.0" height="44.0" rx="3" fill="#BDD7EE" stroke="#1F4E79" stroke-width="1.8" />
+<line x1="623.5" y1="32.0" x2="623.5" y2="68.0" stroke="#9DB7D5" stroke-width="1"/>
+<line x1="637.0" y1="32.0" x2="637.0" y2="68.0" stroke="#9DB7D5" stroke-width="1"/>
+<line x1="650.5" y1="32.0" x2="650.5" y2="68.0" stroke="#9DB7D5" stroke-width="1"/>
+<text x="637.0" y="56.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="bold" font-style="normal">R2</text>
+<rect x="668.0" y="28.0" width="54.0" height="44.0" rx="3" fill="#BDD7EE" stroke="#1F4E79" stroke-width="1.8" />
+<line x1="681.5" y1="32.0" x2="681.5" y2="68.0" stroke="#9DB7D5" stroke-width="1"/>
+<line x1="695.0" y1="32.0" x2="695.0" y2="68.0" stroke="#9DB7D5" stroke-width="1"/>
+<line x1="708.5" y1="32.0" x2="708.5" y2="68.0" stroke="#9DB7D5" stroke-width="1"/>
+<text x="695.0" y="56.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="bold" font-style="normal">R2</text>
+<rect x="726.0" y="28.0" width="54.0" height="44.0" rx="3" fill="#BDD7EE" stroke="#1F4E79" stroke-width="1.8" />
+<line x1="739.5" y1="32.0" x2="739.5" y2="68.0" stroke="#9DB7D5" stroke-width="1"/>
+<line x1="753.0" y1="32.0" x2="753.0" y2="68.0" stroke="#9DB7D5" stroke-width="1"/>
+<line x1="766.5" y1="32.0" x2="766.5" y2="68.0" stroke="#9DB7D5" stroke-width="1"/>
+<text x="753.0" y="56.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="bold" font-style="normal">R2</text>
+<rect x="784.0" y="28.0" width="54.0" height="44.0" rx="3" fill="#BDD7EE" stroke="#1F4E79" stroke-width="1.8" />
+<line x1="797.5" y1="32.0" x2="797.5" y2="68.0" stroke="#9DB7D5" stroke-width="1"/>
+<line x1="811.0" y1="32.0" x2="811.0" y2="68.0" stroke="#9DB7D5" stroke-width="1"/>
+<line x1="824.5" y1="32.0" x2="824.5" y2="68.0" stroke="#9DB7D5" stroke-width="1"/>
+<text x="811.0" y="56.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="bold" font-style="normal">R2</text>
+<line x1="318.0" y1="22.0" x2="318.0" y2="78.0" stroke="#222222" stroke-width="2.4"/>
+<line x1="434.0" y1="22.0" x2="434.0" y2="78.0" stroke="#222222" stroke-width="2.4"/>
+<path d="M32,84 V92 H198 V84" fill="none" stroke="#1F4E79" stroke-width="2"/>
+<text x="115.0" y="112.0" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal">SM0</text>
+<path d="M206,84 V92 H372 V84" fill="none" stroke="#1F4E79" stroke-width="2"/>
+<text x="289.0" y="112.0" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal">SM1</text>
+<path d="M380,84 V92 H604 V84" fill="none" stroke="#1F4E79" stroke-width="2"/>
+<text x="492.0" y="112.0" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal">SM2</text>
+<path d="M612,84 V92 H836 V84" fill="none" stroke="#1F4E79" stroke-width="2"/>
+<text x="724.0" y="112.0" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal">SM3</text>
+<text x="866.0" y="18.0" text-anchor="end" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="italic">equal shares per SM</text>
+<line x1="0.0" y1="120.0" x2="870.0" y2="120.0" stroke="#BFBFBF" stroke-width="1.2"/>
+<text x="0.0" y="142.0" text-anchor="start" font-size="17" fill="#222222" font-weight="bold" font-style="normal">one split inside a CTA</text>
+<rect x="0.0" y="154.0" width="100.0" height="34.0" rx="3" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="50.0" y="177.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="bold" font-style="normal">page 0</text>
+<rect x="0.0" y="206.0" width="100.0" height="46.0" rx="5" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.2" />
+<text x="50.0" y="226.0" text-anchor="middle" font-size="15" fill="#222222" font-weight="bold" font-style="normal">KV group 0</text>
+<text x="50.0" y="244.0" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">TMA + WG</text>
+<line x1="50.0" y1="190.0" x2="50.0" y2="203.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="112.0" y="154.0" width="100.0" height="34.0" rx="3" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="162.0" y="177.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="bold" font-style="normal">page 1</text>
+<rect x="112.0" y="206.0" width="100.0" height="46.0" rx="5" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.2" />
+<text x="162.0" y="226.0" text-anchor="middle" font-size="15" fill="#222222" font-weight="bold" font-style="normal">KV group 1</text>
+<text x="162.0" y="244.0" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">TMA + WG</text>
+<line x1="162.0" y1="190.0" x2="162.0" y2="203.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="224.0" y="154.0" width="100.0" height="34.0" rx="3" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="274.0" y="177.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="bold" font-style="normal">page 2</text>
+<rect x="224.0" y="206.0" width="100.0" height="46.0" rx="5" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.2" />
+<text x="274.0" y="226.0" text-anchor="middle" font-size="15" fill="#222222" font-weight="bold" font-style="normal">KV group 2</text>
+<text x="274.0" y="244.0" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">TMA + WG</text>
+<line x1="274.0" y1="190.0" x2="274.0" y2="203.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="336.0" y="154.0" width="100.0" height="34.0" rx="3" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="386.0" y="177.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="bold" font-style="normal">page 3</text>
+<rect x="336.0" y="206.0" width="100.0" height="46.0" rx="5" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.2" />
+<text x="386.0" y="226.0" text-anchor="middle" font-size="15" fill="#222222" font-weight="bold" font-style="normal">KV group 3</text>
+<text x="386.0" y="244.0" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">TMA + WG</text>
+<line x1="386.0" y1="190.0" x2="386.0" y2="203.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<text x="456.0" y="177.0" text-anchor="start" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="italic">pages located via the block table</text>
+<rect x="486.0" y="206.0" width="150.0" height="46.0" rx="5" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2.4" />
+<text x="561.0" y="226.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="bold" font-style="normal">own logit</text>
+<text x="561.0" y="244.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="bold" font-style="normal">columns</text>
+<line x1="450.0" y1="229.0" x2="483.0" y2="229.0" stroke="#1F4E79" stroke-width="2.4" marker-end="url(#arrAcc)"/>
+<text x="660.0" y="218.0" text-anchor="start" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal">no combine step:</text>
+<text x="660.0" y="240.0" text-anchor="start" font-size="16" fill="#222222" font-weight="normal" font-style="normal">each key is scored</text>
+<text x="660.0" y="260.0" text-anchor="start" font-size="16" fill="#222222" font-weight="normal" font-style="normal">independently</text>
+</svg>

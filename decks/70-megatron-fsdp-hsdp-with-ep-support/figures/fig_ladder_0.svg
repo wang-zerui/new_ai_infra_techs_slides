@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="486pt" height="330pt" viewBox="0 0 486 330" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_ladder_0: DDP vs distributed optimizer on 4 ranks -->
+<text x="88.0" y="106.0" text-anchor="end" font-size="16" fill="#222222" font-weight="bold" font-style="normal">optimizer</text>
+<text x="88.0" y="125.0" text-anchor="end" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">12 B</text>
+<text x="88.0" y="168.0" text-anchor="end" font-size="16" fill="#222222" font-weight="bold" font-style="normal">gradient</text>
+<text x="88.0" y="187.0" text-anchor="end" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">4 B</text>
+<text x="88.0" y="216.0" text-anchor="end" font-size="16" fill="#222222" font-weight="bold" font-style="normal">weight</text>
+<text x="88.0" y="235.0" text-anchor="end" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">2 B</text>
+<text x="194.0" y="24.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">DDP</text>
+<text x="194.0" y="46.0" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal" font-family="Menlo, monospace">no_shard</text>
+<rect x="122.0" y="72.0" width="30.0" height="72.0" rx="0" fill="#FBE5E5" stroke="#C00000" stroke-width="1.6" />
+<rect x="122.0" y="148.0" width="30.0" height="44.0" rx="0" fill="#FBE5E5" stroke="#C00000" stroke-width="1.6" />
+<rect x="122.0" y="196.0" width="30.0" height="44.0" rx="0" fill="#FBE5E5" stroke="#C00000" stroke-width="1.6" />
+<text x="137.0" y="260.0" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">r0</text>
+<rect x="160.0" y="72.0" width="30.0" height="72.0" rx="0" fill="#FBE5E5" stroke="#C00000" stroke-width="1.6" />
+<rect x="160.0" y="148.0" width="30.0" height="44.0" rx="0" fill="#FBE5E5" stroke="#C00000" stroke-width="1.6" />
+<rect x="160.0" y="196.0" width="30.0" height="44.0" rx="0" fill="#FBE5E5" stroke="#C00000" stroke-width="1.6" />
+<text x="175.0" y="260.0" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">r1</text>
+<rect x="198.0" y="72.0" width="30.0" height="72.0" rx="0" fill="#FBE5E5" stroke="#C00000" stroke-width="1.6" />
+<rect x="198.0" y="148.0" width="30.0" height="44.0" rx="0" fill="#FBE5E5" stroke="#C00000" stroke-width="1.6" />
+<rect x="198.0" y="196.0" width="30.0" height="44.0" rx="0" fill="#FBE5E5" stroke="#C00000" stroke-width="1.6" />
+<text x="213.0" y="260.0" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">r2</text>
+<rect x="236.0" y="72.0" width="30.0" height="72.0" rx="0" fill="#FBE5E5" stroke="#C00000" stroke-width="1.6" />
+<rect x="236.0" y="148.0" width="30.0" height="44.0" rx="0" fill="#FBE5E5" stroke="#C00000" stroke-width="1.6" />
+<rect x="236.0" y="196.0" width="30.0" height="44.0" rx="0" fill="#FBE5E5" stroke="#C00000" stroke-width="1.6" />
+<text x="251.0" y="260.0" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">r3</text>
+<text x="386.0" y="24.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">Dist. optimizer</text>
+<text x="386.0" y="46.0" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal" font-family="Menlo, monospace">optim</text>
+<rect x="314.0" y="72.0" width="30.0" height="18.0" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.6" />
+<rect x="314.0" y="90.0" width="30.0" height="18.0" rx="0" fill="#FFFFFF" stroke="#BFBFBF" stroke-width="1" stroke-dasharray="3,2" />
+<rect x="314.0" y="108.0" width="30.0" height="18.0" rx="0" fill="#FFFFFF" stroke="#BFBFBF" stroke-width="1" stroke-dasharray="3,2" />
+<rect x="314.0" y="126.0" width="30.0" height="18.0" rx="0" fill="#FFFFFF" stroke="#BFBFBF" stroke-width="1" stroke-dasharray="3,2" />
+<rect x="314.0" y="148.0" width="30.0" height="44.0" rx="0" fill="#FBE5E5" stroke="#C00000" stroke-width="1.6" />
+<rect x="314.0" y="196.0" width="30.0" height="44.0" rx="0" fill="#FBE5E5" stroke="#C00000" stroke-width="1.6" />
+<text x="329.0" y="260.0" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">r0</text>
+<rect x="352.0" y="72.0" width="30.0" height="18.0" rx="0" fill="#FFFFFF" stroke="#BFBFBF" stroke-width="1" stroke-dasharray="3,2" />
+<rect x="352.0" y="90.0" width="30.0" height="18.0" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.6" />
+<rect x="352.0" y="108.0" width="30.0" height="18.0" rx="0" fill="#FFFFFF" stroke="#BFBFBF" stroke-width="1" stroke-dasharray="3,2" />
+<rect x="352.0" y="126.0" width="30.0" height="18.0" rx="0" fill="#FFFFFF" stroke="#BFBFBF" stroke-width="1" stroke-dasharray="3,2" />
+<rect x="352.0" y="148.0" width="30.0" height="44.0" rx="0" fill="#FBE5E5" stroke="#C00000" stroke-width="1.6" />
+<rect x="352.0" y="196.0" width="30.0" height="44.0" rx="0" fill="#FBE5E5" stroke="#C00000" stroke-width="1.6" />
+<text x="367.0" y="260.0" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">r1</text>
+<rect x="390.0" y="72.0" width="30.0" height="18.0" rx="0" fill="#FFFFFF" stroke="#BFBFBF" stroke-width="1" stroke-dasharray="3,2" />
+<rect x="390.0" y="90.0" width="30.0" height="18.0" rx="0" fill="#FFFFFF" stroke="#BFBFBF" stroke-width="1" stroke-dasharray="3,2" />
+<rect x="390.0" y="108.0" width="30.0" height="18.0" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.6" />
+<rect x="390.0" y="126.0" width="30.0" height="18.0" rx="0" fill="#FFFFFF" stroke="#BFBFBF" stroke-width="1" stroke-dasharray="3,2" />
+<rect x="390.0" y="148.0" width="30.0" height="44.0" rx="0" fill="#FBE5E5" stroke="#C00000" stroke-width="1.6" />
+<rect x="390.0" y="196.0" width="30.0" height="44.0" rx="0" fill="#FBE5E5" stroke="#C00000" stroke-width="1.6" />
+<text x="405.0" y="260.0" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">r2</text>
+<rect x="428.0" y="72.0" width="30.0" height="18.0" rx="0" fill="#FFFFFF" stroke="#BFBFBF" stroke-width="1" stroke-dasharray="3,2" />
+<rect x="428.0" y="90.0" width="30.0" height="18.0" rx="0" fill="#FFFFFF" stroke="#BFBFBF" stroke-width="1" stroke-dasharray="3,2" />
+<rect x="428.0" y="108.0" width="30.0" height="18.0" rx="0" fill="#FFFFFF" stroke="#BFBFBF" stroke-width="1" stroke-dasharray="3,2" />
+<rect x="428.0" y="126.0" width="30.0" height="18.0" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.6" />
+<rect x="428.0" y="148.0" width="30.0" height="44.0" rx="0" fill="#FBE5E5" stroke="#C00000" stroke-width="1.6" />
+<rect x="428.0" y="196.0" width="30.0" height="44.0" rx="0" fill="#FBE5E5" stroke="#C00000" stroke-width="1.6" />
+<text x="443.0" y="260.0" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">r3</text>
+<rect x="20.0" y="274.0" width="22.0" height="16.0" rx="0" fill="#FBE5E5" stroke="#C00000" stroke-width="1.6" />
+<text x="50.0" y="288.0" text-anchor="start" font-size="16" fill="#222222" font-weight="normal" font-style="normal">replicated on every rank</text>
+<rect x="270.0" y="274.0" width="22.0" height="16.0" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.6" />
+<text x="300.0" y="288.0" text-anchor="start" font-size="16" fill="#222222" font-weight="normal" font-style="normal">this rank&#x27;s shard</text>
+<rect x="20.0" y="302.0" width="22.0" height="16.0" rx="0" fill="#FFFFFF" stroke="#BFBFBF" stroke-width="1" stroke-dasharray="3,2" />
+<text x="50.0" y="316.0" text-anchor="start" font-size="16" fill="#222222" font-weight="normal" font-style="normal">held by other ranks</text>
+</svg>

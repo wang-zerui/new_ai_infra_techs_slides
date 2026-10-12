@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="876pt" height="306pt" viewBox="0 0 876 306" font-family="Helvetica, Arial, sans-serif">
+<defs><marker id="m222222" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker><pattern id="hatchRed" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#FBE5E5"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2"/></pattern><pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#fff"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/></pattern></defs>
+<rect width="876" height="306" fill="#fff"/>
+<g transform="translate(3,3)">
+<rect x="0" y="0" width="664" height="300" rx="6" fill="#fff" stroke="#595959" stroke-width="1.5" stroke-dasharray="7,5" />
+<text x="14" y="26" font-size="18" font-weight="bold" fill="#595959" text-anchor="start">One HCA layer</text>
+<rect x="16" y="46" width="140" height="60" rx="6" fill="#fff" stroke="#595959" stroke-width="2" />
+<text x="86.0" y="72.0" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">Context</text>
+<text x="86.0" y="94.0" font-size="18" font-weight="normal" fill="#222222" text-anchor="middle">n tokens</text>
+<rect x="190" y="46" width="160" height="60" rx="6" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.5" />
+<text x="270.0" y="72.0" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">Compressor</text>
+<text x="270.0" y="94.0" font-size="18" font-weight="normal" fill="#222222" text-anchor="middle">m′ = 128</text>
+<rect x="392" y="46" width="160" height="60" rx="6" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.5" />
+<text x="472.0" y="72.0" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">KV entries</text>
+<text x="472.0" y="94.0" font-size="18" font-weight="normal" fill="#222222" text-anchor="middle">n/128 × 512</text>
+<rect x="16" y="142" width="140" height="54" rx="6" fill="#fff" stroke="#595959" stroke-width="2" />
+<text x="86.0" y="175.0" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">Query token</text>
+<rect x="190" y="142" width="160" height="54" rx="6" fill="#fff" stroke="#595959" stroke-width="2" />
+<text x="270.0" y="175.0" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">Query latent</text>
+<rect x="16" y="224" width="140" height="60" rx="6" fill="#fff" stroke="#595959" stroke-width="2" />
+<text x="86.0" y="250.0" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">Last 128</text>
+<text x="86.0" y="272.0" font-size="18" font-weight="normal" fill="#222222" text-anchor="middle">tokens</text>
+<rect x="392" y="224" width="160" height="60" rx="6" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.5" />
+<text x="472.0" y="250.0" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">Window</text>
+<text x="472.0" y="272.0" font-size="18" font-weight="normal" fill="#222222" text-anchor="middle">128 raw entries</text>
+<rect x="576" y="46" width="76" height="238" rx="6" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.5" />
+<text x="614.0" y="139.4" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">Dense</text>
+<text x="614.0" y="160.7" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">shared</text>
+<text x="614.0" y="181.9" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">KV</text>
+<text x="614.0" y="203.2" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">MQA</text>
+<path d="M158,76 L188,76" fill="none" stroke="#222222" stroke-width="2.2" marker-end="url(#m222222)"/>
+<path d="M352,76 L390,76" fill="none" stroke="#222222" stroke-width="2.2" marker-end="url(#m222222)"/>
+<path d="M554,76 L574,76" fill="none" stroke="#222222" stroke-width="2.2" marker-end="url(#m222222)"/>
+<path d="M158,169 L188,169" fill="none" stroke="#222222" stroke-width="2.2" marker-end="url(#m222222)"/>
+<path d="M352,169 H574" fill="none" stroke="#222222" stroke-width="2.2" marker-end="url(#m222222)"/>
+<text x="392" y="162" font-size="16" font-weight="normal" fill="#222222" text-anchor="start">attention q</text>
+<path d="M158,254 L390,254" fill="none" stroke="#222222" stroke-width="2.2" marker-end="url(#m222222)"/>
+<path d="M554,254 L574,254" fill="none" stroke="#222222" stroke-width="2.2" marker-end="url(#m222222)"/>
+<circle cx="190" cy="46" r="13" fill="#1F4E79"/>
+<text x="190" y="52.3" font-size="18" font-weight="bold" fill="#fff" text-anchor="middle">1</text>
+<circle cx="576" cy="46" r="13" fill="#1F4E79"/>
+<text x="576" y="52.3" font-size="18" font-weight="bold" fill="#fff" text-anchor="middle">2</text>
+<text x="801.0" y="26" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">V4-Pro stack</text>
+<rect x="736" y="40" width="130" height="30" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.5" />
+<text x="801.0" y="61" font-size="18" font-weight="bold" fill="#1F4E79" text-anchor="middle">L0 HCA</text>
+<rect x="736" y="78" width="130" height="30" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.5" />
+<text x="801.0" y="99" font-size="18" font-weight="bold" fill="#1F4E79" text-anchor="middle">L1 HCA</text>
+<rect x="736" y="116" width="130" height="30" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="801.0" y="137" font-size="18" font-weight="normal" fill="#222222" text-anchor="middle">L2 CSA</text>
+<rect x="736" y="154" width="130" height="30" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.5" />
+<text x="801.0" y="175" font-size="18" font-weight="bold" fill="#1F4E79" text-anchor="middle">L3 HCA</text>
+<rect x="736" y="192" width="130" height="30" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="801.0" y="213" font-size="18" font-weight="normal" fill="#222222" text-anchor="middle">L4 CSA</text>
+<text x="801.0" y="244" font-size="20" font-weight="bold" fill="#595959" text-anchor="middle">⋮</text>
+<rect x="736" y="256" width="130" height="30" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="801.0" y="277" font-size="18" font-weight="normal" fill="#222222" text-anchor="middle">L60 CSA</text>
+<path d="M666,2 L734,154" fill="none" stroke="#595959" stroke-width="1.5" stroke-dasharray="5,4"/>
+<path d="M666,298 L734,184" fill="none" stroke="#595959" stroke-width="1.5" stroke-dasharray="5,4"/>
+<circle cx="736" cy="40" r="13" fill="#1F4E79"/>
+<text x="736" y="46.3" font-size="18" font-weight="bold" fill="#fff" text-anchor="middle">3</text>
+</g>
+</svg>

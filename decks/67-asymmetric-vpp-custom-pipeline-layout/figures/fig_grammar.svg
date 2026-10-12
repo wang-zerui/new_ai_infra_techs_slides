@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="286pt" viewBox="0 0 870 286" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_grammar: layout string -> unrolled -> stage list -> VPP -->
+<text x="150.0" y="38.0" text-anchor="end" font-size="18" fill="#222222" font-weight="bold" font-style="normal">layout</text>
+<text x="166.0" y="39.0" text-anchor="start" font-size="24" fill="#1F4E79" font-weight="bold" font-style="normal" font-family="Menlo, 'Courier New', monospace">Et*3|(tt|)*29m|L</text>
+<line x1="190.0" y1="54.0" x2="190.0" y2="82.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<text x="206.0" y="74.0" text-anchor="start" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="italic">unroll x*n and (…)*n</text>
+<text x="150.0" y="112.0" text-anchor="end" font-size="18" fill="#222222" font-weight="bold" font-style="normal">unrolled</text>
+<text x="166.0" y="113.0" text-anchor="start" font-size="22" fill="#222222" font-weight="normal" font-style="normal" font-family="Menlo, 'Courier New', monospace">Ettt|tt|tt|tt| … |tt|m|L</text>
+<line x1="190.0" y1="128.0" x2="190.0" y2="156.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<text x="206.0" y="148.0" text-anchor="start" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="italic">split on</text>
+<text x="272.0" y="149.0" text-anchor="start" font-size="18" fill="#222222" font-weight="bold" font-style="normal" font-family="Menlo, 'Courier New', monospace">|</text>
+<text x="150.0" y="192.0" text-anchor="end" font-size="18" fill="#222222" font-weight="bold" font-style="normal">stages</text>
+<rect x="166.0" y="166.0" width="70.0" height="40.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="201.0" y="192.7" text-anchor="middle" font-size="19" fill="#1F4E79" font-weight="bold" font-style="normal">Ettt</text>
+<text x="201.0" y="228.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="normal">s0</text>
+<rect x="244.0" y="166.0" width="52.0" height="40.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="270.0" y="192.7" text-anchor="middle" font-size="19" fill="#222222" font-weight="normal" font-style="normal">tt</text>
+<text x="270.0" y="228.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="normal">s1</text>
+<rect x="304.0" y="166.0" width="52.0" height="40.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="330.0" y="192.7" text-anchor="middle" font-size="19" fill="#222222" font-weight="normal" font-style="normal">tt</text>
+<text x="330.0" y="228.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="normal">s2</text>
+<rect x="364.0" y="166.0" width="52.0" height="40.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="390.0" y="192.7" text-anchor="middle" font-size="19" fill="#222222" font-weight="normal" font-style="normal">tt</text>
+<text x="390.0" y="228.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="normal">s3</text>
+<text x="446.0" y="192.0" text-anchor="middle" font-size="22" fill="#222222" font-weight="normal" font-style="normal">…</text>
+<rect x="468.0" y="166.0" width="52.0" height="40.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="494.0" y="192.7" text-anchor="middle" font-size="19" fill="#222222" font-weight="normal" font-style="normal">tt</text>
+<text x="494.0" y="228.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="normal">s29</text>
+<rect x="528.0" y="166.0" width="52.0" height="40.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="554.0" y="192.7" text-anchor="middle" font-size="19" fill="#1F4E79" font-weight="bold" font-style="normal">m</text>
+<text x="554.0" y="228.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="normal">s30</text>
+<rect x="588.0" y="166.0" width="52.0" height="40.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="614.0" y="192.7" text-anchor="middle" font-size="19" fill="#1F4E79" font-weight="bold" font-style="normal">L</text>
+<text x="614.0" y="228.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="normal">s31</text>
+<text x="666.0" y="182.0" text-anchor="start" font-size="18" fill="#222222" font-weight="normal" font-style="normal">32 stages ÷ PP 8</text>
+<text x="666.0" y="206.0" text-anchor="start" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">= VPP 4</text>
+<text x="166.0" y="272.0" text-anchor="start" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="normal">E embedding · t transformer layer · m MTP layer · L loss</text>
+</svg>

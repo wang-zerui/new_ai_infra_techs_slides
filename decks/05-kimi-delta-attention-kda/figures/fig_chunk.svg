@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="290pt" viewBox="0 0 870 290" font-family="Helvetica, Arial, sans-serif">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker><marker id="k" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker></defs>
+<rect x="16" y="34" width="150" height="40" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.5" />
+<line x1="34.8" y1="38" x2="34.8" y2="70" stroke="#BFBFBF" stroke-width="1"/>
+<line x1="53.5" y1="38" x2="53.5" y2="70" stroke="#BFBFBF" stroke-width="1"/>
+<line x1="72.2" y1="38" x2="72.2" y2="70" stroke="#BFBFBF" stroke-width="1"/>
+<line x1="91.0" y1="38" x2="91.0" y2="70" stroke="#BFBFBF" stroke-width="1"/>
+<line x1="109.8" y1="38" x2="109.8" y2="70" stroke="#BFBFBF" stroke-width="1"/>
+<line x1="128.5" y1="38" x2="128.5" y2="70" stroke="#BFBFBF" stroke-width="1"/>
+<line x1="147.2" y1="38" x2="147.2" y2="70" stroke="#BFBFBF" stroke-width="1"/>
+<text x="91.0" y="25.0" font-size="18" font-weight="normal" fill="#222222" text-anchor="middle" font-style="normal">chunk t−1</text>
+<line x1="167" y1="54.0" x2="176" y2="54.0" stroke="#1F4E79" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="178" y="36" width="44" height="36" rx="3" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2.5" />
+<text x="200.0" y="60.0" font-size="18" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-style="normal">S</text>
+<line x1="223" y1="54.0" x2="232" y2="54.0" stroke="#1F4E79" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="234" y="34" width="150" height="40" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<line x1="252.8" y1="38" x2="252.8" y2="70" stroke="#BFBFBF" stroke-width="1"/>
+<line x1="271.5" y1="38" x2="271.5" y2="70" stroke="#BFBFBF" stroke-width="1"/>
+<line x1="290.2" y1="38" x2="290.2" y2="70" stroke="#BFBFBF" stroke-width="1"/>
+<line x1="309.0" y1="38" x2="309.0" y2="70" stroke="#BFBFBF" stroke-width="1"/>
+<line x1="327.8" y1="38" x2="327.8" y2="70" stroke="#BFBFBF" stroke-width="1"/>
+<line x1="346.5" y1="38" x2="346.5" y2="70" stroke="#BFBFBF" stroke-width="1"/>
+<line x1="365.2" y1="38" x2="365.2" y2="70" stroke="#BFBFBF" stroke-width="1"/>
+<text x="309.0" y="25.0" font-size="18" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-style="normal">chunk t</text>
+<line x1="385" y1="54.0" x2="394" y2="54.0" stroke="#1F4E79" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="396" y="36" width="44" height="36" rx="3" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2.5" />
+<text x="418.0" y="60.0" font-size="18" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-style="normal">S</text>
+<line x1="441" y1="54.0" x2="450" y2="54.0" stroke="#1F4E79" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="452" y="34" width="150" height="40" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.5" />
+<line x1="470.8" y1="38" x2="470.8" y2="70" stroke="#BFBFBF" stroke-width="1"/>
+<line x1="489.5" y1="38" x2="489.5" y2="70" stroke="#BFBFBF" stroke-width="1"/>
+<line x1="508.2" y1="38" x2="508.2" y2="70" stroke="#BFBFBF" stroke-width="1"/>
+<line x1="527.0" y1="38" x2="527.0" y2="70" stroke="#BFBFBF" stroke-width="1"/>
+<line x1="545.8" y1="38" x2="545.8" y2="70" stroke="#BFBFBF" stroke-width="1"/>
+<line x1="564.5" y1="38" x2="564.5" y2="70" stroke="#BFBFBF" stroke-width="1"/>
+<line x1="583.2" y1="38" x2="583.2" y2="70" stroke="#BFBFBF" stroke-width="1"/>
+<text x="527.0" y="25.0" font-size="18" font-weight="normal" fill="#222222" text-anchor="middle" font-style="normal">chunk t+1</text>
+<line x1="603" y1="54.0" x2="612" y2="54.0" stroke="#1F4E79" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="614" y="36" width="44" height="36" rx="3" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2.5" />
+<text x="636.0" y="60.0" font-size="18" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-style="normal">S</text>
+<line x1="659" y1="54.0" x2="668" y2="54.0" stroke="#1F4E79" stroke-width="2.5" marker-end="url(#a)"/>
+<text x="690.0" y="60.0" font-size="22" font-weight="bold" fill="#222222" text-anchor="start" font-style="normal">⋯</text>
+<text x="730.0" y="60.0" font-size="17" font-weight="normal" fill="#595959" text-anchor="start" font-style="italic">C = 64 tokens</text>
+<line x1="234" y1="74" x2="16" y2="104" stroke="#595959" stroke-width="1.2" stroke-dasharray="4,3"/>
+<line x1="384" y1="74" x2="854" y2="104" stroke="#595959" stroke-width="1.2" stroke-dasharray="4,3"/>
+<rect x="16" y="104" width="838" height="182" rx="6" fill="#FFFFFF" stroke="#595959" stroke-width="1.5" stroke-dasharray="6,4"/>
+<text x="150.0" y="132.0" font-size="19" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-style="normal">Intra-chunk: parallel</text>
+<rect x="40" y="146" width="13" height="13" rx="0" fill="#9DC3E6" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="53" y="146" width="13" height="13" rx="0" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="66" y="146" width="13" height="13" rx="0" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="79" y="146" width="13" height="13" rx="0" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="92" y="146" width="13" height="13" rx="0" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="105" y="146" width="13" height="13" rx="0" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="118" y="146" width="13" height="13" rx="0" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="131" y="146" width="13" height="13" rx="0" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="40" y="159" width="13" height="13" rx="0" fill="#9DC3E6" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="53" y="159" width="13" height="13" rx="0" fill="#9DC3E6" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="66" y="159" width="13" height="13" rx="0" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="79" y="159" width="13" height="13" rx="0" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="92" y="159" width="13" height="13" rx="0" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="105" y="159" width="13" height="13" rx="0" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="118" y="159" width="13" height="13" rx="0" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="131" y="159" width="13" height="13" rx="0" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="40" y="172" width="13" height="13" rx="0" fill="#9DC3E6" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="53" y="172" width="13" height="13" rx="0" fill="#9DC3E6" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="66" y="172" width="13" height="13" rx="0" fill="#9DC3E6" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="79" y="172" width="13" height="13" rx="0" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="92" y="172" width="13" height="13" rx="0" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="105" y="172" width="13" height="13" rx="0" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="118" y="172" width="13" height="13" rx="0" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="131" y="172" width="13" height="13" rx="0" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="40" y="185" width="13" height="13" rx="0" fill="#9DC3E6" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="53" y="185" width="13" height="13" rx="0" fill="#9DC3E6" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="66" y="185" width="13" height="13" rx="0" fill="#9DC3E6" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="79" y="185" width="13" height="13" rx="0" fill="#9DC3E6" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="92" y="185" width="13" height="13" rx="0" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="105" y="185" width="13" height="13" rx="0" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="118" y="185" width="13" height="13" rx="0" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="131" y="185" width="13" height="13" rx="0" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="40" y="198" width="13" height="13" rx="0" fill="#9DC3E6" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="53" y="198" width="13" height="13" rx="0" fill="#9DC3E6" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="66" y="198" width="13" height="13" rx="0" fill="#9DC3E6" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="79" y="198" width="13" height="13" rx="0" fill="#9DC3E6" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="92" y="198" width="13" height="13" rx="0" fill="#9DC3E6" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="105" y="198" width="13" height="13" rx="0" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="118" y="198" width="13" height="13" rx="0" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="131" y="198" width="13" height="13" rx="0" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="40" y="211" width="13" height="13" rx="0" fill="#9DC3E6" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="53" y="211" width="13" height="13" rx="0" fill="#9DC3E6" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="66" y="211" width="13" height="13" rx="0" fill="#9DC3E6" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="79" y="211" width="13" height="13" rx="0" fill="#9DC3E6" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="92" y="211" width="13" height="13" rx="0" fill="#9DC3E6" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="105" y="211" width="13" height="13" rx="0" fill="#9DC3E6" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="118" y="211" width="13" height="13" rx="0" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="131" y="211" width="13" height="13" rx="0" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="40" y="224" width="13" height="13" rx="0" fill="#9DC3E6" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="53" y="224" width="13" height="13" rx="0" fill="#9DC3E6" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="66" y="224" width="13" height="13" rx="0" fill="#9DC3E6" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="79" y="224" width="13" height="13" rx="0" fill="#9DC3E6" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="92" y="224" width="13" height="13" rx="0" fill="#9DC3E6" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="105" y="224" width="13" height="13" rx="0" fill="#9DC3E6" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="118" y="224" width="13" height="13" rx="0" fill="#9DC3E6" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="131" y="224" width="13" height="13" rx="0" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="40" y="237" width="13" height="13" rx="0" fill="#9DC3E6" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="53" y="237" width="13" height="13" rx="0" fill="#9DC3E6" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="66" y="237" width="13" height="13" rx="0" fill="#9DC3E6" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="79" y="237" width="13" height="13" rx="0" fill="#9DC3E6" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="92" y="237" width="13" height="13" rx="0" fill="#9DC3E6" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="105" y="237" width="13" height="13" rx="0" fill="#9DC3E6" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="118" y="237" width="13" height="13" rx="0" fill="#9DC3E6" stroke="#7F7F7F" stroke-width="0.8" />
+<rect x="131" y="237" width="13" height="13" rx="0" fill="#9DC3E6" stroke="#7F7F7F" stroke-width="0.8" />
+<text x="158.0" y="176.0" font-size="17" font-weight="normal" fill="#222222" text-anchor="start" font-style="normal">C × C causal</text>
+<text x="158.0" y="198.0" font-size="17" font-weight="normal" fill="#222222" text-anchor="start" font-style="normal">mask (Tril)</text>
+<text x="158.0" y="230.0" font-size="17" font-weight="normal" fill="#1F4E79" text-anchor="start" font-style="italic">dense matmuls</text>
+<text x="150.0" y="276.0" font-size="18" font-weight="normal" fill="#222222" text-anchor="middle" font-style="normal">Tril[(QΓ)(K/Γ)ᵀ] · (U − W S)</text>
+<line x1="300" y1="116" x2="300" y2="274" stroke="#D9D9D9" stroke-width="1.2"/>
+<text x="436.0" y="132.0" font-size="19" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-style="normal">Inter-chunk: read state</text>
+<rect x="352" y="150" width="34" height="104" rx="0" fill="#F2F2F2" stroke="#595959" stroke-width="1.5" />
+<text x="369.0" y="208.0" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle" font-style="normal">Q</text>
+<text x="404.0" y="208.0" font-size="22" font-weight="bold" fill="#222222" text-anchor="middle" font-style="normal">×</text>
+<rect x="424" y="184" width="40" height="40" rx="3" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.5" />
+<text x="444.0" y="210.0" font-size="18" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-style="normal">S</text>
+<text x="482.0" y="208.0" font-size="22" font-weight="bold" fill="#222222" text-anchor="middle" font-style="normal">=</text>
+<rect x="500" y="150" width="34" height="104" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.5" />
+<text x="517.0" y="208.0" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle" font-style="normal">O</text>
+<text x="436.0" y="276.0" font-size="18" font-weight="normal" fill="#222222" text-anchor="middle" font-style="normal">(Γ ⊙ Q) · S  +  intra term</text>
+<line x1="574" y1="116" x2="574" y2="274" stroke="#D9D9D9" stroke-width="1.2"/>
+<text x="712.0" y="132.0" font-size="19" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-style="normal">Hand-off: next state</text>
+<rect x="600" y="166" width="40" height="40" rx="3" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.5" />
+<text x="620.0" y="192.0" font-size="18" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-style="normal">S</text>
+<line x1="642" y1="186" x2="772" y2="186" stroke="#1F4E79" stroke-width="2.5" marker-end="url(#a)"/>
+<text x="707.0" y="158.0" font-size="17" font-weight="normal" fill="#222222" text-anchor="middle" font-style="normal">decay + chunk write</text>
+<rect x="774" y="166" width="40" height="40" rx="3" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.5" />
+<text x="794.0" y="192.0" font-size="18" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-style="normal">S′</text>
+<text x="712.0" y="240.0" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle" font-style="normal">only d<tspan font-size="13" dy="4">k</tspan><tspan dy="-4"> × d</tspan><tspan font-size="13" dy="4">v</tspan><tspan dy="-4"> crosses chunks</tspan></text>
+<text x="712.0" y="276.0" font-size="17" font-weight="normal" fill="#C00000" text-anchor="middle" font-style="italic">serial: one hand-off per chunk</text>
+</svg>

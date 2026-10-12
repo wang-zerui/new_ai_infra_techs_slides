@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="470pt" height="280pt" viewBox="0 0 470 280" font-family="Helvetica, Arial, sans-serif">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker><marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker><marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker><pattern id="hr" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" fill="#FBE5E5"/><line x1="0" y1="0" x2="0" y2="6" stroke="#C00000" stroke-width="1.6"/></pattern></defs>
+<text x="235.0" y="22.0" font-size="17" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-style="normal">no state needed: all chunks at once</text>
+<rect x="12.0" y="36.0" width="98.0" height="56.0" rx="5" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2"/>
+<text x="61.0" y="60.0" font-size="17" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-style="normal">prepare</text>
+<text x="61.0" y="82.0" font-size="16" font-weight="normal" fill="#222222" text-anchor="middle" font-style="normal">chunk 1</text>
+<line x1="61.0" y1="94.0" x2="61.0" y2="150.0" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+<rect x="21.0" y="152.0" width="80.0" height="50.0" rx="5" fill="#F2F2F2" stroke="#222222" stroke-width="1.8"/>
+<text x="61.0" y="183.0" font-size="17" font-weight="bold" fill="#222222" text-anchor="middle" font-style="normal">recur</text>
+<line x1="101.0" y1="177.0" x2="135.0" y2="177.0" stroke="#222222" stroke-width="3" marker-end="url(#a)"/>
+<text x="115.0" y="168.0" font-size="16" font-weight="bold" fill="#222222" text-anchor="middle" font-style="normal">S</text>
+<rect x="128.0" y="36.0" width="98.0" height="56.0" rx="5" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2"/>
+<text x="177.0" y="60.0" font-size="17" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-style="normal">prepare</text>
+<text x="177.0" y="82.0" font-size="16" font-weight="normal" fill="#222222" text-anchor="middle" font-style="normal">chunk 2</text>
+<line x1="177.0" y1="94.0" x2="177.0" y2="150.0" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+<rect x="137.0" y="152.0" width="80.0" height="50.0" rx="5" fill="#F2F2F2" stroke="#222222" stroke-width="1.8"/>
+<text x="177.0" y="183.0" font-size="17" font-weight="bold" fill="#222222" text-anchor="middle" font-style="normal">recur</text>
+<line x1="217.0" y1="177.0" x2="251.0" y2="177.0" stroke="#222222" stroke-width="3" marker-end="url(#a)"/>
+<text x="231.0" y="168.0" font-size="16" font-weight="bold" fill="#222222" text-anchor="middle" font-style="normal">S</text>
+<rect x="244.0" y="36.0" width="98.0" height="56.0" rx="5" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2"/>
+<text x="293.0" y="60.0" font-size="17" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-style="normal">prepare</text>
+<text x="293.0" y="82.0" font-size="16" font-weight="normal" fill="#222222" text-anchor="middle" font-style="normal">chunk 3</text>
+<line x1="293.0" y1="94.0" x2="293.0" y2="150.0" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+<rect x="253.0" y="152.0" width="80.0" height="50.0" rx="5" fill="#F2F2F2" stroke="#222222" stroke-width="1.8"/>
+<text x="293.0" y="183.0" font-size="17" font-weight="bold" fill="#222222" text-anchor="middle" font-style="normal">recur</text>
+<line x1="333.0" y1="177.0" x2="367.0" y2="177.0" stroke="#222222" stroke-width="3" marker-end="url(#a)"/>
+<text x="347.0" y="168.0" font-size="16" font-weight="bold" fill="#222222" text-anchor="middle" font-style="normal">S</text>
+<rect x="360.0" y="36.0" width="98.0" height="56.0" rx="5" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2"/>
+<text x="409.0" y="60.0" font-size="17" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-style="normal">prepare</text>
+<text x="409.0" y="82.0" font-size="16" font-weight="normal" fill="#222222" text-anchor="middle" font-style="normal">chunk 4</text>
+<line x1="409.0" y1="94.0" x2="409.0" y2="150.0" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+<rect x="369.0" y="152.0" width="80.0" height="50.0" rx="5" fill="#F2F2F2" stroke="#222222" stroke-width="1.8"/>
+<text x="409.0" y="183.0" font-size="17" font-weight="bold" fill="#222222" text-anchor="middle" font-style="normal">recur</text>
+<text x="235.0" y="236.0" font-size="17" font-weight="bold" fill="#222222" text-anchor="middle" font-style="normal">thin serial chain: only S passes</text>
+<text x="235.0" y="262.0" font-size="16" font-weight="normal" fill="#595959" text-anchor="middle" font-style="italic">a few small matmuls per chunk</text>
+</svg>

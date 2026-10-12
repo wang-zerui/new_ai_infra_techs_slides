@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="285pt" viewBox="0 0 870 285" font-family="Helvetica, Arial, sans-serif">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker><marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker><marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker><pattern id="hr" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" fill="#FBE5E5"/><line x1="0" y1="0" x2="0" y2="6" stroke="#C00000" stroke-width="1.6"/></pattern></defs>
+<text x="215.0" y="36.0" font-size="19" font-weight="bold" fill="#222222" text-anchor="middle" font-style="normal">Alternate phases</text>
+<text x="54.0" y="73.0" font-size="16" font-weight="normal" fill="#595959" text-anchor="end" font-style="normal">SM 0</text>
+<text x="54.0" y="111.0" font-size="16" font-weight="normal" fill="#595959" text-anchor="end" font-style="normal">SM 1</text>
+<text x="54.0" y="149.0" font-size="16" font-weight="normal" fill="#595959" text-anchor="end" font-style="normal">SM 2</text>
+<text x="54.0" y="187.0" font-size="16" font-weight="normal" fill="#595959" text-anchor="end" font-style="normal">SM 3</text>
+<rect x="64.0" y="52.0" width="66.0" height="30.0" rx="2" fill="#D9D9D9" stroke="#595959" stroke-width="1.2"/>
+<rect x="64.0" y="90.0" width="66.0" height="30.0" rx="2" fill="#D9D9D9" stroke="#595959" stroke-width="1.2"/>
+<rect x="64.0" y="128.0" width="66.0" height="30.0" rx="2" fill="#D9D9D9" stroke="#595959" stroke-width="1.2"/>
+<rect x="64.0" y="166.0" width="66.0" height="30.0" rx="2" fill="#D9D9D9" stroke="#595959" stroke-width="1.2"/>
+<text x="97.0" y="111.0" font-size="15" font-weight="normal" fill="#222222" text-anchor="middle" font-style="normal">intra</text>
+<rect x="134.0" y="52.0" width="40.0" height="30.0" rx="2" fill="#7F7F7F" stroke="#222222" stroke-width="1.2"/>
+<text x="154.0" y="73.0" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle" font-style="normal">S</text>
+<rect x="134.0" y="90.0" width="40.0" height="30.0" rx="2" fill="url(#hr)" stroke="#C00000" stroke-width="1.2"/>
+<rect x="134.0" y="128.0" width="40.0" height="30.0" rx="2" fill="url(#hr)" stroke="#C00000" stroke-width="1.2"/>
+<rect x="134.0" y="166.0" width="40.0" height="30.0" rx="2" fill="url(#hr)" stroke="#C00000" stroke-width="1.2"/>
+<rect x="178.0" y="52.0" width="66.0" height="30.0" rx="2" fill="#D9D9D9" stroke="#595959" stroke-width="1.2"/>
+<rect x="178.0" y="90.0" width="66.0" height="30.0" rx="2" fill="#D9D9D9" stroke="#595959" stroke-width="1.2"/>
+<rect x="178.0" y="128.0" width="66.0" height="30.0" rx="2" fill="#D9D9D9" stroke="#595959" stroke-width="1.2"/>
+<rect x="178.0" y="166.0" width="66.0" height="30.0" rx="2" fill="#D9D9D9" stroke="#595959" stroke-width="1.2"/>
+<text x="211.0" y="111.0" font-size="15" font-weight="normal" fill="#222222" text-anchor="middle" font-style="normal">intra</text>
+<rect x="248.0" y="52.0" width="40.0" height="30.0" rx="2" fill="#7F7F7F" stroke="#222222" stroke-width="1.2"/>
+<text x="268.0" y="73.0" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle" font-style="normal">S</text>
+<rect x="248.0" y="90.0" width="40.0" height="30.0" rx="2" fill="url(#hr)" stroke="#C00000" stroke-width="1.2"/>
+<rect x="248.0" y="128.0" width="40.0" height="30.0" rx="2" fill="url(#hr)" stroke="#C00000" stroke-width="1.2"/>
+<rect x="248.0" y="166.0" width="40.0" height="30.0" rx="2" fill="url(#hr)" stroke="#C00000" stroke-width="1.2"/>
+<rect x="292.0" y="52.0" width="66.0" height="30.0" rx="2" fill="#D9D9D9" stroke="#595959" stroke-width="1.2"/>
+<rect x="292.0" y="90.0" width="66.0" height="30.0" rx="2" fill="#D9D9D9" stroke="#595959" stroke-width="1.2"/>
+<rect x="292.0" y="128.0" width="66.0" height="30.0" rx="2" fill="#D9D9D9" stroke="#595959" stroke-width="1.2"/>
+<rect x="292.0" y="166.0" width="66.0" height="30.0" rx="2" fill="#D9D9D9" stroke="#595959" stroke-width="1.2"/>
+<text x="325.0" y="111.0" font-size="15" font-weight="normal" fill="#222222" text-anchor="middle" font-style="normal">intra</text>
+<rect x="362.0" y="52.0" width="40.0" height="30.0" rx="2" fill="#7F7F7F" stroke="#222222" stroke-width="1.2"/>
+<text x="382.0" y="73.0" font-size="16" font-weight="bold" fill="#FFFFFF" text-anchor="middle" font-style="normal">S</text>
+<rect x="362.0" y="90.0" width="40.0" height="30.0" rx="2" fill="url(#hr)" stroke="#C00000" stroke-width="1.2"/>
+<rect x="362.0" y="128.0" width="40.0" height="30.0" rx="2" fill="url(#hr)" stroke="#C00000" stroke-width="1.2"/>
+<rect x="362.0" y="166.0" width="40.0" height="30.0" rx="2" fill="url(#hr)" stroke="#C00000" stroke-width="1.2"/>
+<line x1="64.0" y1="210.0" x2="410.0" y2="210.0" stroke="#595959" stroke-width="1.5" marker-end="url(#a)"/>
+<text x="410.0" y="234.0" font-size="15" font-weight="normal" fill="#595959" text-anchor="end" font-style="normal">time</text>
+<line x1="440" y1="20" x2="440" y2="235" stroke="#D9D9D9" stroke-width="1.2"/>
+<text x="657.0" y="36.0" font-size="19" font-weight="bold" fill="#222222" text-anchor="middle" font-style="normal">One fused kernel</text>
+<text x="496.0" y="73.0" font-size="16" font-weight="normal" fill="#595959" text-anchor="end" font-style="normal">SM 0</text>
+<text x="496.0" y="111.0" font-size="16" font-weight="normal" fill="#595959" text-anchor="end" font-style="normal">SM 1</text>
+<text x="496.0" y="149.0" font-size="16" font-weight="normal" fill="#595959" text-anchor="end" font-style="normal">SM 2</text>
+<text x="496.0" y="187.0" font-size="16" font-weight="normal" fill="#595959" text-anchor="end" font-style="normal">SM 3</text>
+<rect x="506.0" y="52.0" width="80.0" height="30.0" rx="2" fill="#D9D9D9" stroke="#595959" stroke-width="1.2"/>
+<text x="546.0" y="73.0" font-size="15" font-weight="normal" fill="#222222" text-anchor="middle" font-style="normal">h1 c1</text>
+<rect x="590.0" y="52.0" width="80.0" height="30.0" rx="2" fill="#D9D9D9" stroke="#595959" stroke-width="1.2"/>
+<text x="630.0" y="73.0" font-size="15" font-weight="normal" fill="#222222" text-anchor="middle" font-style="normal">h1 c2</text>
+<rect x="674.0" y="52.0" width="80.0" height="30.0" rx="2" fill="#D9D9D9" stroke="#595959" stroke-width="1.2"/>
+<text x="714.0" y="73.0" font-size="15" font-weight="normal" fill="#222222" text-anchor="middle" font-style="normal">h1 c3</text>
+<rect x="758.0" y="52.0" width="80.0" height="30.0" rx="2" fill="#D9D9D9" stroke="#595959" stroke-width="1.2"/>
+<text x="798.0" y="73.0" font-size="15" font-weight="normal" fill="#222222" text-anchor="middle" font-style="normal">h1 c4</text>
+<rect x="506.0" y="90.0" width="80.0" height="30.0" rx="2" fill="#D9D9D9" stroke="#595959" stroke-width="1.2"/>
+<text x="546.0" y="111.0" font-size="15" font-weight="normal" fill="#222222" text-anchor="middle" font-style="normal">h2 c1</text>
+<rect x="590.0" y="90.0" width="80.0" height="30.0" rx="2" fill="#D9D9D9" stroke="#595959" stroke-width="1.2"/>
+<text x="630.0" y="111.0" font-size="15" font-weight="normal" fill="#222222" text-anchor="middle" font-style="normal">h2 c2</text>
+<rect x="674.0" y="90.0" width="80.0" height="30.0" rx="2" fill="#D9D9D9" stroke="#595959" stroke-width="1.2"/>
+<text x="714.0" y="111.0" font-size="15" font-weight="normal" fill="#222222" text-anchor="middle" font-style="normal">h2 c3</text>
+<rect x="758.0" y="90.0" width="80.0" height="30.0" rx="2" fill="#D9D9D9" stroke="#595959" stroke-width="1.2"/>
+<text x="798.0" y="111.0" font-size="15" font-weight="normal" fill="#222222" text-anchor="middle" font-style="normal">h2 c4</text>
+<rect x="506.0" y="128.0" width="332.0" height="30.0" rx="2" fill="url(#hr)" stroke="#C00000" stroke-width="1.2"/>
+<rect x="506.0" y="166.0" width="332.0" height="30.0" rx="2" fill="url(#hr)" stroke="#C00000" stroke-width="1.2"/>
+<line x1="506.0" y1="210.0" x2="838.0" y2="210.0" stroke="#595959" stroke-width="1.5" marker-end="url(#a)"/>
+<rect x="70.0" y="247.0" width="22.0" height="18.0" rx="2" fill="#D9D9D9" stroke="#595959" stroke-width="1.2"/>
+<text x="100.0" y="262.0" font-size="17" font-weight="normal" fill="#222222" text-anchor="start" font-style="normal">intra-chunk work</text>
+<rect x="300.0" y="247.0" width="22.0" height="18.0" rx="2" fill="#7F7F7F" stroke="#222222" stroke-width="1.2"/>
+<text x="330.0" y="262.0" font-size="17" font-weight="normal" fill="#222222" text-anchor="start" font-style="normal">state hand-off</text>
+<rect x="520.0" y="247.0" width="22.0" height="18.0" rx="2" fill="url(#hr)" stroke="#C00000" stroke-width="1.2"/>
+<text x="550.0" y="262.0" font-size="17" font-weight="normal" fill="#C00000" text-anchor="start" font-style="normal">idle SM</text>
+<text x="690.0" y="262.0" font-size="16" font-weight="normal" fill="#595959" text-anchor="start" font-style="italic">h = head · c = chunk</text>
+</svg>

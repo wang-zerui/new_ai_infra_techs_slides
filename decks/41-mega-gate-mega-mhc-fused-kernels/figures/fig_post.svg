@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="292pt" viewBox="0 0 870 292" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#BFBFBF" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- one pass, three consumers -->
+<text x="73.0" y="18.0" text-anchor="middle" font-size="17" fill="#7F7F7F" font-weight="bold" font-style="normal">HBM</text>
+<text x="798.0" y="18.0" text-anchor="middle" font-size="17" fill="#7F7F7F" font-weight="bold" font-style="normal">HBM</text>
+<rect x="6.0" y="34.0" width="134.0" height="52.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="73.0" y="55.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">residual</text>
+<text x="73.0" y="74.8" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">4 × d BF16</text>
+<rect x="6.0" y="104.0" width="134.0" height="52.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="73.0" y="125.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">x (layer out)</text>
+<text x="73.0" y="144.8" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">d BF16</text>
+<rect x="6.0" y="226.0" width="134.0" height="52.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="73.0" y="247.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">fn weights</text>
+<text x="73.0" y="266.8" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">24 × 4d FP32</text>
+<rect x="730.0" y="34.0" width="134.0" height="52.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="797.0" y="55.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">new residual</text>
+<text x="797.0" y="74.8" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">4 × d BF16</text>
+<rect x="730.0" y="170.0" width="134.0" height="52.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="797.0" y="191.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">24 sums</text>
+<text x="797.0" y="210.8" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">per K split</text>
+<rect x="160.0" y="8.0" width="552.0" height="280.0" rx="8" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2" stroke-dasharray="7,4" />
+<text x="172.0" y="28.0" text-anchor="start" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">one CTA per SM</text>
+<rect x="214.0" y="84.0" width="196.0" height="82.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="312.0" y="111.8" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">Post workers</text>
+<text x="312.0" y="131.3" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">H_post·x + H_resᵀ·res</text>
+<text x="312.0" y="149.0" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">→ BF16, once</text>
+<line x1="140.0" y1="60.0" x2="213.0" y2="100.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<line x1="140.0" y1="130.0" x2="213.0" y2="140.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<text x="178.0" y="110.0" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="italic">TMA</text>
+<rect x="470.0" y="34.0" width="180.0" height="52.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2" />
+<text x="560.0" y="55.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="bold" font-style="normal">store warp</text>
+<text x="560.0" y="74.8" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">TMA, kept in L2</text>
+<path d="M 410 104 L 440 104 L 440 60 L 469 60" fill="none" stroke="#1F4E79" stroke-width="2.4" marker-end="url(#arrAcc)"/>
+<line x1="650.0" y1="60.0" x2="729.0" y2="60.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="470.0" y="170.0" width="180.0" height="52.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2" />
+<text x="560.0" y="191.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="bold" font-style="normal">MMA warp</text>
+<text x="560.0" y="210.8" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">TF32, 24 outputs</text>
+<rect x="250.0" y="190.0" width="124.0" height="40.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="312.0" y="215.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">TMEM: A</text>
+<line x1="312.0" y1="166.0" x2="312.0" y2="189.0" stroke="#1F4E79" stroke-width="2.4" marker-end="url(#arrAcc)"/>
+<line x1="374.0" y1="210.0" x2="469.0" y2="210.0" stroke="#1F4E79" stroke-width="2.4" marker-end="url(#arrAcc)"/>
+<line x1="650.0" y1="196.0" x2="729.0" y2="196.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<path d="M 140 252 L 560 252 L 560 223" fill="none" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<text x="330.0" y="272.0" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="italic">TMA</text>
+<rect x="470.0" y="104.0" width="180.0" height="48.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2" />
+<text x="560.0" y="123.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="bold" font-style="normal">Σ x² per row</text>
+<text x="560.0" y="142.8" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">for the RMS</text>
+<line x1="410.0" y1="128.0" x2="469.0" y2="128.0" stroke="#1F4E79" stroke-width="2.4" marker-end="url(#arrAcc)"/>
+</svg>

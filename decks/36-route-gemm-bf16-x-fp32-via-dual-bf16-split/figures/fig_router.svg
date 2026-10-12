@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480pt" height="340pt" viewBox="0 0 480 340" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_router: x (BF16) and W (FP32) -> router GEMM -> FP32 scores -> top-k -> experts -->
+<rect x="8.0" y="8.0" width="214.0" height="58.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="115.0" y="32.9" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">hidden states x</text>
+<text x="115.0" y="53.6" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">BF16 · M × K</text>
+<rect x="258.0" y="8.0" width="214.0" height="58.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="365.0" y="32.9" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">router weight W</text>
+<text x="365.0" y="53.6" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">FP32 · N × K</text>
+<rect x="8.0" y="102.0" width="464.0" height="52.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="240.0" y="135.0" text-anchor="middle" font-size="20" fill="#1F4E79" font-weight="bold" font-style="normal">router GEMM   x · Wᵀ</text>
+<line x1="115.0" y1="66.0" x2="115.0" y2="100.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<line x1="365.0" y1="66.0" x2="365.0" y2="100.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<text x="8.0" y="186.0" text-anchor="start" font-size="18" fill="#222222" font-weight="normal" font-style="normal">scores of one token</text>
+<rect x="300.0" y="172.0" width="18.0" height="18.0" rx="2" fill="#1F4E79" stroke="#1F4E79" stroke-width="2" />
+<text x="326.0" y="187.0" text-anchor="start" font-size="17" fill="#222222" font-weight="normal" font-style="normal">selected (k = 2)</text>
+<line x1="240.0" y1="154.0" x2="240.0" y2="194.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="14.0" y="278.0" width="38.0" height="38.0" rx="2" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="33.0" y="336.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="normal">e0</text>
+<rect x="66.0" y="224.0" width="38.0" height="92.0" rx="2" fill="#1F4E79" stroke="#1F4E79" stroke-width="2" />
+<text x="85.0" y="336.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="normal">e1</text>
+<rect x="118.0" y="261.0" width="38.0" height="55.0" rx="2" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="137.0" y="336.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="normal">e2</text>
+<rect x="170.0" y="286.0" width="38.0" height="30.0" rx="2" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="189.0" y="336.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="normal">e3</text>
+<rect x="222.0" y="228.0" width="38.0" height="88.0" rx="2" fill="#1F4E79" stroke="#1F4E79" stroke-width="2" />
+<text x="241.0" y="336.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="normal">e4</text>
+<rect x="274.0" y="246.0" width="38.0" height="70.0" rx="2" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="293.0" y="336.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="normal">e5</text>
+<rect x="326.0" y="292.0" width="38.0" height="24.0" rx="2" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="345.0" y="336.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="normal">e6</text>
+<rect x="378.0" y="230.0" width="38.0" height="86.0" rx="2" fill="#FBE5E5" stroke="#C00000" stroke-width="2" stroke-dasharray="5,3" />
+<text x="397.0" y="336.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="normal">e7</text>
+<line x1="6.0" y1="316.0" x2="424.0" y2="316.0" stroke="#222222" stroke-width="1.5"/>
+<text x="241.0" y="218.0" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal">k-th</text>
+<text x="397.0" y="218.0" text-anchor="middle" font-size="17" fill="#C00000" font-weight="bold" font-style="normal">(k+1)-th</text>
+<line x1="262.0" y1="228.0" x2="376.0" y2="230.0" stroke="#C00000" stroke-width="1.6" stroke-dasharray="4,3"/>
+</svg>

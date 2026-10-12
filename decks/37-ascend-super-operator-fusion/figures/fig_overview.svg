@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="300pt" viewBox="0 0 870 300" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_overview: three super-operators in one GLM-5 attention layer on Ascend -->
+<rect x="14.0" y="40.0" width="92.0" height="62.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="60.0" y="67.2" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">hidden</text>
+<text x="60.0" y="86.7" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">state</text>
+<line x1="106.0" y1="71.0" x2="138.0" y2="71.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="140.0" y="40.0" width="200.0" height="62.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="3" />
+<text x="240.0" y="67.0" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">❶ MLAPO</text>
+<text x="240.0" y="87.7" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">13 ops → 1 kernel</text>
+<text x="240.0" y="122.0" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="italic">also writes the KV-cache row</text>
+<line x1="340.0" y1="71.0" x2="428.0" y2="71.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<text x="384.0" y="61.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">q</text>
+<rect x="430.0" y="40.0" width="226.0" height="62.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="3" />
+<text x="543.0" y="67.0" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">❸ Sparse Flash Attn</text>
+<text x="543.0" y="87.7" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">gather KV · attend</text>
+<line x1="656.0" y1="71.0" x2="688.0" y2="71.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="690.0" y="40.0" width="166.0" height="62.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="773.0" y="67.4" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">MoE block</text>
+<text x="773.0" y="85.8" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">routing · GEMM</text>
+<text x="773.0" y="122.0" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="italic">no GLM-5 fusion claim</text>
+<path d="M 60 102 L 60 181 L 162 181" fill="none" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="164.0" y="150.0" width="230.0" height="62.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="3" />
+<text x="279.0" y="177.0" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">❷ Lightning Indexer</text>
+<text x="279.0" y="197.7" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">score · ReLU · TopK</text>
+<path d="M 394 181 L 470 181 L 470 106" fill="none" stroke="#1F4E79" stroke-width="2.4" marker-end="url(#arrAcc)"/>
+<text x="480.0" y="154.0" text-anchor="start" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">top-2048</text>
+<text x="480.0" y="174.0" text-anchor="start" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">token ids</text>
+<rect x="180.0" y="250.0" width="214.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="287.0" y="277.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">index key cache</text>
+<line x1="287.0" y1="250.0" x2="287.0" y2="215.0" stroke="#7F7F7F" stroke-width="2.2" marker-end="url(#arrGray)"/>
+<rect x="430.0" y="250.0" width="200.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="530.0" y="277.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">KV cache</text>
+<line x1="600.0" y1="250.0" x2="600.0" y2="105.0" stroke="#7F7F7F" stroke-width="2.2" marker-end="url(#arrGray)"/>
+<text x="856.0" y="168.0" text-anchor="end" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="italic">DSA / indexer: deck 02</text>
+<text x="856.0" y="190.0" text-anchor="end" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="italic">GPU indexer kernel: deck 10</text>
+<text x="856.0" y="212.0" text-anchor="end" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="italic">Ascend stack: deck 23</text>
+<text x="856.0" y="234.0" text-anchor="end" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="italic">GPU Mega MoE: deck 35</text>
+</svg>

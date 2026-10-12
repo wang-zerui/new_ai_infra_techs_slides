@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="876pt" height="292pt" viewBox="0 0 876 292" font-family="Helvetica, Arial, sans-serif">
+<defs><marker id="m1F4E79" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker><pattern id="hatchRed" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#FBE5E5"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2"/></pattern><pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#fff"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/></pattern></defs>
+<rect width="876" height="292" fill="#fff"/>
+<g transform="translate(3,3)">
+<rect x="16" y="186" width="26" height="40" rx="3" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<rect x="47" y="186" width="26" height="40" rx="3" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<rect x="78" y="186" width="26" height="40" rx="3" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<rect x="109" y="186" width="26" height="40" rx="3" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<rect x="140" y="186" width="26" height="40" rx="3" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="185" y="213" font-size="22" font-weight="bold" fill="#595959" text-anchor="middle">…</text>
+<rect x="205" y="186" width="26" height="40" rx="3" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<rect x="236" y="186" width="26" height="40" rx="3" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<rect x="267" y="186" width="26" height="40" rx="3" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<rect x="298" y="186" width="26" height="40" rx="3" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<rect x="329" y="186" width="26" height="40" rx="3" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="185.5" y="252" font-size="18" font-weight="normal" fill="#222222" text-anchor="middle">tokens 0 … 127</text>
+<path d="M29.0,184 L185.5,128" fill="none" stroke="#1F4E79" stroke-width="2"/>
+<path d="M60.0,184 L185.5,128" fill="none" stroke="#1F4E79" stroke-width="2"/>
+<path d="M91.0,184 L185.5,128" fill="none" stroke="#1F4E79" stroke-width="2"/>
+<path d="M122.0,184 L185.5,128" fill="none" stroke="#1F4E79" stroke-width="2"/>
+<path d="M153.0,184 L185.5,128" fill="none" stroke="#1F4E79" stroke-width="2"/>
+<path d="M218.0,184 L185.5,128" fill="none" stroke="#1F4E79" stroke-width="2"/>
+<path d="M249.0,184 L185.5,128" fill="none" stroke="#1F4E79" stroke-width="2"/>
+<path d="M280.0,184 L185.5,128" fill="none" stroke="#1F4E79" stroke-width="2"/>
+<path d="M311.0,184 L185.5,128" fill="none" stroke="#1F4E79" stroke-width="2"/>
+<path d="M342.0,184 L185.5,128" fill="none" stroke="#1F4E79" stroke-width="2"/>
+<circle cx="185.5" cy="112" r="16" fill="#fff" stroke="#1F4E79" stroke-width="2.5"/>
+<text x="185.5" y="118.5" font-size="20" font-weight="bold" fill="#1F4E79" text-anchor="middle">Σ</text>
+<path d="M185.5,95 L185.5,72" fill="none" stroke="#1F4E79" stroke-width="2.5" marker-end="url(#m1F4E79)"/>
+<rect x="95.5" y="14" width="180" height="56" rx="6" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.5" />
+<text x="185.5" y="38" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">Entry 0</text>
+<text x="185.5" y="60" font-size="16" font-weight="normal" fill="#222222" text-anchor="middle">one 512-d vector</text>
+<rect x="425" y="186" width="26" height="40" rx="3" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<rect x="456" y="186" width="26" height="40" rx="3" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<rect x="487" y="186" width="26" height="40" rx="3" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<rect x="518" y="186" width="26" height="40" rx="3" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<rect x="549" y="186" width="26" height="40" rx="3" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="594" y="213" font-size="22" font-weight="bold" fill="#595959" text-anchor="middle">…</text>
+<rect x="614" y="186" width="26" height="40" rx="3" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<rect x="645" y="186" width="26" height="40" rx="3" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<rect x="676" y="186" width="26" height="40" rx="3" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<rect x="707" y="186" width="26" height="40" rx="3" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<rect x="738" y="186" width="26" height="40" rx="3" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="594.5" y="252" font-size="18" font-weight="normal" fill="#222222" text-anchor="middle">tokens 128 … 255</text>
+<path d="M438.0,184 L594.5,128" fill="none" stroke="#1F4E79" stroke-width="2"/>
+<path d="M469.0,184 L594.5,128" fill="none" stroke="#1F4E79" stroke-width="2"/>
+<path d="M500.0,184 L594.5,128" fill="none" stroke="#1F4E79" stroke-width="2"/>
+<path d="M531.0,184 L594.5,128" fill="none" stroke="#1F4E79" stroke-width="2"/>
+<path d="M562.0,184 L594.5,128" fill="none" stroke="#1F4E79" stroke-width="2"/>
+<path d="M627.0,184 L594.5,128" fill="none" stroke="#1F4E79" stroke-width="2"/>
+<path d="M658.0,184 L594.5,128" fill="none" stroke="#1F4E79" stroke-width="2"/>
+<path d="M689.0,184 L594.5,128" fill="none" stroke="#1F4E79" stroke-width="2"/>
+<path d="M720.0,184 L594.5,128" fill="none" stroke="#1F4E79" stroke-width="2"/>
+<path d="M751.0,184 L594.5,128" fill="none" stroke="#1F4E79" stroke-width="2"/>
+<circle cx="594.5" cy="112" r="16" fill="#fff" stroke="#1F4E79" stroke-width="2.5"/>
+<text x="594.5" y="118.5" font-size="20" font-weight="bold" fill="#1F4E79" text-anchor="middle">Σ</text>
+<path d="M594.5,95 L594.5,72" fill="none" stroke="#1F4E79" stroke-width="2.5" marker-end="url(#m1F4E79)"/>
+<rect x="504.5" y="14" width="180" height="56" rx="6" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.5" />
+<text x="594.5" y="38" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">Entry 1</text>
+<text x="594.5" y="60" font-size="16" font-weight="normal" fill="#222222" text-anchor="middle">one 512-d vector</text>
+<path d="M390,180 L390,232" fill="none" stroke="#BFBFBF" stroke-width="1.5" stroke-dasharray="5,4"/>
+<text x="390" y="258" font-size="16" font-weight="bold" fill="#595959" text-anchor="middle">no overlap</text>
+<circle cx="732" cy="30" r="14" fill="#fff" stroke="#1F4E79" stroke-width="2.5"/>
+<text x="732" y="36" font-size="18" font-weight="bold" fill="#1F4E79" text-anchor="middle">Σ</text>
+<text x="754" y="36" font-size="18" font-weight="normal" fill="#222222" text-anchor="start">softmax over</text>
+<text x="754" y="58" font-size="18" font-weight="normal" fill="#222222" text-anchor="start">128 weights</text>
+<text x="754" y="80" font-size="18" font-weight="normal" fill="#222222" text-anchor="start">+ bias</text>
+</g>
+</svg>

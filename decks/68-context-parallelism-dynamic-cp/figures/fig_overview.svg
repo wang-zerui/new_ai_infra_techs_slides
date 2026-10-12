@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="284pt" viewBox="0 0 870 284" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_overview: two CP bands (GPU0+GPU1, GPU2+GPU3), token-local ops unchanged, attention swaps KV -->
+<rect x="470.0" y="8.0" width="26.0" height="18.0" rx="3" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="504.0" y="23.0" text-anchor="start" font-size="17" fill="#222222" font-weight="normal" font-style="normal">token-local, unchanged</text>
+<rect x="700.0" y="8.0" width="26.0" height="18.0" rx="3" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="734.0" y="23.0" text-anchor="start" font-size="17" fill="#222222" font-weight="normal" font-style="normal">needs all KV</text>
+<rect x="6.0" y="42.0" width="858.0" height="84.0" rx="6" fill="#FFFFFF" stroke="#BFBFBF" stroke-width="1.2" stroke-dasharray="6,4" />
+<text x="16.0" y="66.0" text-anchor="start" font-size="19" fill="#222222" font-weight="bold" font-style="normal">CP rank 0</text>
+<text x="16.0" y="89.0" text-anchor="start" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="normal">GPU0 + GPU1 (TP2)</text>
+<text x="16.0" y="110.0" text-anchor="start" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="italic">half of the tokens</text>
+<rect x="196.0" y="54.0" width="98.0" height="50.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="245.0" y="84.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">LayerNorm</text>
+<rect x="307.0" y="54.0" width="98.0" height="50.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="356.0" y="84.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">QKV Linear</text>
+<line x1="296.0" y1="79.0" x2="306.0" y2="79.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="418.0" y="54.0" width="98.0" height="50.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.2" />
+<text x="467.0" y="84.6" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">Attention</text>
+<line x1="407.0" y1="79.0" x2="417.0" y2="79.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="529.0" y="54.0" width="98.0" height="50.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="578.0" y="84.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">Out Linear</text>
+<line x1="518.0" y1="79.0" x2="528.0" y2="79.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="640.0" y="54.0" width="98.0" height="50.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="689.0" y="84.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">LayerNorm</text>
+<line x1="629.0" y1="79.0" x2="639.0" y2="79.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="751.0" y="54.0" width="98.0" height="50.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="800.0" y="84.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">MLP</text>
+<line x1="740.0" y1="79.0" x2="750.0" y2="79.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="6.0" y="186.0" width="858.0" height="84.0" rx="6" fill="#FFFFFF" stroke="#BFBFBF" stroke-width="1.2" stroke-dasharray="6,4" />
+<text x="16.0" y="210.0" text-anchor="start" font-size="19" fill="#222222" font-weight="bold" font-style="normal">CP rank 1</text>
+<text x="16.0" y="233.0" text-anchor="start" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="normal">GPU2 + GPU3 (TP2)</text>
+<text x="16.0" y="254.0" text-anchor="start" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="italic">other half</text>
+<rect x="196.0" y="198.0" width="98.0" height="50.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="245.0" y="228.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">LayerNorm</text>
+<rect x="307.0" y="198.0" width="98.0" height="50.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="356.0" y="228.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">QKV Linear</text>
+<line x1="296.0" y1="223.0" x2="306.0" y2="223.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="418.0" y="198.0" width="98.0" height="50.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.2" />
+<text x="467.0" y="228.6" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">Attention</text>
+<line x1="407.0" y1="223.0" x2="417.0" y2="223.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="529.0" y="198.0" width="98.0" height="50.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="578.0" y="228.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">Out Linear</text>
+<line x1="518.0" y1="223.0" x2="528.0" y2="223.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="640.0" y="198.0" width="98.0" height="50.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="689.0" y="228.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">LayerNorm</text>
+<line x1="629.0" y1="223.0" x2="639.0" y2="223.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="751.0" y="198.0" width="98.0" height="50.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="800.0" y="228.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">MLP</text>
+<line x1="740.0" y1="223.0" x2="750.0" y2="223.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<line x1="467.0" y1="108.0" x2="467.0" y2="194.0" stroke="#1F4E79" stroke-width="2.6" marker-end="url(#arrAcc)" marker-start="url(#arrAcc)"/>
+<text x="479.0" y="140.0" text-anchor="start" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal" paint-order="stroke" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round">KV exchange</text>
+<text x="479.0" y="160.0" text-anchor="start" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal" paint-order="stroke" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round">in a ring</text>
+</svg>

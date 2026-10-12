@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="470pt" height="340pt" viewBox="0 0 470 340" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_stack_std: standard residual stream -->
+<rect x="16.0" y="300.0" width="110.0" height="34.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="71.0" y="322.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">embedding</text>
+<line x1="70.0" y1="300.0" x2="70.0" y2="34.0" stroke="#222222" stroke-width="3.0"/>
+<line x1="70.0" y1="40.0" x2="70.0" y2="14.0" stroke="#222222" stroke-width="3.0" marker-end="url(#arr)"/>
+<text x="82.0" y="22.0" text-anchor="start" font-size="17" fill="#7F7F7F" font-weight="normal" font-style="italic">output</text>
+<path d="M 70 292 H 128" fill="none" stroke="#222222" stroke-width="1.8" marker-end="url(#arr)"/>
+<rect x="130.0" y="272.0" width="168.0" height="40.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="214.0" y="297.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">Norm → Attention</text>
+<path d="M 298 292 H 314 V 256 H 83" fill="none" stroke="#222222" stroke-width="1.8" marker-end="url(#arr)"/>
+<circle cx="70.0" cy="256.0" r="12" fill="#FFFFFF" stroke="#222222" stroke-width="2"/>
+<text x="70.0" y="262.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">+</text>
+<text x="104.0" y="250.0" text-anchor="middle" font-size="17" fill="#C00000" font-weight="bold" font-style="normal">×1</text>
+<path d="M 70 228 H 128" fill="none" stroke="#222222" stroke-width="1.8" marker-end="url(#arr)"/>
+<rect x="130.0" y="208.0" width="168.0" height="40.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="214.0" y="233.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">Norm → MoE</text>
+<path d="M 298 228 H 314 V 192 H 83" fill="none" stroke="#222222" stroke-width="1.8" marker-end="url(#arr)"/>
+<circle cx="70.0" cy="192.0" r="12" fill="#FFFFFF" stroke="#222222" stroke-width="2"/>
+<text x="70.0" y="198.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">+</text>
+<text x="104.0" y="186.0" text-anchor="middle" font-size="17" fill="#C00000" font-weight="bold" font-style="normal">×1</text>
+<path d="M 70 164 H 128" fill="none" stroke="#222222" stroke-width="1.8" marker-end="url(#arr)"/>
+<rect x="130.0" y="144.0" width="168.0" height="40.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="214.0" y="169.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">Norm → Attention</text>
+<path d="M 298 164 H 314 V 128 H 83" fill="none" stroke="#222222" stroke-width="1.8" marker-end="url(#arr)"/>
+<circle cx="70.0" cy="128.0" r="12" fill="#FFFFFF" stroke="#222222" stroke-width="2"/>
+<text x="70.0" y="134.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">+</text>
+<text x="104.0" y="122.0" text-anchor="middle" font-size="17" fill="#C00000" font-weight="bold" font-style="normal">×1</text>
+<path d="M 70 100 H 128" fill="none" stroke="#222222" stroke-width="1.8" marker-end="url(#arr)"/>
+<rect x="130.0" y="80.0" width="168.0" height="40.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="214.0" y="106.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">Norm → MoE</text>
+<path d="M 298 100 H 314 V 64 H 83" fill="none" stroke="#222222" stroke-width="1.8" marker-end="url(#arr)"/>
+<circle cx="70.0" cy="64.0" r="12" fill="#FFFFFF" stroke="#222222" stroke-width="2"/>
+<text x="70.0" y="70.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">+</text>
+<text x="104.0" y="58.0" text-anchor="middle" font-size="17" fill="#C00000" font-weight="bold" font-style="normal">×1</text>
+<text x="70.0" y="48.0" text-anchor="middle" font-size="22" fill="#222222" font-weight="normal" font-style="normal">⋮</text>
+<text x="330.0" y="150.0" text-anchor="start" font-size="20"><tspan fill="#222222" font-weight="bold" font-style="italic">h</tspan><tspan fill="#222222" font-weight="normal" font-size="13.6" baseline-shift="-0.28em">l</tspan><tspan fill="#222222" font-weight="normal" font-style="italic"> = h</tspan><tspan fill="#222222" font-weight="normal" font-size="13.6" baseline-shift="-0.28em">1</tspan><tspan fill="#222222" font-weight="normal" font-style="normal"> + Σ f</tspan><tspan fill="#222222" font-weight="normal" font-size="13.6" baseline-shift="-0.28em">i</tspan></text>
+<text x="330.0" y="178.0" text-anchor="start" font-size="18" fill="#C00000" font-weight="bold" font-style="normal">fixed weight 1</text>
+<text x="330.0" y="202.0" text-anchor="start" font-size="18" fill="#C00000" font-weight="bold" font-style="normal">for every layer</text>
+</svg>

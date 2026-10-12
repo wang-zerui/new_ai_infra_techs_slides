@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="300pt" viewBox="0 0 870 300" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_overview: kernel scale, layer scale, cluster scale -->
+<rect x="20.0" y="24.0" width="266.0" height="206.0" rx="6" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.8" />
+<circle cx="46" cy="50" r="13" fill="#1F4E79"/>
+<text x="46.0" y="56.0" text-anchor="middle" font-size="15" fill="#FFFFFF" font-weight="bold" font-style="normal">❶</text>
+<text x="68.0" y="56.0" text-anchor="start" font-size="20" fill="#1F4E79" font-weight="bold" font-style="normal">Layer</text>
+<text x="153.0" y="86.0" text-anchor="middle" font-size="19" fill="#222222" font-weight="normal" font-style="normal">Split the collective</text>
+<rect x="312.0" y="24.0" width="266.0" height="206.0" rx="6" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.8" />
+<circle cx="338" cy="50" r="13" fill="#1F4E79"/>
+<text x="338.0" y="56.0" text-anchor="middle" font-size="15" fill="#FFFFFF" font-weight="bold" font-style="normal">❷</text>
+<text x="360.0" y="56.0" text-anchor="start" font-size="20" fill="#1F4E79" font-weight="bold" font-style="normal">Kernel</text>
+<text x="445.0" y="86.0" text-anchor="middle" font-size="19" fill="#222222" font-weight="normal" font-style="normal">Fuse it into the matmul</text>
+<rect x="604.0" y="24.0" width="266.0" height="206.0" rx="6" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.8" />
+<circle cx="630" cy="50" r="13" fill="#1F4E79"/>
+<text x="630.0" y="56.0" text-anchor="middle" font-size="15" fill="#FFFFFF" font-weight="bold" font-style="normal">❸</text>
+<text x="652.0" y="56.0" text-anchor="start" font-size="20" fill="#1F4E79" font-weight="bold" font-style="normal">Cluster</text>
+<text x="737.0" y="86.0" text-anchor="middle" font-size="19" fill="#222222" font-weight="normal" font-style="normal">Split the roles</text>
+<rect x="36.0" y="104.0" width="100.0" height="40.0" rx="4" fill="#F2F2F2" stroke="#C00000" stroke-width="2" />
+<text x="86.0" y="129.9" text-anchor="middle" font-size="17" fill="#C00000" font-weight="bold" font-style="normal">AllReduce</text>
+<line x1="153.0" y1="124.0" x2="175.0" y2="124.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="180.0" y="104.0" width="90.0" height="40.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="225.0" y="129.9" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal">RS + AG</text>
+<text x="153.0" y="176.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">Norm and router run</text>
+<text x="153.0" y="198.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">on sharded tokens</text>
+<rect x="334.0" y="104.0" width="38.0" height="30.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.8" />
+<rect x="334.0" y="140.0" width="38.0" height="14.0" rx="2" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.4" />
+<rect x="380.0" y="104.0" width="38.0" height="30.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.8" />
+<rect x="380.0" y="140.0" width="38.0" height="14.0" rx="2" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.4" />
+<rect x="426.0" y="104.0" width="38.0" height="30.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.8" />
+<rect x="426.0" y="140.0" width="38.0" height="14.0" rx="2" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.4" />
+<rect x="472.0" y="104.0" width="38.0" height="30.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.8" />
+<rect x="472.0" y="140.0" width="38.0" height="14.0" rx="2" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.4" />
+<rect x="518.0" y="104.0" width="38.0" height="30.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.8" />
+<rect x="518.0" y="140.0" width="38.0" height="14.0" rx="2" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.4" />
+<text x="445.0" y="176.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">Every tile ships its partial</text>
+<text x="445.0" y="198.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">inside one kernel</text>
+<rect x="624.0" y="104.0" width="104.0" height="46.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="676.0" y="123.2" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="normal" font-style="normal">Prefill</text>
+<text x="676.0" y="142.7" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="normal" font-style="normal">nodes</text>
+<rect x="746.0" y="104.0" width="104.0" height="46.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="798.0" y="123.2" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="normal" font-style="normal">Decode</text>
+<text x="798.0" y="142.7" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="normal" font-style="normal">nodes</text>
+<line x1="730.0" y1="127.0" x2="742.0" y2="127.0" stroke="#1F4E79" stroke-width="2.2" marker-end="url(#arrAcc)"/>
+<text x="737.0" y="176.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">Prefill cannot preempt</text>
+<text x="737.0" y="198.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">a running decode</text>
+<text x="435.0" y="268.0" text-anchor="middle" font-size="19" fill="#1F4E79" font-weight="bold" font-style="normal">Same goal at three scales: no rank waiting on the fabric</text>
+</svg>

@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="298pt" viewBox="0 0 870 298" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_k2 -->
+<text x="8.0" y="22.0" text-anchor="start" font-size="18" fill="#222222" font-weight="bold" font-style="normal">sorted candidates of one row</text>
+<rect x="20.0" y="76.4" width="28.0" height="159.6" rx="1" fill="#1F4E79" stroke="#1F4E79" stroke-width="1.5" />
+<text x="34.0" y="254.0" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">c1</text>
+<rect x="57.0" y="143.6" width="28.0" height="92.4" rx="1" fill="#1F4E79" stroke="#1F4E79" stroke-width="1.5" />
+<text x="71.0" y="254.0" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">c2</text>
+<rect x="94.0" y="177.2" width="28.0" height="58.8" rx="1" fill="#1F4E79" stroke="#1F4E79" stroke-width="1.5" />
+<text x="108.0" y="254.0" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">c3</text>
+<rect x="131.0" y="194.0" width="28.0" height="42.0" rx="1" fill="#1F4E79" stroke="#1F4E79" stroke-width="1.5" />
+<text x="145.0" y="254.0" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">c4</text>
+<rect x="168.0" y="206.6" width="28.0" height="29.4" rx="1" fill="#1F4E79" stroke="#1F4E79" stroke-width="1.5" />
+<text x="182.0" y="254.0" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">c5</text>
+<rect x="205.0" y="219.2" width="28.0" height="16.8" rx="1" fill="#F2F2F2" stroke="#595959" stroke-width="1.5" />
+<text x="219.0" y="254.0" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">c6</text>
+<rect x="242.0" y="225.5" width="28.0" height="10.5" rx="1" fill="#F2F2F2" stroke="#595959" stroke-width="1.5" />
+<text x="256.0" y="254.0" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">c7</text>
+<rect x="279.0" y="229.7" width="28.0" height="6.3" rx="1" fill="#F2F2F2" stroke="#595959" stroke-width="1.5" />
+<text x="293.0" y="254.0" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">c8</text>
+<rect x="316.0" y="231.8" width="28.0" height="4.2" rx="1" fill="#F2F2F2" stroke="#595959" stroke-width="1.5" />
+<text x="330.0" y="254.0" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">c9</text>
+<rect x="353.0" y="232.0" width="28.0" height="4.0" rx="1" fill="url(#hatchGray)" stroke="#595959" stroke-width="1.5" />
+<text x="367.0" y="254.0" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">c10</text>
+<rect x="390.0" y="232.0" width="28.0" height="4.0" rx="1" fill="url(#hatchGray)" stroke="#595959" stroke-width="1.5" />
+<text x="404.0" y="254.0" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">c11</text>
+<rect x="427.0" y="232.0" width="28.0" height="4.0" rx="1" fill="url(#hatchGray)" stroke="#595959" stroke-width="1.5" />
+<text x="441.0" y="254.0" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">c12</text>
+<line x1="14.0" y1="236.0" x2="464.0" y2="236.0" stroke="#222222" stroke-width="1.5"/>
+<line x1="200.5" y1="52.0" x2="200.5" y2="240.0" stroke="#1F4E79" stroke-width="2" stroke-dasharray="6,4"/>
+<text x="206.5" y="64.0" text-anchor="start" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">top-p cut</text>
+<line x1="348.5" y1="104.0" x2="348.5" y2="240.0" stroke="#7F7F7F" stroke-width="2" stroke-dasharray="6,4"/>
+<text x="354.5" y="116.0" text-anchor="start" font-size="16" fill="#7F7F7F" font-weight="bold" font-style="normal">top-k cut</text>
+<text x="57.0" y="288.0" text-anchor="start" font-size="16" fill="#222222" font-weight="normal" font-style="normal">softmax over the top-k · prefix sum by warp scan</text>
+<line x1="470.0" y1="150.0" x2="520.0" y2="150.0" stroke="#222222" stroke-width="2.5" marker-end="url(#arr)"/>
+<text x="536.0" y="22.0" text-anchor="start" font-size="18" fill="#222222" font-weight="bold" font-style="normal">Gumbel-max over survivors</text>
+<text x="558.0" y="66.0" text-anchor="end" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="normal">c1</text>
+<rect x="566.0" y="48.0" width="196.0" height="28.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<text x="576.0" y="68.0" text-anchor="start" font-size="16" fill="#1F4E79" font-weight="normal" font-style="normal">log p + g</text>
+<text x="558.0" y="106.0" text-anchor="end" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="normal">c2</text>
+<rect x="566.0" y="88.0" width="150.0" height="28.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<text x="576.0" y="108.0" text-anchor="start" font-size="16" fill="#1F4E79" font-weight="normal" font-style="normal">log p + g</text>
+<text x="558.0" y="146.0" text-anchor="end" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="normal">c3</text>
+<rect x="566.0" y="128.0" width="232.0" height="28.0" rx="2" fill="#1F4E79" stroke="#1F4E79" stroke-width="1.5" />
+<text x="576.0" y="148.0" text-anchor="start" font-size="16" fill="#FFFFFF" font-weight="normal" font-style="normal">log p + g</text>
+<text x="558.0" y="186.0" text-anchor="end" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="normal">c4</text>
+<rect x="566.0" y="168.0" width="110.0" height="28.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<text x="576.0" y="188.0" text-anchor="start" font-size="16" fill="#1F4E79" font-weight="normal" font-style="normal">log p + g</text>
+<text x="558.0" y="226.0" text-anchor="end" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="normal">c5</text>
+<rect x="566.0" y="208.0" width="172.0" height="28.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<text x="576.0" y="228.0" text-anchor="start" font-size="16" fill="#1F4E79" font-weight="normal" font-style="normal">log p + g</text>
+<text x="806.0" y="148.0" text-anchor="start" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal">argmax</text>
+<text x="536.0" y="288.0" text-anchor="start" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="italic">g = Gumbel noise per candidate</text>
+</svg>

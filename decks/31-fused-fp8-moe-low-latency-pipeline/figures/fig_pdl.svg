@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="250pt" viewBox="0 0 870 250" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_pdl: five stages without and with PDL (schematic) -->
+<text x="126.0" y="64.0" text-anchor="end" font-size="18" fill="#222222" font-weight="bold" font-style="normal">stream order</text>
+<rect x="136.0" y="40.0" width="70.0" height="40.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="171.0" y="65.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">count</text>
+<rect x="206.0" y="40.0" width="30.0" height="40.0" rx="2" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.6" />
+<rect x="236.0" y="40.0" width="150.0" height="40.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="311.0" y="65.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">Gate-Up</text>
+<rect x="386.0" y="40.0" width="30.0" height="40.0" rx="2" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.6" />
+<rect x="416.0" y="40.0" width="80.0" height="40.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="456.0" y="65.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">act·quant</text>
+<rect x="496.0" y="40.0" width="30.0" height="40.0" rx="2" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.6" />
+<rect x="526.0" y="40.0" width="140.0" height="40.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="596.0" y="65.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">Down</text>
+<rect x="666.0" y="40.0" width="30.0" height="40.0" rx="2" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.6" />
+<rect x="696.0" y="40.0" width="80.0" height="40.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="736.0" y="65.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">reduce</text>
+<text x="126.0" y="154.0" text-anchor="end" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">with PDL</text>
+<rect x="136.0" y="130.0" width="70.0" height="40.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="171.0" y="155.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">count</text>
+<rect x="212.0" y="130.0" width="150.0" height="40.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="287.0" y="155.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">Gate-Up</text>
+<rect x="368.0" y="130.0" width="80.0" height="40.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="408.0" y="155.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">act·quant</text>
+<rect x="454.0" y="130.0" width="140.0" height="40.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="524.0" y="155.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">Down</text>
+<rect x="600.0" y="130.0" width="80.0" height="40.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="640.0" y="155.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">reduce</text>
+<line x1="776.0" y1="24.0" x2="776.0" y2="214.0" stroke="#7F7F7F" stroke-width="1.6" stroke-dasharray="5,5"/>
+<line x1="682.0" y1="196.0" x2="774.0" y2="196.0" stroke="#1F4E79" stroke-width="2.4" marker-end="url(#arrAcc)" marker-start="url(#arrAcc)"/>
+<text x="728.0" y="222.0" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal">time saved</text>
+<line x1="128.0" y1="244.0" x2="862.0" y2="244.0" stroke="#222222" stroke-width="1.6" marker-end="url(#arr)"/>
+<text x="862.0" y="238.0" text-anchor="end" font-size="15" fill="#222222" font-weight="normal" font-style="normal">time</text>
+</svg>

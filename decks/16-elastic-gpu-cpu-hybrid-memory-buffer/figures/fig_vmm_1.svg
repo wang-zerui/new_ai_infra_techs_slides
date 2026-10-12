@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="270pt" viewBox="0 0 870 270" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_vmm_1: reserve once, map HBM and host pages (build step 1) -->
+<text x="520.0" y="16.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="bold" font-style="normal">GPU segment</text>
+<text x="728.0" y="16.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="bold" font-style="normal">storage</text>
+<circle cx="22.0" cy="49.0" r="13" fill="#222222"/>
+<text x="22.0" y="54.8" text-anchor="middle" font-size="16" fill="#FFFFFF" font-weight="bold" font-style="normal">1</text>
+<text x="44.0" y="45.0" text-anchor="start" font-size="16" fill="#222222" font-weight="normal" font-style="normal" font-family="Menlo, monospace">cuMemAddressReserve</text>
+<text x="44.0" y="66.0" text-anchor="start" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="normal" font-family="Menlo, monospace">(gpu + storage bytes)</text>
+<rect x="440.0" y="26.0" width="416.0" height="46.0" rx="0" fill="#FFFFFF" stroke="#A6A6A6" stroke-width="1.6" stroke-dasharray="6,4" />
+<text x="648.0" y="55.0" text-anchor="middle" font-size="17" fill="#7F7F7F" font-weight="normal" font-style="italic">addresses only (no pages)</text>
+<circle cx="22.0" cy="111.0" r="13" fill="#222222"/>
+<text x="22.0" y="116.8" text-anchor="middle" font-size="16" fill="#FFFFFF" font-weight="bold" font-style="normal">2</text>
+<text x="44.0" y="107.0" text-anchor="start" font-size="16" fill="#222222" font-weight="normal" font-style="normal" font-family="Menlo, monospace">cuMemCreate(DEVICE)</text>
+<text x="44.0" y="128.0" text-anchor="start" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="normal" font-family="Menlo, monospace">cuMemMap(addr)</text>
+<rect x="440.0" y="88.0" width="160.0" height="46.0" rx="0" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="520.0" y="117.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">HBM pages</text>
+<rect x="600.0" y="88.0" width="256.0" height="46.0" rx="0" fill="#FFFFFF" stroke="#A6A6A6" stroke-width="1.6" stroke-dasharray="6,4" />
+<line x1="422.0" y1="74.0" x2="422.0" y2="92.0" stroke="#7F7F7F" stroke-width="1.6" marker-end="url(#arrGray)"/>
+</svg>

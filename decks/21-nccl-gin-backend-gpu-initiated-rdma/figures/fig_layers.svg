@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="262pt"
+     viewBox="0 0 870 262" font-family="Helvetica, Arial, sans-serif">
+  <!-- fig_layers: Gin's three layers (host setup, device calls, NIC backend) as DeepEP V2 uses them. 1 unit = 1pt -->
+  <defs>
+    <marker id="arrA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9"
+            markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/>
+    </marker>
+  </defs>
+
+  <!-- row labels with badges -->
+  <circle cx="16" cy="42" r="12" fill="#222222"/>
+  <text x="16" y="47.5" text-anchor="middle" font-size="15" font-weight="bold" fill="#FFFFFF">1</text>
+  <text x="36" y="48" font-size="18" font-weight="bold" fill="#222222">Host setup</text>
+  <circle cx="16" cy="128" r="12" fill="#222222"/>
+  <text x="16" y="133.5" text-anchor="middle" font-size="15" font-weight="bold" fill="#FFFFFF">2</text>
+  <text x="36" y="134" font-size="18" font-weight="bold" fill="#222222">Device calls</text>
+  <circle cx="16" cy="216" r="12" fill="#222222"/>
+  <text x="16" y="221.5" text-anchor="middle" font-size="15" font-weight="bold" fill="#FFFFFF">3</text>
+  <text x="36" y="222" font-size="18" font-weight="bold" fill="#222222">Backend</text>
+
+  <!-- row 1: host setup -->
+  <rect x="150" y="10" width="222" height="64" rx="5" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5"/>
+  <text x="261" y="37" text-anchor="middle" font-size="18" font-weight="bold" fill="#1F4E79">reuse communicator</text>
+  <text x="261" y="62" text-anchor="middle" font-size="17" fill="#222222">from PyTorch</text>
+  <rect x="397" y="10" width="222" height="64" rx="5" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5"/>
+  <text x="508" y="37" text-anchor="middle" font-size="18" font-weight="bold" fill="#1F4E79">device communicator</text>
+  <text x="508" y="62" text-anchor="middle" font-size="17" fill="#222222">one context per QP</text>
+  <rect x="644" y="10" width="222" height="64" rx="5" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5"/>
+  <text x="755" y="37" text-anchor="middle" font-size="18" font-weight="bold" fill="#1F4E79">symmetric window</text>
+  <text x="755" y="62" text-anchor="middle" font-size="17" fill="#222222">one registration</text>
+  <line x1="373" y1="42" x2="396" y2="42" stroke="#1F4E79" stroke-width="2.5" marker-end="url(#arrA)"/>
+  <line x1="620" y1="42" x2="643" y2="42" stroke="#1F4E79" stroke-width="2.5" marker-end="url(#arrA)"/>
+
+  <!-- row 2: device calls inside JIT kernels -->
+  <rect x="150" y="96" width="166" height="64" rx="5" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5"/>
+  <text x="233" y="123" text-anchor="middle" font-size="18" font-weight="bold" font-family="Menlo, 'Courier New', monospace" fill="#1F4E79">put</text>
+  <text x="233" y="148" text-anchor="middle" font-size="17" fill="#222222">remote write</text>
+  <rect x="330" y="96" width="166" height="64" rx="5" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5"/>
+  <text x="413" y="123" text-anchor="middle" font-size="18" font-weight="bold" font-family="Menlo, 'Courier New', monospace" fill="#1F4E79">signal</text>
+  <text x="413" y="148" text-anchor="middle" font-size="17" fill="#222222">remote counter</text>
+  <rect x="510" y="96" width="166" height="64" rx="5" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5"/>
+  <text x="593" y="123" text-anchor="middle" font-size="18" font-weight="bold" font-family="Menlo, 'Courier New', monospace" fill="#1F4E79">get</text>
+  <text x="593" y="148" text-anchor="middle" font-size="17" fill="#222222">remote read</text>
+  <rect x="690" y="96" width="176" height="64" rx="5" fill="#F2F2F2" stroke="#595959" stroke-width="1.5"/>
+  <text x="778" y="123" text-anchor="middle" font-size="18" font-weight="bold" fill="#222222">LSA pointer</text>
+  <text x="778" y="148" text-anchor="middle" font-size="17" fill="#222222">NVLink store</text>
+
+  <!-- row 3: backend -->
+  <rect x="150" y="182" width="400" height="72" rx="5" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5"/>
+  <text x="350" y="211" text-anchor="middle" font-size="18" font-weight="bold" fill="#1F4E79">GDAKI</text>
+  <text x="350" y="238" text-anchor="middle" font-size="17" fill="#222222">GPU writes the WQE and rings the doorbell</text>
+  <rect x="566" y="182" width="300" height="72" rx="5" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="716" y="211" text-anchor="middle" font-size="18" font-weight="bold" fill="#595959">Proxy</text>
+  <text x="716" y="238" text-anchor="middle" font-size="17" fill="#595959">CPU thread posts (unused)</text>
+</svg>

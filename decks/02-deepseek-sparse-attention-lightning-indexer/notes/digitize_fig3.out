@@ -1,0 +1,12 @@
+decode   V3.1-Terminus  vertices (K tokens, $/M tokens): [(0.0, 0.0702), (128.0, 2.1543)]
+decode   V3.2           vertices (K tokens, $/M tokens): [(0.0, 0.0949), (2.1, 0.1455), (101.6, 0.2272), (128.0, 0.2488)]
+prefill  V3.1-Terminus  vertices (K tokens, $/M tokens): [(-0.0, 0.0528), (128.0, 0.6658)]
+prefill  V3.2           vertices (K tokens, $/M tokens): [(-0.0, 0.061), (6.6, 0.0999), (128.0, 0.1871)]
+prefill: at 0K  V3.1=0.0529  V3.2=0.0612
+prefill: at 128K V3.1=0.6658  V3.2=0.1871  ratio=3.56x
+prefill: V3.1 128K/0K growth = 12.6x ; V3.2 = 3.06x
+prefill: V3.2 cheaper than V3.1 from ~10.4K tokens on
+decode: at 0K  V3.1=0.0702  V3.2=0.0949
+decode: at 128K V3.1=2.1537  V3.2=0.2488  ratio=8.66x
+decode: V3.1 128K/0K growth = 30.7x ; V3.2 = 2.62x
+decode: V3.2 cheaper than V3.1 from ~4.8K tokens on

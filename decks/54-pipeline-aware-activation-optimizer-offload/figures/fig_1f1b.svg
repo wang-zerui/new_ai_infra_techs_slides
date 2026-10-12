@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="270pt" viewBox="0 0 870 270" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- 1F1B steady state on one stage: offload the forward just run, prefetch the next backward -->
+<text x="118.0" y="78.0" text-anchor="end" font-size="17" fill="#222222" font-weight="bold" font-style="normal">compute</text>
+<text x="118.0" y="136.0" text-anchor="end" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal">D2H</text>
+<text x="118.0" y="154.0" text-anchor="end" font-size="15" fill="#1F4E79" font-weight="normal" font-style="italic">offload</text>
+<text x="118.0" y="202.0" text-anchor="end" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal">H2D</text>
+<text x="118.0" y="220.0" text-anchor="end" font-size="15" fill="#1F4E79" font-weight="normal" font-style="italic">prefetch</text>
+<rect x="128.0" y="52.0" width="58.0" height="40.0" rx="2" fill="#FFFFFF" stroke="#595959" stroke-width="1.6" />
+<text x="157.0" y="78.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">F4</text>
+<rect x="186.0" y="52.0" width="116.0" height="40.0" rx="2" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="244.0" y="78.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">B1</text>
+<rect x="302.0" y="52.0" width="58.0" height="40.0" rx="2" fill="#FFFFFF" stroke="#595959" stroke-width="1.6" />
+<text x="331.0" y="78.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">F5</text>
+<rect x="360.0" y="52.0" width="116.0" height="40.0" rx="2" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="418.0" y="78.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">B2</text>
+<rect x="476.0" y="52.0" width="58.0" height="40.0" rx="2" fill="#FFFFFF" stroke="#595959" stroke-width="1.6" />
+<text x="505.0" y="78.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">F6</text>
+<rect x="534.0" y="52.0" width="116.0" height="40.0" rx="2" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="592.0" y="78.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">B3</text>
+<rect x="650.0" y="52.0" width="58.0" height="40.0" rx="2" fill="#FFFFFF" stroke="#595959" stroke-width="1.6" />
+<text x="679.0" y="78.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">F7</text>
+<text x="128.0" y="30.0" text-anchor="start" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="italic">stage 0 in steady state · F = forward · B = backward · digit = micro-batch</text>
+<rect x="212.0" y="118.0" width="86.0" height="40.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.8" />
+<text x="255.0" y="143.2" text-anchor="middle" font-size="15" fill="#1F4E79" font-weight="normal" font-style="normal">F4 acts out</text>
+<line x1="188.0" y1="93.0" x2="220.0" y2="117.0" stroke="#1F4E79" stroke-width="1.6" marker-end="url(#arrAcc)"/>
+<rect x="244.0" y="184.0" width="112.0" height="40.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.8" />
+<text x="300.0" y="209.2" text-anchor="middle" font-size="15" fill="#1F4E79" font-weight="normal" font-style="normal">B2 acts in</text>
+<path d="M356,204 L368,204 L368,94" fill="none" stroke="#1F4E79" stroke-width="1.6" marker-end="url(#arrAcc)"/>
+<rect x="386.0" y="118.0" width="86.0" height="40.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.8" />
+<text x="429.0" y="143.2" text-anchor="middle" font-size="15" fill="#1F4E79" font-weight="normal" font-style="normal">F5 acts out</text>
+<line x1="362.0" y1="93.0" x2="394.0" y2="117.0" stroke="#1F4E79" stroke-width="1.6" marker-end="url(#arrAcc)"/>
+<rect x="418.0" y="184.0" width="112.0" height="40.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.8" />
+<text x="474.0" y="209.2" text-anchor="middle" font-size="15" fill="#1F4E79" font-weight="normal" font-style="normal">B3 acts in</text>
+<path d="M530,204 L542,204 L542,94" fill="none" stroke="#1F4E79" stroke-width="1.6" marker-end="url(#arrAcc)"/>
+<rect x="560.0" y="118.0" width="86.0" height="40.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.8" />
+<text x="603.0" y="143.2" text-anchor="middle" font-size="15" fill="#1F4E79" font-weight="normal" font-style="normal">F6 acts out</text>
+<line x1="536.0" y1="93.0" x2="568.0" y2="117.0" stroke="#1F4E79" stroke-width="1.6" marker-end="url(#arrAcc)"/>
+<line x1="124.0" y1="244.0" x2="862.0" y2="244.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<text x="858.0" y="264.0" text-anchor="end" font-size="16" fill="#222222" font-weight="normal" font-style="normal">time</text>
+</svg>

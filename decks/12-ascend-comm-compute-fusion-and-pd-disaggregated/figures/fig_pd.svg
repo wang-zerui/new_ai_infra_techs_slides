@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="296pt" viewBox="0 0 870 296" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_pd: prefill nodes, Mooncake KV path, decode nodes, with the reference settings -->
+<rect x="16.0" y="24.0" width="320.0" height="200.0" rx="6" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.8" stroke-dasharray="6,4" />
+<text x="176.0" y="50.0" text-anchor="middle" font-size="20" fill="#1F4E79" font-weight="bold" font-style="normal">Prefill nodes · PP2 TP16</text>
+<rect x="32.0" y="64.0" width="288.0" height="42.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="176.0" y="91.3" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="normal" font-style="normal">DSA context parallelism</text>
+<rect x="32.0" y="114.0" width="288.0" height="42.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="176.0" y="141.3" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">FlashComm split</text>
+<rect x="32.0" y="164.0" width="288.0" height="46.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="176.0" y="183.2" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="normal" font-style="normal">Prefix cache</text>
+<text x="176.0" y="202.7" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="normal" font-style="normal">RadixCache + host RAM</text>
+<line x1="344.0" y1="110.0" x2="526.0" y2="110.0" stroke="#1F4E79" stroke-width="2.6" marker-end="url(#arrAcc)"/>
+<text x="435.0" y="92.0" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">KV via Mooncake</text>
+<line x1="526.0" y1="160.0" x2="344.0" y2="160.0" stroke="#595959" stroke-width="2.2" marker-end="url(#arrGray)"/>
+<text x="435.0" y="184.0" text-anchor="middle" font-size="17" fill="#7F7F7F" font-weight="normal" font-style="italic">recompute fallback</text>
+<rect x="534.0" y="24.0" width="320.0" height="200.0" rx="6" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.8" stroke-dasharray="6,4" />
+<text x="694.0" y="50.0" text-anchor="middle" font-size="20" fill="#1F4E79" font-weight="bold" font-style="normal">Decode nodes · DP8 TP4</text>
+<rect x="550.0" y="64.0" width="288.0" height="42.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="694.0" y="91.0" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="normal" font-style="normal">MLAPO fused pre-processing</text>
+<rect x="550.0" y="114.0" width="288.0" height="42.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="694.0" y="141.3" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">MTP · 3 draft tokens</text>
+<rect x="550.0" y="164.0" width="288.0" height="46.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="694.0" y="183.2" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="normal" font-style="normal">Async scheduling</text>
+<text x="694.0" y="202.7" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="normal" font-style="normal">D2H overlapped with next step</text>
+<text x="16.0" y="266.0" text-anchor="start" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">Long prefills can no longer preempt running decodes</text>
+<text x="854.0" y="266.0" text-anchor="end" font-size="17" fill="#7F7F7F" font-weight="normal" font-style="italic">one Atlas 800 A3 node each</text>
+</svg>

@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="300pt" viewBox="0 0 870 300" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_block: full vs block sources for layer 11 -->
+<text x="8.0" y="38.0" text-anchor="start" font-size="19" fill="#222222" font-weight="bold" font-style="normal">Full</text>
+<text x="8.0" y="60.0" text-anchor="start" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="normal">11 sources</text>
+<rect x="120.0" y="22.0" width="48.0" height="36.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="144.0" y="47.0" text-anchor="middle" font-size="18"><tspan fill="#222222" font-weight="bold" font-style="italic">v</tspan><tspan fill="#222222" font-weight="bold" font-size="12.2" baseline-shift="-0.28em">0</tspan></text>
+<line x1="144.0" y1="58.0" x2="144.0" y2="76.0" stroke="#7F7F7F" stroke-width="1.4"/>
+<rect x="176.0" y="22.0" width="48.0" height="36.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="200.0" y="47.0" text-anchor="middle" font-size="18"><tspan fill="#222222" font-weight="bold" font-style="italic">v</tspan><tspan fill="#222222" font-weight="bold" font-size="12.2" baseline-shift="-0.28em">1</tspan></text>
+<line x1="200.0" y1="58.0" x2="200.0" y2="76.0" stroke="#7F7F7F" stroke-width="1.4"/>
+<rect x="232.0" y="22.0" width="48.0" height="36.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="256.0" y="47.0" text-anchor="middle" font-size="18"><tspan fill="#222222" font-weight="bold" font-style="italic">v</tspan><tspan fill="#222222" font-weight="bold" font-size="12.2" baseline-shift="-0.28em">2</tspan></text>
+<line x1="256.0" y1="58.0" x2="256.0" y2="76.0" stroke="#7F7F7F" stroke-width="1.4"/>
+<rect x="288.0" y="22.0" width="48.0" height="36.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="312.0" y="47.0" text-anchor="middle" font-size="18"><tspan fill="#222222" font-weight="bold" font-style="italic">v</tspan><tspan fill="#222222" font-weight="bold" font-size="12.2" baseline-shift="-0.28em">3</tspan></text>
+<line x1="312.0" y1="58.0" x2="312.0" y2="76.0" stroke="#7F7F7F" stroke-width="1.4"/>
+<rect x="344.0" y="22.0" width="48.0" height="36.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="368.0" y="47.0" text-anchor="middle" font-size="18"><tspan fill="#222222" font-weight="bold" font-style="italic">v</tspan><tspan fill="#222222" font-weight="bold" font-size="12.2" baseline-shift="-0.28em">4</tspan></text>
+<line x1="368.0" y1="58.0" x2="368.0" y2="76.0" stroke="#7F7F7F" stroke-width="1.4"/>
+<rect x="400.0" y="22.0" width="48.0" height="36.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="424.0" y="47.0" text-anchor="middle" font-size="18"><tspan fill="#222222" font-weight="bold" font-style="italic">v</tspan><tspan fill="#222222" font-weight="bold" font-size="12.2" baseline-shift="-0.28em">5</tspan></text>
+<line x1="424.0" y1="58.0" x2="424.0" y2="76.0" stroke="#7F7F7F" stroke-width="1.4"/>
+<rect x="456.0" y="22.0" width="48.0" height="36.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="480.0" y="47.0" text-anchor="middle" font-size="18"><tspan fill="#222222" font-weight="bold" font-style="italic">v</tspan><tspan fill="#222222" font-weight="bold" font-size="12.2" baseline-shift="-0.28em">6</tspan></text>
+<line x1="480.0" y1="58.0" x2="480.0" y2="76.0" stroke="#7F7F7F" stroke-width="1.4"/>
+<rect x="512.0" y="22.0" width="48.0" height="36.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="536.0" y="47.0" text-anchor="middle" font-size="18"><tspan fill="#222222" font-weight="bold" font-style="italic">v</tspan><tspan fill="#222222" font-weight="bold" font-size="12.2" baseline-shift="-0.28em">7</tspan></text>
+<line x1="536.0" y1="58.0" x2="536.0" y2="76.0" stroke="#7F7F7F" stroke-width="1.4"/>
+<rect x="568.0" y="22.0" width="48.0" height="36.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="592.0" y="47.0" text-anchor="middle" font-size="18"><tspan fill="#222222" font-weight="bold" font-style="italic">v</tspan><tspan fill="#222222" font-weight="bold" font-size="12.2" baseline-shift="-0.28em">8</tspan></text>
+<line x1="592.0" y1="58.0" x2="592.0" y2="76.0" stroke="#7F7F7F" stroke-width="1.4"/>
+<rect x="624.0" y="22.0" width="48.0" height="36.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="648.0" y="47.0" text-anchor="middle" font-size="18"><tspan fill="#222222" font-weight="bold" font-style="italic">v</tspan><tspan fill="#222222" font-weight="bold" font-size="12.2" baseline-shift="-0.28em">9</tspan></text>
+<line x1="648.0" y1="58.0" x2="648.0" y2="76.0" stroke="#7F7F7F" stroke-width="1.4"/>
+<rect x="680.0" y="22.0" width="48.0" height="36.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="704.0" y="47.0" text-anchor="middle" font-size="18"><tspan fill="#222222" font-weight="bold" font-style="italic">v</tspan><tspan fill="#222222" font-weight="bold" font-size="12.2" baseline-shift="-0.28em">10</tspan></text>
+<line x1="704.0" y1="58.0" x2="704.0" y2="76.0" stroke="#7F7F7F" stroke-width="1.4"/>
+<line x1="144.0" y1="76.0" x2="752.0" y2="76.0" stroke="#7F7F7F" stroke-width="1.6" marker-end="url(#arrGray)"/>
+<circle cx="770.0" cy="76.0" r="17" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2"/>
+<text x="770.0" y="82.0" text-anchor="middle" font-size="19" fill="#1F4E79" font-weight="bold" font-style="italic">α</text>
+<line x1="788.0" y1="76.0" x2="810.0" y2="76.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<text x="816.0" y="83.0" text-anchor="start" font-size="19"><tspan fill="#222222" font-weight="bold" font-style="italic">h</tspan><tspan fill="#222222" font-weight="normal" font-size="12.9" baseline-shift="-0.28em">11</tspan></text>
+<text x="8.0" y="140.0" text-anchor="start" font-size="19" fill="#1F4E79" font-weight="bold" font-style="normal">Block</text>
+<text x="8.0" y="162.0" text-anchor="start" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="normal">4 sources</text>
+<rect x="120.0" y="124.0" width="48.0" height="36.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="144.0" y="149.0" text-anchor="middle" font-size="18"><tspan fill="#222222" font-weight="bold" font-style="italic">v</tspan><tspan fill="#222222" font-weight="bold" font-size="12.2" baseline-shift="-0.28em">0</tspan></text>
+<rect x="176.0" y="124.0" width="48.0" height="36.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="200.0" y="149.0" text-anchor="middle" font-size="18"><tspan fill="#222222" font-weight="bold" font-style="italic">v</tspan><tspan fill="#222222" font-weight="bold" font-size="12.2" baseline-shift="-0.28em">1</tspan></text>
+<rect x="232.0" y="124.0" width="48.0" height="36.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="256.0" y="149.0" text-anchor="middle" font-size="18"><tspan fill="#222222" font-weight="bold" font-style="italic">v</tspan><tspan fill="#222222" font-weight="bold" font-size="12.2" baseline-shift="-0.28em">2</tspan></text>
+<rect x="288.0" y="124.0" width="48.0" height="36.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="312.0" y="149.0" text-anchor="middle" font-size="18"><tspan fill="#222222" font-weight="bold" font-style="italic">v</tspan><tspan fill="#222222" font-weight="bold" font-size="12.2" baseline-shift="-0.28em">3</tspan></text>
+<rect x="344.0" y="124.0" width="48.0" height="36.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="368.0" y="149.0" text-anchor="middle" font-size="18"><tspan fill="#222222" font-weight="bold" font-style="italic">v</tspan><tspan fill="#222222" font-weight="bold" font-size="12.2" baseline-shift="-0.28em">4</tspan></text>
+<rect x="400.0" y="124.0" width="48.0" height="36.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="424.0" y="149.0" text-anchor="middle" font-size="18"><tspan fill="#222222" font-weight="bold" font-style="italic">v</tspan><tspan fill="#222222" font-weight="bold" font-size="12.2" baseline-shift="-0.28em">5</tspan></text>
+<rect x="456.0" y="124.0" width="48.0" height="36.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="480.0" y="149.0" text-anchor="middle" font-size="18"><tspan fill="#222222" font-weight="bold" font-style="italic">v</tspan><tspan fill="#222222" font-weight="bold" font-size="12.2" baseline-shift="-0.28em">6</tspan></text>
+<rect x="512.0" y="124.0" width="48.0" height="36.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="536.0" y="149.0" text-anchor="middle" font-size="18"><tspan fill="#222222" font-weight="bold" font-style="italic">v</tspan><tspan fill="#222222" font-weight="bold" font-size="12.2" baseline-shift="-0.28em">7</tspan></text>
+<rect x="568.0" y="124.0" width="48.0" height="36.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="592.0" y="149.0" text-anchor="middle" font-size="18"><tspan fill="#222222" font-weight="bold" font-style="italic">v</tspan><tspan fill="#222222" font-weight="bold" font-size="12.2" baseline-shift="-0.28em">8</tspan></text>
+<rect x="624.0" y="124.0" width="48.0" height="36.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="648.0" y="149.0" text-anchor="middle" font-size="18"><tspan fill="#222222" font-weight="bold" font-style="italic">v</tspan><tspan fill="#222222" font-weight="bold" font-size="12.2" baseline-shift="-0.28em">9</tspan></text>
+<rect x="680.0" y="124.0" width="48.0" height="36.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="704.0" y="149.0" text-anchor="middle" font-size="18"><tspan fill="#222222" font-weight="bold" font-style="italic">v</tspan><tspan fill="#222222" font-weight="bold" font-size="12.2" baseline-shift="-0.28em">10</tspan></text>
+<line x1="144.0" y1="168.0" x2="144.0" y2="220.0" stroke="#1F4E79" stroke-width="1.8" marker-end="url(#arrAcc)"/>
+<rect x="120.0" y="222.0" width="48.0" height="36.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.6" />
+<text x="144.0" y="247.0" text-anchor="middle" font-size="18"><tspan fill="#1F4E79" font-weight="bold" font-style="italic">b</tspan><tspan fill="#1F4E79" font-weight="bold" font-size="12.2" baseline-shift="-0.28em">0</tspan></text>
+<rect x="172.0" y="118.0" width="224.0" height="48.0" rx="6" fill="none" stroke="#1F4E79" stroke-width="1.6" stroke-dasharray="5,4" />
+<line x1="284.0" y1="168.0" x2="284.0" y2="220.0" stroke="#1F4E79" stroke-width="1.8" marker-end="url(#arrAcc)"/>
+<text x="292.0" y="200.0" text-anchor="start" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal">Σ</text>
+<rect x="260.0" y="222.0" width="48.0" height="36.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.6" />
+<text x="284.0" y="247.0" text-anchor="middle" font-size="18"><tspan fill="#1F4E79" font-weight="bold" font-style="italic">b</tspan><tspan fill="#1F4E79" font-weight="bold" font-size="12.2" baseline-shift="-0.28em">1</tspan></text>
+<rect x="396.0" y="118.0" width="224.0" height="48.0" rx="6" fill="none" stroke="#1F4E79" stroke-width="1.6" stroke-dasharray="5,4" />
+<line x1="508.0" y1="168.0" x2="508.0" y2="220.0" stroke="#1F4E79" stroke-width="1.8" marker-end="url(#arrAcc)"/>
+<text x="516.0" y="200.0" text-anchor="start" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal">Σ</text>
+<rect x="484.0" y="222.0" width="48.0" height="36.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.6" />
+<text x="508.0" y="247.0" text-anchor="middle" font-size="18"><tspan fill="#1F4E79" font-weight="bold" font-style="italic">b</tspan><tspan fill="#1F4E79" font-weight="bold" font-size="12.2" baseline-shift="-0.28em">2</tspan></text>
+<rect x="620.0" y="118.0" width="112.0" height="48.0" rx="6" fill="none" stroke="#1F4E79" stroke-width="1.6" stroke-dasharray="5,4" />
+<line x1="676.0" y1="168.0" x2="676.0" y2="220.0" stroke="#1F4E79" stroke-width="1.8" marker-end="url(#arrAcc)"/>
+<text x="684.0" y="200.0" text-anchor="start" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal">Σ</text>
+<rect x="642.0" y="222.0" width="48.0" height="36.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.6" />
+<text x="666.0" y="247.0" text-anchor="middle" font-size="18"><tspan fill="#1F4E79" font-weight="bold" font-style="italic">b</tspan><tspan fill="#1F4E79" font-weight="bold" font-size="12.2" baseline-shift="-0.28em">3</tspan></text>
+<text x="696.0" y="246.0" text-anchor="start" font-size="16" fill="#1F4E79" font-weight="normal" font-style="italic">partial</text>
+<line x1="144.0" y1="258.0" x2="144.0" y2="278.0" stroke="#1F4E79" stroke-width="1.6"/>
+<line x1="284.0" y1="258.0" x2="284.0" y2="278.0" stroke="#1F4E79" stroke-width="1.6"/>
+<line x1="508.0" y1="258.0" x2="508.0" y2="278.0" stroke="#1F4E79" stroke-width="1.6"/>
+<line x1="666.0" y1="258.0" x2="666.0" y2="278.0" stroke="#1F4E79" stroke-width="1.6"/>
+<line x1="144.0" y1="278.0" x2="752.0" y2="278.0" stroke="#1F4E79" stroke-width="1.8" marker-end="url(#arrAcc)"/>
+<circle cx="770.0" cy="278.0" r="17" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2"/>
+<text x="770.0" y="284.0" text-anchor="middle" font-size="19" fill="#1F4E79" font-weight="bold" font-style="italic">α</text>
+<line x1="788.0" y1="278.0" x2="810.0" y2="278.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<text x="816.0" y="285.0" text-anchor="start" font-size="19"><tspan fill="#222222" font-weight="bold" font-style="italic">h</tspan><tspan fill="#222222" font-weight="normal" font-size="12.9" baseline-shift="-0.28em">11</tspan></text>
+</svg>

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="300pt" viewBox="0 0 870 300" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_overview: one op, two modes, both two-shot -->
+<circle cx="20" cy="82" r="13" fill="#1F4E79"/>
+<text x="20.0" y="88.3" text-anchor="middle" font-size="18" fill="#FFFFFF" font-weight="bold" font-style="normal">2</text>
+<text x="40.0" y="88.0" text-anchor="start" font-size="19" fill="#1F4E79" font-weight="bold" font-style="normal">high-throughput</text>
+<text x="40.0" y="112.0" text-anchor="start" font-size="17" fill="#7F7F7F" font-weight="normal" font-style="italic">many tokens</text>
+<circle cx="20" cy="218" r="13" fill="#1F4E79"/>
+<text x="20.0" y="224.3" text-anchor="middle" font-size="18" fill="#FFFFFF" font-weight="bold" font-style="normal">3</text>
+<text x="40.0" y="224.0" text-anchor="start" font-size="19" fill="#1F4E79" font-weight="bold" font-style="normal">low-latency</text>
+<text x="40.0" y="248.0" text-anchor="start" font-size="17" fill="#7F7F7F" font-weight="normal" font-style="italic">few tokens</text>
+<rect x="204.0" y="30.0" width="656.0" height="116.0" rx="6" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2" stroke-dasharray="7,4" />
+<text x="214.0" y="50.0" text-anchor="start" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">one kernel</text>
+<rect x="216.0" y="60.0" width="200.0" height="56.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="316.0" y="84.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">multicast</text>
+<text x="316.0" y="104.7" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">ld_reduce</text>
+<text x="316.0" y="138.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="italic">shot 1</text>
+<rect x="432.0" y="60.0" width="200.0" height="56.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="532.0" y="84.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">+ residual</text>
+<text x="532.0" y="104.7" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">RMSNorm</text>
+<text x="532.0" y="138.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="italic">norm on owned tokens</text>
+<rect x="648.0" y="60.0" width="200.0" height="56.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="748.0" y="84.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">multicast</text>
+<text x="748.0" y="104.7" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">store</text>
+<text x="748.0" y="138.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="italic">shot 2</text>
+<line x1="417.0" y1="88.0" x2="431.0" y2="88.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<line x1="633.0" y1="88.0" x2="647.0" y2="88.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="204.0" y="168.0" width="426.0" height="116.0" rx="6" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2" stroke-dasharray="7,4" />
+<text x="214.0" y="188.0" text-anchor="start" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">kernel 1</text>
+<rect x="676.0" y="168.0" width="184.0" height="116.0" rx="6" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2" stroke-dasharray="7,4" />
+<text x="686.0" y="188.0" text-anchor="start" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">kernel 2</text>
+<rect x="216.0" y="198.0" width="200.0" height="56.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="316.0" y="222.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">P2P scatter</text>
+<text x="316.0" y="242.7" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">+ sum on owner</text>
+<text x="316.0" y="276.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="italic">shot 1</text>
+<rect x="432.0" y="198.0" width="186.0" height="56.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="525.0" y="222.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">multicast</text>
+<text x="525.0" y="242.7" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">broadcast</text>
+<text x="525.0" y="276.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="italic">shot 2</text>
+<rect x="686.0" y="198.0" width="164.0" height="56.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="768.0" y="222.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">+ residual</text>
+<text x="768.0" y="242.7" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">RMSNorm</text>
+<text x="768.0" y="276.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="italic">norm on all tokens</text>
+<line x1="417.0" y1="226.0" x2="431.0" y2="226.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<line x1="619.0" y1="226.0" x2="684.0" y2="226.0" stroke="#1F4E79" stroke-width="2.6" marker-end="url(#arrAcc)"/>
+<text x="653.0" y="212.0" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal" paint-order="stroke" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round">PDL</text>
+</svg>

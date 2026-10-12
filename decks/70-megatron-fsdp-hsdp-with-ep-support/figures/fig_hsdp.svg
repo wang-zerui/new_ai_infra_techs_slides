@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="286pt" viewBox="0 0 870 286" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_hsdp: two node replicas, sharded inside -->
+<rect x="10.0" y="8.0" width="410.0" height="190.0" rx="6" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="1.5" stroke-dasharray="6,4" />
+<text x="22.0" y="32.0" text-anchor="start" font-size="18" fill="#222222" font-weight="bold" font-style="normal">node 0 · replica 0</text>
+<text x="408.0" y="32.0" text-anchor="end" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="italic">NVLink</text>
+<rect x="28.0" y="50.0" width="84.0" height="56.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="70.0" y="73.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="bold" font-style="normal">GPU0</text>
+<text x="70.0" y="95.0" text-anchor="middle" font-size="15" fill="#1F4E79" font-weight="normal" font-style="normal">¼ of state</text>
+<line x1="70.0" y1="106.0" x2="70.0" y2="140.0" stroke="#1F4E79" stroke-width="2.4"/>
+<rect x="126.0" y="50.0" width="84.0" height="56.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="168.0" y="73.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="bold" font-style="normal">GPU1</text>
+<text x="168.0" y="95.0" text-anchor="middle" font-size="15" fill="#1F4E79" font-weight="normal" font-style="normal">¼ of state</text>
+<line x1="168.0" y1="106.0" x2="168.0" y2="140.0" stroke="#1F4E79" stroke-width="2.4"/>
+<rect x="224.0" y="50.0" width="84.0" height="56.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="266.0" y="73.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="bold" font-style="normal">GPU2</text>
+<text x="266.0" y="95.0" text-anchor="middle" font-size="15" fill="#1F4E79" font-weight="normal" font-style="normal">¼ of state</text>
+<line x1="266.0" y1="106.0" x2="266.0" y2="140.0" stroke="#1F4E79" stroke-width="2.4"/>
+<rect x="322.0" y="50.0" width="84.0" height="56.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="364.0" y="73.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="bold" font-style="normal">GPU3</text>
+<text x="364.0" y="95.0" text-anchor="middle" font-size="15" fill="#1F4E79" font-weight="normal" font-style="normal">¼ of state</text>
+<line x1="364.0" y1="106.0" x2="364.0" y2="140.0" stroke="#1F4E79" stroke-width="2.4"/>
+<line x1="69.0" y1="140.0" x2="365.0" y2="140.0" stroke="#1F4E79" stroke-width="3.2"/>
+<text x="215.0" y="172.0" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">AG and RS every layer</text>
+<rect x="450.0" y="8.0" width="410.0" height="190.0" rx="6" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="1.5" stroke-dasharray="6,4" />
+<text x="462.0" y="32.0" text-anchor="start" font-size="18" fill="#222222" font-weight="bold" font-style="normal">node 1 · replica 1</text>
+<text x="848.0" y="32.0" text-anchor="end" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="italic">NVLink</text>
+<rect x="468.0" y="50.0" width="84.0" height="56.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="510.0" y="73.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="bold" font-style="normal">GPU4</text>
+<text x="510.0" y="95.0" text-anchor="middle" font-size="15" fill="#1F4E79" font-weight="normal" font-style="normal">¼ of state</text>
+<line x1="510.0" y1="106.0" x2="510.0" y2="140.0" stroke="#1F4E79" stroke-width="2.4"/>
+<rect x="566.0" y="50.0" width="84.0" height="56.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="608.0" y="73.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="bold" font-style="normal">GPU5</text>
+<text x="608.0" y="95.0" text-anchor="middle" font-size="15" fill="#1F4E79" font-weight="normal" font-style="normal">¼ of state</text>
+<line x1="608.0" y1="106.0" x2="608.0" y2="140.0" stroke="#1F4E79" stroke-width="2.4"/>
+<rect x="664.0" y="50.0" width="84.0" height="56.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="706.0" y="73.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="bold" font-style="normal">GPU6</text>
+<text x="706.0" y="95.0" text-anchor="middle" font-size="15" fill="#1F4E79" font-weight="normal" font-style="normal">¼ of state</text>
+<line x1="706.0" y1="106.0" x2="706.0" y2="140.0" stroke="#1F4E79" stroke-width="2.4"/>
+<rect x="762.0" y="50.0" width="84.0" height="56.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="804.0" y="73.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="bold" font-style="normal">GPU7</text>
+<text x="804.0" y="95.0" text-anchor="middle" font-size="15" fill="#1F4E79" font-weight="normal" font-style="normal">¼ of state</text>
+<line x1="804.0" y1="106.0" x2="804.0" y2="140.0" stroke="#1F4E79" stroke-width="2.4"/>
+<line x1="509.0" y1="140.0" x2="805.0" y2="140.0" stroke="#1F4E79" stroke-width="3.2"/>
+<text x="655.0" y="172.0" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">AG and RS every layer</text>
+<path d="M215,202 L215,234 L655,234 L655,202" fill="none" stroke="#7F7F7F" stroke-width="2.2" stroke-dasharray="7,5"/>
+<path d="M215,200 l-6,10 l12,0 z" fill="#7F7F7F"/>
+<path d="M655,200 l-6,10 l12,0 z" fill="#7F7F7F"/>
+<text x="435.0" y="262.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">gradient all-reduce once per step across nodes</text>
+</svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="290pt" viewBox="0 0 870 290" font-family="Helvetica, Arial, sans-serif">
+  <defs><marker id="a222222" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker><marker id="a1F4E79" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker><pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2.5"/></pattern><pattern id="hatchRed" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#E6A0A0" stroke-width="2.5"/></pattern></defs>
+  <text x="14" y="24" font-size="18" text-anchor="start" font-weight="bold" fill="#222222">encode (quantize)</text>
+  <rect x="14" y="38" width="150" height="64" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2"/>
+  <text x="89.0" y="65.5" font-size="17" text-anchor="middle" font-weight="bold" fill="#222222">tensor amax</text>
+  <text x="89.0" y="85.8" font-size="15" text-anchor="middle" font-weight="normal" fill="#222222">extra pass</text>
+  <line x1="166" y1="70" x2="187" y2="70" stroke="#222222" stroke-width="2.2" marker-end="url(#a222222)"/>
+  <rect x="190" y="38" width="200" height="64" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2"/>
+  <text x="290.0" y="65.5" font-size="17" text-anchor="middle" font-weight="bold" fill="#222222">s_tensor in FP32</text>
+  <text x="290.0" y="85.8" font-size="15" text-anchor="middle" font-weight="normal" fill="#222222">amax ÷ (6 × 448)</text>
+  <line x1="392" y1="70" x2="413" y2="70" stroke="#222222" stroke-width="2.2" marker-end="url(#a222222)"/>
+  <rect x="416" y="38" width="216" height="64" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2"/>
+  <text x="524.0" y="65.5" font-size="17" text-anchor="middle" font-weight="bold" fill="#1F4E79">s_block in E4M3</text>
+  <text x="524.0" y="85.8" font-size="15" text-anchor="middle" font-weight="normal" fill="#1F4E79">block amax ÷ 6 ÷ s_tensor</text>
+  <line x1="634" y1="70" x2="655" y2="70" stroke="#222222" stroke-width="2.2" marker-end="url(#a222222)"/>
+  <rect x="658" y="38" width="200" height="64" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2"/>
+  <text x="758.0" y="65.5" font-size="17" text-anchor="middle" font-weight="bold" fill="#1F4E79">q in E2M1</text>
+  <text x="758.0" y="85.8" font-size="15" text-anchor="middle" font-weight="normal" fill="#1F4E79">x ÷ (s_block × s_tensor)</text>
+  <text x="14" y="160" font-size="18" text-anchor="start" font-weight="bold" fill="#1F4E79">decode (inside the GEMM)</text>
+  <rect x="14" y="174" width="190" height="64" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2"/>
+  <text x="109.0" y="201.4" font-size="17" text-anchor="middle" font-weight="bold" fill="#1F4E79">Tensor Core</text>
+  <text x="109.0" y="221.8" font-size="15" text-anchor="middle" font-weight="normal" fill="#1F4E79">16-value dot product</text>
+  <line x1="206" y1="206" x2="227" y2="206" stroke="#1F4E79" stroke-width="2.2" marker-end="url(#a1F4E79)"/>
+  <rect x="230" y="174" width="200" height="64" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2"/>
+  <text x="330.0" y="201.4" font-size="17" text-anchor="middle" font-weight="bold" fill="#1F4E79">× both s_block</text>
+  <text x="330.0" y="221.8" font-size="15" text-anchor="middle" font-weight="normal" fill="#1F4E79">per block in the MMA</text>
+  <line x1="432" y1="206" x2="453" y2="206" stroke="#222222" stroke-width="2.2" marker-end="url(#a222222)"/>
+  <rect x="456" y="174" width="180" height="64" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2"/>
+  <text x="546.0" y="201.4" font-size="17" text-anchor="middle" font-weight="bold" fill="#222222">FP32 accumulate</text>
+  <text x="546.0" y="221.8" font-size="15" text-anchor="middle" font-weight="normal" fill="#222222">over all of K</text>
+  <line x1="638" y1="206" x2="659" y2="206" stroke="#222222" stroke-width="2.2" marker-end="url(#a222222)"/>
+  <rect x="662" y="174" width="196" height="64" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2"/>
+  <text x="760.0" y="201.4" font-size="17" text-anchor="middle" font-weight="bold" fill="#222222">× both s_tensor</text>
+  <text x="760.0" y="221.8" font-size="15" text-anchor="middle" font-weight="normal" fill="#222222">once after the GEMM</text>
+</svg>

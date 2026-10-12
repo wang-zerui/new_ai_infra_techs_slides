@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="296pt" viewBox="0 0 870 296" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_tiles: tiled matmul fused with its reduce-scatter, one thread block per tile pair -->
+<text x="20.0" y="28.0" text-anchor="start" font-size="19" fill="#222222" font-weight="bold" font-style="normal">Output tiles</text>
+<rect x="20.0" y="42.0" width="52.0" height="36.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.8" />
+<rect x="80.0" y="42.0" width="52.0" height="36.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.8" />
+<rect x="140.0" y="42.0" width="52.0" height="36.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.8" />
+<rect x="200.0" y="42.0" width="52.0" height="36.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.8" />
+<rect x="20.0" y="86.0" width="52.0" height="36.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.8" />
+<rect x="80.0" y="86.0" width="52.0" height="36.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.8" />
+<rect x="140.0" y="86.0" width="52.0" height="36.0" rx="2" fill="#FFFFFF" stroke="#595959" stroke-width="1.8" />
+<rect x="200.0" y="86.0" width="52.0" height="36.0" rx="2" fill="#FFFFFF" stroke="#595959" stroke-width="1.8" />
+<rect x="20.0" y="130.0" width="52.0" height="36.0" rx="2" fill="#FFFFFF" stroke="#595959" stroke-width="1.8" />
+<rect x="80.0" y="130.0" width="52.0" height="36.0" rx="2" fill="#FFFFFF" stroke="#595959" stroke-width="1.8" />
+<rect x="140.0" y="130.0" width="52.0" height="36.0" rx="2" fill="#FFFFFF" stroke="#595959" stroke-width="1.8" />
+<rect x="200.0" y="130.0" width="52.0" height="36.0" rx="2" fill="#FFFFFF" stroke="#595959" stroke-width="1.8" />
+<rect x="20.0" y="174.0" width="52.0" height="36.0" rx="2" fill="#FFFFFF" stroke="#595959" stroke-width="1.8" />
+<rect x="80.0" y="174.0" width="52.0" height="36.0" rx="2" fill="#FFFFFF" stroke="#595959" stroke-width="1.8" />
+<rect x="140.0" y="174.0" width="52.0" height="36.0" rx="2" fill="#FFFFFF" stroke="#595959" stroke-width="1.8" />
+<rect x="200.0" y="174.0" width="52.0" height="36.0" rx="2" fill="#FFFFFF" stroke="#595959" stroke-width="1.8" />
+<text x="136.0" y="240.0" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="normal" font-style="italic">computed so far</text>
+<line x1="268.0" y1="120.0" x2="310.0" y2="120.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<text x="289.0" y="104.0" text-anchor="middle" font-size="17" fill="#7F7F7F" font-weight="normal" font-style="normal">per tile</text>
+<text x="406.0" y="76.0" text-anchor="end" font-size="18" fill="#222222" font-weight="normal" font-style="normal">compute</text>
+<text x="406.0" y="150.0" text-anchor="end" font-size="18" fill="#222222" font-weight="normal" font-style="normal">comm</text>
+<rect x="420.0" y="52.0" width="62.0" height="36.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="451.0" y="76.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">T1</text>
+<rect x="488.0" y="126.0" width="62.0" height="36.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="519.0" y="150.0" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal">T1</text>
+<line x1="482.0" y1="88.0" x2="519.0" y2="124.0" stroke="#7F7F7F" stroke-width="1.6" stroke-dasharray="4,3"/>
+<rect x="488.0" y="52.0" width="62.0" height="36.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="519.0" y="76.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">T2</text>
+<rect x="556.0" y="126.0" width="62.0" height="36.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="587.0" y="150.0" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal">T2</text>
+<line x1="550.0" y1="88.0" x2="587.0" y2="124.0" stroke="#7F7F7F" stroke-width="1.6" stroke-dasharray="4,3"/>
+<rect x="556.0" y="52.0" width="62.0" height="36.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="587.0" y="76.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">T3</text>
+<rect x="624.0" y="126.0" width="62.0" height="36.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="655.0" y="150.0" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal">T3</text>
+<line x1="618.0" y1="88.0" x2="655.0" y2="124.0" stroke="#7F7F7F" stroke-width="1.6" stroke-dasharray="4,3"/>
+<rect x="624.0" y="52.0" width="62.0" height="36.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="655.0" y="76.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">T4</text>
+<rect x="692.0" y="126.0" width="62.0" height="36.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="723.0" y="150.0" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal">T4</text>
+<line x1="686.0" y1="88.0" x2="723.0" y2="124.0" stroke="#7F7F7F" stroke-width="1.6" stroke-dasharray="4,3"/>
+<rect x="692.0" y="52.0" width="62.0" height="36.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="723.0" y="76.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">T5</text>
+<rect x="760.0" y="126.0" width="62.0" height="36.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="791.0" y="150.0" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal">T5</text>
+<line x1="754.0" y1="88.0" x2="791.0" y2="124.0" stroke="#7F7F7F" stroke-width="1.6" stroke-dasharray="4,3"/>
+<line x1="412.0" y1="196.0" x2="862.0" y2="196.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<text x="858.0" y="220.0" text-anchor="end" font-size="18" fill="#222222" font-weight="normal" font-style="normal">time</text>
+<text x="420.0" y="250.0" text-anchor="start" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">one fused kernel · reduce-scatter rides the tiles</text>
+</svg>

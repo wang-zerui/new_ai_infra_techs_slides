@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="290pt" viewBox="0 0 870 290" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_windows: GPU window vs Gin-only storage window, RDMA read path -->
+<rect x="8.0" y="8.0" width="520.0" height="274.0" rx="8" fill="#FFFFFF" stroke="#595959" stroke-width="1.6" />
+<text x="20.0" y="32.0" text-anchor="start" font-size="18" fill="#222222" font-weight="bold" font-style="normal">node A · owner</text>
+<rect x="24.0" y="92.0" width="140.0" height="44.0" rx="0" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="94.0" y="120.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">GPU segment</text>
+<rect x="164.0" y="92.0" width="240.0" height="44.0" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.8" />
+<text x="284.0" y="120.0" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal">storage shard</text>
+<path d="M26,86 L26,78 L162,78 L162,86" fill="none" stroke="#222222" stroke-width="1.6"/>
+<text x="94.0" y="70.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="bold" font-style="normal">NCCL window</text>
+<path d="M166,86 L166,78 L402,78 L402,86" fill="none" stroke="#1F4E79" stroke-width="1.6"/>
+<text x="284.0" y="70.0" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">Gin-only window</text>
+<text x="94.0" y="156.0" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="italic">NVLink + RDMA</text>
+<rect x="24.0" y="196.0" width="140.0" height="50.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="94.0" y="226.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">HBM</text>
+<rect x="184.0" y="196.0" width="200.0" height="50.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="284.0" y="226.9" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal">host DRAM</text>
+<line x1="284.0" y1="138.0" x2="284.0" y2="194.0" stroke="#1F4E79" stroke-width="1.6" stroke-dasharray="5,4"/>
+<line x1="94.0" y1="162.0" x2="94.0" y2="194.0" stroke="#595959" stroke-width="1.6" stroke-dasharray="5,4"/>
+<rect x="426.0" y="186.0" width="88.0" height="64.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="470.0" y="224.7" text-anchor="middle" font-size="19" fill="#1F4E79" font-weight="bold" font-style="normal">NIC</text>
+<line x1="386.0" y1="221.0" x2="424.0" y2="221.0" stroke="#1F4E79" stroke-width="2.6" marker-end="url(#arrAcc)"/>
+<text x="400.0" y="178.0" text-anchor="middle" font-size="15" fill="#1F4E79" font-weight="normal" font-style="normal">PCIe read</text>
+<text x="268.0" y="276.0" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="italic">no kernel runs on A</text>
+<rect x="600.0" y="8.0" width="262.0" height="274.0" rx="8" fill="#FFFFFF" stroke="#595959" stroke-width="1.6" />
+<text x="612.0" y="32.0" text-anchor="start" font-size="18" fill="#222222" font-weight="bold" font-style="normal">node B · reader</text>
+<rect x="616.0" y="52.0" width="230.0" height="52.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="731.0" y="74.2" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">issue warp</text>
+<text x="731.0" y="93.7" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">posts GET</text>
+<rect x="616.0" y="186.0" width="88.0" height="64.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="660.0" y="224.7" text-anchor="middle" font-size="19" fill="#1F4E79" font-weight="bold" font-style="normal">NIC</text>
+<rect x="730.0" y="186.0" width="116.0" height="64.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="788.0" y="214.2" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">GPU fetch</text>
+<text x="788.0" y="233.7" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">area</text>
+<line x1="660.0" y1="106.0" x2="660.0" y2="184.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)" stroke-dasharray="6,4"/>
+<text x="670.0" y="150.0" text-anchor="start" font-size="15" fill="#222222" font-weight="normal" font-style="italic">doorbell</text>
+<line x1="706.0" y1="218.0" x2="728.0" y2="218.0" stroke="#1F4E79" stroke-width="2.6" marker-end="url(#arrAcc)"/>
+<line x1="516.0" y1="218.0" x2="614.0" y2="218.0" stroke="#1F4E79" stroke-width="2.8" marker-end="url(#arrAcc)"/>
+<text x="565.0" y="208.0" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">IB</text>
+</svg>

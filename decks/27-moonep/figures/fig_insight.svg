@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480pt" height="300pt" viewBox="0 0 480 300" font-family="Helvetica, Arial, sans-serif">
+<defs><marker id="a222222" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker><marker id="a1F4E79" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker><marker id="aC00000" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker><marker id="a595959" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#595959"/></marker><marker id="a7F7F7F" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker><marker id="a2E7D32" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2E7D32"/></marker><pattern id="hatchRed" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#FBE5E5"/><line x1="0" y1="0" x2="0" y2="8" stroke="#C00000" stroke-width="2.5"/></pattern><pattern id="hatchGray" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="8" height="8" fill="#fff"/><line x1="0" y1="0" x2="0" y2="8" stroke="#A6A6A6" stroke-width="2"/></pattern></defs>
+<rect width="480" height="300" fill="#fff"/>
+<rect x="0.0" y="22.0" width="180.0" height="106.0" rx="5" fill="#FBE5E5" stroke="#C00000" stroke-width="2" />
+<text x="90.0" y="52.0" font-size="18" font-weight="bold" fill="#C00000" text-anchor="middle">GPU A</text>
+<text x="90.0" y="76.0" font-size="17" font-weight="normal" fill="#C00000" text-anchor="middle">overloaded</text>
+<rect x="14.0" y="88.0" width="152.0" height="30.0" rx="3" fill="#fff" stroke="#595959" stroke-width="2" />
+<text x="90.0" y="108.6" font-size="16" font-weight="normal" fill="#222222" text-anchor="middle">E/R home experts</text>
+<rect x="0.0" y="172.0" width="180.0" height="106.0" rx="5" fill="#FBE5E5" stroke="#C00000" stroke-width="2" />
+<text x="90.0" y="202.0" font-size="18" font-weight="bold" fill="#C00000" text-anchor="middle">GPU B</text>
+<text x="90.0" y="226.0" font-size="17" font-weight="normal" fill="#C00000" text-anchor="middle">overloaded</text>
+<rect x="14.0" y="238.0" width="152.0" height="30.0" rx="3" fill="#fff" stroke="#595959" stroke-width="2" />
+<text x="90.0" y="258.6" font-size="16" font-weight="normal" fill="#222222" text-anchor="middle">E/R home experts</text>
+<rect x="296.0" y="6.0" width="182.0" height="84.0" rx="5" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="387.0" y="32.0" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">GPU C</text>
+<rect x="308.0" y="44.0" width="158.0" height="34.0" rx="3" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" stroke-dasharray="6,3" />
+<text x="387.0" y="67.0" font-size="17" font-weight="bold" fill="#1F4E79" text-anchor="middle">≤ E/R replicas</text>
+<rect x="296.0" y="108.0" width="182.0" height="84.0" rx="5" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="387.0" y="134.0" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">GPU D</text>
+<rect x="308.0" y="146.0" width="158.0" height="34.0" rx="3" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" stroke-dasharray="6,3" />
+<text x="387.0" y="169.0" font-size="17" font-weight="bold" fill="#1F4E79" text-anchor="middle">≤ E/R replicas</text>
+<rect x="296.0" y="210.0" width="182.0" height="84.0" rx="5" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="387.0" y="236.0" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">GPU E</text>
+<rect x="308.0" y="248.0" width="158.0" height="34.0" rx="3" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" stroke-dasharray="6,3" />
+<text x="387.0" y="271.0" font-size="17" font-weight="bold" fill="#1F4E79" text-anchor="middle">≤ E/R replicas</text>
+<line x1="180.0" y1="62.0" x2="294.0" y2="48.0" stroke="#1F4E79" stroke-width="2.5" marker-end="url(#a1F4E79)"/>
+<line x1="180.0" y1="92.0" x2="294.0" y2="150.0" stroke="#1F4E79" stroke-width="2.5" marker-end="url(#a1F4E79)"/>
+<line x1="180.0" y1="232.0" x2="294.0" y2="252.0" stroke="#1F4E79" stroke-width="2.5" marker-end="url(#a1F4E79)"/>
+<text x="238.0" y="20.0" font-size="17" font-weight="bold" fill="#1F4E79" text-anchor="middle">fill to S×K</text>
+</svg>

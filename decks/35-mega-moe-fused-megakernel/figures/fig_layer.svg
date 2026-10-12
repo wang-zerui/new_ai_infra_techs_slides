@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="524pt" height="344pt" viewBox="0 0 524 344" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#BFBFBF" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- one MoE layer under expert parallelism -->
+<text x="2.0" y="22.0" text-anchor="start" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="italic">token&#x27;s GPU</text>
+<text x="287.0" y="22.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="italic">top-6 experts on other GPUs</text>
+<text x="522.0" y="22.0" text-anchor="end" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="italic">token&#x27;s GPU</text>
+<rect x="4.0" y="140.0" width="70.0" height="64.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="39.0" y="166.7" text-anchor="middle" font-size="22" fill="#222222" font-weight="bold" font-style="normal">x</text>
+<text x="39.0" y="189.1" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">FP8</text>
+<rect x="150.0" y="48.0" width="274.0" height="64.0" rx="6" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="1.5" stroke-dasharray="5,3" />
+<text x="154.0" y="42.0" text-anchor="start" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">GPU 1</text>
+<rect x="158.0" y="58.0" width="74.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="195.0" y="86.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">Linear 1</text>
+<line x1="232.0" y1="80.0" x2="249.0" y2="80.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="250.0" y="58.0" width="74.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="287.0" y="86.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">SwiGLU</text>
+<line x1="324.0" y1="80.0" x2="341.0" y2="80.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="342.0" y="58.0" width="74.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="379.0" y="86.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">Linear 2</text>
+<line x1="74.0" y1="172.0" x2="149.0" y2="80.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<line x1="424.0" y1="80.0" x2="455.0" y2="172.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="150.0" y="140.0" width="274.0" height="64.0" rx="6" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="1.5" stroke-dasharray="5,3" />
+<text x="154.0" y="134.0" text-anchor="start" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">GPU 4</text>
+<rect x="158.0" y="150.0" width="74.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="195.0" y="177.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">Linear 1</text>
+<line x1="232.0" y1="172.0" x2="249.0" y2="172.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="250.0" y="150.0" width="74.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="287.0" y="177.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">SwiGLU</text>
+<line x1="324.0" y1="172.0" x2="341.0" y2="172.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="342.0" y="150.0" width="74.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="379.0" y="177.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">Linear 2</text>
+<line x1="74.0" y1="172.0" x2="149.0" y2="172.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<line x1="424.0" y1="172.0" x2="455.0" y2="172.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="150.0" y="232.0" width="274.0" height="64.0" rx="6" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="1.5" stroke-dasharray="5,3" />
+<text x="154.0" y="226.0" text-anchor="start" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">GPU 6</text>
+<rect x="158.0" y="242.0" width="74.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="195.0" y="269.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">Linear 1</text>
+<line x1="232.0" y1="264.0" x2="249.0" y2="264.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="250.0" y="242.0" width="74.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="287.0" y="269.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">SwiGLU</text>
+<line x1="324.0" y1="264.0" x2="341.0" y2="264.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="342.0" y="242.0" width="74.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="379.0" y="269.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">Linear 2</text>
+<line x1="74.0" y1="172.0" x2="149.0" y2="264.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<line x1="424.0" y1="264.0" x2="455.0" y2="172.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="456.0" y="140.0" width="62.0" height="64.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="487.0" y="166.2" text-anchor="middle" font-size="24" fill="#222222" font-weight="bold" font-style="normal">Σ</text>
+<text x="487.0" y="191.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">y</text>
+<text x="110.0" y="318.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">dispatch</text>
+<text x="110.0" y="334.0" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="italic">NVLink</text>
+<text x="287.0" y="318.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">per-expert MLP</text>
+<text x="287.0" y="334.0" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="italic">tensor cores</text>
+<text x="462.0" y="318.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">combine</text>
+<text x="462.0" y="334.0" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="italic">NVLink</text>
+</svg>

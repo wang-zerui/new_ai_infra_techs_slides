@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="876pt" height="226pt" viewBox="0 0 876 226" font-family="Helvetica, Arial, sans-serif">
+<defs><pattern id="hatchRed" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#FBE5E5"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2"/></pattern><pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#fff"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/></pattern></defs>
+<rect width="876" height="226" fill="#fff"/>
+<g transform="translate(3,3)">
+<text x="0" y="32" font-size="20" font-weight="bold" fill="#222222" text-anchor="start">Raw tokens</text>
+<text x="0" y="56" font-size="18" font-weight="normal" fill="#222222" text-anchor="start">1,048,576 per layer</text>
+<rect x="250" y="16" width="616.0" height="40" rx="2" fill="#FBE5E5" stroke="#C00000" stroke-width="2" />
+<text x="0" y="104" font-size="20" font-weight="bold" fill="#222222" text-anchor="start">CSA entries</text>
+<text x="0" y="128" font-size="18" font-weight="normal" fill="#222222" text-anchor="start">262,144 per layer</text>
+<rect x="250" y="88" width="154.0" height="40" rx="2" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="0" y="176" font-size="20" font-weight="bold" fill="#1F4E79" text-anchor="start">HCA entries</text>
+<text x="0" y="200" font-size="18" font-weight="normal" fill="#1F4E79" text-anchor="start">8,192 per layer</text>
+<rect x="250" y="160" width="5" height="40" rx="2" fill="#1F4E79" stroke="#1F4E79" stroke-width="2" />
+<text x="270" y="187" font-size="18" font-weight="bold" fill="#1F4E79" text-anchor="start">read in full · no selector</text>
+<text x="250" y="216" font-size="16" font-weight="normal" fill="#595959" text-anchor="start">bars to linear scale</text>
+</g>
+</svg>

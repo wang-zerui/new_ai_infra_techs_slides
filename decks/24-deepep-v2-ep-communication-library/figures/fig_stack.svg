@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="300pt"
+     viewBox="0 0 870 300" font-family="Helvetica, Arial, sans-serif">
+  <!-- fig_stack: DeepEP v2 (V2.5 names) as a layered stack; DeepEP-owned parts in the accent fill,
+       pre-existing NCCL / hardware in gray. [N] = sibling deck number. 1 unit = 1pt -->
+
+  <!-- row labels -->
+  <text x="8" y="46" font-size="20" font-weight="bold" fill="#222222">Buffers</text>
+  <text x="8" y="120" font-size="20" font-weight="bold" fill="#222222">Kernels</text>
+  <text x="8" y="194" font-size="20" font-weight="bold" fill="#222222">Transport</text>
+  <text x="8" y="268" font-size="20" font-weight="bold" fill="#222222">Fabric</text>
+
+  <!-- Row 1: Python buffer objects -->
+  <rect x="112" y="8" width="236" height="64" rx="5" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5"/>
+  <text x="230" y="35" text-anchor="middle" font-size="18" font-weight="bold" font-family="Menlo, 'Courier New', monospace" fill="#1F4E79">EPBuffer</text>
+  <text x="230" y="60" text-anchor="middle" font-size="17" fill="#222222">dispatch · combine <tspan font-weight="bold" fill="#1F4E79">[17]</tspan></text>
+
+  <rect x="360" y="8" width="160" height="64" rx="5" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5"/>
+  <text x="440" y="35" text-anchor="middle" font-size="17" font-weight="bold" font-family="Menlo, 'Courier New', monospace" fill="#1F4E79">EngramBuffer</text>
+  <text x="440" y="60" text-anchor="middle" font-size="17" fill="#222222">RDMA get <tspan font-weight="bold" fill="#1F4E79">[15·16]</tspan></text>
+
+  <rect x="532" y="8" width="150" height="64" rx="5" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5"/>
+  <text x="607" y="35" text-anchor="middle" font-size="17" font-weight="bold" font-family="Menlo, 'Courier New', monospace" fill="#1F4E79">PPBuffer</text>
+  <text x="607" y="60" text-anchor="middle" font-size="17" fill="#222222">send · recv <tspan font-weight="bold" fill="#1F4E79">[15]</tspan></text>
+
+  <rect x="694" y="8" width="168" height="64" rx="5" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5"/>
+  <text x="778" y="35" text-anchor="middle" font-size="17" font-weight="bold" font-family="Menlo, 'Courier New', monospace" fill="#1F4E79">BucketBuffer</text>
+  <text x="778" y="60" text-anchor="middle" font-size="17" fill="#222222">AG · RS · AR <tspan font-weight="bold" fill="#1F4E79">[15]</tspan></text>
+
+  <!-- Row 2: kernels and policy -->
+  <rect x="112" y="82" width="300" height="64" rx="5" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5"/>
+  <text x="262" y="109" text-anchor="middle" font-size="18" font-weight="bold" fill="#1F4E79">Direct + hybrid EP kernels</text>
+  <text x="262" y="134" text-anchor="middle" font-size="17" fill="#222222">FP8 dispatch · BF16 combine <tspan font-weight="bold" fill="#1F4E79">[18]</tspan></text>
+
+  <rect x="424" y="82" width="230" height="64" rx="5" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5"/>
+  <text x="539" y="109" text-anchor="middle" font-size="18" font-weight="bold" fill="#1F4E79">Analytic SM/QP model</text>
+  <text x="539" y="134" text-anchor="middle" font-size="17" fill="#222222">no auto-tuning <tspan font-weight="bold" fill="#1F4E79">[17]</tspan></text>
+
+  <rect x="666" y="82" width="196" height="64" rx="5" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5"/>
+  <text x="764" y="109" text-anchor="middle" font-size="18" font-weight="bold" fill="#1F4E79">DeepJIT</text>
+  <text x="764" y="134" text-anchor="middle" font-size="17" fill="#222222">runtime compile</text>
+
+  <!-- Row 3: transport inside one NCCL communicator -->
+  <rect x="112" y="156" width="236" height="64" rx="5" fill="#F2F2F2" stroke="#595959" stroke-width="1.5"/>
+  <text x="230" y="183" text-anchor="middle" font-size="18" font-weight="bold" fill="#222222">NCCL communicator</text>
+  <text x="230" y="208" text-anchor="middle" font-size="17" fill="#222222">reused from PyTorch</text>
+
+  <rect x="360" y="156" width="262" height="64" rx="5" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5"/>
+  <text x="491" y="183" text-anchor="middle" font-size="18" font-weight="bold" fill="#1F4E79">Gin put · signal · get</text>
+  <text x="491" y="208" text-anchor="middle" font-size="17" fill="#222222">GPU-initiated RDMA <tspan font-weight="bold" fill="#1F4E79">[21]</tspan></text>
+
+  <rect x="634" y="156" width="228" height="64" rx="5" fill="#F2F2F2" stroke="#595959" stroke-width="1.5"/>
+  <text x="748" y="183" text-anchor="middle" font-size="18" font-weight="bold" fill="#222222">LSA pointers</text>
+  <text x="748" y="208" text-anchor="middle" font-size="17" fill="#222222">NVLink loads/stores</text>
+
+  <!-- Row 4: fabric -->
+  <rect x="112" y="230" width="368" height="64" rx="5" fill="#F2F2F2" stroke="#595959" stroke-width="1.5"/>
+  <text x="296" y="257" text-anchor="middle" font-size="18" font-weight="bold" fill="#222222">NVLink / NVSwitch</text>
+  <text x="296" y="282" text-anchor="middle" font-size="17" fill="#222222">scale-up domain</text>
+
+  <rect x="492" y="230" width="370" height="64" rx="5" fill="#F2F2F2" stroke="#595959" stroke-width="1.5"/>
+  <text x="677" y="257" text-anchor="middle" font-size="18" font-weight="bold" fill="#222222">InfiniBand NIC per GPU</text>
+  <text x="677" y="282" text-anchor="middle" font-size="17" fill="#222222">VL isolation · adaptive routing <tspan font-weight="bold" fill="#1F4E79">[22]</tspan></text>
+</svg>

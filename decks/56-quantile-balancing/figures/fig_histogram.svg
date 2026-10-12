@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="292pt" viewBox="0 0 870 292" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_histogram: local histograms, one all-reduce, quantile read-out -->
+<text x="6.0" y="36.0" text-anchor="start" font-size="18" fill="#222222" font-weight="bold" font-style="normal">rank 0</text>
+<rect x="6.0" y="46.0" width="56.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="34.0" y="74.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">mb 1</text>
+<rect x="68.0" y="46.0" width="56.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="96.0" y="74.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">mb 2</text>
+<text x="152.0" y="78.0" text-anchor="middle" font-size="22" fill="#222222" font-weight="normal" font-style="normal">⋯</text>
+<line x1="166.0" y1="68.0" x2="214.0" y2="68.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="216.0" y="42.0" width="74.0" height="52.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<line x1="228.3" y1="42.0" x2="228.3" y2="94.0" stroke="#1F4E79" stroke-width="0.9"/>
+<line x1="240.7" y1="42.0" x2="240.7" y2="94.0" stroke="#1F4E79" stroke-width="0.9"/>
+<line x1="253.0" y1="42.0" x2="253.0" y2="94.0" stroke="#1F4E79" stroke-width="0.9"/>
+<line x1="265.3" y1="42.0" x2="265.3" y2="94.0" stroke="#1F4E79" stroke-width="0.9"/>
+<line x1="277.7" y1="42.0" x2="277.7" y2="94.0" stroke="#1F4E79" stroke-width="0.9"/>
+<line x1="216.0" y1="55.0" x2="290.0" y2="55.0" stroke="#1F4E79" stroke-width="0.9"/>
+<line x1="216.0" y1="68.0" x2="290.0" y2="68.0" stroke="#1F4E79" stroke-width="0.9"/>
+<line x1="216.0" y1="81.0" x2="290.0" y2="81.0" stroke="#1F4E79" stroke-width="0.9"/>
+<text x="6.0" y="166.0" text-anchor="start" font-size="18" fill="#222222" font-weight="bold" font-style="normal">rank R−1</text>
+<rect x="6.0" y="176.0" width="56.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="34.0" y="203.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">mb 1</text>
+<rect x="68.0" y="176.0" width="56.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="96.0" y="203.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">mb 2</text>
+<text x="152.0" y="208.0" text-anchor="middle" font-size="22" fill="#222222" font-weight="normal" font-style="normal">⋯</text>
+<line x1="166.0" y1="198.0" x2="214.0" y2="198.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="216.0" y="172.0" width="74.0" height="52.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<line x1="228.3" y1="172.0" x2="228.3" y2="224.0" stroke="#1F4E79" stroke-width="0.9"/>
+<line x1="240.7" y1="172.0" x2="240.7" y2="224.0" stroke="#1F4E79" stroke-width="0.9"/>
+<line x1="253.0" y1="172.0" x2="253.0" y2="224.0" stroke="#1F4E79" stroke-width="0.9"/>
+<line x1="265.3" y1="172.0" x2="265.3" y2="224.0" stroke="#1F4E79" stroke-width="0.9"/>
+<line x1="277.7" y1="172.0" x2="277.7" y2="224.0" stroke="#1F4E79" stroke-width="0.9"/>
+<line x1="216.0" y1="185.0" x2="290.0" y2="185.0" stroke="#1F4E79" stroke-width="0.9"/>
+<line x1="216.0" y1="198.0" x2="290.0" y2="198.0" stroke="#1F4E79" stroke-width="0.9"/>
+<line x1="216.0" y1="211.0" x2="290.0" y2="211.0" stroke="#1F4E79" stroke-width="0.9"/>
+<text x="110.0" y="132.0" text-anchor="middle" font-size="26" fill="#222222" font-weight="normal" font-style="normal">⋮</text>
+<text x="200.0" y="122.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="italic">scatter-add</text>
+<text x="200.0" y="142.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="italic">no comm</text>
+<text x="253.0" y="250.0" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="normal" font-style="normal">local n × B</text>
+<rect x="330.0" y="74.0" width="132.0" height="136.0" rx="5" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="396.0" y="126.0" text-anchor="middle" font-size="19" fill="#1F4E79" font-weight="bold" font-style="normal">all-reduce</text>
+<text x="396.0" y="152.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">int counts</text>
+<text x="396.0" y="176.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">once / step</text>
+<circle cx="330.0" cy="74.0" r="13" fill="#1F4E79" stroke="#1F4E79" stroke-width="1"/>
+<text x="330.0" y="80.1" text-anchor="middle" font-size="17" fill="#FFFFFF" font-weight="bold" font-style="normal">3</text>
+<path d="M 292 68 H 310 V 108 H 329" fill="none" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<path d="M 292 198 H 310 V 176 H 329" fill="none" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<line x1="464.0" y1="142.0" x2="500.0" y2="142.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<text x="512.0" y="30.0" text-anchor="start" font-size="18" fill="#222222" font-weight="bold" font-style="normal">expert j, global counts</text>
+<rect x="512.0" y="230.0" width="24.0" height="6.0" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.6" />
+<rect x="536.0" y="222.0" width="24.0" height="14.0" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.6" />
+<rect x="560.0" y="210.0" width="24.0" height="26.0" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.6" />
+<rect x="584.0" y="194.0" width="24.0" height="42.0" rx="0" fill="#FFFFFF" stroke="#C00000" stroke-width="2.4" />
+<rect x="608.0" y="176.0" width="24.0" height="60.0" rx="0" fill="#FFFFFF" stroke="#A6A6A6" stroke-width="1.6" />
+<rect x="632.0" y="160.0" width="24.0" height="76.0" rx="0" fill="#FFFFFF" stroke="#A6A6A6" stroke-width="1.6" />
+<rect x="656.0" y="150.0" width="24.0" height="86.0" rx="0" fill="#FFFFFF" stroke="#A6A6A6" stroke-width="1.6" />
+<rect x="680.0" y="154.0" width="24.0" height="82.0" rx="0" fill="#FFFFFF" stroke="#A6A6A6" stroke-width="1.6" />
+<rect x="704.0" y="166.0" width="24.0" height="70.0" rx="0" fill="#FFFFFF" stroke="#A6A6A6" stroke-width="1.6" />
+<rect x="728.0" y="182.0" width="24.0" height="54.0" rx="0" fill="#FFFFFF" stroke="#A6A6A6" stroke-width="1.6" />
+<rect x="752.0" y="196.0" width="24.0" height="40.0" rx="0" fill="#FFFFFF" stroke="#A6A6A6" stroke-width="1.6" />
+<rect x="776.0" y="210.0" width="24.0" height="26.0" rx="0" fill="#FFFFFF" stroke="#A6A6A6" stroke-width="1.6" />
+<rect x="800.0" y="220.0" width="24.0" height="16.0" rx="0" fill="#FFFFFF" stroke="#A6A6A6" stroke-width="1.6" />
+<rect x="824.0" y="228.0" width="24.0" height="8.0" rx="0" fill="#FFFFFF" stroke="#A6A6A6" stroke-width="1.6" />
+<line x1="508.0" y1="236.0" x2="858.0" y2="236.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<line x1="597.2" y1="118.0" x2="597.2" y2="238.0" stroke="#C00000" stroke-width="2.4" stroke-dasharray="5,4"/>
+<text x="603.2" y="112.0" text-anchor="start" font-size="21"><tspan fill="#C00000" font-weight="bold" font-style="italic">b̂</tspan><tspan fill="#C00000" font-weight="bold" font-size="14.3" baseline-shift="-0.28em">j</tspan></text>
+<text x="614.0" y="66.0" text-anchor="start" font-size="17" fill="#222222" font-weight="normal" font-style="normal">cumulative count</text>
+<text x="614.0" y="88.0" text-anchor="start" font-size="17"><tspan fill="#222222" font-weight="normal" font-style="normal">first reaches ⌈</tspan><tspan fill="#222222" font-weight="normal" font-style="italic">q</tspan><tspan fill="#222222" font-weight="normal" font-style="normal">⌉</tspan></text>
+<text x="510.0" y="258.0" text-anchor="start" font-size="17"><tspan fill="#7F7F7F" font-weight="normal" font-style="italic">b</tspan><tspan fill="#7F7F7F" font-weight="normal" font-size="11.6" baseline-shift="-0.28em">min</tspan><tspan fill="#7F7F7F" font-weight="normal" font-style="normal"> − 1</tspan></text>
+<text x="852.0" y="258.0" text-anchor="end" font-size="17"><tspan fill="#7F7F7F" font-weight="normal" font-style="italic">b</tspan><tspan fill="#7F7F7F" font-weight="normal" font-size="11.6" baseline-shift="-0.28em">max</tspan><tspan fill="#7F7F7F" font-weight="normal" font-style="normal"> + 1</tspan></text>
+<text x="680.0" y="284.0" text-anchor="middle" font-size="18"><tspan fill="#222222" font-weight="normal" font-style="normal">required bias </tspan><tspan fill="#222222" font-weight="normal" font-style="italic">r</tspan><tspan fill="#222222" font-weight="normal" font-style="normal"> = </tspan><tspan fill="#222222" font-weight="normal" font-style="italic">α</tspan><tspan fill="#222222" font-weight="normal" font-style="normal"> − </tspan><tspan fill="#222222" font-weight="normal" font-style="italic">s</tspan></text>
+</svg>

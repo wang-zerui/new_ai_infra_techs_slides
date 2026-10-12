@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="300pt" viewBox="0 0 870 300" font-family="Helvetica, Arial, sans-serif">
+  <defs><marker id="a1F4E79" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker><pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2.5"/></pattern><pattern id="hatchRed" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#E6A0A0" stroke-width="2.5"/></pattern></defs>
+  <text x="286" y="22" font-size="18" text-anchor="middle" font-weight="bold" fill="#1F4E79">rowwise 1×32</text>
+  <text x="566" y="22" font-size="18" text-anchor="middle" font-weight="bold" fill="#1F4E79">columnwise 32×1</text>
+  <rect x="14" y="36" width="150" height="64" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2"/>
+  <text x="89.0" y="63.8" font-size="18" text-anchor="middle" font-weight="bold" fill="#222222">X BF16</text>
+  <text x="89.0" y="83.4" font-size="14" text-anchor="middle" font-weight="normal" fill="#222222">activation</text>
+  <rect x="196" y="36" width="190" height="64" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2"/>
+  <rect x="208" y="62" width="14" height="12" rx="0" fill="#1F4E79" stroke="#1F4E79" stroke-width="1"/>
+  <rect x="222" y="62" width="14" height="12" rx="0" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1"/>
+  <rect x="236" y="62" width="14" height="12" rx="0" fill="#1F4E79" stroke="#1F4E79" stroke-width="1"/>
+  <rect x="250" y="62" width="14" height="12" rx="0" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1"/>
+  <text x="272" y="66" font-size="17" text-anchor="start" font-weight="bold" fill="#1F4E79">X copy</text>
+  <text x="272" y="88" font-size="17" text-anchor="start" font-weight="normal" fill="#222222">→ Fprop</text>
+  <rect x="476" y="36" width="190" height="64" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2"/>
+  <rect x="506" y="42" width="12" height="13" rx="0" fill="#1F4E79" stroke="#1F4E79" stroke-width="1"/>
+  <rect x="506" y="55" width="12" height="13" rx="0" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1"/>
+  <rect x="506" y="68" width="12" height="13" rx="0" fill="#1F4E79" stroke="#1F4E79" stroke-width="1"/>
+  <rect x="506" y="81" width="12" height="13" rx="0" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1"/>
+  <text x="552" y="66" font-size="17" text-anchor="start" font-weight="bold" fill="#1F4E79">X copy</text>
+  <text x="552" y="88" font-size="17" text-anchor="start" font-weight="normal" fill="#222222">→ Wgrad</text>
+  <path d="M166,56 H192" fill="none" stroke="#1F4E79" stroke-width="2.2" marker-end="url(#a1F4E79)"/>
+  <path d="M166,82 H178 V113 H452 V82 H472" fill="none" stroke="#1F4E79" stroke-width="2.2" marker-end="url(#a1F4E79)"/>
+  <rect x="14" y="126" width="150" height="64" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2"/>
+  <text x="89.0" y="153.8" font-size="18" text-anchor="middle" font-weight="bold" fill="#222222">W BF16</text>
+  <text x="89.0" y="173.4" font-size="14" text-anchor="middle" font-weight="normal" fill="#222222">after BF16 all-gather</text>
+  <rect x="196" y="126" width="190" height="64" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2"/>
+  <rect x="208" y="152" width="14" height="12" rx="0" fill="#1F4E79" stroke="#1F4E79" stroke-width="1"/>
+  <rect x="222" y="152" width="14" height="12" rx="0" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1"/>
+  <rect x="236" y="152" width="14" height="12" rx="0" fill="#1F4E79" stroke="#1F4E79" stroke-width="1"/>
+  <rect x="250" y="152" width="14" height="12" rx="0" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1"/>
+  <text x="272" y="156" font-size="17" text-anchor="start" font-weight="bold" fill="#1F4E79">W copy</text>
+  <text x="272" y="178" font-size="17" text-anchor="start" font-weight="normal" fill="#222222">→ Fprop</text>
+  <rect x="476" y="126" width="190" height="64" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2"/>
+  <rect x="506" y="132" width="12" height="13" rx="0" fill="#1F4E79" stroke="#1F4E79" stroke-width="1"/>
+  <rect x="506" y="145" width="12" height="13" rx="0" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1"/>
+  <rect x="506" y="158" width="12" height="13" rx="0" fill="#1F4E79" stroke="#1F4E79" stroke-width="1"/>
+  <rect x="506" y="171" width="12" height="13" rx="0" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1"/>
+  <text x="552" y="156" font-size="17" text-anchor="start" font-weight="bold" fill="#1F4E79">W copy</text>
+  <text x="552" y="178" font-size="17" text-anchor="start" font-weight="normal" fill="#222222">→ Dgrad</text>
+  <path d="M166,146 H192" fill="none" stroke="#1F4E79" stroke-width="2.2" marker-end="url(#a1F4E79)"/>
+  <path d="M166,172 H178 V203 H452 V172 H472" fill="none" stroke="#1F4E79" stroke-width="2.2" marker-end="url(#a1F4E79)"/>
+  <rect x="14" y="216" width="150" height="64" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2"/>
+  <text x="89.0" y="243.8" font-size="18" text-anchor="middle" font-weight="bold" fill="#222222">dY BF16</text>
+  <text x="89.0" y="263.4" font-size="14" text-anchor="middle" font-weight="normal" fill="#222222">output gradient</text>
+  <rect x="196" y="216" width="190" height="64" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2"/>
+  <rect x="208" y="242" width="14" height="12" rx="0" fill="#1F4E79" stroke="#1F4E79" stroke-width="1"/>
+  <rect x="222" y="242" width="14" height="12" rx="0" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1"/>
+  <rect x="236" y="242" width="14" height="12" rx="0" fill="#1F4E79" stroke="#1F4E79" stroke-width="1"/>
+  <rect x="250" y="242" width="14" height="12" rx="0" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1"/>
+  <text x="272" y="246" font-size="17" text-anchor="start" font-weight="bold" fill="#1F4E79">dY copy</text>
+  <text x="272" y="268" font-size="17" text-anchor="start" font-weight="normal" fill="#222222">→ Dgrad</text>
+  <rect x="476" y="216" width="190" height="64" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2"/>
+  <rect x="506" y="222" width="12" height="13" rx="0" fill="#1F4E79" stroke="#1F4E79" stroke-width="1"/>
+  <rect x="506" y="235" width="12" height="13" rx="0" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1"/>
+  <rect x="506" y="248" width="12" height="13" rx="0" fill="#1F4E79" stroke="#1F4E79" stroke-width="1"/>
+  <rect x="506" y="261" width="12" height="13" rx="0" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1"/>
+  <text x="552" y="246" font-size="17" text-anchor="start" font-weight="bold" fill="#1F4E79">dY copy</text>
+  <text x="552" y="268" font-size="17" text-anchor="start" font-weight="normal" fill="#222222">→ Wgrad</text>
+  <path d="M166,236 H192" fill="none" stroke="#1F4E79" stroke-width="2.2" marker-end="url(#a1F4E79)"/>
+  <path d="M166,262 H178 V293 H452 V262 H472" fill="none" stroke="#1F4E79" stroke-width="2.2" marker-end="url(#a1F4E79)"/>
+  <text x="686" y="70" font-size="17" text-anchor="start" font-weight="normal" fill="#7F7F7F">quantized</text>
+  <text x="686" y="92" font-size="17" text-anchor="start" font-weight="normal" fill="#7F7F7F">separately</text>
+  <text x="686" y="114" font-size="17" text-anchor="start" font-weight="normal" fill="#7F7F7F">from BF16</text>
+  <text x="686" y="160" font-size="17" text-anchor="start" font-weight="normal" fill="#7F7F7F">no transpose</text>
+  <text x="686" y="182" font-size="17" text-anchor="start" font-weight="normal" fill="#7F7F7F">needed on</text>
+  <text x="686" y="204" font-size="17" text-anchor="start" font-weight="normal" fill="#7F7F7F">Blackwell</text>
+</svg>

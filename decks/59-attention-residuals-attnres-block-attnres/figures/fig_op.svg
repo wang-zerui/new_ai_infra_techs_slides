@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="490pt" height="300pt" viewBox="0 0 490 300" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_op: AttnRes op for one layer -->
+<rect x="186.0" y="8.0" width="130.0" height="36.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="251.0" y="32.0" text-anchor="middle" font-size="18"><tspan fill="#1F4E79" font-weight="bold" font-style="normal">query w</tspan><tspan fill="#1F4E79" font-weight="bold" font-size="12.2" baseline-shift="-0.28em">l</tspan></text>
+<line x1="251.0" y1="46.0" x2="251.0" y2="64.0" stroke="#1F4E79" stroke-width="2.2" marker-end="url(#arrAcc)"/>
+<rect x="166.0" y="66.0" width="170.0" height="202.0" rx="6" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<rect x="6.0" y="70.0" width="128.0" height="38.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="30.0" y="96.0" text-anchor="middle" font-size="19"><tspan fill="#222222" font-weight="bold" font-style="italic">v</tspan><tspan fill="#222222" font-weight="bold" font-size="12.9" baseline-shift="-0.28em">0</tspan></text>
+<text x="46.0" y="95.0" text-anchor="start" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="normal">embedding</text>
+<line x1="136.0" y1="89.0" x2="164.0" y2="89.0" stroke="#222222" stroke-width="1.8" marker-end="url(#arr)"/>
+<rect x="350.0" y="78.0" width="36.0" height="22.0" rx="2" fill="#2E75B6" stroke="#1F4E79" stroke-width="1.2" />
+<text x="392.0" y="95.0" text-anchor="start" font-size="16" fill="#222222" font-weight="normal" font-style="normal">.40</text>
+<rect x="6.0" y="122.0" width="128.0" height="38.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="30.0" y="148.0" text-anchor="middle" font-size="19"><tspan fill="#222222" font-weight="bold" font-style="italic">v</tspan><tspan fill="#222222" font-weight="bold" font-size="12.9" baseline-shift="-0.28em">1</tspan></text>
+<text x="46.0" y="147.0" text-anchor="start" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="normal">layer 1 out</text>
+<line x1="136.0" y1="141.0" x2="164.0" y2="141.0" stroke="#222222" stroke-width="1.8" marker-end="url(#arr)"/>
+<rect x="350.0" y="130.0" width="4.5" height="22.0" rx="2" fill="#9DC3E6" stroke="#1F4E79" stroke-width="1.2" />
+<text x="360.5" y="147.0" text-anchor="start" font-size="16" fill="#222222" font-weight="normal" font-style="normal">.05</text>
+<rect x="6.0" y="174.0" width="128.0" height="38.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="30.0" y="200.0" text-anchor="middle" font-size="19"><tspan fill="#222222" font-weight="bold" font-style="italic">v</tspan><tspan fill="#222222" font-weight="bold" font-size="12.9" baseline-shift="-0.28em">2</tspan></text>
+<text x="46.0" y="199.0" text-anchor="start" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="normal">layer 2 out</text>
+<line x1="136.0" y1="193.0" x2="164.0" y2="193.0" stroke="#222222" stroke-width="1.8" marker-end="url(#arr)"/>
+<rect x="350.0" y="182.0" width="4.5" height="22.0" rx="2" fill="#9DC3E6" stroke="#1F4E79" stroke-width="1.2" />
+<text x="360.5" y="199.0" text-anchor="start" font-size="16" fill="#222222" font-weight="normal" font-style="normal">.05</text>
+<rect x="6.0" y="226.0" width="128.0" height="38.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="30.0" y="252.0" text-anchor="middle" font-size="19"><tspan fill="#222222" font-weight="bold" font-style="italic">v</tspan><tspan fill="#222222" font-weight="bold" font-size="12.9" baseline-shift="-0.28em">3</tspan></text>
+<text x="46.0" y="251.0" text-anchor="start" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="normal">layer 3 out</text>
+<line x1="136.0" y1="245.0" x2="164.0" y2="245.0" stroke="#222222" stroke-width="1.8" marker-end="url(#arr)"/>
+<rect x="350.0" y="234.0" width="45.0" height="22.0" rx="2" fill="#2E75B6" stroke="#1F4E79" stroke-width="1.2" />
+<text x="401.0" y="251.0" text-anchor="start" font-size="16" fill="#222222" font-weight="normal" font-style="normal">.50</text>
+<text x="251.0" y="124.0" text-anchor="middle" font-size="17"><tspan fill="#222222" font-weight="bold" font-style="italic">w</tspan><tspan fill="#222222" font-weight="normal" font-size="11.6" baseline-shift="-0.28em">l</tspan><tspan fill="#222222" font-weight="normal" font-style="normal">ᵀ RMSNorm(</tspan><tspan fill="#222222" font-weight="bold" font-style="italic">v</tspan><tspan fill="#222222" font-weight="normal" font-size="11.6" baseline-shift="-0.28em">i</tspan><tspan fill="#222222" font-weight="normal" font-style="normal">)</tspan></text>
+<text x="251.0" y="162.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">→ softmax over i</text>
+<text x="350.0" y="54.0" text-anchor="start" font-size="19"><tspan fill="#1F4E79" font-weight="bold" font-style="italic">α</tspan><tspan fill="#1F4E79" font-weight="bold" font-size="12.9" baseline-shift="-0.28em">i→l</tspan></text>
+<line x1="432.0" y1="89.0" x2="451.0" y2="147.5" stroke="#222222" stroke-width="1.4" marker-end="url(#arr)"/>
+<line x1="432.0" y1="141.0" x2="451.0" y2="160.5" stroke="#222222" stroke-width="1.4" marker-end="url(#arr)"/>
+<line x1="432.0" y1="193.0" x2="451.0" y2="173.5" stroke="#222222" stroke-width="1.4" marker-end="url(#arr)"/>
+<line x1="432.0" y1="245.0" x2="451.0" y2="186.5" stroke="#222222" stroke-width="1.4" marker-end="url(#arr)"/>
+<circle cx="468.0" cy="167.0" r="18" fill="#FFFFFF" stroke="#222222" stroke-width="2"/>
+<text x="468.0" y="174.0" text-anchor="middle" font-size="19" fill="#222222" font-weight="bold" font-style="normal">Σ</text>
+<text x="468.0" y="207.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="normal">Σ α·v</text>
+<line x1="468.0" y1="217.0" x2="468.0" y2="270.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<text x="462.0" y="292.0" text-anchor="end" font-size="18"><tspan fill="#222222" font-weight="bold" font-style="italic">h</tspan><tspan fill="#222222" font-weight="normal" font-size="12.2" baseline-shift="-0.28em">l</tspan><tspan fill="#222222" font-weight="normal" font-style="normal"> → layer l</tspan></text>
+</svg>

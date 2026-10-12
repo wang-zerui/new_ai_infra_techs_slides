@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="282pt" viewBox="0 0 870 282" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_positions: YaRN / RoPE base / NoPE+KDA -->
+<line x1="290.0" y1="14.0" x2="290.0" y2="272.0" stroke="#BFBFBF" stroke-width="1.2"/>
+<line x1="580.0" y1="14.0" x2="580.0" y2="272.0" stroke="#BFBFBF" stroke-width="1.2"/>
+<text x="10.0" y="26.0" text-anchor="start" font-size="20" fill="#222222" font-weight="bold" font-style="normal">(a) Kimi K2</text>
+<text x="10.0" y="52.0" text-anchor="start" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">RoPE + YaRN</text>
+<rect x="16.0" y="120.0" width="64.5" height="40.0" rx="3" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<rect x="80.5" y="120.0" width="193.5" height="40.0" rx="3" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2" stroke-dasharray="6,4" />
+<text x="16.0" y="108.0" text-anchor="start" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">trained</text>
+<text x="177.2" y="145.3" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="normal" font-style="normal">YaRN-rescaled</text>
+<line x1="16.0" y1="160.0" x2="16.0" y2="168.0" stroke="#222222" stroke-width="1.6"/>
+<line x1="80.5" y1="160.0" x2="80.5" y2="168.0" stroke="#222222" stroke-width="1.6"/>
+<line x1="274.0" y1="160.0" x2="274.0" y2="168.0" stroke="#222222" stroke-width="1.6"/>
+<text x="16.0" y="188.0" text-anchor="start" font-size="17" fill="#222222" font-weight="normal" font-style="normal">0</text>
+<text x="80.5" y="188.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">32K</text>
+<text x="274.0" y="188.0" text-anchor="end" font-size="17" fill="#222222" font-weight="normal" font-style="normal">128K</text>
+<text x="145.0" y="222.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="italic">window position</text>
+<text x="145.0" y="264.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">128K from a 32K stage</text>
+<text x="300.0" y="26.0" text-anchor="start" font-size="20" fill="#222222" font-weight="bold" font-style="normal">(b) GLM-4.5</text>
+<text x="300.0" y="52.0" text-anchor="start" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">RoPE base 10K → 1M</text>
+<text x="306.0" y="92.0" text-anchor="start" font-size="18" fill="#7F7F7F" font-weight="normal" font-style="normal">base 10K</text>
+<path d="M 306.0,122.0 L 308.2,117.3 L 310.4,113.0 L 312.6,109.3 L 314.8,106.4 L 317.0,104.6 L 319.2,104.0 L 321.4,104.6 L 323.6,106.4 L 325.8,109.3 L 328.0,113.0 L 330.2,117.3 L 332.4,122.0 L 334.6,126.7 L 336.8,131.0 L 339.0,134.7 L 341.2,137.6 L 343.4,139.4 L 345.6,140.0 L 347.8,139.4 L 350.0,137.6 L 352.2,134.7 L 354.4,131.0 L 356.6,126.7 L 358.8,122.0 L 361.0,117.3 L 363.2,113.0 L 365.4,109.3 L 367.6,106.4 L 369.8,104.6 L 372.0,104.0 L 374.2,104.6 L 376.4,106.4 L 378.6,109.3 L 380.8,113.0 L 383.0,117.3 L 385.2,122.0 L 387.4,126.7 L 389.6,131.0 L 391.8,134.7 L 394.0,137.6 L 396.2,139.4 L 398.4,140.0 L 400.6,139.4 L 402.8,137.6 L 405.0,134.7 L 407.2,131.0 L 409.4,126.7 L 411.6,122.0 L 413.8,117.3 L 416.0,113.0 L 418.2,109.3 L 420.4,106.4 L 422.6,104.6 L 424.8,104.0 L 427.0,104.6 L 429.2,106.4 L 431.4,109.3 L 433.6,113.0 L 435.8,117.3 L 438.0,122.0 L 440.2,126.7 L 442.4,131.0 L 444.6,134.7 L 446.8,137.6 L 449.0,139.4 L 451.2,140.0 L 453.4,139.4 L 455.6,137.6 L 457.8,134.7 L 460.0,131.0 L 462.2,126.7 L 464.4,122.0 L 466.6,117.3 L 468.8,113.0 L 471.0,109.3 L 473.2,106.4 L 475.4,104.6 L 477.6,104.0 L 479.8,104.6 L 482.0,106.4 L 484.2,109.3 L 486.4,113.0 L 488.6,117.3 L 490.8,122.0 L 493.0,126.7 L 495.2,131.0 L 497.4,134.7 L 499.6,137.6 L 501.8,139.4 L 504.0,140.0 L 506.2,139.4 L 508.4,137.6 L 510.6,134.7 L 512.8,131.0 L 515.0,126.7 L 517.2,122.0 L 519.4,117.3 L 521.6,113.0 L 523.8,109.3 L 526.0,106.4 L 528.2,104.6 L 530.4,104.0 L 532.6,104.6 L 534.8,106.4 L 537.0,109.3 L 539.2,113.0 L 541.4,117.3 L 543.6,122.0 L 545.8,126.7 L 548.0,131.0 L 550.2,134.7 L 552.4,137.6 L 554.6,139.4 L 556.8,140.0 L 559.0,139.4 L 561.2,137.6 L 563.4,134.7 L 565.6,131.0 L 567.8,126.7 L 570.0,122.0" fill="none" stroke="#A6A6A6" stroke-width="2.4"/>
+<text x="306.0" y="162.0" text-anchor="start" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">base 1M</text>
+<path d="M 306.0,192.0 L 308.2,191.3 L 310.4,190.7 L 312.6,190.0 L 314.8,189.4 L 317.0,188.7 L 319.2,188.1 L 321.4,187.4 L 323.6,186.8 L 325.8,186.2 L 328.0,185.5 L 330.2,184.9 L 332.4,184.3 L 334.6,183.7 L 336.8,183.2 L 339.0,182.6 L 341.2,182.0 L 343.4,181.5 L 345.6,181.0 L 347.8,180.5 L 350.0,180.0 L 352.2,179.5 L 354.4,179.0 L 356.6,178.6 L 358.8,178.1 L 361.0,177.7 L 363.2,177.3 L 365.4,177.0 L 367.6,176.6 L 369.8,176.3 L 372.0,176.0 L 374.2,175.7 L 376.4,175.4 L 378.6,175.2 L 380.8,174.9 L 383.0,174.7 L 385.2,174.6 L 387.4,174.4 L 389.6,174.3 L 391.8,174.2 L 394.0,174.1 L 396.2,174.0 L 398.4,174.0 L 400.6,174.0 L 402.8,174.0 L 405.0,174.1 L 407.2,174.1 L 409.4,174.2 L 411.6,174.3 L 413.8,174.5 L 416.0,174.6 L 418.2,174.8 L 420.4,175.0 L 422.6,175.2 L 424.8,175.5 L 427.0,175.8 L 429.2,176.0 L 431.4,176.4 L 433.6,176.7 L 435.8,177.1 L 438.0,177.4 L 440.2,177.8 L 442.4,178.3 L 444.6,178.7 L 446.8,179.1 L 449.0,179.6 L 451.2,180.1 L 453.4,180.6 L 455.6,181.1 L 457.8,181.6 L 460.0,182.2 L 462.2,182.8 L 464.4,183.3 L 466.6,183.9 L 468.8,184.5 L 471.0,185.1 L 473.2,185.7 L 475.4,186.3 L 477.6,187.0 L 479.8,187.6 L 482.0,188.3 L 484.2,188.9 L 486.4,189.6 L 488.6,190.2 L 490.8,190.9 L 493.0,191.5 L 495.2,192.2 L 497.4,192.8 L 499.6,193.5 L 501.8,194.2 L 504.0,194.8 L 506.2,195.5 L 508.4,196.1 L 510.6,196.7 L 512.8,197.4 L 515.0,198.0 L 517.2,198.6 L 519.4,199.2 L 521.6,199.8 L 523.8,200.4 L 526.0,201.0 L 528.2,201.6 L 530.4,202.1 L 532.6,202.7 L 534.8,203.2 L 537.0,203.7 L 539.2,204.2 L 541.4,204.7 L 543.6,205.1 L 545.8,205.6 L 548.0,206.0 L 550.2,206.4 L 552.4,206.8 L 554.6,207.1 L 556.8,207.5 L 559.0,207.8 L 561.2,208.1 L 563.4,208.4 L 565.6,208.7 L 567.8,208.9 L 570.0,209.1" fill="none" stroke="#1F4E79" stroke-width="3"/>
+<line x1="306.0" y1="214.0" x2="568.0" y2="214.0" stroke="#222222" stroke-width="1.6" marker-end="url(#arr)"/>
+<text x="438.0" y="235.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="italic">position within 32K</text>
+<text x="438.0" y="264.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">slower rotation per position</text>
+<text x="590.0" y="26.0" text-anchor="start" font-size="20" fill="#222222" font-weight="bold" font-style="normal">(c) Kimi K3</text>
+<text x="590.0" y="52.0" text-anchor="start" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">NoPE + KDA</text>
+<rect x="596.0" y="104.0" width="56.0" height="46.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="624.0" y="133.3" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">KDA</text>
+<rect x="658.0" y="104.0" width="56.0" height="46.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="686.0" y="133.3" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">KDA</text>
+<rect x="720.0" y="104.0" width="56.0" height="46.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="748.0" y="133.3" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">KDA</text>
+<rect x="782.0" y="104.0" width="82.0" height="46.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="823.0" y="133.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">MLA</text>
+<path d="M 596,158 L 596,166 L 776,166 L 776,158" fill="none" stroke="#1F4E79" stroke-width="1.8"/>
+<text x="686.0" y="188.0" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="normal" font-style="normal">decay orders tokens</text>
+<text x="823.0" y="188.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">no RoPE</text>
+<text x="729.0" y="222.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="italic">same layers at every window</text>
+<text x="729.0" y="264.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">8K to 1M with no change</text>
+</svg>

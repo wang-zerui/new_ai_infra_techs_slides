@@ -1,0 +1,132 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="292pt" viewBox="0 0 870 292" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_bits: FP32 keeps 23 mantissa bits on CUDA cores; TF32 keeps 10, BF16 keeps 7 on Tensor Cores -->
+<path d="M120.0,40 L120.0,32 L133.0,32 L133.0,40" fill="none" stroke="#7F7F7F" stroke-width="1.5"/>
+<text x="126.5" y="24.0" text-anchor="middle" font-size="17" fill="#7F7F7F" font-weight="normal" font-style="normal">sign</text>
+<path d="M137.0,40 L137.0,32 L269.0,32 L269.0,40" fill="none" stroke="#7F7F7F" stroke-width="1.5"/>
+<text x="203.0" y="24.0" text-anchor="middle" font-size="17" fill="#7F7F7F" font-weight="normal" font-style="normal">exponent</text>
+<path d="M273.0,40 L273.0,32 L660.0,32 L660.0,40" fill="none" stroke="#7F7F7F" stroke-width="1.5"/>
+<text x="466.5" y="24.0" text-anchor="middle" font-size="17" fill="#7F7F7F" font-weight="normal" font-style="normal">mantissa (23 bits)</text>
+<text x="104.0" y="76.5" text-anchor="end" font-size="20" fill="#222222" font-weight="bold" font-style="normal">FP32</text>
+<rect x="118.0" y="52.0" width="17.0" height="36.0" rx="0" fill="#F2F2F2" stroke="#595959" stroke-width="1.2" />
+<rect x="135.0" y="52.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="152.0" y="52.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="169.0" y="52.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="186.0" y="52.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="203.0" y="52.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="220.0" y="52.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="237.0" y="52.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="254.0" y="52.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="271.0" y="52.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="288.0" y="52.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="305.0" y="52.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="322.0" y="52.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="339.0" y="52.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="356.0" y="52.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="373.0" y="52.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="390.0" y="52.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="407.0" y="52.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="424.0" y="52.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="441.0" y="52.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="458.0" y="52.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="475.0" y="52.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="492.0" y="52.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="509.0" y="52.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="526.0" y="52.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="543.0" y="52.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="560.0" y="52.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="577.0" y="52.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="594.0" y="52.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="611.0" y="52.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="628.0" y="52.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="645.0" y="52.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<text x="680.0" y="76.5" text-anchor="start" font-size="19" fill="#C00000" font-weight="bold" font-style="normal">CUDA cores only</text>
+<text x="275.0" y="108.0" text-anchor="start" font-size="17" fill="#222222" font-weight="normal" font-style="italic">24 significant bits kept</text>
+<text x="104.0" y="146.5" text-anchor="end" font-size="20" fill="#222222" font-weight="bold" font-style="normal">TF32</text>
+<rect x="118.0" y="122.0" width="17.0" height="36.0" rx="0" fill="#F2F2F2" stroke="#595959" stroke-width="1.2" />
+<rect x="135.0" y="122.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="152.0" y="122.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="169.0" y="122.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="186.0" y="122.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="203.0" y="122.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="220.0" y="122.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="237.0" y="122.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="254.0" y="122.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="271.0" y="122.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="288.0" y="122.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="305.0" y="122.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="322.0" y="122.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="339.0" y="122.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="356.0" y="122.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="373.0" y="122.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="390.0" y="122.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="407.0" y="122.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="424.0" y="122.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="441.0" y="122.0" width="17.0" height="36.0" rx="0" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.2" />
+<rect x="458.0" y="122.0" width="17.0" height="36.0" rx="0" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.2" />
+<rect x="475.0" y="122.0" width="17.0" height="36.0" rx="0" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.2" />
+<rect x="492.0" y="122.0" width="17.0" height="36.0" rx="0" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.2" />
+<rect x="509.0" y="122.0" width="17.0" height="36.0" rx="0" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.2" />
+<rect x="526.0" y="122.0" width="17.0" height="36.0" rx="0" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.2" />
+<rect x="543.0" y="122.0" width="17.0" height="36.0" rx="0" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.2" />
+<rect x="560.0" y="122.0" width="17.0" height="36.0" rx="0" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.2" />
+<rect x="577.0" y="122.0" width="17.0" height="36.0" rx="0" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.2" />
+<rect x="594.0" y="122.0" width="17.0" height="36.0" rx="0" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.2" />
+<rect x="611.0" y="122.0" width="17.0" height="36.0" rx="0" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.2" />
+<rect x="628.0" y="122.0" width="17.0" height="36.0" rx="0" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.2" />
+<rect x="645.0" y="122.0" width="17.0" height="36.0" rx="0" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.2" />
+<text x="680.0" y="146.5" text-anchor="start" font-size="19" fill="#222222" font-weight="normal" font-style="normal">Tensor Cores</text>
+<text x="275.0" y="178.0" text-anchor="start" font-size="17" fill="#C00000" font-weight="normal" font-style="italic">11 significant bits kept</text>
+<text x="104.0" y="216.5" text-anchor="end" font-size="20" fill="#222222" font-weight="bold" font-style="normal">BF16</text>
+<rect x="118.0" y="192.0" width="17.0" height="36.0" rx="0" fill="#F2F2F2" stroke="#595959" stroke-width="1.2" />
+<rect x="135.0" y="192.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="152.0" y="192.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="169.0" y="192.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="186.0" y="192.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="203.0" y="192.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="220.0" y="192.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="237.0" y="192.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="254.0" y="192.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="271.0" y="192.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="288.0" y="192.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="305.0" y="192.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="322.0" y="192.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="339.0" y="192.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="356.0" y="192.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="373.0" y="192.0" width="17.0" height="36.0" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.2" />
+<rect x="390.0" y="192.0" width="17.0" height="36.0" rx="0" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.2" />
+<rect x="407.0" y="192.0" width="17.0" height="36.0" rx="0" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.2" />
+<rect x="424.0" y="192.0" width="17.0" height="36.0" rx="0" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.2" />
+<rect x="441.0" y="192.0" width="17.0" height="36.0" rx="0" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.2" />
+<rect x="458.0" y="192.0" width="17.0" height="36.0" rx="0" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.2" />
+<rect x="475.0" y="192.0" width="17.0" height="36.0" rx="0" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.2" />
+<rect x="492.0" y="192.0" width="17.0" height="36.0" rx="0" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.2" />
+<rect x="509.0" y="192.0" width="17.0" height="36.0" rx="0" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.2" />
+<rect x="526.0" y="192.0" width="17.0" height="36.0" rx="0" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.2" />
+<rect x="543.0" y="192.0" width="17.0" height="36.0" rx="0" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.2" />
+<rect x="560.0" y="192.0" width="17.0" height="36.0" rx="0" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.2" />
+<rect x="577.0" y="192.0" width="17.0" height="36.0" rx="0" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.2" />
+<rect x="594.0" y="192.0" width="17.0" height="36.0" rx="0" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.2" />
+<rect x="611.0" y="192.0" width="17.0" height="36.0" rx="0" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.2" />
+<rect x="628.0" y="192.0" width="17.0" height="36.0" rx="0" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.2" />
+<rect x="645.0" y="192.0" width="17.0" height="36.0" rx="0" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.2" />
+<text x="680.0" y="216.5" text-anchor="start" font-size="19" fill="#222222" font-weight="normal" font-style="normal">Tensor Cores</text>
+<text x="275.0" y="248.0" text-anchor="start" font-size="17" fill="#C00000" font-weight="normal" font-style="italic">8 significant bits kept</text>
+<rect x="118.0" y="258.0" width="22.0" height="18.0" rx="0" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="1.2" />
+<text x="148.0" y="272.0" text-anchor="start" font-size="17" fill="#222222" font-weight="normal" font-style="normal">weight bits dropped before the multiply</text>
+</svg>

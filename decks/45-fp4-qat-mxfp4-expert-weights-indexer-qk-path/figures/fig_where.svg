@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="876pt" height="288pt" viewBox="0 0 876 288" font-family="Helvetica, Arial, sans-serif">
+<defs><marker id="m222222" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker><pattern id="hatchRed" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#FBE5E5"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2"/></pattern><pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#fff"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/></pattern></defs>
+<rect width="876" height="288" fill="#fff"/>
+<g transform="translate(3,3)">
+<rect x="0" y="0" width="420" height="282" rx="6" fill="#fff" stroke="#595959" stroke-width="1.5" stroke-dasharray="7,5" />
+<text x="14" y="26" font-size="18" font-weight="bold" fill="#595959" text-anchor="start">CSA attention layer</text>
+<rect x="18" y="58" width="176" height="50" rx="6" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="106.0" y="89.0" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">Compressors</text>
+<rect x="144.5" y="46" width="43.5" height="24" rx="12" fill="#fff" stroke="#595959" stroke-width="2" />
+<text x="166.25" y="64" font-size="16" font-weight="bold" fill="#595959" text-anchor="middle">FP8</text>
+<rect x="226" y="58" width="176" height="50" rx="6" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.5" />
+<text x="314.0" y="89.0" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">Indexer Q · K</text>
+<rect x="352.5" y="46" width="43.5" height="24" rx="12" fill="#1F4E79" stroke="#1F4E79" stroke-width="2" />
+<text x="374.25" y="64" font-size="16" font-weight="bold" fill="#fff" text-anchor="middle">FP4</text>
+<rect x="226" y="140" width="176" height="50" rx="6" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.5" />
+<text x="314.0" y="171.0" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">Index scores</text>
+<rect x="342.0" y="128" width="54.0" height="24" rx="12" fill="#fff" stroke="#595959" stroke-width="2" />
+<text x="369.0" y="146" font-size="16" font-weight="bold" fill="#595959" text-anchor="middle">BF16</text>
+<rect x="18" y="140" width="176" height="50" rx="6" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="106.0" y="171.0" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">Top-k</text>
+<rect x="18" y="218" width="384" height="50" rx="6" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="210.0" y="249.0" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">Shared-KV MQA</text>
+<rect x="352.5" y="206" width="43.5" height="24" rx="12" fill="#fff" stroke="#595959" stroke-width="2" />
+<text x="374.25" y="224" font-size="16" font-weight="bold" fill="#595959" text-anchor="middle">FP8</text>
+<path d="M196,83 L224,83" fill="none" stroke="#222222" stroke-width="2.2" marker-end="url(#m222222)"/>
+<path d="M314,110 L314,138" fill="none" stroke="#222222" stroke-width="2.2" marker-end="url(#m222222)"/>
+<path d="M224,165 L196,165" fill="none" stroke="#222222" stroke-width="2.2" marker-end="url(#m222222)"/>
+<path d="M106,192 L106,216" fill="none" stroke="#222222" stroke-width="2.2" marker-end="url(#m222222)"/>
+<rect x="450" y="0" width="420" height="282" rx="6" fill="#fff" stroke="#595959" stroke-width="1.5" stroke-dasharray="7,5" />
+<text x="464" y="26" font-size="18" font-weight="bold" fill="#595959" text-anchor="start">MoE layer</text>
+<rect x="468" y="58" width="176" height="50" rx="6" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="556.0" y="89.0" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">Router</text>
+<rect x="676" y="58" width="176" height="50" rx="6" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="764.0" y="89.0" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">Shared expert</text>
+<rect x="802.5" y="46" width="43.5" height="24" rx="12" fill="#fff" stroke="#595959" stroke-width="2" />
+<text x="824.25" y="64" font-size="16" font-weight="bold" fill="#595959" text-anchor="middle">FP8</text>
+<rect x="468" y="140" width="384" height="128" rx="6" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.5" />
+<text x="660" y="166" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">Routed experts × 384</text>
+<rect x="802.5" y="128" width="43.5" height="24" rx="12" fill="#1F4E79" stroke="#1F4E79" stroke-width="2" />
+<text x="824.25" y="146" font-size="16" font-weight="bold" fill="#fff" text-anchor="middle">FP4</text>
+<rect x="484.0" y="184" width="20" height="28" rx="2" fill="#fff" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="509.5" y="184" width="20" height="28" rx="2" fill="#fff" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="535.0" y="184" width="20" height="28" rx="2" fill="#fff" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="560.5" y="184" width="20" height="28" rx="2" fill="#fff" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="586.0" y="184" width="20" height="28" rx="2" fill="#fff" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="611.5" y="184" width="20" height="28" rx="2" fill="#fff" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="637.0" y="184" width="20" height="28" rx="2" fill="#fff" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="662.5" y="184" width="20" height="28" rx="2" fill="#fff" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="688.0" y="184" width="20" height="28" rx="2" fill="#fff" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="713.5" y="184" width="20" height="28" rx="2" fill="#fff" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="739.0" y="184" width="20" height="28" rx="2" fill="#fff" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="764.5" y="184" width="20" height="28" rx="2" fill="#fff" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="790.0" y="184" width="20" height="28" rx="2" fill="#fff" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="815.5" y="184" width="20" height="28" rx="2" fill="#fff" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="484.0" y="220" width="20" height="28" rx="2" fill="#fff" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="509.5" y="220" width="20" height="28" rx="2" fill="#fff" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="535.0" y="220" width="20" height="28" rx="2" fill="#fff" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="560.5" y="220" width="20" height="28" rx="2" fill="#fff" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="586.0" y="220" width="20" height="28" rx="2" fill="#fff" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="611.5" y="220" width="20" height="28" rx="2" fill="#fff" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="637.0" y="220" width="20" height="28" rx="2" fill="#fff" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="662.5" y="220" width="20" height="28" rx="2" fill="#fff" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="688.0" y="220" width="20" height="28" rx="2" fill="#fff" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="713.5" y="220" width="20" height="28" rx="2" fill="#fff" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="739.0" y="220" width="20" height="28" rx="2" fill="#fff" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="764.5" y="220" width="20" height="28" rx="2" fill="#fff" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="790.0" y="220" width="20" height="28" rx="2" fill="#fff" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="815.5" y="220" width="20" height="28" rx="2" fill="#fff" stroke="#1F4E79" stroke-width="1.5" />
+<path d="M556,110 L556,138" fill="none" stroke="#222222" stroke-width="2.2" marker-end="url(#m222222)"/>
+</g>
+</svg>

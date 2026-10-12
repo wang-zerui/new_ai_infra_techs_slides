@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="272pt" viewBox="0 0 870 272" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_tree -->
+<text x="16.0" y="24.0" text-anchor="start" font-size="18" fill="#222222" font-weight="bold" font-style="normal" font-family="Menlo, monospace">global_step_N/</text>
+<text x="500.0" y="24.0" text-anchor="start" font-size="18" fill="#7F7F7F" font-weight="bold" font-style="normal">holds</text>
+<text x="740.0" y="24.0" text-anchor="middle" font-size="18" fill="#7F7F7F" font-weight="bold" font-style="normal">written by</text>
+<rect x="8.0" y="40.0" width="854.0" height="38.0" rx="0" fill="#F7F7F7" stroke="none" stroke-width="0" />
+<text x="40.0" y="65.0" text-anchor="start" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal" font-family="Menlo, monospace">model/ckpt/</text>
+<text x="500.0" y="65.0" text-anchor="start" font-size="17" fill="#222222" font-weight="normal" font-style="normal">weights</text>
+<rect x="650.0" y="45.0" width="180.0" height="28.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="740.0" y="64.6" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">all ranks (DCP)</text>
+<text x="40.0" y="103.0" text-anchor="start" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal" font-family="Menlo, monospace">model/optimizer/</text>
+<text x="500.0" y="103.0" text-anchor="start" font-size="17" fill="#222222" font-weight="normal" font-style="normal">optimizer state</text>
+<rect x="650.0" y="83.0" width="180.0" height="28.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="740.0" y="102.6" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">all ranks (DCP)</text>
+<rect x="8.0" y="116.0" width="854.0" height="38.0" rx="0" fill="#F7F7F7" stroke="none" stroke-width="0" />
+<text x="40.0" y="141.0" text-anchor="start" font-size="17" fill="#222222" font-weight="normal" font-style="normal" font-family="Menlo, monospace">model/lr_scheduler.pt</text>
+<text x="500.0" y="141.0" text-anchor="start" font-size="17" fill="#222222" font-weight="normal" font-style="normal">LR schedule</text>
+<rect x="650.0" y="121.0" width="180.0" height="28.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="1.5" />
+<text x="740.0" y="140.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">rank 0</text>
+<text x="40.0" y="179.0" text-anchor="start" font-size="17" fill="#222222" font-weight="normal" font-style="normal" font-family="Menlo, monospace">loader/rank_R.pt</text>
+<text x="500.0" y="179.0" text-anchor="start" font-size="17" fill="#222222" font-weight="normal" font-style="normal">data cursor</text>
+<rect x="650.0" y="159.0" width="180.0" height="28.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="1.5" />
+<text x="740.0" y="178.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">rank R</text>
+<rect x="8.0" y="192.0" width="854.0" height="38.0" rx="0" fill="#F7F7F7" stroke="none" stroke-width="0" />
+<text x="40.0" y="217.0" text-anchor="start" font-size="17" fill="#222222" font-weight="normal" font-style="normal" font-family="Menlo, monospace">extra_state/rank_R.pt</text>
+<text x="500.0" y="217.0" text-anchor="start" font-size="17" fill="#222222" font-weight="normal" font-style="normal">step and RNG</text>
+<rect x="650.0" y="197.0" width="180.0" height="28.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="1.5" />
+<text x="740.0" y="216.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">rank R</text>
+<text x="40.0" y="255.0" text-anchor="start" font-size="17" fill="#222222" font-weight="normal" font-style="normal" font-family="Menlo, monospace">checkpoint_manifest.json</text>
+<text x="500.0" y="255.0" text-anchor="start" font-size="17" fill="#222222" font-weight="normal" font-style="normal">done marker</text>
+<rect x="650.0" y="235.0" width="180.0" height="28.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="1.5" />
+<text x="740.0" y="254.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">rank 0 (last)</text>
+<line x1="24.0" y1="34.0" x2="24.0" y2="249.0" stroke="#A6A6A6" stroke-width="1.4"/>
+<line x1="24.0" y1="59.0" x2="34.0" y2="59.0" stroke="#A6A6A6" stroke-width="1.4"/>
+<line x1="24.0" y1="97.0" x2="34.0" y2="97.0" stroke="#A6A6A6" stroke-width="1.4"/>
+<line x1="24.0" y1="135.0" x2="34.0" y2="135.0" stroke="#A6A6A6" stroke-width="1.4"/>
+<line x1="24.0" y1="173.0" x2="34.0" y2="173.0" stroke="#A6A6A6" stroke-width="1.4"/>
+<line x1="24.0" y1="211.0" x2="34.0" y2="211.0" stroke="#A6A6A6" stroke-width="1.4"/>
+<line x1="24.0" y1="249.0" x2="34.0" y2="249.0" stroke="#A6A6A6" stroke-width="1.4"/>
+</svg>

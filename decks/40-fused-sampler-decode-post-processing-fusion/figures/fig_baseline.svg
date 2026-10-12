@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="304pt" viewBox="0 0 870 304" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_baseline -->
+<text x="100.0" y="66.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">penalty</text>
+<text x="100.0" y="46.0" text-anchor="middle" font-size="16" fill="#C00000" font-weight="normal" font-style="normal">8 ops</text>
+<rect x="14.0" y="76.0" width="172.0" height="26.0" rx="4" fill="#FBE5E5" stroke="#C00000" stroke-width="1.5" />
+<text x="100.0" y="94.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">to FP32</text>
+<rect x="14.0" y="107.0" width="172.0" height="26.0" rx="4" fill="#FBE5E5" stroke="#C00000" stroke-width="1.5" />
+<text x="100.0" y="125.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">zeros ×2</text>
+<rect x="14.0" y="138.0" width="172.0" height="26.0" rx="4" fill="#FBE5E5" stroke="#C00000" stroke-width="1.5" />
+<text x="100.0" y="156.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">scatter ×2</text>
+<rect x="14.0" y="169.0" width="172.0" height="26.0" rx="4" fill="#FBE5E5" stroke="#C00000" stroke-width="1.5" />
+<text x="100.0" y="187.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">copy ×2</text>
+<rect x="14.0" y="200.0" width="172.0" height="26.0" rx="4" fill="#FBE5E5" stroke="#C00000" stroke-width="1.5" />
+<text x="100.0" y="218.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">apply penalty</text>
+<line x1="100.0" y1="230.0" x2="100.0" y2="267.0" stroke="#C00000" stroke-width="2.2" marker-end="url(#arrPrb)" marker-start="url(#arrPrb)"/>
+<text x="253.0" y="66.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">temp.</text>
+<text x="253.0" y="46.0" text-anchor="middle" font-size="16" fill="#C00000" font-weight="normal" font-style="normal">1 op</text>
+<rect x="215.0" y="76.0" width="76.0" height="26.0" rx="4" fill="#FBE5E5" stroke="#C00000" stroke-width="1.5" />
+<text x="253.0" y="94.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">÷ T</text>
+<line x1="253.0" y1="106.0" x2="253.0" y2="267.0" stroke="#C00000" stroke-width="2.2" marker-end="url(#arrPrb)" marker-start="url(#arrPrb)"/>
+<text x="387.0" y="66.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">top-k</text>
+<text x="387.0" y="46.0" text-anchor="middle" font-size="16" fill="#C00000" font-weight="normal" font-style="normal">3 ops</text>
+<rect x="320.0" y="76.0" width="134.0" height="26.0" rx="4" fill="#FBE5E5" stroke="#C00000" stroke-width="1.5" />
+<text x="387.0" y="94.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">sort</text>
+<rect x="320.0" y="107.0" width="134.0" height="26.0" rx="4" fill="#FBE5E5" stroke="#C00000" stroke-width="1.5" />
+<text x="387.0" y="125.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">compare</text>
+<rect x="320.0" y="138.0" width="134.0" height="26.0" rx="4" fill="#FBE5E5" stroke="#C00000" stroke-width="1.5" />
+<text x="387.0" y="156.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">mask</text>
+<line x1="387.0" y1="168.0" x2="387.0" y2="267.0" stroke="#C00000" stroke-width="2.2" marker-end="url(#arrPrb)" marker-start="url(#arrPrb)"/>
+<text x="567.0" y="66.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">top-p</text>
+<text x="567.0" y="46.0" text-anchor="middle" font-size="16" fill="#C00000" font-weight="normal" font-style="normal">5 ops</text>
+<rect x="483.0" y="76.0" width="168.0" height="26.0" rx="4" fill="#FBE5E5" stroke="#C00000" stroke-width="1.5" />
+<text x="567.0" y="94.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">softmax</text>
+<rect x="483.0" y="107.0" width="168.0" height="26.0" rx="4" fill="#FBE5E5" stroke="#C00000" stroke-width="1.5" />
+<text x="567.0" y="125.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">cumsum</text>
+<rect x="483.0" y="138.0" width="168.0" height="26.0" rx="4" fill="#FBE5E5" stroke="#C00000" stroke-width="1.5" />
+<text x="567.0" y="156.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">compare</text>
+<rect x="483.0" y="169.0" width="168.0" height="26.0" rx="4" fill="#FBE5E5" stroke="#C00000" stroke-width="1.5" />
+<text x="567.0" y="187.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">mask</text>
+<rect x="483.0" y="200.0" width="168.0" height="26.0" rx="4" fill="#FBE5E5" stroke="#C00000" stroke-width="1.5" />
+<text x="567.0" y="218.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">scatter</text>
+<line x1="567.0" y1="230.0" x2="567.0" y2="267.0" stroke="#C00000" stroke-width="2.2" marker-end="url(#arrPrb)" marker-start="url(#arrPrb)"/>
+<text x="765.0" y="66.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">sample</text>
+<text x="765.0" y="46.0" text-anchor="middle" font-size="16" fill="#C00000" font-weight="normal" font-style="normal">4 ops</text>
+<rect x="680.0" y="76.0" width="170.0" height="26.0" rx="4" fill="#FBE5E5" stroke="#C00000" stroke-width="1.5" />
+<text x="765.0" y="94.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">softmax</text>
+<rect x="680.0" y="107.0" width="170.0" height="26.0" rx="4" fill="#FBE5E5" stroke="#C00000" stroke-width="1.5" />
+<text x="765.0" y="125.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">exp noise</text>
+<rect x="680.0" y="138.0" width="170.0" height="26.0" rx="4" fill="#FBE5E5" stroke="#C00000" stroke-width="1.5" />
+<text x="765.0" y="156.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">÷ noise</text>
+<rect x="680.0" y="169.0" width="170.0" height="26.0" rx="4" fill="#FBE5E5" stroke="#C00000" stroke-width="1.5" />
+<text x="765.0" y="187.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">argmax</text>
+<line x1="765.0" y1="199.0" x2="765.0" y2="267.0" stroke="#C00000" stroke-width="2.2" marker-end="url(#arrPrb)" marker-start="url(#arrPrb)"/>
+<rect x="6.0" y="270.0" width="858.0" height="30.0" rx="3" fill="#FBE5E5" stroke="#C00000" stroke-width="1.8" />
+<text x="435.0" y="291.0" text-anchor="middle" font-size="18" fill="#C00000" font-weight="bold" font-style="normal">HBM: each op reads a full B × V tensor, most write one</text>
+<path d="M316,30 L316,22 L854,22 L854,30" fill="none" stroke="#7F7F7F" stroke-width="1.8"/>
+<text x="585.0" y="14.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="italic">FlashInfer: one fused kernel for this tail</text>
+</svg>

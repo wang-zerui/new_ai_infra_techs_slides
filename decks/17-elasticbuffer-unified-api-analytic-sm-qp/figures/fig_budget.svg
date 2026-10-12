@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="250pt"
+     viewBox="0 0 870 250" font-family="Helvetica, Arial, sans-serif">
+  <!-- fig_budget: the analytic SM/QP budget in DeepEP v2 (get_theoretical_num_sms / _qps). 1 unit = 1pt -->
+  <defs>
+    <marker id="arrA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9"
+            markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/>
+    </marker>
+    <marker id="arrK" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9"
+            markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#595959"/>
+    </marker>
+  </defs>
+
+  <!-- inputs (gray) -->
+  <rect x="2" y="6" width="190" height="42" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.5"/>
+  <text x="97" y="33" text-anchor="middle" font-size="17" fill="#222222">top-k · EP shape</text>
+  <rect x="454" y="6" width="190" height="42" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.5"/>
+  <text x="549" y="33" text-anchor="middle" font-size="17" fill="#222222">link GB/s (ibstat · smi)</text>
+  <rect x="680" y="6" width="188" height="42" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.5"/>
+  <text x="774" y="33" text-anchor="middle" font-size="17" fill="#222222">per-SM HBM GB/s</text>
+  <line x1="97" y1="49" x2="97" y2="72" stroke="#595959" stroke-width="2" marker-end="url(#arrK)"/>
+  <line x1="549" y1="49" x2="549" y2="72" stroke="#595959" stroke-width="2" marker-end="url(#arrK)"/>
+  <line x1="774" y1="49" x2="774" y2="72" stroke="#595959" stroke-width="2" marker-end="url(#arrK)"/>
+
+  <!-- pipeline (accent) -->
+  <rect x="2" y="74" width="190" height="96" rx="5" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5"/>
+  <text x="97" y="101" text-anchor="middle" font-size="18" font-weight="bold" fill="#1F4E79">Routing statistics</text>
+  <text x="97" y="128" text-anchor="middle" font-size="17" fill="#222222">nodes per token</text>
+  <text x="97" y="152" text-anchor="middle" font-size="17" fill="#222222">GPUs per token</text>
+
+  <rect x="228" y="74" width="190" height="96" rx="5" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5"/>
+  <text x="323" y="101" text-anchor="middle" font-size="18" font-weight="bold" fill="#1F4E79">Bytes per token</text>
+  <text x="323" y="128" text-anchor="middle" font-size="17" fill="#222222">RDMA · NVLink</text>
+  <text x="323" y="152" text-anchor="middle" font-size="17" fill="#222222">SM reads · writes</text>
+
+  <rect x="454" y="74" width="190" height="96" rx="5" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5"/>
+  <text x="549" y="101" text-anchor="middle" font-size="18" font-weight="bold" fill="#1F4E79">Bottleneck link</text>
+  <text x="549" y="128" text-anchor="middle" font-size="17" fill="#222222">max bytes ÷ GB/s</text>
+  <text x="549" y="152" text-anchor="middle" font-size="17" fill="#222222">sets token rate</text>
+
+  <rect x="680" y="74" width="188" height="96" rx="5" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5"/>
+  <text x="774" y="101" text-anchor="middle" font-size="18" font-weight="bold" fill="#1F4E79">SM count</text>
+  <text x="774" y="128" text-anchor="middle" font-size="17" fill="#222222">SM bytes ÷ SM GB/s</text>
+  <text x="774" y="152" text-anchor="middle" font-size="17" fill="#222222">+30% · round to 4</text>
+
+  <line x1="193" y1="122" x2="226" y2="122" stroke="#1F4E79" stroke-width="2.5" marker-end="url(#arrA)"/>
+  <line x1="419" y1="122" x2="452" y2="122" stroke="#1F4E79" stroke-width="2.5" marker-end="url(#arrA)"/>
+  <line x1="645" y1="122" x2="678" y2="122" stroke="#1F4E79" stroke-width="2.5" marker-end="url(#arrA)"/>
+
+  <!-- outputs -->
+  <line x1="774" y1="171" x2="774" y2="194" stroke="#1F4E79" stroke-width="2.5" marker-end="url(#arrA)"/>
+  <rect x="610" y="196" width="258" height="48" rx="4" fill="#FFF2CC" stroke="#7F6000" stroke-width="1.5"/>
+  <text x="739" y="226" text-anchor="middle" font-size="17" font-family="Menlo, 'Courier New', monospace" fill="#222222">num_sms · num_qps</text>
+  <text x="590" y="217" text-anchor="end" font-size="17" fill="#222222">QPs: direct min(SMs, 9)</text>
+  <text x="590" y="239" text-anchor="end" font-size="17" fill="#222222">hybrid 16 × SMs + 1</text>
+</svg>

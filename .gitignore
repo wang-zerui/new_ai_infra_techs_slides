@@ -1,0 +1,9 @@
+# preview renders (regenerate with scripts/build_all.sh)
+decks/*/pages/
+# OS / editor
+.DS_Store
+__pycache__/
+*.pyc
+.claude/
+# HTML twins embed absolute local image paths; regenerate with scripts/build_all.sh
+decks/*/*.html

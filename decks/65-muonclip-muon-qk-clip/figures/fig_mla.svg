@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="262pt" viewBox="0 0 870 262" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_mla -->
+<text x="85.0" y="26.0" text-anchor="middle" font-size="17" fill="#7F7F7F" font-weight="normal" font-style="italic">query of head h</text>
+<text x="330.0" y="26.0" text-anchor="middle" font-size="17" fill="#7F7F7F" font-weight="normal" font-style="italic">key</text>
+<text x="560.0" y="26.0" text-anchor="middle" font-size="17" fill="#7F7F7F" font-weight="normal" font-style="italic">logit term</text>
+<rect x="20.0" y="48.0" width="130.0" height="54.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="85.0" y="83.0" text-anchor="middle" font-size="22" fill="#1F4E79" font-weight="bold"><tspan>q</tspan><tspan baseline-shift="sub" font-size="15.4">C</tspan></text>
+<text x="158.0" y="83.0" text-anchor="start" font-size="22" fill="#1F4E79" font-weight="bold"><tspan>× √γ</tspan></text>
+<text x="240.0" y="84.0" text-anchor="middle" font-size="30" fill="#222222" font-weight="bold" font-style="normal">·</text>
+<rect x="266.0" y="48.0" width="130.0" height="54.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="331.0" y="83.0" text-anchor="middle" font-size="22" fill="#1F4E79" font-weight="bold"><tspan>k</tspan><tspan baseline-shift="sub" font-size="15.4">C</tspan></text>
+<text x="404.0" y="83.0" text-anchor="start" font-size="22" fill="#1F4E79" font-weight="bold"><tspan>× √γ</tspan></text>
+<rect x="20.0" y="150.0" width="130.0" height="54.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="85.0" y="185.0" text-anchor="middle" font-size="22" fill="#1F4E79" font-weight="bold"><tspan>q</tspan><tspan baseline-shift="sub" font-size="15.4">R</tspan></text>
+<text x="158.0" y="185.0" text-anchor="start" font-size="22" fill="#1F4E79" font-weight="bold"><tspan>× γ</tspan></text>
+<text x="240.0" y="186.0" text-anchor="middle" font-size="30" fill="#222222" font-weight="bold" font-style="normal">·</text>
+<rect x="266.0" y="150.0" width="130.0" height="54.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" stroke-dasharray="6,4" />
+<text x="331.0" y="185.0" text-anchor="middle" font-size="22" fill="#222222" font-weight="bold"><tspan>k</tspan><tspan baseline-shift="sub" font-size="15.4">R</tspan></text>
+<text x="404.0" y="185.0" text-anchor="start" font-size="22" fill="#7F7F7F" font-weight="bold"><tspan>× 1</tspan></text>
+<text x="331.0" y="230.0" text-anchor="middle" font-size="18" fill="#7F7F7F" font-weight="normal" font-style="normal">shared by all heads</text>
+<text x="331.0" y="252.0" text-anchor="middle" font-size="18" fill="#7F7F7F" font-weight="normal" font-style="normal">left untouched</text>
+<line x1="468.0" y1="75.0" x2="492.0" y2="75.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="494.0" y="48.0" width="140.0" height="54.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2" />
+<text x="564.0" y="83.0" text-anchor="middle" font-size="22" fill="#1F4E79" font-weight="bold"><tspan>γ · q</tspan><tspan baseline-shift="sub" font-size="15.4">C</tspan><tspan>·k</tspan><tspan baseline-shift="sub" font-size="15.4">C</tspan></text>
+<line x1="468.0" y1="177.0" x2="492.0" y2="177.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="494.0" y="150.0" width="140.0" height="54.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2" />
+<text x="564.0" y="185.0" text-anchor="middle" font-size="22" fill="#1F4E79" font-weight="bold"><tspan>γ · q</tspan><tspan baseline-shift="sub" font-size="15.4">R</tspan><tspan>·k</tspan><tspan baseline-shift="sub" font-size="15.4">R</tspan></text>
+<path d="M 636,75.0 L 672,75.0 L 672,112.0" fill="none" stroke="#222222" stroke-width="2.2"/>
+<path d="M 636,177.0 L 672,177.0 L 672,140.0" fill="none" stroke="#222222" stroke-width="2.2"/>
+<circle cx="672" cy="126.0" r="14" fill="#FFFFFF" stroke="#222222" stroke-width="2.2"/>
+<text x="672.0" y="134.0" text-anchor="middle" font-size="24" fill="#222222" font-weight="bold" font-style="normal">+</text>
+<line x1="686.0" y1="126.0" x2="708.0" y2="126.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="710.0" y="92.0" width="154.0" height="68.0" rx="6" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.4" />
+<text x="787.0" y="122.0" text-anchor="middle" font-size="22" fill="#1F4E79" font-weight="bold"><tspan>logit</tspan><tspan baseline-shift="sub" font-size="15.4">h</tspan></text>
+<text x="787.0" y="150.0" text-anchor="middle" font-size="20" fill="#1F4E79" font-weight="bold" font-style="normal">× γ exactly</text>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="876pt" height="290pt" viewBox="0 0 876 290" font-family="Helvetica, Arial, sans-serif">
+<defs><marker id="m222222" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker><marker id="m1F4E79" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker><pattern id="hatchRed" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#FBE5E5"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2"/></pattern><pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#fff"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/></pattern></defs>
+<rect width="876" height="290" fill="#fff"/>
+<g transform="translate(3,3)">
+<rect x="0" y="20" width="160" height="70" rx="6" fill="#fff" stroke="#595959" stroke-width="2" />
+<text x="80.0" y="51.0" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">FP32 master</text>
+<text x="80.0" y="73.0" font-size="18" font-weight="normal" fill="#222222" text-anchor="middle">expert weight W</text>
+<rect x="236" y="20" width="160" height="70" rx="6" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.5" />
+<text x="316.0" y="51.0" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">MXFP4 W</text>
+<text x="316.0" y="73.0" font-size="18" font-weight="normal" fill="#222222" text-anchor="middle">E2M1 + E8M0/32</text>
+<rect x="472" y="20" width="160" height="70" rx="6" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="552.0" y="51.0" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">FP8 W</text>
+<text x="552.0" y="73.0" font-size="18" font-weight="normal" fill="#222222" text-anchor="middle">E4M3 + 128×128</text>
+<rect x="708" y="20" width="160" height="70" rx="6" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="788.0" y="51.0" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">FP8 GEMM</text>
+<text x="788.0" y="73.0" font-size="18" font-weight="normal" fill="#222222" text-anchor="middle">X · W</text>
+<path d="M162,55.0 L234,55.0" fill="none" stroke="#222222" stroke-width="2.2" marker-end="url(#m222222)"/>
+<text x="198.0" y="45.0" font-size="16" font-weight="normal" fill="#222222" text-anchor="middle">quantize</text>
+<path d="M398,55.0 L470,55.0" fill="none" stroke="#222222" stroke-width="2.2" marker-end="url(#m222222)"/>
+<text x="434.0" y="45.0" font-size="16" font-weight="normal" fill="#222222" text-anchor="middle">exact</text>
+<path d="M634,55.0 L706,55.0" fill="none" stroke="#222222" stroke-width="2.2" marker-end="url(#m222222)"/>
+<text x="670.0" y="45.0" font-size="16" font-weight="normal" fill="#222222" text-anchor="middle">forward</text>
+<path d="M788.0,92 V150" fill="none" stroke="#222222" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#m222222)"/>
+<rect x="708" y="152" width="160" height="58" rx="6" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="788.0" y="176" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">∂L / ∂W</text>
+<text x="788.0" y="198" font-size="18" font-weight="normal" fill="#222222" text-anchor="middle">w.r.t. FP8 W</text>
+<path d="M706,181 H80.0 V94" fill="none" stroke="#1F4E79" stroke-width="2.5" marker-end="url(#m1F4E79)"/>
+<text x="434.0" y="172" font-size="18" font-weight="bold" fill="#1F4E79" text-anchor="middle">straight to the master (STE)</text>
+<rect x="250" y="218" width="360" height="52" rx="6" fill="#fff" stroke="#595959" stroke-width="2" stroke-dasharray="6,4" />
+<text x="430" y="250" font-size="18" font-weight="normal" fill="#595959" text-anchor="middle">re-quantize Wᵀ into FP4</text>
+<text x="626" y="254" font-size="18" font-weight="bold" fill="#C00000" text-anchor="start">✗ skipped</text>
+</g>
+</svg>

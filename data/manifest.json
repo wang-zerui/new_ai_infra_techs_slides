@@ -1,0 +1,885 @@
+[
+  {
+    "id": "01",
+    "slug": "01-csa-compressed-sparse-attention",
+    "technique": "CSA compressed sparse attention",
+    "category": "Attention & Long Context",
+    "notion_page_id": "e36ba1f7295647b897468dc2b4d30590",
+    "notion_url": "https://app.notion.com/p/e36ba1f7295647b897468dc2b4d30590",
+    "reference": "https://arxiv.org/abs/2606.19348",
+    "source": [
+      "DeepSeek V4"
+    ]
+  },
+  {
+    "id": "02",
+    "slug": "02-deepseek-sparse-attention-lightning-indexer",
+    "technique": "DeepSeek Sparse Attention (DSA) + Lightning Indexer",
+    "category": "Attention & Long Context",
+    "notion_page_id": "cf0641f4eac74fd9bd6c903a15b59ca3",
+    "notion_url": "https://app.notion.com/p/cf0641f4eac74fd9bd6c903a15b59ca3",
+    "reference": "https://arxiv.org/abs/2512.02556",
+    "source": [
+      "DeepSeek V3.2",
+      "GLM-5 series"
+    ]
+  },
+  {
+    "id": "03",
+    "slug": "03-hca-highly-compressed-attention-hybrid-attention",
+    "technique": "HCA highly-compressed attention + hybrid attention stacking",
+    "category": "Attention & Long Context",
+    "notion_page_id": "ceae2901ccd44561a14abacc7f6574bf",
+    "notion_url": "https://app.notion.com/p/ceae2901ccd44561a14abacc7f6574bf",
+    "reference": "https://arxiv.org/abs/2606.19348",
+    "source": [
+      "DeepSeek V4"
+    ]
+  },
+  {
+    "id": "04",
+    "slug": "04-indexshare-cross-layer-shared-indexer",
+    "technique": "IndexShare (cross-layer shared indexer)",
+    "category": "Attention & Long Context",
+    "notion_page_id": "e18d1e0afe6f4d3d9c37bfdf815b0738",
+    "notion_url": "https://app.notion.com/p/e18d1e0afe6f4d3d9c37bfdf815b0738",
+    "reference": "https://arxiv.org/abs/2603.12201",
+    "source": [
+      "GLM-5 series"
+    ]
+  },
+  {
+    "id": "05",
+    "slug": "05-kimi-delta-attention-kda",
+    "technique": "Kimi Delta Attention (KDA)",
+    "category": "Attention & Long Context",
+    "notion_page_id": "0a25e512d50542b08af4e090523e14b2",
+    "notion_url": "https://app.notion.com/p/0a25e512d50542b08af4e090523e14b2",
+    "reference": "https://arxiv.org/abs/2607.24653",
+    "source": [
+      "Kimi K3"
+    ]
+  },
+  {
+    "id": "06",
+    "slug": "06-staged-context-extension-annealing-cooldown",
+    "technique": "Staged context extension + annealing / cooldown",
+    "category": "Attention & Long Context",
+    "notion_page_id": "ff95a3d4ac0745728425571a7344ee70",
+    "notion_url": "https://app.notion.com/p/ff95a3d4ac0745728425571a7344ee70",
+    "reference": "https://arxiv.org/abs/2607.24653",
+    "source": [
+      "Kimi K2",
+      "Kimi K3",
+      "GLM-4.5"
+    ]
+  },
+  {
+    "id": "07",
+    "slug": "07-dynamic-decode-attention",
+    "technique": "Dynamic Decode Attention (dynamic task scheduling)",
+    "category": "Attention Kernels",
+    "notion_page_id": "395fb76ae58944d0ae141c2a047478b6",
+    "notion_url": "https://app.notion.com/p/395fb76ae58944d0ae141c2a047478b6",
+    "reference": "https://github.com/Tencent/hpc-ops",
+    "source": [
+      "HPC-Ops"
+    ]
+  },
+  {
+    "id": "08",
+    "slug": "08-flashkda-chunkwise-linear-attention-kernel",
+    "technique": "FlashKDA (chunkwise linear-attention kernel)",
+    "category": "Attention Kernels",
+    "notion_page_id": "addf5d5fcfad445081c78ebac0e50d60",
+    "notion_url": "https://app.notion.com/p/addf5d5fcfad445081c78ebac0e50d60",
+    "reference": "https://arxiv.org/abs/2607.24653",
+    "source": [
+      "Kimi K3"
+    ]
+  },
+  {
+    "id": "09",
+    "slug": "09-fp8-block-sparse-prefill-attention",
+    "technique": "FP8 block-sparse prefill attention",
+    "category": "Attention Kernels",
+    "notion_page_id": "6ee53460854a4c988e083e2ba08d1f88",
+    "notion_url": "https://app.notion.com/p/6ee53460854a4c988e083e2ba08d1f88",
+    "reference": "https://github.com/Tencent/hpc-ops",
+    "source": [
+      "HPC-Ops"
+    ]
+  },
+  {
+    "id": "10",
+    "slug": "10-fp8-mqa-logits-sparse-indexer-scoring-kernel",
+    "technique": "FP8 MQA logits / sparse indexer scoring kernel",
+    "category": "Attention Kernels",
+    "notion_page_id": "ac84a3f18a034bac9f7c33b63a8eb6e3",
+    "notion_url": "https://app.notion.com/p/ac84a3f18a034bac9f7c33b63a8eb6e3",
+    "reference": "https://github.com/deepseek-ai/DeepGEMM",
+    "source": [
+      "DeepGEMM",
+      "DeepSeek V3.2"
+    ]
+  },
+  {
+    "id": "11",
+    "slug": "11-1f1b-batch-level-ep-all-to-all-overlap",
+    "technique": "1F1B / batch-level EP all-to-all overlap",
+    "category": "Comm/Compute Overlap",
+    "notion_page_id": "0e6015aa2a8449ff917574f6139df4c2",
+    "notion_url": "https://app.notion.com/p/0e6015aa2a8449ff917574f6139df4c2",
+    "reference": "https://arxiv.org/abs/2603.07685",
+    "source": [
+      "Megatron-LM / MCore"
+    ]
+  },
+  {
+    "id": "12",
+    "slug": "12-ascend-comm-compute-fusion-and-pd-disaggregated",
+    "technique": "Ascend · comm/compute fusion and PD-disaggregated scheduling",
+    "category": "Comm/Compute Overlap",
+    "notion_page_id": "b1ba69567b7740fdbeead2013a32881c",
+    "notion_url": "https://app.notion.com/p/b1ba69567b7740fdbeead2013a32881c",
+    "reference": "https://arxiv.org/abs/2602.15763",
+    "source": [
+      "GLM-5 series"
+    ]
+  },
+  {
+    "id": "13",
+    "slug": "13-fused-allreduce-residual-rmsnorm",
+    "technique": "Fused AllReduce + residual + RMSNorm",
+    "category": "Comm/Compute Overlap",
+    "notion_page_id": "2a55d26c7c7a4f858f5816d7ca24b473",
+    "notion_url": "https://app.notion.com/p/2a55d26c7c7a4f858f5816d7ca24b473",
+    "reference": "https://github.com/Tencent/hpc-ops",
+    "source": [
+      "HPC-Ops"
+    ]
+  },
+  {
+    "id": "14",
+    "slug": "14-wave-based-fine-grained-communication-compute",
+    "technique": "Wave-based fine-grained communication/compute overlap",
+    "category": "Comm/Compute Overlap",
+    "notion_page_id": "0a5b3fd612d24e81a538b34ef561d06c",
+    "notion_url": "https://app.notion.com/p/0a5b3fd612d24e81a538b34ef561d06c",
+    "reference": "https://arxiv.org/abs/2606.19348",
+    "source": [
+      "DeepSeek V4"
+    ]
+  },
+  {
+    "id": "15",
+    "slug": "15-0-sm-pp-cp-engram-communication-primitives",
+    "technique": "0-SM PP / CP / Engram communication primitives",
+    "category": "Expert-Parallel Communication",
+    "notion_page_id": "c3f064d3adbd46a983472f8d7992f155",
+    "notion_url": "https://app.notion.com/p/c3f064d3adbd46a983472f8d7992f155",
+    "reference": "https://github.com/deepseek-ai/DeepEP",
+    "source": [
+      "DeepEP"
+    ]
+  },
+  {
+    "id": "16",
+    "slug": "16-elastic-gpu-cpu-hybrid-memory-buffer",
+    "technique": "Elastic GPU/CPU hybrid memory buffer",
+    "category": "Expert-Parallel Communication",
+    "notion_page_id": "f8ca122ace3b41dba7d867f9c2731da3",
+    "notion_url": "https://app.notion.com/p/f8ca122ace3b41dba7d867f9c2731da3",
+    "reference": "https://github.com/deepseek-ai/DeepEP",
+    "source": [
+      "DeepEP"
+    ]
+  },
+  {
+    "id": "17",
+    "slug": "17-elasticbuffer-unified-api-analytic-sm-qp",
+    "technique": "ElasticBuffer unified API + analytic SM/QP budgeting",
+    "category": "Expert-Parallel Communication",
+    "notion_page_id": "288a723bba1048b2964f7c67a24d4a3a",
+    "notion_url": "https://app.notion.com/p/288a723bba1048b2964f7c67a24d4a3a",
+    "reference": "https://github.com/deepseek-ai/DeepEP",
+    "source": [
+      "DeepEP"
+    ]
+  },
+  {
+    "id": "18",
+    "slug": "18-fp8-dispatch-bf16-combine-low-precision",
+    "technique": "FP8 dispatch + BF16 combine low-precision communication",
+    "category": "Expert-Parallel Communication",
+    "notion_page_id": "8f8e53cef45c40b58e4079637b461706",
+    "notion_url": "https://app.notion.com/p/8f8e53cef45c40b58e4079637b461706",
+    "reference": "https://github.com/deepseek-ai/DeepEP",
+    "source": [
+      "DeepEP",
+      "DeepSeek V4"
+    ]
+  },
+  {
+    "id": "19",
+    "slug": "19-hybridep-flexdispatcher",
+    "technique": "HybridEP + FlexDispatcher",
+    "category": "Expert-Parallel Communication",
+    "notion_page_id": "3e7e3ebd211b43769e3a8acb1883c7f6",
+    "notion_url": "https://app.notion.com/p/3e7e3ebd211b43769e3a8acb1883c7f6",
+    "reference": "https://github.com/NVIDIA/Megatron-LM/blob/main/megatron/core/transformer/moe/README.md",
+    "source": [
+      "Megatron-LM / MCore",
+      "DeepEP"
+    ]
+  },
+  {
+    "id": "20",
+    "slug": "20-moonep-dynamic-redundant-experts-online-gpu",
+    "technique": "MoonEP · dynamic redundant experts + online GPU planning + zero-copy static shapes",
+    "category": "Expert-Parallel Communication",
+    "notion_page_id": "dfc27fd2e9d443c9a0a0efd215bdc3da",
+    "notion_url": "https://app.notion.com/p/dfc27fd2e9d443c9a0a0efd215bdc3da",
+    "reference": "https://github.com/MoonshotAI/MoonEP",
+    "source": [
+      "MoonEP"
+    ]
+  },
+  {
+    "id": "21",
+    "slug": "21-nccl-gin-backend-gpu-initiated-rdma",
+    "technique": "NCCL Gin backend (GPU-initiated RDMA)",
+    "category": "Expert-Parallel Communication",
+    "notion_page_id": "50c0563d46924e00830d20a62dd6cbde",
+    "notion_url": "https://app.notion.com/p/50c0563d46924e00830d20a62dd6cbde",
+    "reference": "https://github.com/deepseek-ai/DeepEP",
+    "source": [
+      "DeepEP"
+    ]
+  },
+  {
+    "id": "22",
+    "slug": "22-network-side-optimization-vl-traffic-isolation",
+    "technique": "Network-side optimization: VL traffic isolation / adaptive routing / SM-free RDMA",
+    "category": "Expert-Parallel Communication",
+    "notion_page_id": "c0f6478d3ece4c3c8cef0965065c4c0a",
+    "notion_url": "https://app.notion.com/p/c0f6478d3ece4c3c8cef0965065c4c0a",
+    "reference": "https://github.com/deepseek-ai/DeepEP",
+    "source": [
+      "DeepEP"
+    ]
+  },
+  {
+    "id": "23",
+    "slug": "23-ascend-adaptation-stack-glm-5",
+    "technique": "Ascend adaptation stack (GLM-5)",
+    "category": "Frameworks & Platform Stacks",
+    "notion_page_id": "3eda454335e04ef09f6a0b6991ee5608",
+    "notion_url": "https://app.notion.com/p/3eda454335e04ef09f6a0b6991ee5608",
+    "reference": "https://arxiv.org/abs/2602.15763",
+    "source": [
+      "GLM-5 series",
+      "VeOmni"
+    ]
+  },
+  {
+    "id": "24",
+    "slug": "24-deepep-v2-ep-communication-library",
+    "technique": "DeepEP v2 (EP communication library)",
+    "category": "Frameworks & Platform Stacks",
+    "notion_page_id": "d471baa2bcdf452592855568ee99f726",
+    "notion_url": "https://app.notion.com/p/d471baa2bcdf452592855568ee99f726",
+    "reference": "https://github.com/deepseek-ai/DeepEP",
+    "source": [
+      "DeepEP"
+    ]
+  },
+  {
+    "id": "25",
+    "slug": "25-deepgemm-unified-tensor-core-kernel-library",
+    "technique": "DeepGEMM (unified tensor-core kernel library)",
+    "category": "Frameworks & Platform Stacks",
+    "notion_page_id": "c0133413563f4ee390f9e4fb55027780",
+    "notion_url": "https://app.notion.com/p/c0133413563f4ee390f9e4fb55027780",
+    "reference": "https://github.com/deepseek-ai/DeepGEMM",
+    "source": [
+      "DeepGEMM"
+    ]
+  },
+  {
+    "id": "26",
+    "slug": "26-hpc-ops",
+    "technique": "HPC-Ops (Tencent Hunyuan inference operator library)",
+    "category": "Frameworks & Platform Stacks",
+    "notion_page_id": "85f1abe2180f4b86bf1e9ea6d23705ce",
+    "notion_url": "https://app.notion.com/p/85f1abe2180f4b86bf1e9ea6d23705ce",
+    "reference": "https://github.com/Tencent/hpc-ops",
+    "source": [
+      "HPC-Ops"
+    ]
+  },
+  {
+    "id": "27",
+    "slug": "27-moonep",
+    "technique": "MoonEP (perfectly balanced EP communication library)",
+    "category": "Frameworks & Platform Stacks",
+    "notion_page_id": "65b197b767bb4d5c9dc17bbce5c0ca13",
+    "notion_url": "https://app.notion.com/p/65b197b767bb4d5c9dc17bbce5c0ca13",
+    "reference": "https://github.com/MoonshotAI/MoonEP",
+    "source": [
+      "MoonEP",
+      "Kimi K3"
+    ]
+  },
+  {
+    "id": "28",
+    "slug": "28-veomni",
+    "technique": "VeOmni (model-centric omni-modal training framework)",
+    "category": "Frameworks & Platform Stacks",
+    "notion_page_id": "9b9145984b6a433abf69f32d2c06db67",
+    "notion_url": "https://app.notion.com/p/9b9145984b6a433abf69f32d2c06db67",
+    "reference": "https://arxiv.org/abs/2508.02317",
+    "source": [
+      "VeOmni"
+    ]
+  },
+  {
+    "id": "29",
+    "slug": "29-fp8-grouped-gemm",
+    "technique": "FP8 grouped GEMM (per-tensor / block-wise scaling)",
+    "category": "GEMM & MoE Kernels",
+    "notion_page_id": "4b75d7ab1bfc40239d6b9566c5d6fc14",
+    "notion_url": "https://app.notion.com/p/4b75d7ab1bfc40239d6b9566c5d6fc14",
+    "reference": "https://github.com/Tencent/hpc-ops",
+    "source": [
+      "HPC-Ops"
+    ]
+  },
+  {
+    "id": "30",
+    "slug": "30-fp8-fp4-bf16-dense-gemm-ue8m0-scaling-layout",
+    "technique": "FP8/FP4/BF16 dense GEMM + UE8M0 scaling layout",
+    "category": "GEMM & MoE Kernels",
+    "notion_page_id": "eedb72bc30e14aa8ba49b28b4344d0b9",
+    "notion_url": "https://app.notion.com/p/eedb72bc30e14aa8ba49b28b4344d0b9",
+    "reference": "https://github.com/deepseek-ai/DeepGEMM",
+    "source": [
+      "DeepGEMM"
+    ]
+  },
+  {
+    "id": "31",
+    "slug": "31-fused-fp8-moe-low-latency-pipeline",
+    "technique": "Fused FP8 MoE low-latency pipeline",
+    "category": "GEMM & MoE Kernels",
+    "notion_page_id": "4d0436aff16240398bbe1c41ab56d5ad",
+    "notion_url": "https://app.notion.com/p/4d0436aff16240398bbe1c41ab56d5ad",
+    "reference": "https://github.com/Tencent/hpc-ops",
+    "source": [
+      "HPC-Ops"
+    ]
+  },
+  {
+    "id": "32",
+    "slug": "32-k-axis-grouped-gemm-moe-weight-backward",
+    "technique": "K-axis grouped GEMM (MoE weight backward)",
+    "category": "GEMM & MoE Kernels",
+    "notion_page_id": "56c25e6b3cbe4425b251e2b59530b802",
+    "notion_url": "https://app.notion.com/p/56c25e6b3cbe4425b251e2b59530b802",
+    "reference": "https://github.com/deepseek-ai/DeepGEMM",
+    "source": [
+      "DeepGEMM"
+    ]
+  },
+  {
+    "id": "33",
+    "slug": "33-m-axis-grouped-gemm-contiguous-layout",
+    "technique": "M-axis grouped GEMM (contiguous layout)",
+    "category": "GEMM & MoE Kernels",
+    "notion_page_id": "3e1e63852a934fad8b5d53773913bce5",
+    "notion_url": "https://app.notion.com/p/3e1e63852a934fad8b5d53773913bce5",
+    "reference": "https://github.com/deepseek-ai/DeepGEMM",
+    "source": [
+      "DeepGEMM"
+    ]
+  },
+  {
+    "id": "34",
+    "slug": "34-masked-grouped-gemm-cuda-graph-friendly",
+    "technique": "Masked grouped GEMM (CUDA Graph friendly)",
+    "category": "GEMM & MoE Kernels",
+    "notion_page_id": "d8af0edc72e64994bbb502dc9a3bfcea",
+    "notion_url": "https://app.notion.com/p/d8af0edc72e64994bbb502dc9a3bfcea",
+    "reference": "https://github.com/deepseek-ai/DeepGEMM",
+    "source": [
+      "DeepGEMM",
+      "DeepEP"
+    ]
+  },
+  {
+    "id": "35",
+    "slug": "35-mega-moe-fused-megakernel",
+    "technique": "Mega MoE fused MegaKernel",
+    "category": "GEMM & MoE Kernels",
+    "notion_page_id": "77562a16a085453aa50e5744e3382f7e",
+    "notion_url": "https://app.notion.com/p/77562a16a085453aa50e5744e3382f7e",
+    "reference": "https://github.com/deepseek-ai/DeepGEMM",
+    "source": [
+      "DeepGEMM"
+    ]
+  },
+  {
+    "id": "36",
+    "slug": "36-route-gemm-bf16-x-fp32-via-dual-bf16-split",
+    "technique": "Route GEMM (BF16 x FP32 via dual-BF16 split)",
+    "category": "GEMM & MoE Kernels",
+    "notion_page_id": "1ca14bb9a0ce4d439cc9a0686b60a02d",
+    "notion_url": "https://app.notion.com/p/1ca14bb9a0ce4d439cc9a0686b60a02d",
+    "reference": "https://github.com/Tencent/hpc-ops",
+    "source": [
+      "HPC-Ops"
+    ]
+  },
+  {
+    "id": "37",
+    "slug": "37-ascend-super-operator-fusion",
+    "technique": "Ascend · super-operator fusion (MLAPO / Sparse FA / MoE Mega-Fusion)",
+    "category": "Kernel Fusion & Runtime",
+    "notion_page_id": "5926e0ea48474805988cb4d1419bac18",
+    "notion_url": "https://app.notion.com/p/5926e0ea48474805988cb4d1419bac18",
+    "reference": "https://arxiv.org/abs/2602.15763",
+    "source": [
+      "GLM-5 series"
+    ]
+  },
+  {
+    "id": "38",
+    "slug": "38-cuda-graphs",
+    "technique": "CUDA Graphs (full-iteration / per-layer / TE graphed callables)",
+    "category": "Kernel Fusion & Runtime",
+    "notion_page_id": "7d97c06866b54afdb590597a7dc39756",
+    "notion_url": "https://app.notion.com/p/7d97c06866b54afdb590597a7dc39756",
+    "reference": "https://docs.nvidia.com/megatron-core/developer-guide/latest/user-guide/features/cuda_graph.html",
+    "source": [
+      "Megatron-LM / MCore",
+      "TransformerEngine"
+    ]
+  },
+  {
+    "id": "39",
+    "slug": "39-deepjit-runtime-compilation-pdl-determinism",
+    "technique": "DeepJIT runtime compilation + PDL + determinism switches",
+    "category": "Kernel Fusion & Runtime",
+    "notion_page_id": "1ebac796b72b428f9c32afc18e7b5fd4",
+    "notion_url": "https://app.notion.com/p/1ebac796b72b428f9c32afc18e7b5fd4",
+    "reference": "https://github.com/deepseek-ai/DeepGEMM",
+    "source": [
+      "DeepGEMM"
+    ]
+  },
+  {
+    "id": "40",
+    "slug": "40-fused-sampler-decode-post-processing-fusion",
+    "technique": "Fused Sampler (decode post-processing fusion)",
+    "category": "Kernel Fusion & Runtime",
+    "notion_page_id": "3070daaed63740e3be901cba2641e152",
+    "notion_url": "https://app.notion.com/p/3070daaed63740e3be901cba2641e152",
+    "reference": "https://github.com/Tencent/hpc-ops",
+    "source": [
+      "HPC-Ops"
+    ]
+  },
+  {
+    "id": "41",
+    "slug": "41-mega-gate-mega-mhc-fused-kernels",
+    "technique": "Mega Gate / Mega mHC fused kernels",
+    "category": "Kernel Fusion & Runtime",
+    "notion_page_id": "0bb7a1acbf924329aab698ccc8c5ffee",
+    "notion_url": "https://app.notion.com/p/0bb7a1acbf924329aab698ccc8c5ffee",
+    "reference": "https://github.com/deepseek-ai/DeepGEMM",
+    "source": [
+      "DeepGEMM",
+      "DeepSeek V4"
+    ]
+  },
+  {
+    "id": "42",
+    "slug": "42-router-permutation-mla-rope-fused-kernels",
+    "technique": "Router / permutation / MLA-RoPE fused kernels",
+    "category": "Kernel Fusion & Runtime",
+    "notion_page_id": "9d82ddbf31244093bc930a84ed679c2d",
+    "notion_url": "https://app.notion.com/p/9d82ddbf31244093bc930a84ed679c2d",
+    "reference": "https://arxiv.org/abs/2603.07685",
+    "source": [
+      "Megatron-LM / MCore",
+      "TransformerEngine"
+    ]
+  },
+  {
+    "id": "43",
+    "slug": "43-tilelang-dsl-batch-invariant-deterministic",
+    "technique": "TileLang DSL + batch-invariant deterministic kernels",
+    "category": "Kernel Fusion & Runtime",
+    "notion_page_id": "22c7e2d5f253481981afb6c6ee06e3f5",
+    "notion_url": "https://app.notion.com/p/22c7e2d5f253481981afb6c6ee06e3f5",
+    "reference": "https://arxiv.org/abs/2606.19348",
+    "source": [
+      "DeepSeek V4"
+    ]
+  },
+  {
+    "id": "44",
+    "slug": "44-ascend-w4a8-w8a8-hybrid-quantization-stack",
+    "technique": "Ascend · W4A8/W8A8 hybrid quantization stack",
+    "category": "Low-Precision & Quantization",
+    "notion_page_id": "38d6d033f1b943b3b79615c26f4f0a2e",
+    "notion_url": "https://app.notion.com/p/38d6d033f1b943b3b79615c26f4f0a2e",
+    "reference": "https://arxiv.org/abs/2602.15763",
+    "source": [
+      "GLM-5 series"
+    ]
+  },
+  {
+    "id": "45",
+    "slug": "45-fp4-qat-mxfp4-expert-weights-indexer-qk-path",
+    "technique": "FP4 QAT (MXFP4 expert weights + indexer QK path)",
+    "category": "Low-Precision & Quantization",
+    "notion_page_id": "ad31c31051744ea2b53ea97c1417ac71",
+    "notion_url": "https://app.notion.com/p/ad31c31051744ea2b53ea97c1417ac71",
+    "reference": "https://arxiv.org/abs/2606.19348",
+    "source": [
+      "DeepSeek V4"
+    ]
+  },
+  {
+    "id": "46",
+    "slug": "46-fp8-training-and-fp8-activation-compression",
+    "technique": "FP8 training (per-tensor / blockwise) and FP8 activation compression",
+    "category": "Low-Precision & Quantization",
+    "notion_page_id": "8406549e9fd645e49d2f2e90a838f1bd",
+    "notion_url": "https://app.notion.com/p/8406549e9fd645e49d2f2e90a838f1bd",
+    "reference": "https://github.com/NVIDIA/TransformerEngine",
+    "source": [
+      "TransformerEngine",
+      "Megatron-LM / MCore",
+      "Kimi K2"
+    ]
+  },
+  {
+    "id": "47",
+    "slug": "47-mxfp8-micro-scaling-training",
+    "technique": "MXFP8 micro-scaling training",
+    "category": "Low-Precision & Quantization",
+    "notion_page_id": "02c9479032474c7e8e387fb2e6b7a964",
+    "notion_url": "https://app.notion.com/p/02c9479032474c7e8e387fb2e6b7a964",
+    "reference": "https://arxiv.org/abs/2506.08027",
+    "source": [
+      "TransformerEngine"
+    ]
+  },
+  {
+    "id": "48",
+    "slug": "48-nvfp4-pretraining-recipe",
+    "technique": "NVFP4 pretraining recipe",
+    "category": "Low-Precision & Quantization",
+    "notion_page_id": "eae9504538664595866784566f5d14cd",
+    "notion_url": "https://app.notion.com/p/eae9504538664595866784566f5d14cd",
+    "reference": "https://arxiv.org/abs/2509.25149",
+    "source": [
+      "TransformerEngine",
+      "Megatron-LM / MCore"
+    ]
+  },
+  {
+    "id": "49",
+    "slug": "49-precision-aware-optimizer",
+    "technique": "Precision-aware optimizer (BF16/FP8 optimizer states)",
+    "category": "Low-Precision & Quantization",
+    "notion_page_id": "893ccbb87b354e7e8fedbc0a18ca7117",
+    "notion_url": "https://app.notion.com/p/893ccbb87b354e7e8fedbc0a18ca7117",
+    "reference": "https://github.com/NVIDIA/Megatron-LM/blob/main/megatron/core/transformer/moe/README.md",
+    "source": [
+      "Megatron-LM / MCore",
+      "TransformerEngine"
+    ]
+  },
+  {
+    "id": "50",
+    "slug": "50-distributed-checkpointing-and-elastic-resource",
+    "technique": "Distributed checkpointing and elastic-resource training",
+    "category": "Memory & Offload Scheduling",
+    "notion_page_id": "a065908961604600811834b0c1800744",
+    "notion_url": "https://app.notion.com/p/a065908961604600811834b0c1800744",
+    "reference": "https://github.com/ByteDance-Seed/VeOmni",
+    "source": [
+      "VeOmni",
+      "Kimi K2"
+    ]
+  },
+  {
+    "id": "51",
+    "slug": "51-dynamic-batching-sequence-packing",
+    "technique": "Dynamic batching / sequence packing",
+    "category": "Memory & Offload Scheduling",
+    "notion_page_id": "5cfd3adb77f74e0c8d09435a3af5d9b3",
+    "notion_url": "https://app.notion.com/p/5cfd3adb77f74e0c8d09435a3af5d9b3",
+    "reference": "https://arxiv.org/abs/2508.02317",
+    "source": [
+      "VeOmni",
+      "Megatron-LM / MCore",
+      "GLM-5 series"
+    ]
+  },
+  {
+    "id": "52",
+    "slug": "52-fine-grained-selective-recomputation",
+    "technique": "Fine-grained selective recomputation",
+    "category": "Memory & Offload Scheduling",
+    "notion_page_id": "2e31e16f18ce45edba1e3d9058756c08",
+    "notion_url": "https://app.notion.com/p/2e31e16f18ce45edba1e3d9058756c08",
+    "reference": "https://arxiv.org/abs/2603.07685",
+    "source": [
+      "Megatron-LM / MCore"
+    ]
+  },
+  {
+    "id": "53",
+    "slug": "53-memory-efficient-token-permutation",
+    "technique": "Memory-efficient token permutation",
+    "category": "Memory & Offload Scheduling",
+    "notion_page_id": "3a91e54ff5c7400e9b2e65e0ba6479f5",
+    "notion_url": "https://app.notion.com/p/3a91e54ff5c7400e9b2e65e0ba6479f5",
+    "reference": "https://github.com/NVIDIA/Megatron-LM/blob/main/megatron/core/transformer/moe/README.md",
+    "source": [
+      "Megatron-LM / MCore"
+    ]
+  },
+  {
+    "id": "54",
+    "slug": "54-pipeline-aware-activation-optimizer-offload",
+    "technique": "Pipeline-aware activation / optimizer offload",
+    "category": "Memory & Offload Scheduling",
+    "notion_page_id": "431ab65669934bd2af65da396bb96f7f",
+    "notion_url": "https://app.notion.com/p/431ab65669934bd2af65da396bb96f7f",
+    "reference": "https://arxiv.org/abs/2603.07685",
+    "source": [
+      "Megatron-LM / MCore",
+      "Kimi K2",
+      "Kimi K3"
+    ]
+  },
+  {
+    "id": "55",
+    "slug": "55-loss-free-balance-routing-sigmoid-gating",
+    "technique": "Loss-free balance routing + sigmoid gating",
+    "category": "MoE & Routing",
+    "notion_page_id": "efa722c88bed4a4cb1baa6d8d0a0d6fa",
+    "notion_url": "https://app.notion.com/p/efa722c88bed4a4cb1baa6d8d0a0d6fa",
+    "reference": "https://arxiv.org/abs/2508.06471",
+    "source": [
+      "GLM-4.5",
+      "DeepSeek V3.2",
+      "Megatron-LM / MCore"
+    ]
+  },
+  {
+    "id": "56",
+    "slug": "56-quantile-balancing",
+    "technique": "Quantile Balancing",
+    "category": "MoE & Routing",
+    "notion_page_id": "b59b1fb31a654c95a2957772ad9e4d92",
+    "notion_url": "https://app.notion.com/p/b59b1fb31a654c95a2957772ad9e4d92",
+    "reference": "https://arxiv.org/abs/2607.24653",
+    "source": [
+      "Kimi K3"
+    ]
+  },
+  {
+    "id": "57",
+    "slug": "57-stable-latentmoe",
+    "technique": "Stable LatentMoE",
+    "category": "MoE & Routing",
+    "notion_page_id": "fafccf6521d44c569d9d5cfad419049f",
+    "notion_url": "https://app.notion.com/p/fafccf6521d44c569d9d5cfad419049f",
+    "reference": "https://arxiv.org/abs/2607.24653",
+    "source": [
+      "Kimi K3"
+    ]
+  },
+  {
+    "id": "58",
+    "slug": "58-ultra-sparse-moe",
+    "technique": "Ultra-sparse MoE (fine-grained routed experts + shared expert)",
+    "category": "MoE & Routing",
+    "notion_page_id": "b2283eba9cf14a8fb2fa3f7b2ba4127f",
+    "notion_url": "https://app.notion.com/p/b2283eba9cf14a8fb2fa3f7b2ba4127f",
+    "reference": "https://arxiv.org/abs/2606.19348",
+    "source": [
+      "DeepSeek V4",
+      "Kimi K2",
+      "GLM-5 series"
+    ]
+  },
+  {
+    "id": "59",
+    "slug": "59-attention-residuals-attnres-block-attnres",
+    "technique": "Attention Residuals (AttnRes / Block AttnRes)",
+    "category": "Model Shape & Depth Scaling",
+    "notion_page_id": "8b86f64fd2d44d4bac732d2321f7722a",
+    "notion_url": "https://app.notion.com/p/8b86f64fd2d44d4bac732d2321f7722a",
+    "reference": "https://arxiv.org/abs/2603.15031",
+    "source": [
+      "Kimi K3"
+    ]
+  },
+  {
+    "id": "60",
+    "slug": "60-deep-and-narrow-more-attention-heads-partial",
+    "technique": "Deep-and-narrow + more attention heads + partial RoPE",
+    "category": "Model Shape & Depth Scaling",
+    "notion_page_id": "ba32c8b828d748ea9f32a65e15598576",
+    "notion_url": "https://app.notion.com/p/ba32c8b828d748ea9f32a65e15598576",
+    "reference": "https://arxiv.org/abs/2508.06471",
+    "source": [
+      "GLM-4.5"
+    ]
+  },
+  {
+    "id": "61",
+    "slug": "61-mhc-manifold-constrained-hyper-connections",
+    "technique": "mHC: manifold-constrained hyper-connections",
+    "category": "Model Shape & Depth Scaling",
+    "notion_page_id": "99ccc6cd324244c0bf114f19b5440674",
+    "notion_url": "https://app.notion.com/p/99ccc6cd324244c0bf114f19b5440674",
+    "reference": "https://arxiv.org/abs/2512.24880",
+    "source": [
+      "DeepSeek V4",
+      "GLM-5 series"
+    ]
+  },
+  {
+    "id": "62",
+    "slug": "62-mtp-multi-token-prediction-layer",
+    "technique": "MTP (multi-token prediction) layer",
+    "category": "Model Shape & Depth Scaling",
+    "notion_page_id": "354b71e013554721a039936a8fff8b2a",
+    "notion_url": "https://app.notion.com/p/354b71e013554721a039936a8fff8b2a",
+    "reference": "https://arxiv.org/abs/2508.06471",
+    "source": [
+      "DeepSeek V4",
+      "GLM-4.5",
+      "GLM-5 series",
+      "Megatron-LM / MCore"
+    ]
+  },
+  {
+    "id": "63",
+    "slug": "63-anticipatory-routing",
+    "technique": "Anticipatory routing (asynchronous router parameters)",
+    "category": "Optimizer & Stability",
+    "notion_page_id": "ecc924eb12db4b0fa39609cf42a53369",
+    "notion_url": "https://app.notion.com/p/ecc924eb12db4b0fa39609cf42a53369",
+    "reference": "https://arxiv.org/abs/2606.19348",
+    "source": [
+      "DeepSeek V4"
+    ]
+  },
+  {
+    "id": "64",
+    "slug": "64-distributed-engineering-of-muon-at-scale",
+    "technique": "Distributed engineering of Muon at scale",
+    "category": "Optimizer & Stability",
+    "notion_page_id": "9069ea0863a741658d052a19a186169b",
+    "notion_url": "https://app.notion.com/p/9069ea0863a741658d052a19a186169b",
+    "reference": "https://arxiv.org/abs/2606.19348",
+    "source": [
+      "DeepSeek V4",
+      "GLM-5 series"
+    ]
+  },
+  {
+    "id": "65",
+    "slug": "65-muonclip-muon-qk-clip",
+    "technique": "MuonClip (Muon + QK-Clip)",
+    "category": "Optimizer & Stability",
+    "notion_page_id": "63cf5bee70464919acbac2e6ed917cdd",
+    "notion_url": "https://app.notion.com/p/63cf5bee70464919acbac2e6ed917cdd",
+    "reference": "https://arxiv.org/abs/2507.20534",
+    "source": [
+      "Kimi K2"
+    ]
+  },
+  {
+    "id": "66",
+    "slug": "66-qk-norm",
+    "technique": "QK-Norm",
+    "category": "Optimizer & Stability",
+    "notion_page_id": "319387d19fc64c6d8079c56a5c3b7a69",
+    "notion_url": "https://app.notion.com/p/319387d19fc64c6d8079c56a5c3b7a69",
+    "reference": "https://arxiv.org/abs/2508.06471",
+    "source": [
+      "GLM-4.5"
+    ]
+  },
+  {
+    "id": "67",
+    "slug": "67-asymmetric-vpp-custom-pipeline-layout",
+    "technique": "Asymmetric VPP / custom pipeline layout",
+    "category": "Parallelism Strategy",
+    "notion_page_id": "0b667c3fda7240be99b87c3b35fdcfcd",
+    "notion_url": "https://app.notion.com/p/0b667c3fda7240be99b87c3b35fdcfcd",
+    "reference": "https://github.com/NVIDIA/Megatron-LM/blob/main/megatron/core/transformer/moe/README.md",
+    "source": [
+      "Megatron-LM / MCore"
+    ]
+  },
+  {
+    "id": "68",
+    "slug": "68-context-parallelism-dynamic-cp",
+    "technique": "Context Parallelism / Dynamic CP",
+    "category": "Parallelism Strategy",
+    "notion_page_id": "82d104d9bcc74fab931db687fed76e81",
+    "notion_url": "https://app.notion.com/p/82d104d9bcc74fab931db687fed76e81",
+    "reference": "https://github.com/NVIDIA/Megatron-LM/blob/main/docs/user-guide/features/context_parallel.md",
+    "source": [
+      "Megatron-LM / MCore",
+      "TransformerEngine"
+    ]
+  },
+  {
+    "id": "69",
+    "slug": "69-kda-context-parallelism-kcp",
+    "technique": "KDA Context Parallelism (KCP)",
+    "category": "Parallelism Strategy",
+    "notion_page_id": "a5e78a14357748deb3032985bef70062",
+    "notion_url": "https://app.notion.com/p/a5e78a14357748deb3032985bef70062",
+    "reference": "https://arxiv.org/abs/2607.24653",
+    "source": [
+      "Kimi K3"
+    ]
+  },
+  {
+    "id": "70",
+    "slug": "70-megatron-fsdp-hsdp-with-ep-support",
+    "technique": "Megatron-FSDP / HSDP (with EP support)",
+    "category": "Parallelism Strategy",
+    "notion_page_id": "bbdbb22301864a05bcbc8e4097a6b284",
+    "notion_url": "https://app.notion.com/p/bbdbb22301864a05bcbc8e4097a6b284",
+    "reference": "https://github.com/NVIDIA/Megatron-LM/blob/main/megatron/core/transformer/moe/README.md",
+    "source": [
+      "Megatron-LM / MCore"
+    ]
+  },
+  {
+    "id": "71",
+    "slug": "71-moe-parallel-folding",
+    "technique": "MoE Parallel Folding",
+    "category": "Parallelism Strategy",
+    "notion_page_id": "ef4d75b8eee841a79ada63b79bff78d8",
+    "notion_url": "https://app.notion.com/p/ef4d75b8eee841a79ada63b79bff78d8",
+    "reference": "https://arxiv.org/abs/2603.07685",
+    "source": [
+      "Megatron-LM / MCore"
+    ]
+  }
+]

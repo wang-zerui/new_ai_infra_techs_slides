@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="286pt" viewBox="0 0 870 286" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_dial: sparsity number line -->
+<text x="435.0" y="24.0" text-anchor="middle" font-size="20" fill="#222222" font-weight="bold" font-style="normal">sparsity = routed experts ÷ routed experts per token</text>
+<line x1="60.0" y1="164.0" x2="863.7" y2="164.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<circle cx="151.2" cy="164" r="9" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="2"/>
+<text x="151.2" y="198.0" text-anchor="middle" font-size="19" fill="#7F7F7F" font-weight="normal" font-style="normal">8</text>
+<circle cx="242.4" cy="164" r="9" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="2"/>
+<text x="242.4" y="198.0" text-anchor="middle" font-size="19" fill="#7F7F7F" font-weight="normal" font-style="normal">16</text>
+<circle cx="424.8" cy="164" r="9" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="2"/>
+<text x="424.8" y="198.0" text-anchor="middle" font-size="19" fill="#7F7F7F" font-weight="normal" font-style="normal">32</text>
+<circle cx="607.2" cy="164" r="9" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="2"/>
+<text x="607.2" y="198.0" text-anchor="middle" font-size="19" fill="#7F7F7F" font-weight="normal" font-style="normal">48</text>
+<circle cx="789.6" cy="164" r="9" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="2"/>
+<text x="789.6" y="198.0" text-anchor="middle" font-size="19" fill="#7F7F7F" font-weight="normal" font-style="normal">64</text>
+<circle cx="68.0" cy="64" r="9" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="2"/>
+<text x="86.0" y="70.0" text-anchor="start" font-size="18" fill="#7F7F7F" font-weight="normal" font-style="normal">K2 sweep</text>
+<circle cx="68.0" cy="94" r="5.5" fill="#1F4E79" stroke="#1F4E79" stroke-width="1.5"/>
+<text x="86.0" y="100.0" text-anchor="start" font-size="18" fill="#7F7F7F" font-weight="normal" font-style="normal">model config</text>
+<line x1="424.8" y1="132.0" x2="424.8" y2="153.0" stroke="#1F4E79" stroke-width="1.6"/>
+<circle cx="424.8" cy="164" r="5.5" fill="#1F4E79" stroke="#1F4E79" stroke-width="1.5"/>
+<text x="424.8" y="101.0" text-anchor="middle" font-size="19" fill="#7F7F7F" font-weight="bold" font-style="normal">DeepSeek-V3</text>
+<text x="424.8" y="124.0" text-anchor="middle" font-size="19" fill="#1F4E79" font-weight="bold" font-style="normal">GLM-5</text>
+<line x1="546.4" y1="70.0" x2="546.4" y2="153.0" stroke="#1F4E79" stroke-width="1.6"/>
+<circle cx="546.4" cy="164" r="5.5" fill="#1F4E79" stroke="#1F4E79" stroke-width="1.5"/>
+<text x="546.4" y="62.0" text-anchor="middle" font-size="19" fill="#1F4E79" font-weight="bold" font-style="normal">V4-Flash 42.7</text>
+<line x1="607.2" y1="132.0" x2="607.2" y2="153.0" stroke="#1F4E79" stroke-width="1.6"/>
+<circle cx="607.2" cy="164" r="5.5" fill="#1F4E79" stroke="#1F4E79" stroke-width="1.5"/>
+<text x="607.2" y="124.0" text-anchor="middle" font-size="19" fill="#1F4E79" font-weight="bold" font-style="normal">Kimi K2</text>
+<line x1="789.6" y1="112.0" x2="789.6" y2="153.0" stroke="#1F4E79" stroke-width="1.6"/>
+<circle cx="789.6" cy="164" r="5.5" fill="#1F4E79" stroke="#1F4E79" stroke-width="1.5"/>
+<text x="789.6" y="104.0" text-anchor="middle" font-size="19" fill="#1F4E79" font-weight="bold" font-style="normal">V4-Pro</text>
+<text x="60.0" y="238.0" text-anchor="start" font-size="19" fill="#1F4E79" font-weight="bold" font-style="normal">Lower loss at equal FLOPs</text>
+<line x1="436.2" y1="232.0" x2="858.0" y2="232.0" stroke="#1F4E79" stroke-width="2.6" marker-end="url(#arrAcc)"/>
+<text x="60.0" y="274.0" text-anchor="start" font-size="19" fill="#C00000" font-weight="bold" font-style="normal">More weights to hold and balance</text>
+<line x1="436.2" y1="268.0" x2="858.0" y2="268.0" stroke="#C00000" stroke-width="2.6" marker-end="url(#arrPrb)"/>
+</svg>

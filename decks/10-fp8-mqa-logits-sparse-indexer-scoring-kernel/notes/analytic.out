@@ -1,0 +1,11 @@
+MACs per (query, key) pair: 8,192; FLOPs 16,384
+unfused bytes per (query,key): 256 B vs fused 4 B -> 64x
+one 4K-query chunk vs 128K keys: unfused 128 GiB vs fused 2 GiB (FP32)
+H=32: block_q = 4 tokens per Q tile
+H=64: block_q = 2 tokens per Q tile
+key bytes: FP8 132 B, MXFP4 68 B -> 1.94x fewer
+decode read per request per layer at 128K: FP8 17.3 MB, FP4 8.9 MB; at 4.8 TB/s: 3.6 us vs 1.9 us
+decode intensity (next_n=1): 124 FLOP/B; next_n=2: 248 FLOP/B; H200 ridge 412 FLOP/B (1,979 TFLOPS dense FP8 / 4.8 TB/s)
+PR #452 before/after as % of 1,979 TFLOPS: ['51%/55%', '53%/57%', '48%/50%', '50%/52%']
+gains: ['+7.4%', '+8.1%', '+5.1%', '+4.8%']
+FP32 logits 4K x 128K = 2 GiB; BF16 = 1 GiB

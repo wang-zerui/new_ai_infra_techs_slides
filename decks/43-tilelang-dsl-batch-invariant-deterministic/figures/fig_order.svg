@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="270pt" viewBox="0 0 870 270" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_order -->
+<text x="205.0" y="22.0" text-anchor="middle" font-size="19" fill="#222222" font-weight="bold" font-style="normal">Small batch: split-K over 4 SMs</text>
+<rect x="28.0" y="44.0" width="62.0" height="32.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.8" />
+<text x="59.0" y="66.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">K0</text>
+<rect x="136.0" y="44.0" width="62.0" height="32.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.8" />
+<text x="167.0" y="66.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">K1</text>
+<rect x="244.0" y="44.0" width="62.0" height="32.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.8" />
+<text x="275.0" y="66.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">K2</text>
+<rect x="352.0" y="44.0" width="62.0" height="32.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.8" />
+<text x="383.0" y="66.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">K3</text>
+<text x="59.0" y="96.0" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">SM0</text>
+<text x="167.0" y="96.0" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">SM1</text>
+<text x="275.0" y="96.0" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">SM2</text>
+<text x="383.0" y="96.0" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">SM3</text>
+<path d="M59.0,104 L59.0,136 L100.0,136" fill="none" stroke="#222222" stroke-width="2"/>
+<path d="M167.0,104 L167.0,136 L126.0,136" fill="none" stroke="#222222" stroke-width="2"/>
+<circle cx="113.0" cy="136.0" r="13" fill="#FFFFFF" stroke="#222222" stroke-width="2"/>
+<text x="113.0" y="143.2" text-anchor="middle" font-size="20" fill="#222222" font-weight="bold" font-style="normal">+</text>
+<path d="M275.0,104 L275.0,136 L316.0,136" fill="none" stroke="#222222" stroke-width="2"/>
+<path d="M383.0,104 L383.0,136 L342.0,136" fill="none" stroke="#222222" stroke-width="2"/>
+<circle cx="329.0" cy="136.0" r="13" fill="#FFFFFF" stroke="#222222" stroke-width="2"/>
+<text x="329.0" y="143.2" text-anchor="middle" font-size="20" fill="#222222" font-weight="bold" font-style="normal">+</text>
+<path d="M113.0,149 L113.0,188 L192,188" fill="none" stroke="#222222" stroke-width="2"/>
+<path d="M329.0,149 L329.0,188 L218,188" fill="none" stroke="#222222" stroke-width="2"/>
+<circle cx="205.0" cy="188.0" r="13" fill="#FFFFFF" stroke="#222222" stroke-width="2"/>
+<text x="205.0" y="195.2" text-anchor="middle" font-size="20" fill="#222222" font-weight="bold" font-style="normal">+</text>
+<line x1="205.0" y1="201.0" x2="205.0" y2="226.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="165.0" y="228.0" width="80.0" height="36.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="205.0" y="253.0" text-anchor="middle" font-size="20" fill="#222222" font-weight="bold" font-style="normal">y</text>
+<line x1="432.0" y1="10.0" x2="432.0" y2="206.0" stroke="#BFBFBF" stroke-width="1.2"/>
+<text x="655.0" y="22.0" text-anchor="middle" font-size="19" fill="#222222" font-weight="bold" font-style="normal">Large batch: one SM, K in order</text>
+<rect x="478.0" y="44.0" width="62.0" height="32.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.8" />
+<text x="509.0" y="66.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">K0</text>
+<rect x="586.0" y="44.0" width="62.0" height="32.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.8" />
+<text x="617.0" y="66.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">K1</text>
+<rect x="694.0" y="44.0" width="62.0" height="32.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.8" />
+<text x="725.0" y="66.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">K2</text>
+<rect x="802.0" y="44.0" width="62.0" height="32.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.8" />
+<text x="833.0" y="66.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">K3</text>
+<line x1="509.0" y1="78.0" x2="509.0" y2="126.0" stroke="#222222" stroke-width="2"/>
+<line x1="509.0" y1="126.0" x2="604.0" y2="126.0" stroke="#222222" stroke-width="2"/>
+<line x1="617.0" y1="78.0" x2="617.0" y2="113.0" stroke="#222222" stroke-width="2"/>
+<circle cx="617.0" cy="126.0" r="13" fill="#FFFFFF" stroke="#222222" stroke-width="2"/>
+<text x="617.0" y="133.2" text-anchor="middle" font-size="20" fill="#222222" font-weight="bold" font-style="normal">+</text>
+<path d="M617.0,139 L617.0,160 L712.0,160" fill="none" stroke="#222222" stroke-width="2"/>
+<line x1="725.0" y1="78.0" x2="725.0" y2="147.0" stroke="#222222" stroke-width="2"/>
+<circle cx="725.0" cy="160.0" r="13" fill="#FFFFFF" stroke="#222222" stroke-width="2"/>
+<text x="725.0" y="167.2" text-anchor="middle" font-size="20" fill="#222222" font-weight="bold" font-style="normal">+</text>
+<path d="M725.0,173 L725.0,194 L820.0,194" fill="none" stroke="#222222" stroke-width="2"/>
+<line x1="833.0" y1="78.0" x2="833.0" y2="181.0" stroke="#222222" stroke-width="2"/>
+<circle cx="833.0" cy="194.0" r="13" fill="#FFFFFF" stroke="#222222" stroke-width="2"/>
+<text x="833.0" y="201.2" text-anchor="middle" font-size="20" fill="#222222" font-weight="bold" font-style="normal">+</text>
+<path d="M833.0,207 L833.0,214 L695,214 L695,226" fill="none" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="655.0" y="228.0" width="80.0" height="36.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="695.0" y="253.0" text-anchor="middle" font-size="20" fill="#222222" font-weight="bold" font-style="normal">y′</text>
+<line x1="250.0" y1="250.0" x2="650.0" y2="250.0" stroke="#C00000" stroke-width="2.4" stroke-dasharray="7,5"/>
+<text x="450.0" y="234.0" text-anchor="middle" font-size="18" fill="#C00000" font-weight="bold" font-style="normal" paint-order="stroke" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round">different rounding: y ≠ y′</text>
+</svg>

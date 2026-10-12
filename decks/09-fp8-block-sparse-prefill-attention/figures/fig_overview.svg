@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="276pt" viewBox="0 0 870 276" font-family="Helvetica, Arial, sans-serif">
+  <!-- fig_overview: Stem mask -> uint8 block mask -> persistent FP8 block-sparse kernel (slide figure, 1 unit = 1pt) -->
+  <defs>
+    <marker id="a_neu" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+    <marker id="a_ink" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+    <marker id="a_prb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+    <marker id="a_acc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+    <marker id="a_good" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2E7D32"/></marker>
+    <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="1.6"/></pattern>
+    <pattern id="hatchNeu" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="1.6"/></pattern>
+  </defs>
+  <rect x="4.0" y="156.0" width="128.0" height="60.0" rx="4" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="1.5" />
+  <text x="68.0" y="181.7" font-size="18" fill="#222222" text-anchor="middle">Q · K · V</text>
+  <text x="68.0" y="202.9" font-size="18" fill="#222222" text-anchor="middle">FP8, paged</text>
+  <line x1="133.0" y1="186.0" x2="160.0" y2="186.0" stroke="#7F7F7F" stroke-width="2" marker-end="url(#a_neu)"/>
+  <rect x="162.0" y="156.0" width="140.0" height="60.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+  <text x="232.0" y="181.7" font-size="18" fill="#1F4E79" text-anchor="middle">Stem mask</text>
+  <text x="232.0" y="202.9" font-size="18" fill="#1F4E79" text-anchor="middle">generator</text>
+  <circle cx="162.0" cy="156.0" r="13" fill="#1F4E79"/>
+  <text x="162.0" y="161.2" font-size="15" fill="#FFFFFF" text-anchor="middle" font-weight="bold">1</text>
+  <line x1="303.0" y1="186.0" x2="330.0" y2="186.0" stroke="#1F4E79" stroke-width="2.2" marker-end="url(#a_acc)"/>
+  <path d="M332,152 L468,152 L482,166 L482,220 L332,220 z" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2"/>
+  <path d="M468,152 L468,166 L482,166" fill="none" stroke="#1F4E79" stroke-width="1.5"/>
+  <text x="407.0" y="180.0" font-size="18" fill="#1F4E79" text-anchor="middle" font-weight="bold">Block mask</text>
+  <text x="407.0" y="203.0" font-size="16" fill="#222222" text-anchor="middle">uint8 per Q head</text>
+  <rect x="514.0" y="6.0" width="352.0" height="262.0" rx="6" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.8" stroke-dasharray="6,4" />
+  <text x="526.0" y="30.0" font-size="17" fill="#1F4E79" text-anchor="start" font-weight="bold">Persistent FP8 kernel, 1 CTA per SM</text>
+  <line x1="483.0" y1="186.0" x2="530.0" y2="186.0" stroke="#1F4E79" stroke-width="2.2" marker-end="url(#a_acc)"/>
+  <rect x="532.0" y="156.0" width="220.0" height="60.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+  <text x="642.0" y="181.7" font-size="18" fill="#1F4E79" text-anchor="middle">Producer warp</text>
+  <text x="642.0" y="202.9" font-size="18" fill="#1F4E79" text-anchor="middle">tile list · TMA loads</text>
+  <circle cx="532.0" cy="156.0" r="13" fill="#1F4E79"/>
+  <text x="532.0" y="161.2" font-size="15" fill="#FFFFFF" text-anchor="middle" font-weight="bold">2</text>
+  <rect x="532.0" y="66.0" width="220.0" height="60.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+  <text x="642.0" y="91.7" font-size="18" fill="#1F4E79" text-anchor="middle">2 consumer warpgroups</text>
+  <text x="642.0" y="112.9" font-size="18" fill="#1F4E79" text-anchor="middle">FP8 wgmma · softmax</text>
+  <circle cx="532.0" cy="66.0" r="13" fill="#1F4E79"/>
+  <text x="532.0" y="71.2" font-size="15" fill="#FFFFFF" text-anchor="middle" font-weight="bold">3</text>
+  <line x1="642.0" y1="155.0" x2="642.0" y2="128.0" stroke="#1F4E79" stroke-width="2.2" marker-end="url(#a_acc)"/>
+  <text x="652.0" y="146.0" font-size="16" fill="#1F4E79" text-anchor="start">kept K/V tiles</text>
+  <line x1="753.0" y1="96.0" x2="772.0" y2="96.0" stroke="#1F4E79" stroke-width="2.2" marker-end="url(#a_acc)"/>
+  <rect x="774.0" y="74.0" width="84.0" height="44.0" rx="4" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="1.5" />
+  <text x="816.0" y="102.3" font-size="18" fill="#222222" text-anchor="middle">O BF16</text>
+  <path d="M68,217 L68,252 L600,252 L600,219" stroke="#7F7F7F" stroke-width="2" fill="none" marker-end="url(#a_neu)"/>
+  <text x="300.0" y="246.0" font-size="16" fill="#595959" text-anchor="middle">Q and paged K/V pages</text>
+</svg>

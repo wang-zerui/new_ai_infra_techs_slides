@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="300pt" viewBox="0 0 870 300" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_sfa: Sparse Flash Attention gathers the selected KV rows and attends -->
+<rect x="30.0" y="50.0" width="104.0" height="19.0" rx="2" fill="#FFFFFF" stroke="#B0B0B0" stroke-width="1.4" />
+<rect x="30.0" y="72.0" width="104.0" height="19.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.4" />
+<rect x="30.0" y="94.0" width="104.0" height="19.0" rx="2" fill="#FFFFFF" stroke="#B0B0B0" stroke-width="1.4" />
+<rect x="30.0" y="116.0" width="104.0" height="19.0" rx="2" fill="#FFFFFF" stroke="#B0B0B0" stroke-width="1.4" />
+<rect x="30.0" y="138.0" width="104.0" height="19.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.4" />
+<rect x="30.0" y="160.0" width="104.0" height="19.0" rx="2" fill="#FFFFFF" stroke="#B0B0B0" stroke-width="1.4" />
+<rect x="30.0" y="182.0" width="104.0" height="19.0" rx="2" fill="#FFFFFF" stroke="#B0B0B0" stroke-width="1.4" />
+<rect x="30.0" y="204.0" width="104.0" height="19.0" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.4" />
+<rect x="30.0" y="226.0" width="104.0" height="19.0" rx="2" fill="#FFFFFF" stroke="#B0B0B0" stroke-width="1.4" />
+<text x="82.0" y="18.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="bold" font-style="normal">KV cache</text>
+<text x="82.0" y="38.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="normal">S rows</text>
+<text x="82.0" y="266.0" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">2048 rows selected</text>
+<text x="82.0" y="286.0" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="normal" font-style="normal">by the indexer</text>
+<rect x="176.0" y="36.0" width="680.0" height="176.0" rx="6" fill="#DEEBF7" stroke="#1F4E79" stroke-width="3" />
+<text x="190.0" y="56.0" text-anchor="start" font-size="19" fill="#1F4E79" font-weight="bold" font-style="normal">❸ Sparse Flash Attention  ·  one kernel</text>
+<rect x="200.0" y="62.0" width="160.0" height="46.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2" />
+<text x="280.0" y="90.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">gather tile 1</text>
+<rect x="280.0" y="142.0" width="160.0" height="46.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2" />
+<text x="360.0" y="170.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">attend tile 1</text>
+<line x1="346.0" y1="111.0" x2="302.0" y2="139.0" stroke="#1F4E79" stroke-width="2.2" marker-end="url(#arrAcc)"/>
+<rect x="384.0" y="62.0" width="160.0" height="46.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2" />
+<text x="464.0" y="90.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">gather tile 2</text>
+<rect x="464.0" y="142.0" width="160.0" height="46.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2" />
+<text x="544.0" y="170.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">attend tile 2</text>
+<line x1="530.0" y1="111.0" x2="486.0" y2="139.0" stroke="#1F4E79" stroke-width="2.2" marker-end="url(#arrAcc)"/>
+<rect x="568.0" y="62.0" width="160.0" height="46.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2" />
+<text x="648.0" y="90.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">gather tile 3</text>
+<rect x="648.0" y="142.0" width="160.0" height="46.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2" />
+<text x="728.0" y="170.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">attend tile 3</text>
+<line x1="714.0" y1="111.0" x2="670.0" y2="139.0" stroke="#1F4E79" stroke-width="2.2" marker-end="url(#arrAcc)"/>
+<text x="842.0" y="56.0" text-anchor="end" font-size="16" fill="#1F4E79" font-weight="normal" font-style="italic">gather overlaps attention</text>
+<line x1="138.0" y1="121.0" x2="172.0" y2="121.0" stroke="#1F4E79" stroke-width="2.6" marker-end="url(#arrAcc)"/>
+<line x1="738.0" y1="212.0" x2="738.0" y2="240.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<text x="750.0" y="238.0" text-anchor="start" font-size="17" fill="#222222" font-weight="normal" font-style="normal">attention out</text>
+<text x="200.0" y="238.0" text-anchor="start" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="italic">scores: q_nope · k_nopeᵀ + q_rope · k_ropeᵀ</text>
+</svg>

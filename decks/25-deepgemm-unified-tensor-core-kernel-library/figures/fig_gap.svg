@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="276pt"
+     viewBox="0 0 870 276" font-family="Helvetica, Arial, sans-serif">
+
+  <!-- column headers -->
+  <text x="320" y="26" text-anchor="middle" font-size="20" font-weight="bold" fill="#595959">A BLAS FP8 GEMM call</text>
+  <text x="683" y="26" text-anchor="middle" font-size="20" font-weight="bold" fill="#C00000">One DeepSeek-V4 MoE step</text>
+
+  <!-- row 1: scaling -->
+  <text x="135" y="72" text-anchor="end" font-size="17" fill="#595959">Scaling</text>
+  <rect x="145" y="44" width="350" height="44" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.2"/>
+  <text x="320" y="72" text-anchor="middle" font-size="18" fill="#222222">one scale per tensor</text>
+  <rect x="508" y="44" width="350" height="44" rx="4" fill="#FBE5E5" stroke="#C00000" stroke-width="1.4"/>
+  <text x="683" y="72" text-anchor="middle" font-size="18" fill="#222222">one scale per 1x128 tile along K</text>
+
+  <!-- row 2: shapes -->
+  <text x="135" y="128" text-anchor="end" font-size="17" fill="#595959">Shapes</text>
+  <rect x="145" y="100" width="350" height="44" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.2"/>
+  <text x="320" y="128" text-anchor="middle" font-size="18" fill="#222222">M, N, K fixed on the host</text>
+  <rect x="508" y="100" width="350" height="44" rx="4" fill="#FBE5E5" stroke="#C00000" stroke-width="1.4"/>
+  <text x="683" y="128" text-anchor="middle" font-size="18" fill="#222222">tokens per expert known on the GPU</text>
+
+  <!-- row 3: operands -->
+  <text x="135" y="184" text-anchor="end" font-size="17" fill="#595959">Operands</text>
+  <rect x="145" y="156" width="350" height="44" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.2"/>
+  <text x="320" y="184" text-anchor="middle" font-size="18" fill="#222222">one dtype for A and B</text>
+  <rect x="508" y="156" width="350" height="44" rx="4" fill="#FBE5E5" stroke="#C00000" stroke-width="1.4"/>
+  <text x="683" y="184" text-anchor="middle" font-size="18" fill="#222222">FP8 activations x FP4 weights</text>
+
+  <!-- row 4: surroundings -->
+  <text x="135" y="240" text-anchor="end" font-size="17" fill="#595959">Around it</text>
+  <rect x="145" y="212" width="350" height="44" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.2"/>
+  <text x="320" y="240" text-anchor="middle" font-size="18" fill="#222222">matmul only</text>
+  <rect x="508" y="212" width="350" height="44" rx="4" fill="#FBE5E5" stroke="#C00000" stroke-width="1.4"/>
+  <text x="683" y="240" text-anchor="middle" font-size="18" fill="#222222">EP dispatch, SwiGLU, combine</text>
+</svg>

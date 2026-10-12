@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="284pt" viewBox="0 0 870 284" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_ulysses -->
+<text x="22" y="148" text-anchor="middle" font-size="16" fill="#7F7F7F" transform="rotate(-90 22 148)">sequence S →</text>
+<text x="130.0" y="24.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">before attention</text>
+<text x="130.0" y="50.0" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="normal" font-style="normal" font-family="Menlo, monospace">[S/P, H]</text>
+<rect x="40.0" y="72.0" width="42.0" height="34.0" rx="3" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="61.0" y="94.6" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">G0</text>
+<rect x="86.0" y="72.0" width="42.0" height="34.0" rx="3" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="107.0" y="94.6" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">G0</text>
+<rect x="132.0" y="72.0" width="42.0" height="34.0" rx="3" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="153.0" y="94.6" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">G0</text>
+<rect x="178.0" y="72.0" width="42.0" height="34.0" rx="3" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="199.0" y="94.6" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">G0</text>
+<rect x="40.0" y="110.0" width="42.0" height="34.0" rx="3" fill="#FFFFFF" stroke="#595959" stroke-width="1.4" />
+<text x="61.0" y="132.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">G1</text>
+<rect x="86.0" y="110.0" width="42.0" height="34.0" rx="3" fill="#FFFFFF" stroke="#595959" stroke-width="1.4" />
+<text x="107.0" y="132.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">G1</text>
+<rect x="132.0" y="110.0" width="42.0" height="34.0" rx="3" fill="#FFFFFF" stroke="#595959" stroke-width="1.4" />
+<text x="153.0" y="132.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">G1</text>
+<rect x="178.0" y="110.0" width="42.0" height="34.0" rx="3" fill="#FFFFFF" stroke="#595959" stroke-width="1.4" />
+<text x="199.0" y="132.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">G1</text>
+<rect x="40.0" y="148.0" width="42.0" height="34.0" rx="3" fill="#FFFFFF" stroke="#595959" stroke-width="1.4" />
+<text x="61.0" y="170.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">G2</text>
+<rect x="86.0" y="148.0" width="42.0" height="34.0" rx="3" fill="#FFFFFF" stroke="#595959" stroke-width="1.4" />
+<text x="107.0" y="170.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">G2</text>
+<rect x="132.0" y="148.0" width="42.0" height="34.0" rx="3" fill="#FFFFFF" stroke="#595959" stroke-width="1.4" />
+<text x="153.0" y="170.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">G2</text>
+<rect x="178.0" y="148.0" width="42.0" height="34.0" rx="3" fill="#FFFFFF" stroke="#595959" stroke-width="1.4" />
+<text x="199.0" y="170.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">G2</text>
+<rect x="40.0" y="186.0" width="42.0" height="34.0" rx="3" fill="#FFFFFF" stroke="#595959" stroke-width="1.4" />
+<text x="61.0" y="208.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">G3</text>
+<rect x="86.0" y="186.0" width="42.0" height="34.0" rx="3" fill="#FFFFFF" stroke="#595959" stroke-width="1.4" />
+<text x="107.0" y="208.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">G3</text>
+<rect x="132.0" y="186.0" width="42.0" height="34.0" rx="3" fill="#FFFFFF" stroke="#595959" stroke-width="1.4" />
+<text x="153.0" y="208.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">G3</text>
+<rect x="178.0" y="186.0" width="42.0" height="34.0" rx="3" fill="#FFFFFF" stroke="#595959" stroke-width="1.4" />
+<text x="199.0" y="208.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">G3</text>
+<text x="130.0" y="242.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="normal">heads H →</text>
+<text x="410.0" y="24.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">inside attention</text>
+<text x="410.0" y="50.0" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="normal" font-style="normal" font-family="Menlo, monospace">[S, H/P]</text>
+<rect x="320.0" y="72.0" width="42.0" height="34.0" rx="3" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="341.0" y="94.6" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">G0</text>
+<rect x="366.0" y="72.0" width="42.0" height="34.0" rx="3" fill="#FFFFFF" stroke="#595959" stroke-width="1.4" />
+<text x="387.0" y="94.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">G1</text>
+<rect x="412.0" y="72.0" width="42.0" height="34.0" rx="3" fill="#FFFFFF" stroke="#595959" stroke-width="1.4" />
+<text x="433.0" y="94.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">G2</text>
+<rect x="458.0" y="72.0" width="42.0" height="34.0" rx="3" fill="#FFFFFF" stroke="#595959" stroke-width="1.4" />
+<text x="479.0" y="94.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">G3</text>
+<rect x="320.0" y="110.0" width="42.0" height="34.0" rx="3" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="341.0" y="132.6" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">G0</text>
+<rect x="366.0" y="110.0" width="42.0" height="34.0" rx="3" fill="#FFFFFF" stroke="#595959" stroke-width="1.4" />
+<text x="387.0" y="132.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">G1</text>
+<rect x="412.0" y="110.0" width="42.0" height="34.0" rx="3" fill="#FFFFFF" stroke="#595959" stroke-width="1.4" />
+<text x="433.0" y="132.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">G2</text>
+<rect x="458.0" y="110.0" width="42.0" height="34.0" rx="3" fill="#FFFFFF" stroke="#595959" stroke-width="1.4" />
+<text x="479.0" y="132.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">G3</text>
+<rect x="320.0" y="148.0" width="42.0" height="34.0" rx="3" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="341.0" y="170.6" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">G0</text>
+<rect x="366.0" y="148.0" width="42.0" height="34.0" rx="3" fill="#FFFFFF" stroke="#595959" stroke-width="1.4" />
+<text x="387.0" y="170.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">G1</text>
+<rect x="412.0" y="148.0" width="42.0" height="34.0" rx="3" fill="#FFFFFF" stroke="#595959" stroke-width="1.4" />
+<text x="433.0" y="170.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">G2</text>
+<rect x="458.0" y="148.0" width="42.0" height="34.0" rx="3" fill="#FFFFFF" stroke="#595959" stroke-width="1.4" />
+<text x="479.0" y="170.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">G3</text>
+<rect x="320.0" y="186.0" width="42.0" height="34.0" rx="3" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="341.0" y="208.6" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">G0</text>
+<rect x="366.0" y="186.0" width="42.0" height="34.0" rx="3" fill="#FFFFFF" stroke="#595959" stroke-width="1.4" />
+<text x="387.0" y="208.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">G1</text>
+<rect x="412.0" y="186.0" width="42.0" height="34.0" rx="3" fill="#FFFFFF" stroke="#595959" stroke-width="1.4" />
+<text x="433.0" y="208.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">G2</text>
+<rect x="458.0" y="186.0" width="42.0" height="34.0" rx="3" fill="#FFFFFF" stroke="#595959" stroke-width="1.4" />
+<text x="479.0" y="208.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">G3</text>
+<text x="410.0" y="242.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="normal">heads H →</text>
+<line x1="228.0" y1="146.0" x2="312.0" y2="146.0" stroke="#1F4E79" stroke-width="2.6" marker-end="url(#arrAcc)"/>
+<text x="270.0" y="134.0" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">all-to-all</text>
+<line x1="506.0" y1="146.0" x2="532.0" y2="146.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="534.0" y="72.0" width="146.0" height="148.0" rx="5" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="607.0" y="124.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="bold" font-style="normal">FlashAttention</text>
+<text x="607.0" y="149.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">full sequence</text>
+<text x="607.0" y="174.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">H/P heads</text>
+<line x1="686.0" y1="146.0" x2="770.0" y2="146.0" stroke="#1F4E79" stroke-width="2.6" marker-end="url(#arrAcc)"/>
+<text x="726.0" y="134.0" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">all-to-all</text>
+<rect x="772.0" y="116.0" width="90.0" height="60.0" rx="5" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="817.0" y="142.0" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="normal" font-style="normal" font-family="Menlo, monospace">[S/P, H]</text>
+<text x="817.0" y="166.0" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="normal" font-style="normal">out proj</text>
+<rect x="40.0" y="256.0" width="22.0" height="18.0" rx="3" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="70.0" y="271.0" text-anchor="start" font-size="17" fill="#222222" font-weight="normal" font-style="normal">GPU 0&#x27;s shard (P = 4)</text>
+</svg>

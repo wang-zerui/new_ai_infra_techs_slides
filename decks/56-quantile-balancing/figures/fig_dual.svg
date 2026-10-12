@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="500pt" height="300pt" viewBox="0 0 500 300" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_dual: convex piecewise-linear dual, sign steps vs QB jump (schematic) -->
+<line x1="34.0" y1="236.0" x2="488.0" y2="236.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<line x1="34.0" y1="236.0" x2="34.0" y2="14.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<text x="486.0" y="262.0" text-anchor="end" font-size="18" fill="#222222" font-weight="normal" font-style="normal">expert threshold β = −b</text>
+<text x="22" y="131.0" text-anchor="middle" font-size="18" fill="#222222" transform="rotate(-90 22 131.0)">dual objective</text>
+<line x1="70.0" y1="229.0" x2="70.0" y2="237.0" stroke="#7F7F7F" stroke-width="2"/>
+<line x1="112.0" y1="229.0" x2="112.0" y2="237.0" stroke="#7F7F7F" stroke-width="2"/>
+<line x1="150.0" y1="229.0" x2="150.0" y2="237.0" stroke="#7F7F7F" stroke-width="2"/>
+<line x1="184.0" y1="229.0" x2="184.0" y2="237.0" stroke="#7F7F7F" stroke-width="2"/>
+<line x1="214.0" y1="229.0" x2="214.0" y2="237.0" stroke="#7F7F7F" stroke-width="2"/>
+<line x1="243.0" y1="229.0" x2="243.0" y2="237.0" stroke="#7F7F7F" stroke-width="2"/>
+<line x1="262.0" y1="229.0" x2="262.0" y2="237.0" stroke="#7F7F7F" stroke-width="2"/>
+<line x1="392.0" y1="229.0" x2="392.0" y2="237.0" stroke="#7F7F7F" stroke-width="2"/>
+<text x="48.0" y="222.0" text-anchor="start" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="italic">token margins</text>
+<path d="M 44.0 40.0 L 70.0 74.3 L 112.0 120.5 L 150.0 154.0 L 184.0 176.4 L 214.0 189.6 L 243.0 196.0 L 262.0 196.0 L 392.0 167.4 L 474.0 131.3" fill="none" stroke="#222222" stroke-width="2.6"/>
+<line x1="243.0" y1="200.0" x2="243.0" y2="227.0" stroke="#1F4E79" stroke-width="2" stroke-dasharray="5,4"/>
+<circle cx="243.0" cy="196.0" r="6" fill="#1F4E79" stroke="#1F4E79" stroke-width="1"/>
+<path d="M 60.0 57.1 Q 94.0 35.1 128.0 129.6" fill="none" stroke="#C00000" stroke-width="2.2" marker-end="url(#arrPrb)"/>
+<path d="M 128.0 130.6 Q 162.0 108.6 196.0 176.7" fill="none" stroke="#C00000" stroke-width="2.2" marker-end="url(#arrPrb)"/>
+<path d="M 196.0 177.7 Q 230.0 155.7 264.0 190.6" fill="none" stroke="#C00000" stroke-width="2.2" marker-end="url(#arrPrb)"/>
+<path d="M 264.0 191.6 Q 230.0 155.7 196.0 176.7" fill="none" stroke="#C00000" stroke-width="2.2" marker-end="url(#arrPrb)"/>
+<path d="M 196.0 177.7 Q 230.0 155.7 264.0 190.6" fill="none" stroke="#C00000" stroke-width="2.2" marker-end="url(#arrPrb)"/>
+<circle cx="60.0" cy="61.1" r="4" fill="#C00000" stroke="#C00000" stroke-width="1"/>
+<circle cx="128.0" cy="134.6" r="4" fill="#C00000" stroke="#C00000" stroke-width="1"/>
+<circle cx="196.0" cy="181.7" r="4" fill="#C00000" stroke="#C00000" stroke-width="1"/>
+<circle cx="264.0" cy="195.6" r="4" fill="#C00000" stroke="#C00000" stroke-width="1"/>
+<circle cx="196.0" cy="181.7" r="4" fill="#C00000" stroke="#C00000" stroke-width="1"/>
+<circle cx="264.0" cy="195.6" r="4" fill="#C00000" stroke="#C00000" stroke-width="1"/>
+<text x="296.0" y="118.0" text-anchor="start" font-size="18" fill="#C00000" font-weight="bold" font-style="normal">sign steps: fixed γ</text>
+<path d="M 60.0 53.1 C 90.0 20.0 203.0 20.0 243.0 187.0" fill="none" stroke="#1F4E79" stroke-width="2.8" marker-end="url(#arrAcc)"/>
+<text x="257.0" y="40.0" text-anchor="start" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">QB: one exact jump</text>
+<text x="257.0" y="62.0" text-anchor="start" font-size="18" fill="#1F4E79" font-weight="normal" font-style="normal">to the (q+1)-th margin</text>
+</svg>

@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="340pt" viewBox="0 0 870 340" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchAcc" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#DEEBF7"/><line x1="0" y1="0" x2="0" y2="7" stroke="#1F4E79" stroke-width="1.6"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_table: shape comparison -->
+<rect x="680.0" y="0.0" width="190.0" height="340.0" rx="0" fill="#DEEBF7" stroke="none" />
+<rect x="681.0" y="1.0" width="188.0" height="338.0" rx="3" fill="none" stroke="#1F4E79" stroke-width="2.2" />
+<text x="395.0" y="25.0" text-anchor="middle" font-size="20" fill="#222222" font-weight="bold" font-style="normal">DeepSeek-V3</text>
+<text x="585.0" y="25.0" text-anchor="middle" font-size="20" fill="#222222" font-weight="bold" font-style="normal">Kimi K2</text>
+<text x="775.0" y="25.0" text-anchor="middle" font-size="20" fill="#1F4E79" font-weight="bold" font-style="normal">GLM-4.5</text>
+<line x1="0.0" y1="36.0" x2="870.0" y2="36.0" stroke="#595959" stroke-width="1.6"/>
+<circle cx="13.0" cy="55.0" r="11" fill="#1F4E79"/>
+<text x="13.0" y="60.2" text-anchor="middle" font-size="15" fill="#FFFFFF" font-weight="bold" font-style="normal">1</text>
+<text x="32.0" y="61.6" text-anchor="start" font-size="19" fill="#222222" font-weight="normal" font-style="normal">Layers (dense + MoE)</text>
+<text x="395.0" y="61.6" text-anchor="middle" font-size="19" fill="#222222" font-weight="normal" font-style="normal">61 (3 + 58)</text>
+<text x="585.0" y="61.6" text-anchor="middle" font-size="19" fill="#222222" font-weight="normal" font-style="normal">61 (1 + 60)</text>
+<text x="775.0" y="61.6" text-anchor="middle" font-size="19" fill="#1F4E79" font-weight="bold" font-style="normal">92 (3 + 89)</text>
+<line x1="0.0" y1="74.0" x2="870.0" y2="74.0" stroke="#D0D0D0" stroke-width="1"/>
+<text x="32.0" y="99.7" text-anchor="start" font-size="19" fill="#222222" font-weight="normal" font-style="normal">Hidden dim</text>
+<text x="395.0" y="99.7" text-anchor="middle" font-size="19" fill="#222222" font-weight="normal" font-style="normal">7168</text>
+<text x="585.0" y="99.7" text-anchor="middle" font-size="19" fill="#222222" font-weight="normal" font-style="normal">7168</text>
+<text x="775.0" y="99.7" text-anchor="middle" font-size="19" fill="#1F4E79" font-weight="bold" font-style="normal">5120</text>
+<line x1="0.0" y1="112.0" x2="870.0" y2="112.0" stroke="#D0D0D0" stroke-width="1"/>
+<text x="32.0" y="137.7" text-anchor="start" font-size="19" fill="#222222" font-weight="normal" font-style="normal">Routed experts (active)</text>
+<text x="395.0" y="137.7" text-anchor="middle" font-size="19" fill="#222222" font-weight="normal" font-style="normal">256 (8)</text>
+<text x="585.0" y="137.7" text-anchor="middle" font-size="19" fill="#222222" font-weight="normal" font-style="normal">384 (8)</text>
+<text x="775.0" y="137.7" text-anchor="middle" font-size="19" fill="#1F4E79" font-weight="bold" font-style="normal">160 (8)</text>
+<line x1="0.0" y1="150.0" x2="870.0" y2="150.0" stroke="#595959" stroke-width="1.6"/>
+<circle cx="13.0" cy="169.0" r="11" fill="#1F4E79"/>
+<text x="13.0" y="174.2" text-anchor="middle" font-size="15" fill="#FFFFFF" font-weight="bold" font-style="normal">2</text>
+<text x="32.0" y="175.7" text-anchor="start" font-size="19" fill="#222222" font-weight="normal" font-style="normal">Attention type</text>
+<text x="395.0" y="175.7" text-anchor="middle" font-size="19" fill="#222222" font-weight="normal" font-style="normal">MLA</text>
+<text x="585.0" y="175.7" text-anchor="middle" font-size="19" fill="#222222" font-weight="normal" font-style="normal">MLA</text>
+<text x="775.0" y="175.7" text-anchor="middle" font-size="19" fill="#1F4E79" font-weight="bold" font-style="normal">GQA</text>
+<line x1="0.0" y1="188.0" x2="870.0" y2="188.0" stroke="#D0D0D0" stroke-width="1"/>
+<text x="32.0" y="213.7" text-anchor="start" font-size="19" fill="#222222" font-weight="normal" font-style="normal">Query / KV heads</text>
+<text x="395.0" y="213.7" text-anchor="middle" font-size="19" fill="#222222" font-weight="normal" font-style="normal">128 / 128</text>
+<text x="585.0" y="213.7" text-anchor="middle" font-size="19" fill="#222222" font-weight="normal" font-style="normal">64 / 64</text>
+<text x="775.0" y="213.7" text-anchor="middle" font-size="19" fill="#1F4E79" font-weight="bold" font-style="normal">96 / 8</text>
+<line x1="0.0" y1="226.0" x2="870.0" y2="226.0" stroke="#D0D0D0" stroke-width="1"/>
+<circle cx="13.0" cy="245.0" r="11" fill="#1F4E79"/>
+<text x="13.0" y="250.2" text-anchor="middle" font-size="15" fill="#FFFFFF" font-weight="bold" font-style="normal">3</text>
+<text x="32.0" y="251.7" text-anchor="start" font-size="19" fill="#222222" font-weight="normal" font-style="normal">RoPE dims per QK head</text>
+<text x="395.0" y="251.7" text-anchor="middle" font-size="19" fill="#222222" font-weight="normal" font-style="normal">64 of 192</text>
+<text x="585.0" y="251.7" text-anchor="middle" font-size="19" fill="#222222" font-weight="normal" font-style="normal">64 of 192</text>
+<text x="775.0" y="251.7" text-anchor="middle" font-size="19" fill="#1F4E79" font-weight="bold" font-style="normal">64 of 128</text>
+<line x1="0.0" y1="264.0" x2="870.0" y2="264.0" stroke="#595959" stroke-width="1.6"/>
+<text x="32.0" y="289.6" text-anchor="start" font-size="19" fill="#222222" font-weight="normal" font-style="normal">QK-Norm (deck 66)</text>
+<text x="395.0" y="289.6" text-anchor="middle" font-size="19" fill="#222222" font-weight="normal" font-style="normal">no</text>
+<text x="585.0" y="289.6" text-anchor="middle" font-size="19" fill="#222222" font-weight="normal" font-style="normal">no</text>
+<text x="775.0" y="289.6" text-anchor="middle" font-size="19" fill="#1F4E79" font-weight="bold" font-style="normal">yes</text>
+<line x1="0.0" y1="302.0" x2="870.0" y2="302.0" stroke="#D0D0D0" stroke-width="1"/>
+<text x="32.0" y="327.6" text-anchor="start" font-size="19" fill="#222222" font-weight="normal" font-style="normal">Total / active params</text>
+<text x="395.0" y="327.6" text-anchor="middle" font-size="19" fill="#222222" font-weight="normal" font-style="normal">671B / 37B</text>
+<text x="585.0" y="327.6" text-anchor="middle" font-size="19" fill="#222222" font-weight="normal" font-style="normal">1043B / 32B</text>
+<text x="775.0" y="327.6" text-anchor="middle" font-size="19" fill="#1F4E79" font-weight="bold" font-style="normal">355B / 32B</text>
+</svg>

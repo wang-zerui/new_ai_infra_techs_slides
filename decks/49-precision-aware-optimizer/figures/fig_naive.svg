@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="262pt" viewBox="0 0 870 262" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_naive: BF16 grid vs FP32 grid around w -->
+<text x="18.0" y="70.0" text-anchor="start" font-size="19" fill="#222222" font-weight="bold" font-style="normal">BF16 weight</text>
+<text x="18.0" y="92.0" text-anchor="start" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">8 significant bits</text>
+<line x1="190.0" y1="64.0" x2="840.0" y2="64.0" stroke="#595959" stroke-width="2"/>
+<line x1="330.0" y1="50.0" x2="330.0" y2="78.0" stroke="#222222" stroke-width="2.4"/>
+<text x="330.0" y="100.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">w − s</text>
+<line x1="560.0" y1="50.0" x2="560.0" y2="78.0" stroke="#222222" stroke-width="2.4"/>
+<text x="560.0" y="100.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">w</text>
+<line x1="790.0" y1="50.0" x2="790.0" y2="78.0" stroke="#222222" stroke-width="2.4"/>
+<text x="790.0" y="100.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">w + s</text>
+<circle cx="560" cy="64" r="7" fill="#222222"/>
+<path d="M556,42 L514,42" fill="none" stroke="#C00000" stroke-width="2.4" marker-end="url(#arrPrb)"/>
+<text x="534.0" y="34.0" text-anchor="middle" font-size="17" fill="#C00000" font-weight="bold" font-style="normal">−Δ</text>
+<circle cx="508" cy="64" r="6" fill="#FFFFFF" stroke="#C00000" stroke-width="2.2"/>
+<path d="M510,74 Q534.0,94 554,76" fill="none" stroke="#C00000" stroke-width="2.2" marker-end="url(#arrPrb)"/>
+<text x="415.0" y="126.0" text-anchor="middle" font-size="17" fill="#C00000" font-weight="bold" font-style="normal">Δ &lt; s/2: rounds back to w</text>
+<text x="18.0" y="184.0" text-anchor="start" font-size="19" fill="#222222" font-weight="bold" font-style="normal">FP32 master</text>
+<text x="18.0" y="206.0" text-anchor="start" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">24 significant bits</text>
+<line x1="190.0" y1="178.0" x2="840.0" y2="178.0" stroke="#595959" stroke-width="2"/>
+<line x1="330.0" y1="170.0" x2="330.0" y2="186.0" stroke="#7F7F7F" stroke-width="1.2"/>
+<line x1="349.2" y1="170.0" x2="349.2" y2="186.0" stroke="#7F7F7F" stroke-width="1.2"/>
+<line x1="368.3" y1="170.0" x2="368.3" y2="186.0" stroke="#7F7F7F" stroke-width="1.2"/>
+<line x1="387.5" y1="170.0" x2="387.5" y2="186.0" stroke="#7F7F7F" stroke-width="1.2"/>
+<line x1="406.7" y1="170.0" x2="406.7" y2="186.0" stroke="#7F7F7F" stroke-width="1.2"/>
+<line x1="425.8" y1="170.0" x2="425.8" y2="186.0" stroke="#7F7F7F" stroke-width="1.2"/>
+<line x1="445.0" y1="170.0" x2="445.0" y2="186.0" stroke="#7F7F7F" stroke-width="1.2"/>
+<line x1="464.2" y1="170.0" x2="464.2" y2="186.0" stroke="#7F7F7F" stroke-width="1.2"/>
+<line x1="483.3" y1="170.0" x2="483.3" y2="186.0" stroke="#7F7F7F" stroke-width="1.2"/>
+<line x1="502.5" y1="170.0" x2="502.5" y2="186.0" stroke="#7F7F7F" stroke-width="1.2"/>
+<line x1="521.7" y1="170.0" x2="521.7" y2="186.0" stroke="#7F7F7F" stroke-width="1.2"/>
+<line x1="540.8" y1="170.0" x2="540.8" y2="186.0" stroke="#7F7F7F" stroke-width="1.2"/>
+<line x1="560.0" y1="170.0" x2="560.0" y2="186.0" stroke="#7F7F7F" stroke-width="1.2"/>
+<line x1="579.2" y1="170.0" x2="579.2" y2="186.0" stroke="#7F7F7F" stroke-width="1.2"/>
+<line x1="598.3" y1="170.0" x2="598.3" y2="186.0" stroke="#7F7F7F" stroke-width="1.2"/>
+<line x1="617.5" y1="170.0" x2="617.5" y2="186.0" stroke="#7F7F7F" stroke-width="1.2"/>
+<line x1="636.7" y1="170.0" x2="636.7" y2="186.0" stroke="#7F7F7F" stroke-width="1.2"/>
+<line x1="655.8" y1="170.0" x2="655.8" y2="186.0" stroke="#7F7F7F" stroke-width="1.2"/>
+<line x1="675.0" y1="170.0" x2="675.0" y2="186.0" stroke="#7F7F7F" stroke-width="1.2"/>
+<line x1="694.2" y1="170.0" x2="694.2" y2="186.0" stroke="#7F7F7F" stroke-width="1.2"/>
+<line x1="713.3" y1="170.0" x2="713.3" y2="186.0" stroke="#7F7F7F" stroke-width="1.2"/>
+<line x1="732.5" y1="170.0" x2="732.5" y2="186.0" stroke="#7F7F7F" stroke-width="1.2"/>
+<line x1="751.7" y1="170.0" x2="751.7" y2="186.0" stroke="#7F7F7F" stroke-width="1.2"/>
+<line x1="770.8" y1="170.0" x2="770.8" y2="186.0" stroke="#7F7F7F" stroke-width="1.2"/>
+<line x1="790.0" y1="170.0" x2="790.0" y2="186.0" stroke="#7F7F7F" stroke-width="1.2"/>
+<circle cx="560" cy="178" r="7" fill="#222222"/>
+<text x="560.0" y="210.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">w</text>
+<path d="M556,156 L508.5,156" fill="none" stroke="#1F4E79" stroke-width="2.4" marker-end="url(#arrAcc)"/>
+<text x="531.2" y="148.0" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal">−Δ</text>
+<circle cx="502.5" cy="178" r="7" fill="#1F4E79"/>
+<text x="502.5" y="210.0" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal">w − Δ</text>
+<text x="415.0" y="240.0" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal">the step is kept</text>
+</svg>

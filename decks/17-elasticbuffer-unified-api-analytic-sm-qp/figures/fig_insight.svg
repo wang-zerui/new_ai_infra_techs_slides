@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480pt" height="262pt"
+     viewBox="0 0 480 262" font-family="Helvetica, Arial, sans-serif">
+  <!-- fig_insight: a few copy SMs feed one NIC; SM count = link rate / per-SM rate. 1 unit = 1pt -->
+  <defs>
+    <marker id="arrA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9"
+            markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/>
+    </marker>
+    <marker id="arrK" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9"
+            markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#595959"/>
+    </marker>
+  </defs>
+
+  <!-- copy SMs (all drawn, fan-in) -->
+  <rect x="8" y="24" width="104" height="40" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5"/>
+  <text x="60" y="50.3" text-anchor="middle" font-size="18" font-weight="bold" fill="#1F4E79">SM 1</text>
+  <rect x="8" y="76" width="104" height="40" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5"/>
+  <text x="60" y="102.3" text-anchor="middle" font-size="18" font-weight="bold" fill="#1F4E79">SM 2</text>
+  <text x="60" y="144" text-anchor="middle" font-size="22" font-weight="bold" fill="#1F4E79">⋮</text>
+  <rect x="8" y="160" width="104" height="40" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5"/>
+  <text x="60" y="186.3" text-anchor="middle" font-size="18" font-weight="bold" fill="#1F4E79">SM n</text>
+  <text x="60" y="230" text-anchor="middle" font-size="17" fill="#222222">≈ 45 GB/s</text>
+  <text x="60" y="252" text-anchor="middle" font-size="17" fill="#222222">writes each</text>
+
+  <!-- send buffer in HBM -->
+  <rect x="182" y="88" width="116" height="48" rx="4" fill="#FFF2CC" stroke="#7F6000" stroke-width="1.5"/>
+  <text x="240" y="118.3" text-anchor="middle" font-size="18" fill="#222222">send buffer</text>
+  <path d="M113,44 C150,44 150,104 181,106" fill="none" stroke="#1F4E79" stroke-width="2.5" marker-end="url(#arrA)"/>
+  <path d="M113,96 C140,96 150,110 181,112" fill="none" stroke="#1F4E79" stroke-width="2.5" marker-end="url(#arrA)"/>
+  <path d="M113,180 C150,180 150,122 181,118" fill="none" stroke="#1F4E79" stroke-width="2.5" marker-end="url(#arrA)"/>
+  <text x="186" y="76" font-size="17" fill="#1F4E79">TMA copies</text>
+
+  <!-- NIC -->
+  <rect x="370" y="82" width="104" height="60" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.5"/>
+  <text x="422" y="108" text-anchor="middle" font-size="18" font-weight="bold" fill="#222222">NIC</text>
+  <text x="422" y="131" text-anchor="middle" font-size="17" fill="#222222">50 GB/s</text>
+  <line x1="299" y1="112" x2="368" y2="112" stroke="#595959" stroke-width="2.5" marker-end="url(#arrK)"/>
+  <text x="334" y="103" text-anchor="middle" font-size="17" fill="#595959">RDMA</text>
+
+  <!-- the budget relation -->
+  <rect x="170" y="180" width="304" height="46" rx="5" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.5" stroke-dasharray="5,3"/>
+  <text x="322" y="209.3" text-anchor="middle" font-size="18" font-weight="bold" fill="#1F4E79">n ≈ link GB/s ÷ SM GB/s</text>
+</svg>

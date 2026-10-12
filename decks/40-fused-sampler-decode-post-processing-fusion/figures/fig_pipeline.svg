@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480pt" height="340pt" viewBox="0 0 480 340" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_pipeline -->
+<rect x="40.0" y="10.0" width="196.0" height="50.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="138.0" y="41.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">logits  B × V</text>
+<line x1="138.0" y1="62.0" x2="138.0" y2="86.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="40.0" y="88.0" width="196.0" height="50.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="138.0" y="119.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">repetition penalty</text>
+<line x1="138.0" y1="140.0" x2="138.0" y2="164.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="40.0" y="166.0" width="196.0" height="50.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="138.0" y="197.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">temperature</text>
+<line x1="138.0" y1="218.0" x2="138.0" y2="242.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="40.0" y="244.0" width="196.0" height="50.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="138.0" y="275.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">top-k</text>
+<rect x="276.0" y="10.0" width="196.0" height="50.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="374.0" y="41.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">softmax</text>
+<line x1="374.0" y1="62.0" x2="374.0" y2="86.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="276.0" y="88.0" width="196.0" height="50.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="374.0" y="119.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">top-p</text>
+<line x1="374.0" y1="140.0" x2="374.0" y2="164.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="276.0" y="166.0" width="196.0" height="50.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="374.0" y="197.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">random draw</text>
+<line x1="374.0" y1="218.0" x2="374.0" y2="242.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="276.0" y="244.0" width="196.0" height="50.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="374.0" y="275.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">penalty-mask update</text>
+<path d="M238,269.0 L256.0,269.0 L256.0,35.0 L274,35.0" fill="none" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<path d="M374.0,296 L374.0,330 L16,330 L16,113.0 L38,113.0" fill="none" stroke="#7F7F7F" stroke-width="2.2" marker-end="url(#arrGray)" stroke-dasharray="7,4"/>
+<text x="246.0" y="324.0" text-anchor="end" font-size="17" fill="#7F7F7F" font-weight="normal" font-style="italic">state for the next step</text>
+</svg>

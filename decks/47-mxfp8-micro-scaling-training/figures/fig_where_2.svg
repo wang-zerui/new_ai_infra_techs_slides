@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="310pt" viewBox="0 0 870 310" font-family="Helvetica, Arial, sans-serif">
+  <defs><marker id="a222222" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker><marker id="aC00000" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker><marker id="a1F4E79" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker><pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2.5"/></pattern><pattern id="hatchRed" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#E6A0A0" stroke-width="2.5"/></pattern></defs>
+  <text x="14" y="24" font-size="19" text-anchor="start" font-weight="bold" fill="#222222">Hopper: block scales applied in software</text>
+  <rect x="14" y="44" width="170" height="64" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2"/>
+  <text x="99.0" y="71.8" font-size="18" text-anchor="middle" font-weight="bold" fill="#222222">FP8 tiles</text>
+  <text x="99.0" y="91.8" font-size="15" text-anchor="middle" font-weight="normal" fill="#222222">+ FP32 scales</text>
+  <rect x="236" y="44" width="200" height="64" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2"/>
+  <text x="336.0" y="71.8" font-size="18" text-anchor="middle" font-weight="bold" fill="#222222">Tensor Core</text>
+  <text x="336.0" y="91.8" font-size="15" text-anchor="middle" font-weight="normal" fill="#222222">MMA over 128 of K</text>
+  <rect x="512" y="44" width="220" height="64" rx="4" fill="#FBE5E5" stroke="#C00000" stroke-width="2"/>
+  <text x="622.0" y="71.8" font-size="18" text-anchor="middle" font-weight="bold" fill="#C00000">CUDA Core</text>
+  <text x="622.0" y="91.8" font-size="15" text-anchor="middle" font-weight="normal" fill="#C00000">× sA·sB then FP32 add</text>
+  <line x1="186" y1="76" x2="232" y2="76" stroke="#222222" stroke-width="2.4" marker-end="url(#a222222)"/>
+  <line x1="438" y1="76" x2="508" y2="76" stroke="#C00000" stroke-width="2.6" marker-end="url(#aC00000)"/>
+  <text x="473" y="66" font-size="15" text-anchor="middle" font-weight="bold" fill="#C00000">promote</text>
+  <path d="M622,110 V134 H336 V114" fill="none" stroke="#C00000" stroke-width="2.2" marker-end="url(#aC00000)" stroke-dasharray="7,5"/>
+  <text x="479" y="130" font-size="15" text-anchor="middle" font-weight="normal" fill="#C00000" paint-order="stroke" stroke="#FFFFFF" stroke-width="4">next 128 of K</text>
+  <text x="760" y="82" font-size="16" text-anchor="start" font-weight="normal" fill="#C00000">per block</text>
+  <text x="760" y="102" font-size="16" text-anchor="start" font-weight="normal" fill="#C00000">dot-product</text>
+  <line x1="14" y1="156" x2="856" y2="156" stroke="#BFBFBF" stroke-width="1.2" stroke-dasharray="6,5"/>
+  <text x="14" y="186" font-size="19" text-anchor="start" font-weight="bold" fill="#1F4E79">Blackwell: MXFP8 block-scaled MMA</text>
+  <rect x="14" y="206" width="170" height="64" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2"/>
+  <text x="99.0" y="233.8" font-size="18" text-anchor="middle" font-weight="bold" fill="#1F4E79">MXFP8 blocks</text>
+  <text x="99.0" y="253.8" font-size="15" text-anchor="middle" font-weight="normal" fill="#1F4E79">+ E8M0 scales</text>
+  <rect x="236" y="206" width="300" height="64" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2"/>
+  <text x="386.0" y="233.8" font-size="18" text-anchor="middle" font-weight="bold" fill="#1F4E79">Tensor Core</text>
+  <text x="386.0" y="253.8" font-size="15" text-anchor="middle" font-weight="normal" fill="#1F4E79">applies scale per 32 in the MMA</text>
+  <rect x="600" y="206" width="132" height="64" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2"/>
+  <text x="666.0" y="233.8" font-size="18" text-anchor="middle" font-weight="bold" fill="#222222">FP32</text>
+  <text x="666.0" y="253.8" font-size="15" text-anchor="middle" font-weight="normal" fill="#222222">output</text>
+  <line x1="186" y1="238" x2="232" y2="238" stroke="#1F4E79" stroke-width="2.4" marker-end="url(#a1F4E79)"/>
+  <line x1="538" y1="238" x2="596" y2="238" stroke="#1F4E79" stroke-width="2.4" marker-end="url(#a1F4E79)"/>
+</svg>

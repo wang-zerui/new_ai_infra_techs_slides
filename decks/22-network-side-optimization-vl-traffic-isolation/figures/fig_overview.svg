@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="318pt" viewBox="0 0 870 318" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_overview: where each fix lives: GPU (SM-free RDMA), NIC (SL tag), fabric (VL, AR) -->
+<rect x="96.0" y="6.0" width="770.0" height="96.0" rx="6" fill="#FAFAFA" stroke="#BFBFBF" stroke-width="1.2" />
+<text x="84.0" y="61.0" text-anchor="end" font-size="19" fill="#222222" font-weight="bold" font-style="normal">GPU</text>
+<rect x="96.0" y="112.0" width="770.0" height="80.0" rx="6" fill="#FAFAFA" stroke="#BFBFBF" stroke-width="1.2" />
+<text x="84.0" y="159.0" text-anchor="end" font-size="19" fill="#222222" font-weight="bold" font-style="normal">NIC</text>
+<rect x="96.0" y="202.0" width="770.0" height="110.0" rx="6" fill="#FAFAFA" stroke="#BFBFBF" stroke-width="1.2" />
+<text x="84.0" y="264.0" text-anchor="end" font-size="19" fill="#222222" font-weight="bold" font-style="normal">fabric</text>
+<rect x="114.0" y="26.0" width="200.0" height="56.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="214.0" y="60.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">compute SMs</text>
+<rect x="334.0" y="26.0" width="250.0" height="56.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="459.0" y="49.9" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">send phase</text>
+<text x="459.0" y="70.6" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">+ recv hook</text>
+<rect x="604.0" y="26.0" width="246.0" height="56.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="727.0" y="49.9" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">GEMM-to-send</text>
+<text x="727.0" y="70.6" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">signals (SBO)</text>
+<circle cx="334.0" cy="26.0" r="13" fill="#1F4E79"/>
+<text x="334.0" y="32.3" text-anchor="middle" font-size="18" fill="#FFFFFF" font-weight="bold" font-style="normal">3</text>
+<circle cx="604.0" cy="26.0" r="13" fill="#1F4E79"/>
+<text x="604.0" y="32.3" text-anchor="middle" font-size="18" fill="#FFFFFF" font-weight="bold" font-style="normal">3</text>
+<rect x="114.0" y="128.0" width="300.0" height="48.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="264.0" y="158.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">RDMA engine · QPs</text>
+<rect x="434.0" y="128.0" width="416.0" height="48.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="642.0" y="158.3" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">service level per QP</text>
+<circle cx="434.0" cy="128.0" r="13" fill="#1F4E79"/>
+<text x="434.0" y="134.3" text-anchor="middle" font-size="18" fill="#FFFFFF" font-weight="bold" font-style="normal">1</text>
+<rect x="114.0" y="222.0" width="330.0" height="74.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="279.0" y="255.0" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">SL → VL map</text>
+<text x="279.0" y="275.7" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">per-VL buffers + credits</text>
+<rect x="464.0" y="222.0" width="386.0" height="74.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="657.0" y="255.0" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">adaptive routing</text>
+<text x="657.0" y="275.7" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">rail-aligned LL paths</text>
+<circle cx="114.0" cy="222.0" r="13" fill="#1F4E79"/>
+<text x="114.0" y="228.3" text-anchor="middle" font-size="18" fill="#FFFFFF" font-weight="bold" font-style="normal">1</text>
+<circle cx="464.0" cy="222.0" r="13" fill="#1F4E79"/>
+<text x="464.0" y="228.3" text-anchor="middle" font-size="18" fill="#FFFFFF" font-weight="bold" font-style="normal">2</text>
+</svg>

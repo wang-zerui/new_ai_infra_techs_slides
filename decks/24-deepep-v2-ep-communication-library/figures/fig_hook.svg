@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480pt" height="300pt"
+     viewBox="0 0 480 300" font-family="Helvetica, Arial, sans-serif">
+  <!-- fig_hook: one token's dispatch path in hierarchical EP (slide figure, 1 unit = 1pt) -->
+  <defs>
+    <marker id="arrA" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9"
+            markerUnits="userSpaceOnUse" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/>
+    </marker>
+  </defs>
+
+  <!-- ===== Node 0 ===== -->
+  <rect x="28" y="8" width="448" height="102" rx="6" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="1.5"/>
+  <text transform="rotate(-90 16 59)" x="16" y="65" text-anchor="middle" font-size="18" font-weight="bold" fill="#222222">Node 0</text>
+  <rect x="41" y="54" width="98" height="44" rx="4" fill="#FFF2CC" stroke="#7F6000" stroke-width="1.5"/>
+  <text x="90" y="82.3" text-anchor="middle" font-size="18" fill="#222222">GPU 0</text>
+  <rect x="151" y="54" width="98" height="44" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="1.5"/>
+  <text x="200" y="82.3" text-anchor="middle" font-size="18" fill="#222222">GPU 1</text>
+  <rect x="261" y="54" width="98" height="44" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5"/>
+  <text x="310" y="82.3" text-anchor="middle" font-size="18" fill="#222222">GPU 2</text>
+  <rect x="371" y="54" width="98" height="44" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="1.5"/>
+  <text x="420" y="82.3" text-anchor="middle" font-size="18" fill="#222222">GPU 3</text>
+  <!-- local NVLink hop -->
+  <path d="M90,53 V36 H310 V52" fill="none" stroke="#1F4E79" stroke-width="2.5" marker-end="url(#arrA)"/>
+  <text x="200" y="29" text-anchor="middle" font-size="18" fill="#1F4E79">NVLink</text>
+
+
+  <!-- ===== Node 1 ===== -->
+  <rect x="28" y="150" width="448" height="110" rx="6" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="1.5"/>
+  <text transform="rotate(-90 16 205)" x="16" y="211" text-anchor="middle" font-size="18" font-weight="bold" fill="#222222">Node 1</text>
+  <rect x="41" y="162" width="98" height="44" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="1.5"/>
+  <text x="90" y="190.3" text-anchor="middle" font-size="18" fill="#222222">GPU 0</text>
+  <rect x="151" y="162" width="98" height="44" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5"/>
+  <text x="200" y="190.3" text-anchor="middle" font-size="18" fill="#222222">GPU 1</text>
+  <rect x="261" y="162" width="98" height="44" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="1.5"/>
+  <text x="310" y="190.3" text-anchor="middle" font-size="18" fill="#222222">GPU 2</text>
+  <rect x="371" y="162" width="98" height="44" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5"/>
+  <text x="420" y="190.3" text-anchor="middle" font-size="18" fill="#222222">GPU 3</text>
+  <!-- NVLink fan-out on the destination node -->
+  <path d="M90,207 V230 H420 V208" fill="none" stroke="#1F4E79" stroke-width="2.5" marker-end="url(#arrA)"/>
+  <line x1="200" y1="230" x2="200" y2="208" stroke="#1F4E79" stroke-width="2.5" marker-end="url(#arrA)"/>
+  <text x="310" y="252" text-anchor="middle" font-size="18" fill="#1F4E79">NVLink</text>
+
+  <!-- ===== RDMA hop between rails (drawn after Node 1 so the head stays visible) ===== -->
+  <line x1="90" y1="99" x2="90" y2="161" stroke="#1F4E79" stroke-width="2.5" marker-end="url(#arrA)"/>
+  <text x="104" y="137" font-size="18" fill="#1F4E79">RDMA to the same GPU index</text>
+
+  <!-- ===== legend ===== -->
+  <rect x="30" y="273" width="20" height="20" rx="3" fill="#FFF2CC" stroke="#7F6000" stroke-width="1.5"/>
+  <text x="58" y="289" font-size="18" fill="#222222">token source</text>
+  <rect x="224" y="273" width="20" height="20" rx="3" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5"/>
+  <text x="252" y="289" font-size="18" fill="#222222">hosts a chosen expert</text>
+</svg>

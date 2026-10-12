@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="288pt" viewBox="0 0 870 288" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_mirror: d(dispatch)=combine and d(combine)=dispatch; fan-out is FP8, fan-in is BF16 -->
+<text x="214.0" y="20.0" text-anchor="middle" font-size="19" fill="#222222" font-weight="bold" font-style="normal">(a) dispatch</text>
+<circle cx="50" cy="96" r="22" fill="#F2F2F2" stroke="#595959" stroke-width="2"/>
+<text x="50.0" y="102.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">t</text>
+<rect x="326.0" y="48.0" width="92.0" height="28.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="372.0" y="68.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">E1</text>
+<rect x="326.0" y="82.0" width="92.0" height="28.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="372.0" y="102.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">E2</text>
+<rect x="326.0" y="116.0" width="92.0" height="28.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="372.0" y="135.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">E3</text>
+<line x1="74.0" y1="96.0" x2="324.0" y2="62.0" stroke="#1F4E79" stroke-width="2.6" marker-end="url(#arrAcc)"/>
+<line x1="74.0" y1="96.0" x2="324.0" y2="96.0" stroke="#1F4E79" stroke-width="2.6" marker-end="url(#arrAcc)"/>
+<line x1="74.0" y1="96.0" x2="324.0" y2="130.0" stroke="#1F4E79" stroke-width="2.6" marker-end="url(#arrAcc)"/>
+<text x="200.0" y="48.0" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal" paint-order="stroke" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round">copy · FP8</text>
+<text x="10.0" y="48.0" text-anchor="start" font-size="17" fill="#7F7F7F" font-weight="normal" font-style="italic">forward</text>
+<circle cx="50" cy="222" r="22" fill="#F2F2F2" stroke="#595959" stroke-width="2"/>
+<text x="50.0" y="228.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">t</text>
+<rect x="326.0" y="174.0" width="92.0" height="28.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="372.0" y="193.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">E1</text>
+<rect x="326.0" y="208.0" width="92.0" height="28.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="372.0" y="227.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">E2</text>
+<rect x="326.0" y="242.0" width="92.0" height="28.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="372.0" y="261.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">E3</text>
+<line x1="324.0" y1="188.0" x2="74.0" y2="222.0" stroke="#404040" stroke-width="2.6" marker-end="url(#arr)"/>
+<line x1="324.0" y1="222.0" x2="74.0" y2="222.0" stroke="#404040" stroke-width="2.6" marker-end="url(#arr)"/>
+<line x1="324.0" y1="256.0" x2="74.0" y2="222.0" stroke="#404040" stroke-width="2.6" marker-end="url(#arr)"/>
+<text x="200.0" y="174.0" text-anchor="middle" font-size="18" fill="#404040" font-weight="bold" font-style="normal" paint-order="stroke" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round">sum · BF16</text>
+<text x="10.0" y="174.0" text-anchor="start" font-size="17" fill="#7F7F7F" font-weight="normal" font-style="italic">backward</text>
+<text x="10.0" y="274.0" text-anchor="start" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="normal" font-family="Menlo, monospace">runs combine()</text>
+<text x="656.0" y="20.0" text-anchor="middle" font-size="19" fill="#222222" font-weight="bold" font-style="normal">(b) combine</text>
+<circle cx="492" cy="96" r="22" fill="#F2F2F2" stroke="#595959" stroke-width="2"/>
+<text x="492.0" y="102.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">t</text>
+<rect x="768.0" y="48.0" width="92.0" height="28.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="814.0" y="68.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">E1</text>
+<rect x="768.0" y="82.0" width="92.0" height="28.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="814.0" y="102.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">E2</text>
+<rect x="768.0" y="116.0" width="92.0" height="28.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="814.0" y="135.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">E3</text>
+<line x1="766.0" y1="62.0" x2="516.0" y2="96.0" stroke="#404040" stroke-width="2.6" marker-end="url(#arr)"/>
+<line x1="766.0" y1="96.0" x2="516.0" y2="96.0" stroke="#404040" stroke-width="2.6" marker-end="url(#arr)"/>
+<line x1="766.0" y1="130.0" x2="516.0" y2="96.0" stroke="#404040" stroke-width="2.6" marker-end="url(#arr)"/>
+<text x="642.0" y="48.0" text-anchor="middle" font-size="18" fill="#404040" font-weight="bold" font-style="normal" paint-order="stroke" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round">sum · BF16</text>
+<text x="452.0" y="48.0" text-anchor="start" font-size="17" fill="#7F7F7F" font-weight="normal" font-style="italic">forward</text>
+<circle cx="492" cy="222" r="22" fill="#F2F2F2" stroke="#595959" stroke-width="2"/>
+<text x="492.0" y="228.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">t</text>
+<rect x="768.0" y="174.0" width="92.0" height="28.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="814.0" y="193.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">E1</text>
+<rect x="768.0" y="208.0" width="92.0" height="28.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="814.0" y="227.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">E2</text>
+<rect x="768.0" y="242.0" width="92.0" height="28.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="814.0" y="261.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">E3</text>
+<line x1="516.0" y1="222.0" x2="766.0" y2="188.0" stroke="#1F4E79" stroke-width="2.6" marker-end="url(#arrAcc)"/>
+<line x1="516.0" y1="222.0" x2="766.0" y2="222.0" stroke="#1F4E79" stroke-width="2.6" marker-end="url(#arrAcc)"/>
+<line x1="516.0" y1="222.0" x2="766.0" y2="256.0" stroke="#1F4E79" stroke-width="2.6" marker-end="url(#arrAcc)"/>
+<text x="642.0" y="174.0" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal" paint-order="stroke" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round">copy · FP8</text>
+<text x="452.0" y="174.0" text-anchor="start" font-size="17" fill="#7F7F7F" font-weight="normal" font-style="italic">backward</text>
+<text x="452.0" y="274.0" text-anchor="start" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="normal" font-family="Menlo, monospace">runs dispatch()</text>
+<line x1="436" y1="6" x2="436" y2="282" stroke="#BFBFBF" stroke-width="1.2"/>
+<line x1="10" y1="152" x2="862" y2="152" stroke="#BFBFBF" stroke-width="1" stroke-dasharray="4,4"/>
+</svg>

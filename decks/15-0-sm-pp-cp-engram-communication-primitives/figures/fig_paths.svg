@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="292pt" viewBox="0 0 870 292" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_paths: EP / PP / CP / Engram traffic patterns -->
+<rect x="0.0" y="8.0" width="204.0" height="280.0" rx="8" fill="#FFFFFF" stroke="#595959" stroke-width="1.6" stroke-dasharray="6,4" />
+<text x="102.0" y="38.0" text-anchor="middle" font-size="21" fill="#222222" font-weight="bold" font-style="normal">EP</text>
+<line x1="74.0" y1="88.0" x2="130.0" y2="88.0" stroke="#222222" stroke-width="1.8"/>
+<line x1="74.0" y1="88.0" x2="130.0" y2="166.0" stroke="#222222" stroke-width="1.8"/>
+<line x1="74.0" y1="166.0" x2="130.0" y2="88.0" stroke="#222222" stroke-width="1.8"/>
+<line x1="74.0" y1="166.0" x2="130.0" y2="166.0" stroke="#222222" stroke-width="1.8"/>
+<line x1="52.0" y1="104.0" x2="52.0" y2="150.0" stroke="#222222" stroke-width="1.8"/>
+<line x1="152.0" y1="104.0" x2="152.0" y2="150.0" stroke="#222222" stroke-width="1.8"/>
+<rect x="30.0" y="72.0" width="44.0" height="32.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="52.0" y="93.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">G0</text>
+<rect x="30.0" y="150.0" width="44.0" height="32.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="52.0" y="171.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">G1</text>
+<rect x="130.0" y="72.0" width="44.0" height="32.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="152.0" y="93.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">G2</text>
+<rect x="130.0" y="150.0" width="44.0" height="32.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="152.0" y="171.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">G3</text>
+<text x="102.0" y="232.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">tokens to experts</text>
+<text x="102.0" y="254.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">and back</text>
+<rect x="222.0" y="8.0" width="204.0" height="280.0" rx="8" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.6" />
+<text x="324.0" y="38.0" text-anchor="middle" font-size="21" fill="#1F4E79" font-weight="bold" font-style="normal">PP</text>
+<rect x="236.0" y="110.0" width="44.0" height="32.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="258.0" y="131.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">S0</text>
+<line x1="282.0" y1="126.0" x2="300.0" y2="126.0" stroke="#1F4E79" stroke-width="2.4" marker-end="url(#arrAcc)"/>
+<rect x="302.0" y="110.0" width="44.0" height="32.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="324.0" y="131.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">S1</text>
+<line x1="348.0" y1="126.0" x2="366.0" y2="126.0" stroke="#1F4E79" stroke-width="2.4" marker-end="url(#arrAcc)"/>
+<rect x="368.0" y="110.0" width="44.0" height="32.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="390.0" y="131.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">S2</text>
+<text x="324.0" y="232.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">activations to</text>
+<text x="324.0" y="254.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">the next stage</text>
+<rect x="444.0" y="8.0" width="204.0" height="280.0" rx="8" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.6" />
+<text x="546.0" y="38.0" text-anchor="middle" font-size="21" fill="#1F4E79" font-weight="bold" font-style="normal">CP</text>
+<rect x="524.0" y="66.0" width="44.0" height="32.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="546.0" y="87.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">G0</text>
+<rect x="458.0" y="150.0" width="44.0" height="32.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="480.0" y="171.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">G1</text>
+<rect x="524.0" y="150.0" width="44.0" height="32.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="546.0" y="171.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">G2</text>
+<rect x="590.0" y="150.0" width="44.0" height="32.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="612.0" y="171.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">G3</text>
+<line x1="546.0" y1="100.0" x2="480.0" y2="147.0" stroke="#1F4E79" stroke-width="2.2" marker-end="url(#arrAcc)"/>
+<line x1="546.0" y1="100.0" x2="546.0" y2="147.0" stroke="#1F4E79" stroke-width="2.2" marker-end="url(#arrAcc)"/>
+<line x1="546.0" y1="100.0" x2="612.0" y2="147.0" stroke="#1F4E79" stroke-width="2.2" marker-end="url(#arrAcc)"/>
+<text x="546.0" y="232.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">every KV shard</text>
+<text x="546.0" y="254.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">to every rank</text>
+<rect x="666.0" y="8.0" width="204.0" height="280.0" rx="8" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.6" />
+<text x="768.0" y="38.0" text-anchor="middle" font-size="21" fill="#1F4E79" font-weight="bold" font-style="normal">Engram</text>
+<rect x="778.0" y="50.0" width="58.0" height="13.0" rx="0" fill="#F2F2F2" stroke="#A6A6A6" stroke-width="1.2" />
+<rect x="778.0" y="63.0" width="58.0" height="13.0" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.2" />
+<rect x="778.0" y="76.0" width="58.0" height="13.0" rx="0" fill="#F2F2F2" stroke="#A6A6A6" stroke-width="1.2" />
+<rect x="778.0" y="89.0" width="58.0" height="13.0" rx="0" fill="#F2F2F2" stroke="#A6A6A6" stroke-width="1.2" />
+<rect x="778.0" y="102.0" width="58.0" height="13.0" rx="0" fill="#F2F2F2" stroke="#A6A6A6" stroke-width="1.2" />
+<rect x="778.0" y="115.0" width="58.0" height="13.0" rx="0" fill="#F2F2F2" stroke="#A6A6A6" stroke-width="1.2" />
+<rect x="778.0" y="128.0" width="58.0" height="13.0" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.2" />
+<rect x="778.0" y="141.0" width="58.0" height="13.0" rx="0" fill="#F2F2F2" stroke="#A6A6A6" stroke-width="1.2" />
+<line x1="774.0" y1="102.0" x2="840.0" y2="102.0" stroke="#7F7F7F" stroke-width="1.6" stroke-dasharray="4,3"/>
+<text x="842.0" y="82.0" text-anchor="start" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">s0</text>
+<text x="842.0" y="134.0" text-anchor="start" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">s1</text>
+<rect x="682.0" y="176.0" width="60.0" height="32.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="712.0" y="197.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">token</text>
+<path d="M776.0,69.5 L712.0,69.5 Q698.0,69.5 698.0,83.5 L698.0,173" fill="none" stroke="#1F4E79" stroke-width="2.2" marker-end="url(#arrAcc)"/>
+<path d="M776.0,134.5 L740.0,134.5 Q726.0,134.5 726.0,148.5 L726.0,173" fill="none" stroke="#1F4E79" stroke-width="2.2" marker-end="url(#arrAcc)"/>
+<text x="768.0" y="232.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">table rows</text>
+<text x="768.0" y="254.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">to each token</text>
+</svg>

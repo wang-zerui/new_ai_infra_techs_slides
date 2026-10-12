@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="285pt" viewBox="0 0 870 285" font-family="Helvetica, Arial, sans-serif">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker><marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker><marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker><pattern id="hr" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" fill="#FBE5E5"/><line x1="0" y1="0" x2="0" y2="6" stroke="#C00000" stroke-width="1.6"/></pattern></defs>
+<text x="140.0" y="24.0" font-size="19" font-weight="bold" fill="#222222" text-anchor="middle" font-style="normal">Softmax-style CP</text>
+<rect x="40.0" y="50.0" width="84.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.5"/>
+<text x="82.0" y="78.0" font-size="16" font-weight="bold" fill="#222222" text-anchor="middle" font-style="normal">GPU 0</text>
+<rect x="160.0" y="50.0" width="84.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.5"/>
+<text x="202.0" y="78.0" font-size="16" font-weight="bold" fill="#222222" text-anchor="middle" font-style="normal">GPU 1</text>
+<rect x="160.0" y="140.0" width="84.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.5"/>
+<text x="202.0" y="168.0" font-size="16" font-weight="bold" fill="#222222" text-anchor="middle" font-style="normal">GPU 2</text>
+<rect x="40.0" y="140.0" width="84.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.5"/>
+<text x="82.0" y="168.0" font-size="16" font-weight="bold" fill="#222222" text-anchor="middle" font-style="normal">GPU 3</text>
+<path d="M126,72 H158" fill="none" stroke="#C00000" stroke-width="2.5" marker-end="url(#r)"/>
+<path d="M202,96 V138" fill="none" stroke="#C00000" stroke-width="2.5" marker-end="url(#r)"/>
+<path d="M158,162 H126" fill="none" stroke="#C00000" stroke-width="2.5" marker-end="url(#r)"/>
+<path d="M82,138 V96" fill="none" stroke="#C00000" stroke-width="2.5" marker-end="url(#r)"/>
+<text x="142.0" y="64.0" font-size="14" font-weight="bold" fill="#C00000" text-anchor="middle" font-style="normal">KV</text>
+<text x="214.0" y="122.0" font-size="14" font-weight="bold" fill="#C00000" text-anchor="start" font-style="normal">KV</text>
+<text x="142.0" y="180.0" font-size="14" font-weight="bold" fill="#C00000" text-anchor="middle" font-style="normal">KV</text>
+<text x="70.0" y="122.0" font-size="14" font-weight="bold" fill="#C00000" text-anchor="end" font-style="normal">KV</text>
+<text x="140.0" y="228.0" font-size="17" font-weight="normal" fill="#222222" text-anchor="middle" font-style="normal">ships K and V blocks</text>
+<text x="140.0" y="254.0" font-size="17" font-weight="bold" fill="#C00000" text-anchor="middle" font-style="normal">grows with length</text>
+<line x1="290" y1="14" x2="290" y2="268" stroke="#D9D9D9" stroke-width="1.2"/>
+<text x="435.0" y="24.0" font-size="19" font-weight="bold" fill="#222222" text-anchor="middle" font-style="normal">Head-split all-to-all</text>
+<text x="350.0" y="88.0" font-size="15" font-weight="normal" fill="#595959" text-anchor="end" font-style="normal">GPU 0</text>
+<rect x="358.0" y="66.0" width="206.0" height="28.0" rx="3" fill="url(#hr)" stroke="#C00000" stroke-width="1.2"/>
+<text x="350.0" y="124.0" font-size="15" font-weight="normal" fill="#595959" text-anchor="end" font-style="normal">GPU 1</text>
+<rect x="358.0" y="102.0" width="206.0" height="28.0" rx="3" fill="url(#hr)" stroke="#C00000" stroke-width="1.2"/>
+<text x="350.0" y="160.0" font-size="15" font-weight="normal" fill="#595959" text-anchor="end" font-style="normal">GPU 2</text>
+<rect x="358.0" y="138.0" width="206.0" height="28.0" rx="3" fill="url(#hr)" stroke="#C00000" stroke-width="1.2"/>
+<text x="350.0" y="196.0" font-size="15" font-weight="normal" fill="#595959" text-anchor="end" font-style="normal">GPU 3</text>
+<rect x="358.0" y="174.0" width="206.0" height="28.0" rx="3" fill="url(#hr)" stroke="#C00000" stroke-width="1.2"/>
+<text x="461.0" y="54.0" font-size="15" font-weight="normal" fill="#222222" text-anchor="middle" font-style="normal">each: all T tokens × H/4 heads</text>
+<text x="435.0" y="228.0" font-size="17" font-weight="normal" fill="#222222" text-anchor="middle" font-style="normal">CP degree ≤ heads</text>
+<text x="435.0" y="254.0" font-size="17" font-weight="bold" fill="#C00000" text-anchor="middle" font-style="normal">recurrence stays full length</text>
+<line x1="580" y1="14" x2="580" y2="268" stroke="#D9D9D9" stroke-width="1.2"/>
+<text x="725.0" y="24.0" font-size="19" font-weight="bold" fill="#222222" text-anchor="middle" font-style="normal">Sum local states</text>
+<rect x="600.0" y="60.0" width="60.0" height="40.0" rx="4" fill="#DEEBF7" stroke="#595959" stroke-width="1.5"/>
+<text x="630.0" y="86.0" font-size="17" font-weight="bold" fill="#222222" text-anchor="middle" font-style="normal">S̃<tspan font-size="14" dy="5">0</tspan><tspan dy="-5"></tspan></text>
+<text x="672.0" y="88.0" font-size="22" font-weight="bold" fill="#222222" text-anchor="middle" font-style="normal">+</text>
+<rect x="684.0" y="60.0" width="60.0" height="40.0" rx="4" fill="#DEEBF7" stroke="#595959" stroke-width="1.5"/>
+<text x="714.0" y="86.0" font-size="17" font-weight="bold" fill="#222222" text-anchor="middle" font-style="normal">S̃<tspan font-size="14" dy="5">1</tspan><tspan dy="-5"></tspan></text>
+<text x="756.0" y="88.0" font-size="22" font-weight="bold" fill="#222222" text-anchor="middle" font-style="normal">+</text>
+<rect x="768.0" y="60.0" width="60.0" height="40.0" rx="4" fill="#DEEBF7" stroke="#595959" stroke-width="1.5"/>
+<text x="798.0" y="86.0" font-size="17" font-weight="bold" fill="#222222" text-anchor="middle" font-style="normal">S̃<tspan font-size="14" dy="5">2</tspan><tspan dy="-5"></tspan></text>
+<line x1="725.0" y1="104.0" x2="725.0" y2="134.0" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+<rect x="685.0" y="136.0" width="80.0" height="40.0" rx="4" fill="#FFFFFF" stroke="#C00000" stroke-width="2"/>
+<text x="725.0" y="162.0" font-size="17" font-weight="bold" fill="#C00000" text-anchor="middle" font-style="normal">S<tspan font-size="14" dy="5">in,3</tspan><tspan dy="-5"></tspan></text>
+<text x="790.0" y="166.0" font-size="30" font-weight="bold" fill="#C00000" text-anchor="start" font-style="normal">✗</text>
+<text x="725.0" y="228.0" font-size="17" font-weight="normal" fill="#222222" text-anchor="middle" font-style="normal">exact only if S just adds up</text>
+<text x="725.0" y="254.0" font-size="17" font-weight="bold" fill="#C00000" text-anchor="middle" font-style="normal">KDA multiplies S by M</text>
+</svg>

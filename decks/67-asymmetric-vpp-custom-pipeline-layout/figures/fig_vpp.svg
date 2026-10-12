@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480pt" height="266pt" viewBox="0 0 480 266" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_vpp: 24 layers on PP4 x VPP2, interleaved -->
+<text x="132.0" y="28.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="bold" font-style="normal">GPU 0</text>
+<text x="228.0" y="28.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="bold" font-style="normal">GPU 1</text>
+<text x="324.0" y="28.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="bold" font-style="normal">GPU 2</text>
+<text x="420.0" y="28.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="bold" font-style="normal">GPU 3</text>
+<text x="80.0" y="77.0" text-anchor="end" font-size="17" fill="#222222" font-weight="normal" font-style="normal">chunk 0</text>
+<rect x="92.0" y="44.0" width="80.0" height="54.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="132.0" y="77.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">L0–2</text>
+<line x1="173.0" y1="71.0" x2="187.0" y2="71.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="188.0" y="44.0" width="80.0" height="54.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="228.0" y="77.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">L3–5</text>
+<line x1="269.0" y1="71.0" x2="283.0" y2="71.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="284.0" y="44.0" width="80.0" height="54.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="324.0" y="77.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">L6–8</text>
+<line x1="365.0" y1="71.0" x2="379.0" y2="71.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="380.0" y="44.0" width="80.0" height="54.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="420.0" y="77.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">L9–11</text>
+<text x="80.0" y="189.0" text-anchor="end" font-size="17" fill="#222222" font-weight="normal" font-style="normal">chunk 1</text>
+<rect x="92.0" y="156.0" width="80.0" height="54.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="132.0" y="189.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">L12–14</text>
+<line x1="173.0" y1="183.0" x2="187.0" y2="183.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="188.0" y="156.0" width="80.0" height="54.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="228.0" y="189.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">L15–17</text>
+<line x1="269.0" y1="183.0" x2="283.0" y2="183.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="284.0" y="156.0" width="80.0" height="54.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="324.0" y="189.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">L18–20</text>
+<line x1="365.0" y1="183.0" x2="379.0" y2="183.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="380.0" y="156.0" width="80.0" height="54.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="420.0" y="189.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">L21–23</text>
+<path d="M420.0,100 V127.0 H132.0 V154" fill="none" stroke="#1F4E79" stroke-width="2.2" marker-end="url(#arrAcc)"/>
+<text x="276.0" y="119.0" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">next chunk</text>
+<text x="92.0" y="250.0" text-anchor="start" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="italic">24 layers · PP 4 · VPP 2 · 3 layers per chunk</text>
+</svg>

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="300pt" viewBox="0 0 870 300" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_statusquo: two failed suitors for long context -->
+<line x1="435.0" y1="14.0" x2="435.0" y2="290.0" stroke="#BFBFBF" stroke-width="1.2"/>
+<text x="16.0" y="30.0" text-anchor="start" font-size="20" fill="#222222" font-weight="bold" font-style="normal">(a) Long window from the start</text>
+<rect x="20.0" y="52.0" width="395.0" height="44.0" rx="4" fill="#FBE5E5" stroke="#C00000" stroke-width="2" />
+<text x="170.0" y="80.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">whole run at 128K</text>
+<rect x="330.0" y="52.0" width="40.0" height="44.0" rx="0" fill="url(#hatchPrb)" stroke="#C00000" stroke-width="2" />
+<line x1="330.0" y1="96.0" x2="22.0" y2="150.0" stroke="#7F7F7F" stroke-width="1.4" stroke-dasharray="5,4"/>
+<line x1="370.0" y1="96.0" x2="413.0" y2="150.0" stroke="#7F7F7F" stroke-width="1.4" stroke-dasharray="5,4"/>
+<rect x="20.0" y="150.0" width="395.0" height="84.0" rx="5" fill="#FFFFFF" stroke="#595959" stroke-width="1.8" />
+<rect x="30.0" y="172.0" width="22.0" height="44.0" rx="2" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<rect x="56.0" y="172.0" width="30.0" height="44.0" rx="2" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<rect x="90.0" y="172.0" width="18.0" height="44.0" rx="2" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<rect x="112.0" y="172.0" width="26.0" height="44.0" rx="2" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<rect x="142.0" y="172.0" width="20.0" height="44.0" rx="2" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<rect x="166.0" y="172.0" width="96.0" height="44.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="214.0" y="199.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">long doc</text>
+<rect x="266.0" y="172.0" width="24.0" height="44.0" rx="2" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<rect x="294.0" y="172.0" width="18.0" height="44.0" rx="2" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<rect x="316.0" y="172.0" width="30.0" height="44.0" rx="2" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<rect x="350.0" y="172.0" width="22.0" height="44.0" rx="2" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<rect x="376.0" y="172.0" width="26.0" height="44.0" rx="2" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="217.0" y="258.0" text-anchor="middle" font-size="18" fill="#7F7F7F" font-weight="normal" font-style="normal">one 128K training sequence</text>
+<text x="217.0" y="284.0" text-anchor="middle" font-size="18" fill="#C00000" font-weight="bold" font-style="normal">mostly packed short docs</text>
+<text x="451.0" y="30.0" text-anchor="start" font-size="20" fill="#222222" font-weight="bold" font-style="normal">(b) Short only + RoPE stretch</text>
+<rect x="455.0" y="52.0" width="268.0" height="44.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="589.0" y="80.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">whole run at 4K</text>
+<line x1="725.0" y1="74.0" x2="744.0" y2="74.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="747.0" y="52.0" width="113.0" height="44.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" stroke-dasharray="6,4" />
+<text x="803.5" y="70.2" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">RoPE</text>
+<text x="803.5" y="89.7" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">rescale</text>
+<line x1="803.0" y1="96.0" x2="803.0" y2="148.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="455.0" y="150.0" width="405.0" height="84.0" rx="5" fill="#FFFFFF" stroke="#595959" stroke-width="1.8" />
+<rect x="466.0" y="186.0" width="52.0" height="36.0" rx="4" fill="#FFFFFF" stroke="#222222" stroke-width="2" />
+<text x="492.0" y="209.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="bold" font-style="normal">fact</text>
+<rect x="526.0" y="186.0" width="26.0" height="36.0" rx="2" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<rect x="556.0" y="186.0" width="20.0" height="36.0" rx="2" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<rect x="580.0" y="186.0" width="30.0" height="36.0" rx="2" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<rect x="614.0" y="186.0" width="18.0" height="36.0" rx="2" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<rect x="636.0" y="186.0" width="24.0" height="36.0" rx="2" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<rect x="664.0" y="186.0" width="28.0" height="36.0" rx="2" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<rect x="696.0" y="186.0" width="22.0" height="36.0" rx="2" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<rect x="722.0" y="186.0" width="18.0" height="36.0" rx="2" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<rect x="744.0" y="186.0" width="26.0" height="36.0" rx="2" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<rect x="796.0" y="186.0" width="54.0" height="36.0" rx="4" fill="#FFFFFF" stroke="#222222" stroke-width="2" />
+<text x="823.0" y="209.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="bold" font-style="normal">query</text>
+<path d="M 823,186 C 823,156 492,156 492,184" fill="none" stroke="#C00000" stroke-width="2.2" marker-end="url(#arrPrb)" stroke-dasharray="7,5"/>
+<text x="657.0" y="170.0" text-anchor="middle" font-size="24" fill="#C00000" font-weight="bold" font-style="normal" paint-order="stroke" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round">✗</text>
+<text x="657.0" y="258.0" text-anchor="middle" font-size="18" fill="#7F7F7F" font-weight="normal" font-style="normal">128K prompt at inference</text>
+<text x="657.0" y="284.0" text-anchor="middle" font-size="18" fill="#C00000" font-weight="bold" font-style="normal">never trained on long recall</text>
+</svg>

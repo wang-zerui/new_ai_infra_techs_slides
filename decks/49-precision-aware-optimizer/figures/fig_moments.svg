@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="270pt" viewBox="0 0 870 270" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_moments: BF16 fused path vs FP8 scaled path -->
+<text x="8.0" y="28.0" text-anchor="start" font-size="18" fill="#222222" font-weight="bold" font-style="normal">BF16 moments: fused</text>
+<rect x="8.0" y="42.0" width="170.0" height="52.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.2" />
+<text x="93.0" y="64.0" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">m and v</text>
+<text x="93.0" y="84.0" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">BF16</text>
+<rect x="208.0" y="42.0" width="480.0" height="52.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2.2" />
+<text x="448.0" y="64.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">one kernel: cast in registers</text>
+<text x="448.0" y="84.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">FP32 Adam math  ·  cast back</text>
+<line x1="180.0" y1="68.0" x2="206.0" y2="68.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="718.0" y="42.0" width="130.0" height="52.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.2" />
+<text x="783.0" y="64.0" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">m and v</text>
+<text x="783.0" y="84.0" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">BF16</text>
+<line x1="690.0" y1="68.0" x2="716.0" y2="68.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<text x="8.0" y="152.0" text-anchor="start" font-size="18" fill="#222222" font-weight="bold" font-style="normal">FP8 or FP16 moments: scaled per tensor</text>
+<rect x="8.0" y="166.0" width="150.0" height="52.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.2" />
+<text x="83.0" y="188.0" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">m and v FP8</text>
+<text x="83.0" y="208.0" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">+ FP32 scale</text>
+<rect x="188.0" y="166.0" width="130.0" height="52.0" rx="4" fill="#FBE5E5" stroke="#C00000" stroke-width="2.2" />
+<text x="253.0" y="188.0" text-anchor="middle" font-size="16" fill="#C00000" font-weight="normal" font-style="normal">unscale to</text>
+<text x="253.0" y="208.0" text-anchor="middle" font-size="16" fill="#C00000" font-weight="normal" font-style="normal">FP32 temp</text>
+<line x1="160.0" y1="192.0" x2="186.0" y2="192.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="348.0" y="166.0" width="150.0" height="52.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2.2" />
+<text x="423.0" y="188.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">FP32 Adam</text>
+<text x="423.0" y="208.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">kernel</text>
+<line x1="320.0" y1="192.0" x2="346.0" y2="192.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="528.0" y="166.0" width="150.0" height="52.0" rx="4" fill="#FBE5E5" stroke="#C00000" stroke-width="2.2" />
+<text x="603.0" y="188.0" text-anchor="middle" font-size="16" fill="#C00000" font-weight="normal" font-style="normal">absmax to</text>
+<text x="603.0" y="208.0" text-anchor="middle" font-size="16" fill="#C00000" font-weight="normal" font-style="normal">new scale</text>
+<line x1="500.0" y1="192.0" x2="526.0" y2="192.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="708.0" y="166.0" width="126.0" height="52.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.2" />
+<text x="771.0" y="188.0" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">m and v FP8</text>
+<text x="771.0" y="208.0" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">+ FP32 scale</text>
+<line x1="680.0" y1="192.0" x2="706.0" y2="192.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<text x="862.0" y="256.0" text-anchor="end" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="italic">scale = absmax / 448 for FP8 E4M3</text>
+</svg>

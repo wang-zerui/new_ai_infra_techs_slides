@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="276pt" viewBox="0 0 870 276" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- IndexCache / IndexShare: F and S layers -->
+<text x="0.0" y="27.0" text-anchor="start" font-size="17" fill="#222222" font-weight="normal" font-style="normal">layer ℓ+3</text>
+<text x="0.0" y="48.0" text-anchor="start" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="normal">Shared</text>
+<rect x="690.0" y="6.0" width="170.0" height="48.0" rx="5" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="775.0" y="36.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">Sparse MLA</text>
+<line x1="775.0" y1="68.0" x2="775.0" y2="56.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="128.0" y="6.0" width="282.0" height="48.0" rx="5" fill="#FFFFFF" stroke="#A6A6A6" stroke-width="1.6" stroke-dasharray="5,4" />
+<text x="269.0" y="36.0" text-anchor="middle" font-size="17" fill="#7F7F7F" font-weight="normal" font-style="normal">no indexer · no top-k</text>
+<line x1="521.0" y1="30.0" x2="687.0" y2="30.0" stroke="#1F4E79" stroke-width="2.4" marker-end="url(#arrAcc)"/>
+<text x="605.5" y="23.0" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">reuse</text>
+<text x="0.0" y="91.0" text-anchor="start" font-size="17" fill="#222222" font-weight="normal" font-style="normal">layer ℓ+2</text>
+<text x="0.0" y="112.0" text-anchor="start" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="normal">Shared</text>
+<rect x="690.0" y="70.0" width="170.0" height="48.0" rx="5" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="775.0" y="100.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">Sparse MLA</text>
+<line x1="775.0" y1="132.0" x2="775.0" y2="120.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="128.0" y="70.0" width="282.0" height="48.0" rx="5" fill="#FFFFFF" stroke="#A6A6A6" stroke-width="1.6" stroke-dasharray="5,4" />
+<text x="269.0" y="100.0" text-anchor="middle" font-size="17" fill="#7F7F7F" font-weight="normal" font-style="normal">no indexer · no top-k</text>
+<line x1="521.0" y1="94.0" x2="687.0" y2="94.0" stroke="#1F4E79" stroke-width="2.4" marker-end="url(#arrAcc)"/>
+<text x="605.5" y="87.0" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">reuse</text>
+<text x="0.0" y="155.0" text-anchor="start" font-size="17" fill="#222222" font-weight="normal" font-style="normal">layer ℓ+1</text>
+<text x="0.0" y="176.0" text-anchor="start" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="normal">Shared</text>
+<rect x="690.0" y="134.0" width="170.0" height="48.0" rx="5" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="775.0" y="164.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">Sparse MLA</text>
+<line x1="775.0" y1="196.0" x2="775.0" y2="184.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="128.0" y="134.0" width="282.0" height="48.0" rx="5" fill="#FFFFFF" stroke="#A6A6A6" stroke-width="1.6" stroke-dasharray="5,4" />
+<text x="269.0" y="163.9" text-anchor="middle" font-size="17" fill="#7F7F7F" font-weight="normal" font-style="normal">no indexer · no top-k</text>
+<line x1="521.0" y1="158.0" x2="687.0" y2="158.0" stroke="#1F4E79" stroke-width="2.4" marker-end="url(#arrAcc)"/>
+<text x="605.5" y="151.0" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">reuse</text>
+<text x="0.0" y="219.0" text-anchor="start" font-size="17" fill="#222222" font-weight="normal" font-style="normal">layer ℓ</text>
+<text x="0.0" y="240.0" text-anchor="start" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">Full</text>
+<rect x="690.0" y="198.0" width="170.0" height="48.0" rx="5" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="775.0" y="228.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">Sparse MLA</text>
+<rect x="128.0" y="198.0" width="160.0" height="48.0" rx="5" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.5" />
+<text x="208.0" y="228.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">Indexer</text>
+<rect x="314.0" y="198.0" width="96.0" height="48.0" rx="5" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.5" />
+<text x="362.0" y="228.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">Top-k</text>
+<rect x="446.0" y="198.0" width="150.0" height="48.0" rx="5" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2.5" />
+<text x="521.0" y="218.2" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal">write</text>
+<text x="521.0" y="237.7" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal">top-k cache</text>
+<line x1="290.0" y1="222.0" x2="311.0" y2="222.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<line x1="412.0" y1="222.0" x2="443.0" y2="222.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<line x1="598.0" y1="222.0" x2="687.0" y2="222.0" stroke="#1F4E79" stroke-width="2.4" marker-end="url(#arrAcc)"/>
+<line x1="521.0" y1="196.0" x2="521.0" y2="30.0" stroke="#1F4E79" stroke-width="2.4"/>
+<text x="521.0" y="266.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="italic">overwritten at the next F layer</text>
+</svg>

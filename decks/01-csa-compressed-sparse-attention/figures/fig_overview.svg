@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="876pt" height="320pt" viewBox="0 0 876 320" font-family="Helvetica, Arial, sans-serif">
+<defs><marker id="m222222" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker><pattern id="hatchRed" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#FBE5E5"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2"/></pattern><pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#fff"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/></pattern></defs>
+<rect width="876" height="320" fill="#fff"/>
+<g transform="translate(3,3)">
+<rect x="0" y="14" width="150" height="60" rx="6" fill="#fff" stroke="#595959" stroke-width="2" />
+<text x="75.0" y="40.0" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">Context</text>
+<text x="75.0" y="62.0" font-size="18" font-weight="normal" fill="#222222" text-anchor="middle">n tokens</text>
+<rect x="0" y="194" width="150" height="52" rx="6" fill="#fff" stroke="#595959" stroke-width="2" />
+<text x="75.0" y="226.3" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">Query token</text>
+<rect x="0" y="256" width="150" height="56" rx="6" fill="#fff" stroke="#595959" stroke-width="2" />
+<text x="75.0" y="280.0" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">Last 128</text>
+<text x="75.0" y="302.0" font-size="18" font-weight="normal" fill="#222222" text-anchor="middle">tokens</text>
+<rect x="186" y="14" width="160" height="60" rx="6" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.5" />
+<text x="266.0" y="40.0" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">Compressors</text>
+<text x="266.0" y="62.0" font-size="18" font-weight="normal" fill="#222222" text-anchor="middle">m = 4</text>
+<rect x="186" y="108" width="160" height="60" rx="6" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.5" />
+<text x="266.0" y="134.0" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">Indexer keys</text>
+<text x="266.0" y="156.0" font-size="18" font-weight="normal" fill="#222222" text-anchor="middle">n/4 × 128</text>
+<rect x="392" y="14" width="166" height="60" rx="6" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.5" />
+<text x="475.0" y="40.0" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">KV entries</text>
+<text x="475.0" y="62.0" font-size="18" font-weight="normal" fill="#222222" text-anchor="middle">n/4 × 512</text>
+<rect x="392" y="108" width="166" height="60" rx="6" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.5" />
+<text x="475.0" y="134.0" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">Lightning</text>
+<text x="475.0" y="156.0" font-size="18" font-weight="normal" fill="#222222" text-anchor="middle">indexer + top-k</text>
+<rect x="598" y="14" width="150" height="60" rx="6" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.5" />
+<text x="673.0" y="40.0" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">Selected</text>
+<text x="673.0" y="62.0" font-size="18" font-weight="normal" fill="#222222" text-anchor="middle">k entries</text>
+<rect x="598" y="256" width="150" height="56" rx="6" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.5" />
+<text x="673.0" y="280.0" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">Window</text>
+<text x="673.0" y="302.0" font-size="18" font-weight="normal" fill="#222222" text-anchor="middle">128 raw entries</text>
+<rect x="782" y="14" width="86" height="298" rx="6" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.5" />
+<text x="825.0" y="146.4" font-size="20" font-weight="bold" fill="#222222" text-anchor="middle">Shared</text>
+<text x="825.0" y="170.0" font-size="20" font-weight="bold" fill="#222222" text-anchor="middle">KV</text>
+<text x="825.0" y="193.6" font-size="20" font-weight="bold" fill="#222222" text-anchor="middle">MQA</text>
+<rect x="186" y="194" width="160" height="52" rx="6" fill="#fff" stroke="#595959" stroke-width="2" />
+<text x="266.0" y="226.3" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">Query latent</text>
+<path d="M152,44 L184,44" fill="none" stroke="#222222" stroke-width="2.2" marker-end="url(#m222222)"/>
+<path d="M348,44 L390,44" fill="none" stroke="#222222" stroke-width="2.2" marker-end="url(#m222222)"/>
+<path d="M560,44 L596,44" fill="none" stroke="#222222" stroke-width="2.2" marker-end="url(#m222222)"/>
+<path d="M750,44 L780,44" fill="none" stroke="#222222" stroke-width="2.2" marker-end="url(#m222222)"/>
+<path d="M266,76 L266,106" fill="none" stroke="#222222" stroke-width="2.2" marker-end="url(#m222222)"/>
+<path d="M348,138 L390,138" fill="none" stroke="#222222" stroke-width="2.2" marker-end="url(#m222222)"/>
+<path d="M560,138 H673 V78" fill="none" stroke="#222222" stroke-width="2.2" marker-end="url(#m222222)"/>
+<text x="680" y="116" font-size="16" font-weight="normal" fill="#1F4E79" text-anchor="start">top-k ids</text>
+<path d="M152,220 L184,220" fill="none" stroke="#222222" stroke-width="2.2" marker-end="url(#m222222)"/>
+<path d="M348,220 H778" fill="none" stroke="#222222" stroke-width="2.2" marker-end="url(#m222222)"/>
+<path d="M475,220 V172" fill="none" stroke="#222222" stroke-width="2.2" marker-end="url(#m222222)"/>
+<text x="486" y="196" font-size="16" font-weight="normal" fill="#222222" text-anchor="start">indexer q</text>
+<text x="600" y="212" font-size="16" font-weight="normal" fill="#222222" text-anchor="start">attention q</text>
+<path d="M152,284 L596,284" fill="none" stroke="#222222" stroke-width="2.2" marker-end="url(#m222222)"/>
+<path d="M750,284 L780,284" fill="none" stroke="#222222" stroke-width="2.2" marker-end="url(#m222222)"/>
+<circle cx="186" cy="14" r="13" fill="#1F4E79"/>
+<text x="186" y="20.3" font-size="18" font-weight="bold" fill="#fff" text-anchor="middle">1</text>
+<circle cx="392" cy="108" r="13" fill="#1F4E79"/>
+<text x="392" y="114.3" font-size="18" font-weight="bold" fill="#fff" text-anchor="middle">2</text>
+<circle cx="782" cy="14" r="13" fill="#1F4E79"/>
+<text x="782" y="20.3" font-size="18" font-weight="bold" fill="#fff" text-anchor="middle">3</text>
+</g>
+</svg>

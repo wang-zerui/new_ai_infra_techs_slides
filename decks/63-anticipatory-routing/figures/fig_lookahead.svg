@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="276pt" viewBox="0 0 870 276" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_lookahead -->
+<text x="4.0" y="66.0" text-anchor="start" font-size="17" fill="#7F7F7F" font-weight="bold" font-style="normal">data loader</text>
+<text x="4.0" y="134.0" text-anchor="start" font-size="17" fill="#7F7F7F" font-weight="bold" font-style="normal">routing pass</text>
+<text x="4.0" y="232.0" text-anchor="start" font-size="17" fill="#7F7F7F" font-weight="bold" font-style="normal">training step</text>
+<text x="242.0" y="22.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">step t−2</text>
+<rect x="128.0" y="40.0" width="228.0" height="40.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="242.0" y="66.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">fetch batch B(t)</text>
+<line x1="242.0" y1="82.0" x2="242.0" y2="106.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="128.0" y="108.0" width="228.0" height="40.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="242.0" y="133.9" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal">route B(t) with θ(t−2)</text>
+<rect x="128.0" y="206.0" width="228.0" height="40.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="242.0" y="231.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">train B(t−2) with θ(t−2)</text>
+<text x="490.0" y="22.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">step t−1</text>
+<rect x="376.0" y="40.0" width="228.0" height="40.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="490.0" y="66.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">fetch batch B(t+1)</text>
+<line x1="490.0" y1="82.0" x2="490.0" y2="106.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="376.0" y="108.0" width="228.0" height="40.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="490.0" y="133.9" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal">route B(t+1) with θ(t−1)</text>
+<rect x="376.0" y="206.0" width="228.0" height="40.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="490.0" y="231.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">train B(t−1) with θ(t−1)</text>
+<text x="738.0" y="22.0" text-anchor="middle" font-size="18" fill="#222222" font-weight="bold" font-style="normal">step t</text>
+<rect x="624.0" y="40.0" width="228.0" height="40.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="738.0" y="66.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">fetch batch B(t+2)</text>
+<line x1="738.0" y1="82.0" x2="738.0" y2="106.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="624.0" y="108.0" width="228.0" height="40.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="738.0" y="133.9" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal">route B(t+2) with θ(t)</text>
+<rect x="624.0" y="206.0" width="228.0" height="40.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="1.6" />
+<text x="738.0" y="231.9" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">train B(t) with θ(t)</text>
+<path d="M202.0,150 L202.0,178 L698.0,178 L698.0,204" fill="none" stroke="#1F4E79" stroke-width="2.6" marker-end="url(#arrAcc)"/>
+<text x="450.0" y="172.0" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal" paint-order="stroke" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round">cached indices I(t)</text>
+<text x="862.0" y="270.0" text-anchor="end" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="italic">each routing pass feeds the step Δt later (Δt = 2 here)</text>
+</svg>

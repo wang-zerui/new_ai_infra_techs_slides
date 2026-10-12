@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="284pt" viewBox="0 0 870 284" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_dcp_sched: async scheduler row + training-loop row -->
+<rect x="6.0" y="8.0" width="858.0" height="128.0" rx="6" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.5" stroke-dasharray="6,4" />
+<text x="16.0" y="30.0" text-anchor="start" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">data sampler (asynchronous)</text>
+<rect x="16.0" y="50.0" width="128.0" height="64.0" rx="4" fill="#FFF2CC" stroke="#B8860B" stroke-width="2" />
+<text x="80.0" y="78.2" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">sequence</text>
+<text x="80.0" y="97.7" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">lengths</text>
+<line x1="146.0" y1="82.0" x2="168.0" y2="82.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="170.0" y="50.0" width="196.0" height="64.0" rx="5" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.2" />
+<text x="268.0" y="76.0" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">Cost model</text>
+<text x="268.0" y="100.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">work ≈ S² / CP</text>
+<line x1="368.0" y1="82.0" x2="388.0" y2="82.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="390.0" y="50.0" width="196.0" height="64.0" rx="5" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.2" />
+<text x="488.0" y="76.0" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">Solver</text>
+<text x="488.0" y="100.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">pack and pick CP</text>
+<line x1="588.0" y1="82.0" x2="608.0" y2="82.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="610.0" y="50.0" width="196.0" height="64.0" rx="5" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.2" />
+<text x="708.0" y="76.0" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">Simulator</text>
+<text x="708.0" y="100.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">fastest plan in HBM</text>
+<rect x="6.0" y="150.0" width="858.0" height="128.0" rx="6" fill="#FFFFFF" stroke="#7F7F7F" stroke-width="1.2" stroke-dasharray="6,4" />
+<text x="16.0" y="172.0" text-anchor="start" font-size="18" fill="#222222" font-weight="bold" font-style="normal">training loop</text>
+<line x1="708.0" y1="117.0" x2="708.0" y2="192.0" stroke="#1F4E79" stroke-width="2.4" marker-end="url(#arrAcc)"/>
+<text x="696.0" y="182.0" text-anchor="end" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal" paint-order="stroke" stroke="#FFFFFF" stroke-width="5" stroke-linejoin="round">cp_size + cp_group per micro-batch</text>
+<rect x="16.0" y="196.0" width="170.0" height="64.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="101.0" y="224.4" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">pre-built CP groups</text>
+<text x="101.0" y="242.8" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">1 · 2 · 4 · 8</text>
+<rect x="202.0" y="196.0" width="150.0" height="64.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="277.0" y="224.2" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">micro-batch 1</text>
+<text x="277.0" y="243.7" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">CP4</text>
+<rect x="366.0" y="196.0" width="150.0" height="64.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="441.0" y="224.2" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">micro-batch 2</text>
+<text x="441.0" y="243.7" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">CP1</text>
+<rect x="530.0" y="196.0" width="150.0" height="64.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="605.0" y="224.2" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">micro-batch 3</text>
+<text x="605.0" y="243.7" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">CP2</text>
+<rect x="694.0" y="196.0" width="150.0" height="64.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="769.0" y="224.2" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">micro-batch 4</text>
+<text x="769.0" y="243.7" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">CP1</text>
+</svg>

@@ -1,0 +1,112 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="270pt" viewBox="0 0 870 270" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_perm: row-id map, permute, unpermute -->
+<text x="4.0" y="20.0" text-anchor="start" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">row-id map (once)</text>
+<text x="80.0" y="54.0" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">E0</text>
+<text x="116.0" y="54.0" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">E1</text>
+<text x="152.0" y="54.0" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">E2</text>
+<rect x="4.0" y="64.0" width="52.0" height="30.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="30.0" y="84.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="bold" font-style="normal">t1</text>
+<rect x="64.0" y="64.0" width="32.0" height="30.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.6" />
+<text x="80.0" y="84.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">0</text>
+<rect x="100.0" y="64.0" width="32.0" height="30.0" rx="4" fill="#FFFFFF" stroke="#BFBFBF" stroke-width="1.6" />
+<text x="116.0" y="84.2" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">–</text>
+<rect x="136.0" y="64.0" width="32.0" height="30.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.6" />
+<text x="152.0" y="84.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">4</text>
+<rect x="4.0" y="108.0" width="52.0" height="30.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="30.0" y="128.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="bold" font-style="normal">t2</text>
+<rect x="64.0" y="108.0" width="32.0" height="30.0" rx="4" fill="#FFFFFF" stroke="#BFBFBF" stroke-width="1.6" />
+<text x="80.0" y="128.2" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">–</text>
+<rect x="100.0" y="108.0" width="32.0" height="30.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.6" />
+<text x="116.0" y="128.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">2</text>
+<rect x="136.0" y="108.0" width="32.0" height="30.0" rx="4" fill="#FFFFFF" stroke="#BFBFBF" stroke-width="1.6" />
+<text x="152.0" y="128.2" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">–</text>
+<rect x="4.0" y="152.0" width="52.0" height="30.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="30.0" y="172.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="bold" font-style="normal">t3</text>
+<rect x="64.0" y="152.0" width="32.0" height="30.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.6" />
+<text x="80.0" y="172.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">1</text>
+<rect x="100.0" y="152.0" width="32.0" height="30.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.6" />
+<text x="116.0" y="172.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">3</text>
+<rect x="136.0" y="152.0" width="32.0" height="30.0" rx="4" fill="#FFFFFF" stroke="#BFBFBF" stroke-width="1.6" />
+<text x="152.0" y="172.2" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">–</text>
+<rect x="4.0" y="196.0" width="52.0" height="30.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="30.0" y="216.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="bold" font-style="normal">t4</text>
+<rect x="64.0" y="196.0" width="32.0" height="30.0" rx="4" fill="#FFFFFF" stroke="#BFBFBF" stroke-width="1.6" />
+<text x="80.0" y="216.2" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">–</text>
+<rect x="100.0" y="196.0" width="32.0" height="30.0" rx="4" fill="#FFFFFF" stroke="#BFBFBF" stroke-width="1.6" />
+<text x="116.0" y="216.2" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="normal">–</text>
+<rect x="136.0" y="196.0" width="32.0" height="30.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.6" />
+<text x="152.0" y="216.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">5</text>
+<text x="346.0" y="264.0" text-anchor="middle" font-size="15" fill="#7F7F7F" font-weight="normal" font-style="italic">expert-major rows</text>
+<rect x="300.0" y="40.0" width="92.0" height="28.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="346.0" y="59.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">row 0: t1</text>
+<rect x="300.0" y="76.0" width="92.0" height="28.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="346.0" y="95.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">row 1: t3</text>
+<rect x="300.0" y="112.0" width="92.0" height="28.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="346.0" y="131.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">row 2: t2</text>
+<rect x="300.0" y="148.0" width="92.0" height="28.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="346.0" y="167.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">row 3: t3</text>
+<rect x="300.0" y="184.0" width="92.0" height="28.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="346.0" y="203.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">row 4: t1</text>
+<rect x="300.0" y="220.0" width="92.0" height="28.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="346.0" y="239.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">row 5: t4</text>
+<line x1="398.0" y1="42.0" x2="398.0" y2="102.0" stroke="#222222" stroke-width="1.6"/>
+<text x="404.0" y="77.0" text-anchor="start" font-size="15" fill="#222222" font-weight="bold" font-style="normal">E0</text>
+<line x1="398.0" y1="114.0" x2="398.0" y2="174.0" stroke="#222222" stroke-width="1.6"/>
+<text x="404.0" y="149.0" text-anchor="start" font-size="15" fill="#222222" font-weight="bold" font-style="normal">E1</text>
+<line x1="398.0" y1="186.0" x2="398.0" y2="246.0" stroke="#222222" stroke-width="1.6"/>
+<text x="404.0" y="221.0" text-anchor="start" font-size="15" fill="#222222" font-weight="bold" font-style="normal">E2</text>
+<line x1="172.0" y1="79.0" x2="298.0" y2="54.0" stroke="#1F4E79" stroke-width="1.8" marker-end="url(#arrAcc)"/>
+<line x1="172.0" y1="79.0" x2="298.0" y2="198.0" stroke="#1F4E79" stroke-width="1.8" marker-end="url(#arrAcc)"/>
+<line x1="172.0" y1="123.0" x2="298.0" y2="126.0" stroke="#1F4E79" stroke-width="1.8" marker-end="url(#arrAcc)"/>
+<line x1="172.0" y1="167.0" x2="298.0" y2="90.0" stroke="#1F4E79" stroke-width="1.8" marker-end="url(#arrAcc)"/>
+<line x1="172.0" y1="167.0" x2="298.0" y2="162.0" stroke="#1F4E79" stroke-width="1.8" marker-end="url(#arrAcc)"/>
+<line x1="172.0" y1="211.0" x2="298.0" y2="234.0" stroke="#1F4E79" stroke-width="1.8" marker-end="url(#arrAcc)"/>
+<text x="236.0" y="20.0" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">permute kernel</text>
+<rect x="452.0" y="40.0" width="84.0" height="208.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="494.0" y="140.4" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">expert</text>
+<text x="494.0" y="158.8" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">GEMMs</text>
+<line x1="422.0" y1="54.0" x2="450.0" y2="54.0" stroke="#7F7F7F" stroke-width="1.2"/>
+<line x1="538.0" y1="54.0" x2="578.0" y2="54.0" stroke="#7F7F7F" stroke-width="1.2"/>
+<line x1="422.0" y1="90.0" x2="450.0" y2="90.0" stroke="#7F7F7F" stroke-width="1.2"/>
+<line x1="538.0" y1="90.0" x2="578.0" y2="90.0" stroke="#7F7F7F" stroke-width="1.2"/>
+<line x1="422.0" y1="126.0" x2="450.0" y2="126.0" stroke="#7F7F7F" stroke-width="1.2"/>
+<line x1="538.0" y1="126.0" x2="578.0" y2="126.0" stroke="#7F7F7F" stroke-width="1.2"/>
+<line x1="422.0" y1="162.0" x2="450.0" y2="162.0" stroke="#7F7F7F" stroke-width="1.2"/>
+<line x1="538.0" y1="162.0" x2="578.0" y2="162.0" stroke="#7F7F7F" stroke-width="1.2"/>
+<line x1="422.0" y1="198.0" x2="450.0" y2="198.0" stroke="#7F7F7F" stroke-width="1.2"/>
+<line x1="538.0" y1="198.0" x2="578.0" y2="198.0" stroke="#7F7F7F" stroke-width="1.2"/>
+<line x1="422.0" y1="234.0" x2="450.0" y2="234.0" stroke="#7F7F7F" stroke-width="1.2"/>
+<line x1="538.0" y1="234.0" x2="578.0" y2="234.0" stroke="#7F7F7F" stroke-width="1.2"/>
+<rect x="780.0" y="64.0" width="86.0" height="30.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.8" />
+<text x="823.0" y="84.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">t1 out</text>
+<rect x="780.0" y="108.0" width="86.0" height="30.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.8" />
+<text x="823.0" y="128.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">t2 out</text>
+<rect x="780.0" y="152.0" width="86.0" height="30.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.8" />
+<text x="823.0" y="172.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">t3 out</text>
+<rect x="780.0" y="196.0" width="86.0" height="30.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.8" />
+<text x="823.0" y="216.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">t4 out</text>
+<line x1="580.0" y1="54.0" x2="778.0" y2="79.0" stroke="#1F4E79" stroke-width="1.8" marker-end="url(#arrAcc)"/>
+<line x1="580.0" y1="90.0" x2="778.0" y2="167.0" stroke="#1F4E79" stroke-width="1.8" marker-end="url(#arrAcc)"/>
+<line x1="580.0" y1="126.0" x2="778.0" y2="123.0" stroke="#1F4E79" stroke-width="1.8" marker-end="url(#arrAcc)"/>
+<line x1="580.0" y1="162.0" x2="778.0" y2="167.0" stroke="#1F4E79" stroke-width="1.8" marker-end="url(#arrAcc)"/>
+<line x1="580.0" y1="198.0" x2="778.0" y2="79.0" stroke="#1F4E79" stroke-width="1.8" marker-end="url(#arrAcc)"/>
+<line x1="580.0" y1="234.0" x2="778.0" y2="211.0" stroke="#1F4E79" stroke-width="1.8" marker-end="url(#arrAcc)"/>
+<text x="680.0" y="20.0" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">unpermute kernel</text>
+<text x="680.0" y="252.0" text-anchor="middle" font-size="15" fill="#1F4E79" font-weight="normal" font-style="normal">Σ prob · y, FP32 accumulate</text>
+</svg>

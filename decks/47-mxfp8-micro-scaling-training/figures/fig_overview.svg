@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="336pt" viewBox="0 0 870 336" font-family="Helvetica, Arial, sans-serif">
+  <defs><marker id="a222222" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker><pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2.5"/></pattern><pattern id="hatchRed" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#E6A0A0" stroke-width="2.5"/></pattern></defs>
+  <rect x="14" y="8" width="130" height="48" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2"/>
+  <text x="79.0" y="38.0" font-size="17" text-anchor="middle" font-weight="bold" fill="#222222">Embedding</text>
+  <rect x="158" y="8" width="104" height="48" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2"/>
+  <text x="210.0" y="38.0" font-size="17" text-anchor="middle" font-weight="bold" fill="#1F4E79">Block 1</text>
+  <rect x="276" y="8" width="104" height="48" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2"/>
+  <text x="328.0" y="38.0" font-size="17" text-anchor="middle" font-weight="bold" fill="#1F4E79">Block 2</text>
+  <text x="419.0" y="39.7" font-size="22" text-anchor="middle" font-weight="bold" fill="#7F7F7F">⋯</text>
+  <rect x="458" y="8" width="116" height="48" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2"/>
+  <text x="516.0" y="38.0" font-size="17" text-anchor="middle" font-weight="bold" fill="#1F4E79">Block N−1</text>
+  <rect x="588" y="8" width="104" height="48" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2"/>
+  <text x="640.0" y="38.0" font-size="17" text-anchor="middle" font-weight="bold" fill="#1F4E79">Block N</text>
+  <rect x="706" y="8" width="140" height="48" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2"/>
+  <text x="776.0" y="38.0" font-size="17" text-anchor="middle" font-weight="bold" fill="#222222">Output layer</text>
+  <rect x="14" y="92" width="842" height="196" rx="6" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.6" stroke-dasharray="6,4"/>
+  <line x1="286" y1="58" x2="40" y2="90" stroke="#1F4E79" stroke-width="1.4" stroke-dasharray="4,3"/>
+  <line x1="370" y1="58" x2="830" y2="90" stroke="#1F4E79" stroke-width="1.4" stroke-dasharray="4,3"/>
+  <rect x="34" y="112" width="98" height="52" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2"/>
+  <text x="83.0" y="143.9" font-size="17" text-anchor="middle" font-weight="bold" fill="#222222">LayerNorm</text>
+  <line x1="134" y1="138" x2="148" y2="138" stroke="#222222" stroke-width="2" marker-end="url(#a222222)"/>
+  <rect x="150" y="112" width="98" height="52" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2"/>
+  <text x="199.0" y="143.9" font-size="17" text-anchor="middle" font-weight="bold" fill="#1F4E79">QKV</text>
+  <line x1="250" y1="138" x2="264" y2="138" stroke="#222222" stroke-width="2" marker-end="url(#a222222)"/>
+  <rect x="266" y="112" width="98" height="52" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2"/>
+  <text x="315.0" y="143.9" font-size="17" text-anchor="middle" font-weight="bold" fill="#222222">BMM1</text>
+  <line x1="366" y1="138" x2="380" y2="138" stroke="#222222" stroke-width="2" marker-end="url(#a222222)"/>
+  <rect x="382" y="112" width="98" height="52" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2"/>
+  <text x="431.0" y="143.9" font-size="17" text-anchor="middle" font-weight="bold" fill="#222222">Softmax</text>
+  <line x1="482" y1="138" x2="496" y2="138" stroke="#222222" stroke-width="2" marker-end="url(#a222222)"/>
+  <rect x="498" y="112" width="98" height="52" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2"/>
+  <text x="547.0" y="143.9" font-size="17" text-anchor="middle" font-weight="bold" fill="#222222">BMM2</text>
+  <line x1="598" y1="138" x2="612" y2="138" stroke="#222222" stroke-width="2" marker-end="url(#a222222)"/>
+  <rect x="614" y="112" width="98" height="52" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2"/>
+  <text x="663.0" y="143.9" font-size="17" text-anchor="middle" font-weight="bold" fill="#1F4E79">Proj</text>
+  <line x1="714" y1="138" x2="728" y2="138" stroke="#222222" stroke-width="2" marker-end="url(#a222222)"/>
+  <rect x="730" y="112" width="98" height="52" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2"/>
+  <text x="779.0" y="143.9" font-size="17" text-anchor="middle" font-weight="bold" fill="#222222">Add</text>
+  <rect x="34" y="196" width="98" height="52" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2"/>
+  <text x="83.0" y="227.9" font-size="17" text-anchor="middle" font-weight="bold" fill="#222222">LayerNorm</text>
+  <line x1="134" y1="222" x2="148" y2="222" stroke="#222222" stroke-width="2" marker-end="url(#a222222)"/>
+  <rect x="150" y="196" width="98" height="52" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2"/>
+  <text x="199.0" y="227.9" font-size="17" text-anchor="middle" font-weight="bold" fill="#1F4E79">FC1</text>
+  <line x1="250" y1="222" x2="264" y2="222" stroke="#222222" stroke-width="2" marker-end="url(#a222222)"/>
+  <rect x="266" y="196" width="98" height="52" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2"/>
+  <text x="315.0" y="227.9" font-size="17" text-anchor="middle" font-weight="bold" fill="#222222">Act</text>
+  <line x1="366" y1="222" x2="380" y2="222" stroke="#222222" stroke-width="2" marker-end="url(#a222222)"/>
+  <rect x="382" y="196" width="98" height="52" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2"/>
+  <text x="431.0" y="227.9" font-size="17" text-anchor="middle" font-weight="bold" fill="#1F4E79">FC2</text>
+  <line x1="482" y1="222" x2="496" y2="222" stroke="#222222" stroke-width="2" marker-end="url(#a222222)"/>
+  <rect x="498" y="196" width="98" height="52" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2"/>
+  <text x="547.0" y="227.9" font-size="17" text-anchor="middle" font-weight="bold" fill="#222222">Add</text>
+  <rect x="34" y="302" width="22" height="22" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2"/>
+  <text x="64" y="319" font-size="17" text-anchor="start" font-weight="normal" fill="#222222">MXFP8 Fprop, Dgrad and Wgrad</text>
+  <rect x="380" y="302" width="22" height="22" rx="2" fill="#F2F2F2" stroke="#595959" stroke-width="2"/>
+  <text x="410" y="319" font-size="17" text-anchor="start" font-weight="normal" fill="#222222">BF16</text>
+</svg>

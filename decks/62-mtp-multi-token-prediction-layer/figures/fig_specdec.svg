@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="286pt" viewBox="0 0 870 286" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_specdec: verify draft + bonus token, MTP drafts next -->
+<rect x="30.0" y="206.0" width="90.0" height="40.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="75.0" y="232.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">The</text>
+<rect x="140.0" y="206.0" width="90.0" height="40.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="185.0" y="232.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">cat</text>
+<rect x="250.0" y="206.0" width="90.0" height="40.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2" stroke-dasharray="6,4" />
+<text x="295.0" y="232.3" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">sat</text>
+<text x="130.0" y="272.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="italic">accepted text</text>
+<text x="295.0" y="272.0" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="bold" font-style="italic">draft</text>
+<rect x="140.0" y="112.0" width="200.0" height="52.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="240.0" y="144.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">Main model</text>
+<line x1="185.0" y1="204.0" x2="185.0" y2="166.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<line x1="185.0" y1="110.0" x2="185.0" y2="80.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<line x1="295.0" y1="204.0" x2="295.0" y2="166.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<line x1="295.0" y1="110.0" x2="295.0" y2="80.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<rect x="140.0" y="38.0" width="90.0" height="40.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="185.0" y="64.3" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">sat ✓</text>
+<rect x="250.0" y="38.0" width="90.0" height="40.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="295.0" y="64.3" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">on</text>
+<text x="185.0" y="26.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="italic">= draft</text>
+<text x="295.0" y="26.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="italic">bonus</text>
+<rect x="486.0" y="112.0" width="140.0" height="52.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="556.0" y="144.3" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">MTP block</text>
+<line x1="342.0" y1="138.0" x2="484.0" y2="138.0" stroke="#1F4E79" stroke-width="2.4" marker-end="url(#arrAcc)"/>
+<text x="413.0" y="130.0" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="normal" font-style="italic">h(sat)</text>
+<path d="M 342 58 L 556 58 L 556 110" fill="none" stroke="#1F4E79" stroke-width="2.4" marker-end="url(#arrAcc)"/>
+<text x="449.0" y="50.0" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="normal" font-style="italic">Emb(on)</text>
+<line x1="628.0" y1="138.0" x2="668.0" y2="138.0" stroke="#1F4E79" stroke-width="2.4" marker-end="url(#arrAcc)"/>
+<rect x="670.0" y="118.0" width="90.0" height="40.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2" stroke-dasharray="6,4" />
+<text x="715.0" y="144.3" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">the</text>
+<text x="715.0" y="184.0" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="bold" font-style="italic">next draft</text>
+<text x="860.0" y="64.0" text-anchor="end" font-size="19" fill="#1F4E79" font-weight="bold" font-style="normal">2 tokens this pass</text>
+<text x="860.0" y="236.0" text-anchor="end" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="italic">draft wrong: keep main&#x27;s token</text>
+<text x="860.0" y="258.0" text-anchor="end" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="italic">1 token this pass</text>
+</svg>

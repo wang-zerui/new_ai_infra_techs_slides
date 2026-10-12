@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="310pt" viewBox="0 0 870 310" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_overview: describe-groups kernel + persistent grouped GEMM -->
+<rect x="10.0" y="60.0" width="168.0" height="36.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="94.0" y="83.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">seqlens [G]</text>
+<line x1="180.0" y1="78.0" x2="210.0" y2="78.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="10.0" y="112.0" width="168.0" height="36.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="94.0" y="135.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">cu_seqlens [G+1]</text>
+<line x1="180.0" y1="130.0" x2="210.0" y2="130.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="212.0" y="30.0" width="190.0" height="196.0" rx="6" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.2" />
+<text x="307.0" y="54.0" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">kernel 0</text>
+<rect x="224.0" y="66.0" width="166.0" height="40.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.6" />
+<text x="307.0" y="91.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">TMA desc per group</text>
+<rect x="224.0" y="116.0" width="166.0" height="40.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.6" />
+<text x="307.0" y="141.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">tiles + cu_tiles scan</text>
+<rect x="224.0" y="166.0" width="166.0" height="40.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.6" />
+<text x="307.0" y="191.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">task map (decode)</text>
+<circle cx="224" cy="66" r="12" fill="#1F4E79"/>
+<text x="224.0" y="72.0" text-anchor="middle" font-size="17" fill="#FFFFFF" font-weight="bold" font-style="normal">1</text>
+<line x1="404.0" y1="128.0" x2="440.0" y2="128.0" stroke="#1F4E79" stroke-width="2.6" marker-end="url(#arrAcc)"/>
+<text x="422.0" y="116.0" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">PDL</text>
+<rect x="442.0" y="30.0" width="418.0" height="196.0" rx="6" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.2" />
+<text x="651.0" y="54.0" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">kernel 1: persistent, one CTA per SM</text>
+<rect x="454.0" y="66.0" width="394.0" height="34.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.6" />
+<text x="651.0" y="88.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">tile list over (group, m-tile, n-tile)</text>
+<rect x="454.0" y="120.0" width="114.0" height="58.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.6" />
+<text x="511.0" y="145.6" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">producer WG</text>
+<text x="511.0" y="162.9" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">TMA loads</text>
+<rect x="580.0" y="120.0" width="156.0" height="58.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.6" />
+<text x="658.0" y="145.6" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">2 math WGs</text>
+<text x="658.0" y="162.9" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">swapped WGMMA</text>
+<rect x="748.0" y="120.0" width="100.0" height="58.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.6" />
+<text x="798.0" y="145.6" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">epilogue</text>
+<text x="798.0" y="162.9" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">TMA store</text>
+<line x1="569.0" y1="149.0" x2="578.0" y2="149.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<line x1="737.0" y1="149.0" x2="746.0" y2="149.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<circle cx="582" cy="120" r="12" fill="#1F4E79"/>
+<text x="582.0" y="126.0" text-anchor="middle" font-size="17" fill="#FFFFFF" font-weight="bold" font-style="normal">2</text>
+<circle cx="594" cy="204" r="12" fill="#1F4E79"/>
+<text x="594.0" y="210.0" text-anchor="middle" font-size="17" fill="#FFFFFF" font-weight="bold" font-style="normal">3</text>
+<text x="612.0" y="210.0" text-anchor="start" font-size="15" fill="#1F4E79" font-weight="normal" font-style="italic">per-K scale · FP32 accumulate</text>
+<rect x="10.0" y="254.0" width="150.0" height="36.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="85.0" y="277.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">x [Σt, K]</text>
+<rect x="172.0" y="254.0" width="160.0" height="36.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="252.0" y="277.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">W [G, N, K]</text>
+<rect x="344.0" y="254.0" width="92.0" height="36.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="390.0" y="277.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">scales</text>
+<path d="M 438 272 L 520 272 L 520 229" fill="none" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="690.0" y="254.0" width="170.0" height="36.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="775.0" y="277.2" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">y [Σt, N] BF16</text>
+<line x1="836.0" y1="180.0" x2="836.0" y2="251.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+</svg>

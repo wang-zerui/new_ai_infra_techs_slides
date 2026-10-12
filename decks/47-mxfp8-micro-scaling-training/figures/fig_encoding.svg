@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="280pt" viewBox="0 0 870 280" font-family="Helvetica, Arial, sans-serif">
+  <defs><pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2.5"/></pattern><pattern id="hatchRed" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#E6A0A0" stroke-width="2.5"/></pattern></defs>
+  <rect x="250" y="6" width="20" height="20" rx="2" fill="#F2F2F2" stroke="#595959" stroke-width="1.6"/>
+  <text x="278" y="22" font-size="16" text-anchor="start" font-weight="normal" fill="#222222">sign</text>
+  <rect x="344" y="6" width="20" height="20" rx="2" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.6"/>
+  <text x="372" y="22" font-size="16" text-anchor="start" font-weight="normal" fill="#222222">exponent</text>
+  <rect x="474" y="6" width="20" height="20" rx="2" fill="#FFFFFF" stroke="#595959" stroke-width="1.6"/>
+  <text x="502" y="22" font-size="16" text-anchor="start" font-weight="normal" fill="#222222">mantissa</text>
+  <text x="380" y="62" font-size="19" text-anchor="middle" font-weight="bold" fill="#222222">FP8 per-tensor (hybrid)</text>
+  <text x="700" y="62" font-size="19" text-anchor="middle" font-weight="bold" fill="#1F4E79">MXFP8</text>
+  <text x="200" y="106" font-size="19" text-anchor="end" font-weight="bold" fill="#222222">Weights</text>
+  <rect x="260" y="84" width="22" height="32" rx="0" fill="#F2F2F2" stroke="#595959" stroke-width="1.6"/>
+  <rect x="282" y="84" width="22" height="32" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.6"/>
+  <rect x="304" y="84" width="22" height="32" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.6"/>
+  <rect x="326" y="84" width="22" height="32" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.6"/>
+  <rect x="348" y="84" width="22" height="32" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.6"/>
+  <rect x="370" y="84" width="22" height="32" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.6"/>
+  <rect x="392" y="84" width="22" height="32" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.6"/>
+  <rect x="414" y="84" width="22" height="32" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.6"/>
+  <text x="450" y="107" font-size="18" text-anchor="start" font-weight="bold" fill="#222222">E4M3</text>
+  <rect x="600" y="84" width="22" height="32" rx="0" fill="#F2F2F2" stroke="#595959" stroke-width="1.6"/>
+  <rect x="622" y="84" width="22" height="32" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.6"/>
+  <rect x="644" y="84" width="22" height="32" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.6"/>
+  <rect x="666" y="84" width="22" height="32" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.6"/>
+  <rect x="688" y="84" width="22" height="32" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.6"/>
+  <rect x="710" y="84" width="22" height="32" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.6"/>
+  <rect x="732" y="84" width="22" height="32" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.6"/>
+  <rect x="754" y="84" width="22" height="32" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.6"/>
+  <text x="790" y="107" font-size="18" text-anchor="start" font-weight="bold" fill="#1F4E79">E4M3</text>
+  <text x="200" y="164" font-size="19" text-anchor="end" font-weight="bold" fill="#222222">Activations</text>
+  <rect x="260" y="142" width="22" height="32" rx="0" fill="#F2F2F2" stroke="#595959" stroke-width="1.6"/>
+  <rect x="282" y="142" width="22" height="32" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.6"/>
+  <rect x="304" y="142" width="22" height="32" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.6"/>
+  <rect x="326" y="142" width="22" height="32" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.6"/>
+  <rect x="348" y="142" width="22" height="32" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.6"/>
+  <rect x="370" y="142" width="22" height="32" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.6"/>
+  <rect x="392" y="142" width="22" height="32" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.6"/>
+  <rect x="414" y="142" width="22" height="32" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.6"/>
+  <text x="450" y="165" font-size="18" text-anchor="start" font-weight="bold" fill="#222222">E4M3</text>
+  <rect x="600" y="142" width="22" height="32" rx="0" fill="#F2F2F2" stroke="#595959" stroke-width="1.6"/>
+  <rect x="622" y="142" width="22" height="32" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.6"/>
+  <rect x="644" y="142" width="22" height="32" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.6"/>
+  <rect x="666" y="142" width="22" height="32" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.6"/>
+  <rect x="688" y="142" width="22" height="32" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.6"/>
+  <rect x="710" y="142" width="22" height="32" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.6"/>
+  <rect x="732" y="142" width="22" height="32" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.6"/>
+  <rect x="754" y="142" width="22" height="32" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.6"/>
+  <text x="790" y="165" font-size="18" text-anchor="start" font-weight="bold" fill="#1F4E79">E4M3</text>
+  <text x="200" y="222" font-size="19" text-anchor="end" font-weight="bold" fill="#222222">Act. gradients</text>
+  <rect x="260" y="200" width="22" height="32" rx="0" fill="#F2F2F2" stroke="#595959" stroke-width="1.6"/>
+  <rect x="282" y="200" width="22" height="32" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.6"/>
+  <rect x="304" y="200" width="22" height="32" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.6"/>
+  <rect x="326" y="200" width="22" height="32" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.6"/>
+  <rect x="348" y="200" width="22" height="32" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.6"/>
+  <rect x="370" y="200" width="22" height="32" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.6"/>
+  <rect x="392" y="200" width="22" height="32" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.6"/>
+  <rect x="414" y="200" width="22" height="32" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.6"/>
+  <text x="450" y="223" font-size="18" text-anchor="start" font-weight="bold" fill="#595959">E5M2</text>
+  <rect x="600" y="200" width="22" height="32" rx="0" fill="#F2F2F2" stroke="#595959" stroke-width="1.6"/>
+  <rect x="622" y="200" width="22" height="32" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.6"/>
+  <rect x="644" y="200" width="22" height="32" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.6"/>
+  <rect x="666" y="200" width="22" height="32" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.6"/>
+  <rect x="688" y="200" width="22" height="32" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.6"/>
+  <rect x="710" y="200" width="22" height="32" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.6"/>
+  <rect x="732" y="200" width="22" height="32" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.6"/>
+  <rect x="754" y="200" width="22" height="32" rx="0" fill="#FFFFFF" stroke="#595959" stroke-width="1.6"/>
+  <rect x="596" y="196" width="184" height="40" rx="4" fill="none" stroke="#1F4E79" stroke-width="2.6"/>
+  <text x="790" y="223" font-size="18" text-anchor="start" font-weight="bold" fill="#1F4E79">E4M3</text>
+  <text x="380" y="272" font-size="16" text-anchor="middle" font-weight="normal" fill="#7F7F7F">2 mantissa bits for gradients</text>
+  <text x="700" y="272" font-size="16" text-anchor="middle" font-weight="normal" fill="#1F4E79">3 mantissa bits everywhere</text>
+</svg>

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="285pt" viewBox="0 0 870 285" font-family="Helvetica, Arial, sans-serif">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker><marker id="b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker><marker id="r" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="10" markerHeight="10" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker><pattern id="hr" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="6" height="6" fill="#FBE5E5"/><line x1="0" y1="0" x2="0" y2="6" stroke="#C00000" stroke-width="1.6"/></pattern></defs>
+<text x="132.0" y="46.0" font-size="17" font-weight="normal" fill="#222222" text-anchor="end" font-style="normal">one sequence</text>
+<text x="132.0" y="124.0" font-size="17" font-weight="bold" fill="#222222" text-anchor="end" font-style="normal">step 1</text>
+<text x="132.0" y="196.0" font-size="17" font-weight="bold" fill="#222222" text-anchor="end" font-style="normal">step 2</text>
+<text x="132.0" y="258.0" font-size="17" font-weight="bold" fill="#222222" text-anchor="end" font-style="normal">step 3</text>
+<text x="132.0" y="66.0" font-size="15" font-weight="normal" fill="#595959" text-anchor="end" font-style="italic">SM group each</text>
+<text x="132.0" y="144.0" font-size="15" font-weight="normal" fill="#595959" text-anchor="end" font-style="italic">in parallel</text>
+<text x="132.0" y="216.0" font-size="15" font-weight="normal" fill="#595959" text-anchor="end" font-style="italic">compose</text>
+<text x="132.0" y="278.0" font-size="15" font-weight="normal" fill="#595959" text-anchor="end" font-style="italic">in parallel</text>
+<rect x="150.0" y="30.0" width="160.0" height="34.0" rx="3" fill="#F2F2F2" stroke="#595959" stroke-width="1.5"/>
+<text x="230.0" y="53.0" font-size="17" font-weight="normal" fill="#222222" text-anchor="middle" font-style="normal">segment 1</text>
+<line x1="230.0" y1="66.0" x2="230.0" y2="96.0" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+<rect x="150.0" y="96.0" width="160.0" height="54.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2"/>
+<text x="230.0" y="117.0" font-size="18" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-style="normal">M<tspan font-size="14" dy="5">1</tspan><tspan dy="-5">​</tspan> and S̃<tspan font-size="14" dy="5">1</tspan><tspan dy="-5">​</tspan></text>
+<text x="230.0" y="143.0" font-size="15" font-weight="normal" fill="#595959" text-anchor="middle" font-style="normal">from S = 0</text>
+<line x1="230.0" y1="151.0" x2="230.0" y2="174.0" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+<rect x="180.0" y="176.0" width="100.0" height="34.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2"/>
+<text x="230.0" y="199.0" font-size="17" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-style="normal">S<tspan font-size="14" dy="5">in,1</tspan><tspan dy="-5">​</tspan></text>
+<line x1="280.0" y1="193.0" x2="356.0" y2="193.0" stroke="#1F4E79" stroke-width="2.5" marker-end="url(#b)"/>
+<line x1="230.0" y1="212.0" x2="230.0" y2="236.0" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+<rect x="150.0" y="238.0" width="160.0" height="34.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5"/>
+<text x="230.0" y="261.0" font-size="17" font-weight="normal" fill="#222222" text-anchor="middle" font-style="normal">outputs</text>
+<rect x="328.0" y="30.0" width="160.0" height="34.0" rx="3" fill="#F2F2F2" stroke="#595959" stroke-width="1.5"/>
+<text x="408.0" y="53.0" font-size="17" font-weight="normal" fill="#222222" text-anchor="middle" font-style="normal">segment 2</text>
+<line x1="408.0" y1="66.0" x2="408.0" y2="96.0" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+<rect x="328.0" y="96.0" width="160.0" height="54.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2"/>
+<text x="408.0" y="117.0" font-size="18" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-style="normal">M<tspan font-size="14" dy="5">2</tspan><tspan dy="-5">​</tspan> and S̃<tspan font-size="14" dy="5">2</tspan><tspan dy="-5">​</tspan></text>
+<text x="408.0" y="143.0" font-size="15" font-weight="normal" fill="#595959" text-anchor="middle" font-style="normal">from S = 0</text>
+<line x1="408.0" y1="151.0" x2="408.0" y2="174.0" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+<rect x="358.0" y="176.0" width="100.0" height="34.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2"/>
+<text x="408.0" y="199.0" font-size="17" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-style="normal">S<tspan font-size="14" dy="5">in,2</tspan><tspan dy="-5">​</tspan></text>
+<line x1="458.0" y1="193.0" x2="534.0" y2="193.0" stroke="#1F4E79" stroke-width="2.5" marker-end="url(#b)"/>
+<line x1="408.0" y1="212.0" x2="408.0" y2="236.0" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+<rect x="328.0" y="238.0" width="160.0" height="34.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5"/>
+<text x="408.0" y="261.0" font-size="17" font-weight="normal" fill="#222222" text-anchor="middle" font-style="normal">outputs</text>
+<rect x="506.0" y="30.0" width="160.0" height="34.0" rx="3" fill="#F2F2F2" stroke="#595959" stroke-width="1.5"/>
+<text x="586.0" y="53.0" font-size="17" font-weight="normal" fill="#222222" text-anchor="middle" font-style="normal">segment 3</text>
+<line x1="586.0" y1="66.0" x2="586.0" y2="96.0" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+<rect x="506.0" y="96.0" width="160.0" height="54.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2"/>
+<text x="586.0" y="117.0" font-size="18" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-style="normal">M<tspan font-size="14" dy="5">3</tspan><tspan dy="-5">​</tspan> and S̃<tspan font-size="14" dy="5">3</tspan><tspan dy="-5">​</tspan></text>
+<text x="586.0" y="143.0" font-size="15" font-weight="normal" fill="#595959" text-anchor="middle" font-style="normal">from S = 0</text>
+<line x1="586.0" y1="151.0" x2="586.0" y2="174.0" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+<rect x="536.0" y="176.0" width="100.0" height="34.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2"/>
+<text x="586.0" y="199.0" font-size="17" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-style="normal">S<tspan font-size="14" dy="5">in,3</tspan><tspan dy="-5">​</tspan></text>
+<line x1="636.0" y1="193.0" x2="712.0" y2="193.0" stroke="#1F4E79" stroke-width="2.5" marker-end="url(#b)"/>
+<line x1="586.0" y1="212.0" x2="586.0" y2="236.0" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+<rect x="506.0" y="238.0" width="160.0" height="34.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5"/>
+<text x="586.0" y="261.0" font-size="17" font-weight="normal" fill="#222222" text-anchor="middle" font-style="normal">outputs</text>
+<rect x="684.0" y="30.0" width="160.0" height="34.0" rx="3" fill="#F2F2F2" stroke="#595959" stroke-width="1.5"/>
+<text x="764.0" y="53.0" font-size="17" font-weight="normal" fill="#222222" text-anchor="middle" font-style="normal">segment 4</text>
+<line x1="764.0" y1="66.0" x2="764.0" y2="96.0" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+<rect x="684.0" y="96.0" width="160.0" height="54.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2"/>
+<text x="764.0" y="117.0" font-size="18" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-style="normal">M<tspan font-size="14" dy="5">4</tspan><tspan dy="-5">​</tspan> and S̃<tspan font-size="14" dy="5">4</tspan><tspan dy="-5">​</tspan></text>
+<text x="764.0" y="143.0" font-size="15" font-weight="normal" fill="#595959" text-anchor="middle" font-style="normal">from S = 0</text>
+<line x1="764.0" y1="151.0" x2="764.0" y2="174.0" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+<rect x="714.0" y="176.0" width="100.0" height="34.0" rx="4" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2"/>
+<text x="764.0" y="199.0" font-size="17" font-weight="bold" fill="#1F4E79" text-anchor="middle" font-style="normal">S<tspan font-size="14" dy="5">in,4</tspan><tspan dy="-5">​</tspan></text>
+<line x1="764.0" y1="212.0" x2="764.0" y2="236.0" stroke="#222222" stroke-width="2" marker-end="url(#a)"/>
+<rect x="684.0" y="238.0" width="160.0" height="34.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5"/>
+<text x="764.0" y="261.0" font-size="17" font-weight="normal" fill="#222222" text-anchor="middle" font-style="normal">outputs</text>
+</svg>

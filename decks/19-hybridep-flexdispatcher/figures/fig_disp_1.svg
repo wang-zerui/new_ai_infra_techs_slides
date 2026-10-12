@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="292pt" viewBox="0 0 870 292" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_disp_1: HybridEP dispatch inside one NVLink domain -->
+<text x="72.0" y="22.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="bold" font-style="normal">GPU A0 memory</text>
+<rect x="4.0" y="34.0" width="136.0" height="36.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="72.0" y="58.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">routing map</text>
+<rect x="4.0" y="86.0" width="136.0" height="146.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="72.0" y="108.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="normal" font-style="normal">token chunks</text>
+<rect x="16.0" y="120.0" width="112.0" height="21.0" rx="2" fill="#F2F2F2" stroke="#595959" stroke-width="1.4" />
+<text x="72.0" y="136.0" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">t1</text>
+<rect x="16.0" y="147.0" width="112.0" height="21.0" rx="2" fill="#F2F2F2" stroke="#595959" stroke-width="1.4" />
+<text x="72.0" y="163.0" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">t2</text>
+<rect x="16.0" y="174.0" width="112.0" height="21.0" rx="2" fill="#F2F2F2" stroke="#595959" stroke-width="1.4" />
+<text x="72.0" y="190.0" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">t3</text>
+<rect x="16.0" y="201.0" width="112.0" height="21.0" rx="2" fill="#F2F2F2" stroke="#595959" stroke-width="1.4" />
+<text x="72.0" y="217.0" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">t4</text>
+<rect x="196.0" y="34.0" width="390.0" height="212.0" rx="6" fill="#FFFFFF" stroke="#1F4E79" stroke-width="2.4" />
+<text x="391.0" y="22.0" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal">one persistent block per SM (N in parallel)</text>
+<rect x="212.0" y="64.0" width="110.0" height="60.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="267.0" y="90.2" text-anchor="middle" font-size="17" fill="#222222" font-weight="bold" font-style="normal">G2S</text>
+<text x="267.0" y="109.7" text-anchor="middle" font-size="17" fill="#222222" font-weight="bold" font-style="normal">warps</text>
+<rect x="466.0" y="64.0" width="110.0" height="60.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="521.0" y="90.2" text-anchor="middle" font-size="17" fill="#222222" font-weight="bold" font-style="normal">S2G</text>
+<text x="521.0" y="109.7" text-anchor="middle" font-size="17" fill="#222222" font-weight="bold" font-style="normal">warps</text>
+<rect x="348.0" y="76.0" width="21.0" height="36.0" rx="2" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.6" />
+<rect x="371.0" y="76.0" width="21.0" height="36.0" rx="2" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.6" />
+<rect x="394.0" y="76.0" width="21.0" height="36.0" rx="2" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.6" />
+<rect x="417.0" y="76.0" width="21.0" height="36.0" rx="2" fill="#FFFFFF" stroke="#1F4E79" stroke-width="1.6" />
+<text x="393.0" y="140.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">SMEM FIFO</text>
+<line x1="324.0" y1="94.0" x2="346.0" y2="94.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<line x1="441.0" y1="94.0" x2="464.0" y2="94.0" stroke="#222222" stroke-width="2.2" marker-end="url(#arr)"/>
+<line x1="142.0" y1="108.0" x2="210.0" y2="108.0" stroke="#1F4E79" stroke-width="2.4" marker-end="url(#arrAcc)"/>
+<text x="170.0" y="100.0" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">TMA</text>
+<path d="M142,52 L521,52 L521,62" fill="none" stroke="#222222" stroke-width="1.8" marker-end="url(#arr)"/>
+<text x="748.0" y="22.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="bold" font-style="normal">NVLink domain A</text>
+<rect x="630.0" y="34.0" width="236.0" height="140.0" rx="6" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<rect x="646.0" y="46.0" width="204.0" height="26.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="748.0" y="64.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">A0 expert input</text>
+<rect x="646.0" y="77.0" width="204.0" height="26.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="748.0" y="95.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">A1 expert input</text>
+<rect x="646.0" y="108.0" width="204.0" height="26.0" rx="4" fill="#FFFFFF" stroke="#A6A6A6" stroke-width="2" stroke-dasharray="4,3" />
+<text x="748.0" y="126.6" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="normal">A2</text>
+<rect x="646.0" y="139.0" width="204.0" height="26.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="748.0" y="157.6" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">A3 expert input</text>
+<path d="M578,94 L606,94 L606,59 L644,59" fill="none" stroke="#1F4E79" stroke-width="2.4" marker-end="url(#arrAcc)"/>
+<path d="M578,94 L606,94 L606,90 L644,90" fill="none" stroke="#1F4E79" stroke-width="2.4" marker-end="url(#arrAcc)"/>
+<path d="M578,94 L606,94 L606,152 L644,152" fill="none" stroke="#1F4E79" stroke-width="2.4" marker-end="url(#arrAcc)"/>
+<text x="611.0" y="46.0" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">TMA</text>
+</svg>

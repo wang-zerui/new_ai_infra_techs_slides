@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="236pt" viewBox="0 0 870 236" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- exact replay: saved inputs, RNG states and FP8 recipe feed the recompute -->
+<text x="140.0" y="24.0" text-anchor="middle" font-size="19" fill="#222222" font-weight="bold" font-style="normal">saved in forward</text>
+<rect x="8.0" y="40.0" width="264.0" height="42.0" rx="9" fill="#F2F2F2" stroke="#595959" stroke-width="1.8" />
+<text x="140.0" y="67.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">inputs (z)</text>
+<rect x="8.0" y="102.0" width="264.0" height="42.0" rx="9" fill="#F2F2F2" stroke="#595959" stroke-width="1.8" />
+<text x="140.0" y="129.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">RNG states</text>
+<rect x="8.0" y="164.0" width="264.0" height="42.0" rx="9" fill="#F2F2F2" stroke="#595959" stroke-width="1.8" />
+<text x="140.0" y="191.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">FP8 on/off + recipe</text>
+<rect x="356.0" y="84.0" width="196.0" height="60.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="454.0" y="120.7" text-anchor="middle" font-size="19" fill="#1F4E79" font-weight="bold" font-style="normal">recompute f</text>
+<text x="454.0" y="166.0" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="normal" font-style="italic">TE recompute phase</text>
+<path d="M274,61 C318,61 312,114 354,114" fill="none" stroke="#1F4E79" stroke-width="2.2" marker-end="url(#arrAcc)"/>
+<path d="M274,123 C318,123 312,114 354,114" fill="none" stroke="#1F4E79" stroke-width="2.2" marker-end="url(#arrAcc)"/>
+<path d="M274,185 C318,185 312,114 354,114" fill="none" stroke="#1F4E79" stroke-width="2.2" marker-end="url(#arrAcc)"/>
+<rect x="636.0" y="84.0" width="226.0" height="60.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="749.0" y="120.3" text-anchor="middle" font-size="18" fill="#1F4E79" font-weight="bold" font-style="normal">a restored in place</text>
+<line x1="554.0" y1="114.0" x2="634.0" y2="114.0" stroke="#1F4E79" stroke-width="2.4" marker-end="url(#arrAcc)"/>
+<text x="749.0" y="168.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="italic">same storage object</text>
+<text x="749.0" y="190.0" text-anchor="middle" font-size="16" fill="#7F7F7F" font-weight="normal" font-style="italic">fc2 views see the data</text>
+</svg>

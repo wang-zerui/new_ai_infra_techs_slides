@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="262pt" viewBox="0 0 870 262" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_remainder: 32-bit layout and the per-step cycle -->
+<rect x="150.0" y="70.0" width="22.0" height="46.0" rx="0" fill="#F2F2F2" stroke="#595959" stroke-width="2.2" />
+<text x="161.0" y="99.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">s</text>
+<rect x="172.0" y="70.0" width="176.0" height="46.0" rx="0" fill="#F2F2F2" stroke="#595959" stroke-width="2.2" />
+<text x="260.0" y="99.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">exponent 8</text>
+<rect x="348.0" y="70.0" width="154.0" height="46.0" rx="0" fill="#F2F2F2" stroke="#595959" stroke-width="2.2" />
+<text x="425.0" y="99.0" text-anchor="middle" font-size="16" fill="#222222" font-weight="normal" font-style="normal">mantissa 7</text>
+<rect x="502.0" y="70.0" width="352.0" height="46.0" rx="0" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.2" />
+<text x="678.0" y="99.0" text-anchor="middle" font-size="16" fill="#1F4E79" font-weight="bold" font-style="normal">low mantissa 16</text>
+<text x="138.0" y="99.0" text-anchor="end" font-size="18" fill="#222222" font-weight="bold" font-style="normal">FP32 master</text>
+<path d="M152,66 q0,-8 8,-8 L318.0,58 q8,0 8,-8 q0,8 8,8 L492.0,58 q8,0 8,8" fill="none" stroke="#222222" stroke-width="1.8"/>
+<text x="326.0" y="42.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="bold" font-style="normal">BF16 weight for the GEMMs</text>
+<path d="M504.0,66 q0,-8 8,-8 L670.0,58 q8,0 8,-8 q0,8 8,8 L844.0,58 q8,0 8,8" fill="none" stroke="#1F4E79" stroke-width="1.8"/>
+<text x="678.0" y="42.0" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal">int16 remainder in optimizer state</text>
+<rect x="8.0" y="168.0" width="192.0" height="58.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="104.0" y="192.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="bold" font-style="normal">stored</text>
+<text x="104.0" y="214.0" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">BF16 w + int16 r</text>
+<rect x="226.0" y="168.0" width="192.0" height="58.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="322.0" y="192.0" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal">rejoin</text>
+<text x="322.0" y="214.0" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">undo round-up if r &lt; 0</text>
+<line x1="202.0" y1="197.0" x2="224.0" y2="197.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="444.0" y="168.0" width="192.0" height="58.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="540.0" y="192.0" text-anchor="middle" font-size="17" fill="#222222" font-weight="bold" font-style="normal">Adam step</text>
+<text x="540.0" y="214.0" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">on the exact FP32 value</text>
+<line x1="420.0" y1="197.0" x2="442.0" y2="197.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<rect x="662.0" y="168.0" width="192.0" height="58.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="758.0" y="192.0" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal">split</text>
+<text x="758.0" y="214.0" text-anchor="middle" font-size="15" fill="#222222" font-weight="normal" font-style="normal">w rounded to nearest</text>
+<line x1="638.0" y1="197.0" x2="660.0" y2="197.0" stroke="#222222" stroke-width="2" marker-end="url(#arr)"/>
+<path d="M758.0,228 L758.0,244 L104.0,244 L104.0,230" fill="none" stroke="#7F7F7F" stroke-width="1.8" marker-end="url(#arrGray)" stroke-dasharray="5,4"/>
+</svg>

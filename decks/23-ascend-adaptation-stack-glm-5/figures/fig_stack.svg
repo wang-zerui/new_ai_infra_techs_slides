@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="870pt" height="358pt" viewBox="0 0 870 358" font-family="Helvetica, Arial, sans-serif">
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker>
+  <marker id="arrAcc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker>
+  <marker id="arrPrb" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#C00000"/></marker>
+  <marker id="arrGray" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="11" markerHeight="11"
+          markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7F7F7F"/></marker>
+  <pattern id="hatchPrb" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2.2"/>
+  </pattern>
+  <pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+    <rect width="7" height="7" fill="#FFFFFF"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/>
+  </pattern>
+</defs>
+<!-- fig_stack: model / quantized weights / engine / fused kernels / node, with deck refs -->
+<rect x="18.0" y="6.0" width="622.0" height="44.0" rx="4" fill="#FFFFFF" stroke="#595959" stroke-width="2" />
+<text x="329.0" y="34.6" text-anchor="middle" font-size="19" fill="#222222" font-weight="normal" font-style="normal">GLM-5 · 744B MoE · DSA · 200K context</text>
+<text x="656.0" y="34.0" text-anchor="start" font-size="18" fill="#7F7F7F" font-weight="normal" font-style="italic">the model</text>
+<rect x="18.0" y="58.0" width="622.0" height="48.0" rx="5" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.4" />
+<text x="32.0" y="88.0" text-anchor="start" font-size="19" fill="#1F4E79" font-weight="bold" font-style="normal">Mixed W4A8 / W8A8 weights</text>
+<text x="626.0" y="88.0" text-anchor="end" font-size="18" fill="#1F4E79" font-weight="normal" font-style="normal">deck 44</text>
+<text x="656.0" y="88.0" text-anchor="start" font-size="18" fill="#7F7F7F" font-weight="normal" font-style="italic">memory</text>
+<rect x="18.0" y="114.0" width="622.0" height="90.0" rx="6" fill="#FFFFFF" stroke="#595959" stroke-width="1.5" />
+<text x="30.0" y="136.0" text-anchor="start" font-size="19" fill="#222222" font-weight="bold" font-style="normal">Inference engine · vLLM-Ascend / SGLang</text>
+<text x="626.0" y="136.0" text-anchor="end" font-size="18" fill="#1F4E79" font-weight="normal" font-style="normal">deck 12</text>
+<rect x="30.0" y="150.0" width="114.0" height="44.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="87.0" y="177.9" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal">FlashComm</text>
+<rect x="153.0" y="150.0" width="114.0" height="44.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="210.0" y="177.9" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal">DP attn + EP</text>
+<rect x="276.0" y="150.0" width="114.0" height="44.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="333.0" y="177.9" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal">PD split</text>
+<rect x="399.0" y="150.0" width="114.0" height="44.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="456.0" y="177.9" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal">Prefix cache</text>
+<rect x="522.0" y="150.0" width="114.0" height="44.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="579.0" y="177.9" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal">MTP</text>
+<text x="656.0" y="165.0" text-anchor="start" font-size="18" fill="#7F7F7F" font-weight="normal" font-style="italic">exposed time</text>
+<rect x="18.0" y="212.0" width="622.0" height="90.0" rx="6" fill="#FFFFFF" stroke="#595959" stroke-width="1.5" />
+<text x="30.0" y="234.0" text-anchor="start" font-size="19" fill="#222222" font-weight="bold" font-style="normal">Fused kernels · CANN</text>
+<text x="626.0" y="234.0" text-anchor="end" font-size="18" fill="#1F4E79" font-weight="normal" font-style="normal">deck 37</text>
+<rect x="30.0" y="248.0" width="192.0" height="44.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="126.0" y="275.9" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal">Lightning Indexer</text>
+<rect x="233.0" y="248.0" width="192.0" height="44.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="329.0" y="275.9" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal">Sparse Flash Attn</text>
+<rect x="436.0" y="248.0" width="192.0" height="44.0" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2" />
+<text x="532.0" y="275.9" text-anchor="middle" font-size="17" fill="#1F4E79" font-weight="bold" font-style="normal">MLAPO</text>
+<text x="656.0" y="263.0" text-anchor="start" font-size="18" fill="#7F7F7F" font-weight="normal" font-style="italic">compute density</text>
+<rect x="18.0" y="310.0" width="622.0" height="42.0" rx="4" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="329.0" y="337.3" text-anchor="middle" font-size="18" fill="#222222" font-weight="normal" font-style="normal">Atlas 800 A3 node · 8 × 128 GB NPU memory</text>
+<text x="656.0" y="337.0" text-anchor="start" font-size="18" fill="#7F7F7F" font-weight="normal" font-style="italic">hardware</text>
+</svg>

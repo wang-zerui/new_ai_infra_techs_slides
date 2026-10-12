@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="876pt" height="294pt" viewBox="0 0 876 294" font-family="Helvetica, Arial, sans-serif">
+<defs><marker id="m222222" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#222222"/></marker><marker id="m1F4E79" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="userSpaceOnUse" markerWidth="12" markerHeight="12" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F4E79"/></marker><pattern id="hatchRed" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#FBE5E5"/><line x1="0" y1="0" x2="0" y2="7" stroke="#C00000" stroke-width="2"/></pattern><pattern id="hatchGray" width="7" height="7" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="7" height="7" fill="#fff"/><line x1="0" y1="0" x2="0" y2="7" stroke="#A6A6A6" stroke-width="2"/></pattern></defs>
+<rect width="876" height="294" fill="#fff"/>
+<g transform="translate(3,3)">
+<text x="0" y="48" font-size="18" font-weight="bold" fill="#1F4E79" text-anchor="start">HCA reads</text>
+<text x="0" y="70" font-size="18" font-weight="bold" fill="#1F4E79" text-anchor="start">every entry</text>
+<rect x="150" y="34" width="66" height="40" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.5" />
+<rect x="222" y="34" width="66" height="40" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.5" />
+<rect x="294" y="34" width="66" height="40" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.5" />
+<rect x="366" y="34" width="66" height="40" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.5" />
+<rect x="438" y="34" width="66" height="40" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.5" />
+<rect x="510" y="34" width="66" height="40" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.5" />
+<rect x="582" y="34" width="66" height="40" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.5" />
+<rect x="654" y="34" width="66" height="40" rx="4" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.5" />
+<rect x="726" y="34" width="54" height="40" rx="4" fill="url(#hatchRed)" stroke="#C00000" stroke-width="2" />
+<path d="M794,4 L794,124" fill="none" stroke="#222222" stroke-width="2"/>
+<text x="790" y="142" font-size="16" font-weight="bold" fill="#222222" text-anchor="end">query</text>
+<rect x="469.0" y="86" width="16.5" height="30" rx="1" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="488.5" y="86" width="16.5" height="30" rx="1" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="508.0" y="86" width="16.5" height="30" rx="1" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="527.5" y="86" width="16.5" height="30" rx="1" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="547.0" y="86" width="16.5" height="30" rx="1" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="566.5" y="86" width="16.5" height="30" rx="1" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="586.0" y="86" width="16.5" height="30" rx="1" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="605.5" y="86" width="16.5" height="30" rx="1" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="625.0" y="86" width="16.5" height="30" rx="1" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="644.5" y="86" width="16.5" height="30" rx="1" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="664.0" y="86" width="16.5" height="30" rx="1" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="683.5" y="86" width="16.5" height="30" rx="1" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="703.0" y="86" width="16.5" height="30" rx="1" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="722.5" y="86" width="16.5" height="30" rx="1" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="742.0" y="86" width="16.5" height="30" rx="1" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<rect x="761.5" y="86" width="16.5" height="30" rx="1" fill="#DEEBF7" stroke="#1F4E79" stroke-width="1.5" />
+<text x="458" y="108" font-size="18" font-weight="normal" fill="#222222" text-anchor="end">+ 128 raw tokens</text>
+<text x="786" y="24" font-size="16" font-weight="bold" fill="#C00000" text-anchor="end">partial block</text>
+<path d="M0,154 L870,154" fill="none" stroke="#BFBFBF" stroke-width="1.2" stroke-dasharray="5,4"/>
+<text x="0" y="197" font-size="20" font-weight="bold" fill="#222222" text-anchor="start">CSA</text>
+<rect x="84" y="168" width="170" height="46" rx="6" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="169.0" y="198" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">n/4 entries</text>
+<rect x="300" y="168" width="200" height="46" rx="6" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="400.0" y="198" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">Indexer + top-k</text>
+<rect x="546" y="168" width="160" height="46" rx="6" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="626.0" y="198" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">k + 128</text>
+<rect x="752" y="168" width="114" height="46" rx="6" fill="#F2F2F2" stroke="#595959" stroke-width="2" />
+<text x="809.0" y="198" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">MQA</text>
+<text x="0" y="263" font-size="20" font-weight="bold" fill="#1F4E79" text-anchor="start">HCA</text>
+<rect x="84" y="234" width="170" height="46" rx="6" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.5" />
+<text x="169.0" y="264" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">n/128 entries</text>
+<rect x="546" y="234" width="160" height="46" rx="6" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.5" />
+<text x="626.0" y="264" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">all + 128</text>
+<rect x="752" y="234" width="114" height="46" rx="6" fill="#DEEBF7" stroke="#1F4E79" stroke-width="2.5" />
+<text x="809.0" y="264" font-size="18" font-weight="bold" fill="#222222" text-anchor="middle">MQA</text>
+<path d="M256,191 L298,191" fill="none" stroke="#222222" stroke-width="2.2" marker-end="url(#m222222)"/>
+<path d="M502,191 L544,191" fill="none" stroke="#222222" stroke-width="2.2" marker-end="url(#m222222)"/>
+<path d="M708,191 L750,191" fill="none" stroke="#222222" stroke-width="2.2" marker-end="url(#m222222)"/>
+<path d="M256,257 L544,257" fill="none" stroke="#1F4E79" stroke-width="2.5" marker-end="url(#m1F4E79)"/>
+<text x="400" y="250" font-size="18" font-weight="bold" fill="#1F4E79" text-anchor="middle">no selector</text>
+<path d="M708,257 L750,257" fill="none" stroke="#1F4E79" stroke-width="2.5" marker-end="url(#m1F4E79)"/>
+</g>
+</svg>

@@ -1,0 +1,6 @@
+L=   32768: GLM-5.1 0.123 TFLOP (indexer share 17%), GLM-5.2 0.108 TFLOP, ratio 1.14x
+L=  131072: GLM-5.1 0.186 TFLOP (indexer share 45%), GLM-5.2 0.125 TFLOP, ratio 1.49x
+L= 1048576: GLM-5.1 0.772 TFLOP (indexer share 87%), GLM-5.2 0.283 TFLOP, ratio 2.73x
+greedy full search, N=47: 1081 forward passes
+greedy full search, N=78: 3003 forward passes
+MTP: IndexShare+KVShare alone 5.10/4.56 = 1.118; full recipe 5.47/4.56 = 1.200
