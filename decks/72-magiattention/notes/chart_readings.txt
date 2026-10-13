@@ -1,0 +1,86 @@
+magi_attn_exp_distributed_h100_varlen_causal_mask_fwd_flops_report.png y0=4108 gridlines=[534, 548, 1260, 1972, 2684, 3396] d=712.0px/100 (diff spread 14-713)
+  g0 n=8: ulysses=278  ring_p2p=89  ring_ag=289  usp=261  loongtrain=259  hybrid_dcp=277  magi_a2av=387  magi_native=459
+  g1 n=8: ulysses=200(199-202)  ring_p2p=69  ring_ag=293  usp=251  loongtrain=252  hybrid_dcp=223  magi_a2av=307(305-309)  magi_native=427
+  g2 n=8: ulysses=186  ring_p2p=48  ring_ag=241  usp=255  loongtrain=209  hybrid_dcp=191  magi_a2av=276  magi_native=316(314-319)
+  g3 n=8: ulysses=163  ring_p2p=29  ring_ag=181  usp=192  loongtrain=193  hybrid_dcp=162  magi_a2av=208(206-210)  magi_native=238(237-241)
+magi_attn_exp_distributed_h100_varlen_causal_mask_bwd_flops_report.png y0=4108 gridlines=[534, 546, 588, 1028, 1468, 1908, 2350, 2790, 3230, 3670] d=440.0px/50 (diff spread 12-441)
+  g0 n=8: ulysses=332  ring_p2p=97  ring_ag=179  usp=325  loongtrain=321  hybrid_dcp=226  magi_a2av=336  magi_native=361
+  g1 n=8: ulysses=295  ring_p2p=86  ring_ag=156  usp=309  loongtrain=254(253-256)  hybrid_dcp=220  magi_a2av=353  magi_native=371
+  g2 n=8: ulysses=277  ring_p2p=57  ring_ag=105  usp=285  loongtrain=181  hybrid_dcp=191  magi_a2av=326  magi_native=334
+  g3 n=8: ulysses=249  ring_p2p=29  ring_ag=55  usp=196(194-198)  loongtrain=172  hybrid_dcp=164  magi_a2av=243(242-246)  magi_native=265(264-267)
+magi_attn_exp_distributed_b200_varlen_causal_mask_fwd_flops_report.png y0=4108 gridlines=[575, 587, 1244, 1960, 2676, 3392] d=715.8px/200 (diff spread 12-717)
+  g0 n=7: ulysses=678  ring_p2p=467  ring_ag=718  usp=630  loongtrain=627  magi_a2av=913  magi_native=870
+  g1 n=7: ulysses=315(314-324)  ring_p2p=98(98-107)  ring_ag=534(531-540)  usp=465(463-469)  loongtrain=466(464-471)  magi_a2av=582(578-592)  magi_native=806(804-808)
+  g2 n=7: ulysses=279  ring_p2p=61  ring_ag=397(395-401)  usp=447  loongtrain=349(347-353)  magi_a2av=485(483-488)  magi_native=670(668-675)
+  g3 n=7: ulysses=260  ring_p2p=37  ring_ag=295(292-297)  usp=269(266-274)  loongtrain=285(284-288)  magi_a2av=398(396-401)  magi_native=563(561-566)
+magi_attn_exp_distributed_b200_varlen_causal_mask_bwd_flops_report.png y0=4108 gridlines=[575, 587, 806, 1278, 1750, 2222, 2694, 3166, 3638] d=471.0px/100 (diff spread 12-473)
+  g0 n=7: ulysses=595  ring_p2p=346  ring_ag=331  usp=564  loongtrain=559  magi_a2av=694  magi_native=648
+  g1 n=7: ulysses=433(431-438)  ring_p2p=132(128-137)  ring_ag=254(252-256)  usp=491(490-493)  loongtrain=404(402-409)  magi_a2av=608(607-611)  magi_native=658
+  g2 n=7: ulysses=399  ring_p2p=80  ring_ag=184(182-186)  usp=470  loongtrain=291(290-293)  magi_a2av=537(535-539)  magi_native=618
+  g3 n=7: ulysses=404  ring_p2p=48  ring_ag=133(132-135)  usp=353(351-356)  loongtrain=330  magi_a2av=449(448-452)  magi_native=554(553-556)
+magi_attn_exp_distributed_h100_full_mask_fwd_flops_report.png y0=4108 gridlines=[534, 546, 664, 1154, 1648, 2140, 2632, 3124, 3616] d=492.0px/100 (diff spread 12-495)
+  g0 n=8: ulysses=605  ring_p2p=511  ring_ag=607  usp=580  loongtrain=578  hybrid_dcp=508  magi_a2av=649  magi_native=665
+  g1 n=8: ulysses=575  ring_p2p=535  ring_ag=601  usp=603  loongtrain=602  hybrid_dcp=534  magi_a2av=645  magi_native=654
+  g2 n=8: ulysses=584  ring_p2p=517  ring_ag=594  usp=594  loongtrain=597  hybrid_dcp=522  magi_a2av=625  magi_native=646
+  g3 n=8: ulysses=620  ring_p2p=513  ring_ag=584  usp=605  loongtrain=604  hybrid_dcp=513  magi_a2av=618  magi_native=629
+magi_attn_exp_distributed_h100_full_mask_bwd_flops_report.png y0=4108 gridlines=[534, 546, 772, 1328, 1884, 2440, 2996, 3552] d=556.0px/100 (diff spread 12-557)
+  g0 n=8: ulysses=576  ring_p2p=497  ring_ag=533  usp=571  loongtrain=570  hybrid_dcp=496  magi_a2av=514  magi_native=535
+  g1 n=8: ulysses=577  ring_p2p=519  ring_ag=543  usp=589  loongtrain=578  hybrid_dcp=517  magi_a2av=520  magi_native=547
+  g2 n=8: ulysses=583  ring_p2p=513  ring_ag=540  usp=587  loongtrain=573  hybrid_dcp=514  magi_a2av=515  magi_native=548
+  g3 n=8: ulysses=578  ring_p2p=505  ring_ag=536  usp=581  loongtrain=576  hybrid_dcp=504  magi_a2av=515  magi_native=549
+magi_attn_exp_kernel_h100_full_mask_fwd_flops_report.png y0=4107 gridlines=[783, 795, 846, 1312, 1778, 2244, 2710, 3176, 3642] d=466.0px/100 (diff spread 12-466)
+  g0 n=7: fa2=316(315-318)  fa3=560(558-564)  cudnn=291(287-298)  flex=281(280-284)  flash_mask=252(250-254)  sdpa=535(533-538)  ffa=223(223-233)
+  g1 n=7: fa2=360  fa3=672  cudnn=505(504-507)  flex=348  flash_mask=315  sdpa=629  ffa=575(574-577)
+  g2 n=7: fa2=377  fa3=678  cudnn=547  flex=371  flash_mask=346  sdpa=627  ffa=625
+  g3 n=7: fa2=373  fa3=674  cudnn=565  flex=386  flash_mask=356  sdpa=610(609-616)  ffa=618
+  g4 n=7: fa2=373  fa3=687  cudnn=577  flex=391  flash_mask=363  sdpa=609  ffa=630
+  g5 n=7: fa2=376  fa3=701  cudnn=584  flex=391  flash_mask=360  sdpa=618  ffa=634
+magi_attn_exp_kernel_h100_full_mask_bwd_flops_report.png y0=4107 gridlines=[783, 795, 844, 1388, 1932, 2476, 3020, 3564] d=544.0px/100 (diff spread 12-545)
+  g0 n=7: fa2=225(224-227)  fa3=336(334-340)  cudnn=257(255-261)  flex=203  flash_mask=197(196-199)  sdpa=317(315-321)  ffa=314(310-319)
+  g1 n=7: fa2=278  fa3=455(453-457)  cudnn=380(378-382)  flex=186  flash_mask=246  sdpa=437(436-439)  ffa=450(449-452)
+  g2 n=7: fa2=309  fa3=518  cudnn=438  flex=243  flash_mask=272  sdpa=489  ffa=511
+  g3 n=7: fa2=320  fa3=557  cudnn=461  flex=284  flash_mask=278  sdpa=503  ffa=540
+  g4 n=7: fa2=331  fa3=588  cudnn=478  flex=287  flash_mask=292  sdpa=522  ffa=562
+  g5 n=7: fa2=335  fa3=601  cudnn=488  flex=289  flash_mask=299  sdpa=534  ffa=576
+magi_attn_exp_kernel_h100_causal_mask_fwd_flops_report.png y0=4107 gridlines=[783, 795, 1222, 1702, 2184, 2664, 3146, 3628] d=481.0px/100 (diff spread 12-482)
+  g0 n=7: fa2=189(187-192)  fa3=283(283-291)  cudnn=147(144-155)  flex=163(161-167)  flash_mask=160(158-163)  sdpa=328(325-333)  ffa=107(107-116)
+  g1 n=7: fa2=272(271-275)  fa3=585(584-588)  cudnn=364(362-369)  flex=270(269-273)  flash_mask=237(236-240)  sdpa=475(474-479)  ffa=437(435-442)
+  g2 n=7: fa2=328  fa3=663  cudnn=488(487-490)  flex=327(326-329)  flash_mask=295  sdpa=563  ffa=567
+  g3 n=7: fa2=352  fa3=658  cudnn=538  flex=370  flash_mask=332  sdpa=591  ffa=595
+  g4 n=7: fa2=364  fa3=673  cudnn=554  flex=385  flash_mask=347  sdpa=590  ffa=608
+  g5 n=7: fa2=366  fa3=680  cudnn=567  flex=391  flash_mask=352  sdpa=607  ffa=622
+magi_attn_exp_kernel_h100_causal_mask_bwd_flops_report.png y0=4107 gridlines=[783, 795, 1318, 1876, 2434, 2992, 3550] d=558.0px/100 (diff spread 12-558)
+  g0 n=7: fa2=142(140-144)  fa3=210(208-215)  cudnn=150(148-154)  flex=101  flash_mask=130(128-132)  sdpa=181(178-186)  ffa=165(163-170)
+  g1 n=7: fa2=210(209-213)  fa3=355(353-359)  cudnn=266(264-270)  flex=113  flash_mask=191(189-193)  sdpa=306(304-310)  ffa=318(316-322)
+  g2 n=7: fa2=267  fa3=463(462-465)  cudnn=369(366-371)  flex=166(164-168)  flash_mask=242  sdpa=403(402-405)  ffa=425(424-428)
+  g3 n=7: fa2=302  fa3=518  cudnn=427  flex=218  flash_mask=264  sdpa=460  ffa=489(487-491)
+  g4 n=7: fa2=323  fa3=562  cudnn=461  flex=252  flash_mask=290  sdpa=499  ffa=538
+  g5 n=7: fa2=330  fa3=585  cudnn=485  flex=271  flash_mask=302  sdpa=517  ffa=560
+magi_attn_exp_kernel_h100_varlen_causal_mask_fwd_flops_report.png y0=4107 gridlines=[783, 795, 1310, 1870, 2428, 2988, 3548] d=559.0px/100 (diff spread 12-560)
+  g0 n=7: fa2=48(46-51)  fa3=63(60-68)  cudnn=34(33-38)  flex=29(28-31)  flash_mask=51(50-53)  sdpa=32  ffa=33
+  g1 n=7: fa2=149(147-152)  fa3=221(219-226)  cudnn=129(126-135)  flex=76(75-78)  flash_mask=115(114-118)  sdpa=38  ffa=98(98-105)
+  g2 n=7: fa2=229(227-232)  fa3=359(357-364)  cudnn=298(296-302)  flex=124(122-126)  flash_mask=177(176-179)  sdpa=36  ffa=338(336-343)
+  g3 n=7: fa2=304  fa3=485(484-488)  cudnn=417  flex=183(181-185)  flash_mask=228  sdpa=32  ffa=473(472-475)
+  g4 n=7: fa2=331  fa3=545  cudnn=452  flex=232  flash_mask=242  sdpa=23  ffa=518
+  g5 n=7: fa2=344  fa3=584  cudnn=492  flex=270  flash_mask=241  sdpa=17  ffa=548
+magi_attn_exp_kernel_h100_varlen_block_causal_mask_fwd_flops_report.png y0=4109 gridlines=[783, 795, 1252, 1822, 2394, 2966, 3536, 4103] d=568.8px/100 (diff spread 6-572)
+  g0 n=3: s0=79(78-81)  s1=63  s2=51(49-65)
+  g1 n=3: s0=139  s1=75  s2=199(199-205)
+  g2 n=3: s0=152  s1=55  s2=435(433-438)
+  g3 n=3: s0=176  s1=42  s2=532
+  g4 n=3: s0=176  s1=28  s2=552
+  g5 n=3: s0=159  s1=19  s2=575
+magi_attn_exp_kernel_h100_varlen_block_causal_mask_bwd_flops_report.png y0=4109 gridlines=[783, 795, 954, 1406, 1856, 2306, 2756, 3208, 3658, 4103] d=450.0px/50 (diff spread 6-451)
+  g0 n=3: s0=70  s1=49  s2=75(75-79)
+  g1 n=3: s0=6  s1=7  s2=7
+  g2 n=3: s0=133  s1=48  s2=260
+  g3 n=3: s0=153  s1=39  s2=315
+  g4 n=3: s0=182  s1=27  s2=345
+  g5 n=3: s0=205  s1=18  s2=363
+magi_attn_exp_kernel_b200_full_mask_fwd_flops_report.png y0=4107 gridlines=[783, 795, 876, 1340, 1800, 2262, 2724, 3186, 3646] d=461.0px/200 (diff spread 12-464)
+  g0 n=6: fa4=204(204-223)  cudnn=252(247-267)  flex=103(98-112)  flash_mask=252(249-256)  sdpa=713(713-728)  ffa_fa4=315
+  g1 n=6: fa4=835(835-852)  cudnn=929(923-941)  flex=356(354-357)  flash_mask=333(331-336)  sdpa=1210(1207-1218)  ffa_fa4=1152(1146-1161)
+  g2 n=6: fa4=1381  cudnn=1281(1280-1284)  flex=376  flash_mask=375  sdpa=1418  ffa_fa4=1403
+  g3 n=6: fa4=1338(1336-1340)  cudnn=1328(1321-1332)  flex=396  flash_mask=385  sdpa=1411  ffa_fa4=1389
+  g4 n=6: fa4=1302  cudnn=1321  flex=403  flash_mask=389  sdpa=1371  ffa_fa4=1400
+  g5 n=6: fa4=1299  cudnn=1329  flex=407  flash_mask=389  sdpa=1371  ffa_fa4=1401

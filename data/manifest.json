@@ -881,5 +881,18 @@
     "source": [
       "Megatron-LM / MCore"
     ]
+  },
+  {
+    "id": "72",
+    "slug": "72-magiattention",
+    "technique": "MagiAttention (distributed attention for ultra-long, heterogeneous-mask training)",
+    "category": "Frameworks & Platform Stacks",
+    "notion_page_id": "3f895647fb2a81aa8f07fc1ab10670bb",
+    "notion_url": "https://app.notion.com/p/3f895647fb2a81aa8f07fc1ab10670bb",
+    "reference": "https://github.com/SandAI-org/MagiAttention",
+    "source": [
+      "MagiAttention",
+      "MAGI-1"
+    ]
   }
 ]

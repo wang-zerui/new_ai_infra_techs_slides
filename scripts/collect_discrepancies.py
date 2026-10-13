@@ -19,8 +19,8 @@ out = [
 found = 0
 for e in manifest:
     src = ROOT / "decks" / e["slug"] / "notes" / "sources.md"
-    if not src.exists():
-        continue
+    if not src.exists() or not (src.parent / "notion_correction.md").exists():
+        continue  # rows created from the deck's own sources (e.g. 72) have no pre-existing row to compare
     text = src.read_text()
     m = re.search(r"^(#{2,3}) [^\n]*discrepanc[^\n]*\n(.*?)(?=^#{1,2} |\Z)", text, re.S | re.I | re.M)
     if not m:

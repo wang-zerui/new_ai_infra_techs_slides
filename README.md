@@ -1,6 +1,6 @@
 # Industrial Pretraining Architecture & Infra Tech Landscape (2026): one talk deck per technique
 
-71 conference-style explainer decks, one for each technique in the Notion database *Industrial Pretraining Architecture & Infra Tech Landscape (2026)*: sparse and linear attention, MoE routing, expert-parallel communication, low-precision training, kernels, parallelism and memory scheduling, as used in DeepSeek-V3.2/V4, Kimi K2/K3, GLM-4.5/5, Megatron Core, TransformerEngine, DeepEP, DeepGEMM, HPC-Ops, MoonEP and VeOmni.
+72 conference-style explainer decks, one for each technique in the Notion database *Industrial Pretraining Architecture & Infra Tech Landscape (2026)*: sparse and linear attention, MoE routing, expert-parallel communication, low-precision training, kernels, parallelism and memory scheduling, as used in DeepSeek-V3.2/V4, Kimi K2/K3, GLM-4.5/5, Megatron Core, TransformerEngine, DeepEP, DeepGEMM, HPC-Ops, MoonEP, VeOmni and MagiAttention.
 
 Each deck is an ~8-minute talk in the USENIX OSDI/NSDI house style: a measured pain number, one insight, the mechanism walked through with redrawn diagrams, results charts whose numbers trace to the primary source, and a summary with the reference link. Every deck folder holds:
 
@@ -67,6 +67,7 @@ How they are made: [`docs/deck-recipe.md`](docs/deck-recipe.md). Rebuild everyth
 | 26 | [HPC-Ops (Tencent Hunyuan inference operator library)](decks/26-hpc-ops/) | HPC-Ops | [PDF](decks/26-hpc-ops/26-hpc-ops.pdf) (15 slides) | [PPTX](decks/26-hpc-ops/26-hpc-ops.pptx) | [row](https://app.notion.com/p/85f1abe2180f4b86bf1e9ea6d23705ce) |
 | 27 | [MoonEP (perfectly balanced EP communication library)](decks/27-moonep/) | MoonEP, Kimi K3 | [PDF](decks/27-moonep/27-moonep.pdf) (15 slides) | [PPTX](decks/27-moonep/27-moonep.pptx) | [row](https://app.notion.com/p/65b197b767bb4d5c9dc17bbce5c0ca13) |
 | 28 | [VeOmni (model-centric omni-modal training framework)](decks/28-veomni/) | VeOmni | [PDF](decks/28-veomni/28-veomni.pdf) (15 slides) | [PPTX](decks/28-veomni/28-veomni.pptx) | [row](https://app.notion.com/p/9b9145984b6a433abf69f32d2c06db67) |
+| 72 | [MagiAttention (distributed attention for ultra-long, heterogeneous-mask training)](decks/72-magiattention/) | MagiAttention, MAGI-1 | [PDF](decks/72-magiattention/72-magiattention.pdf) (16 slides) | [PPTX](decks/72-magiattention/72-magiattention.pptx) | [row](https://app.notion.com/p/3f895647fb2a81aa8f07fc1ab10670bb) |
 
 ## GEMM & MoE Kernels
 

@@ -31,7 +31,7 @@ lines = [
     f"{len(manifest)} conference-style explainer decks, one for each technique in the Notion database "
     "*Industrial Pretraining Architecture & Infra Tech Landscape (2026)*: sparse and linear attention, MoE routing, "
     "expert-parallel communication, low-precision training, kernels, parallelism and memory scheduling, as used in "
-    "DeepSeek-V3.2/V4, Kimi K2/K3, GLM-4.5/5, Megatron Core, TransformerEngine, DeepEP, DeepGEMM, HPC-Ops, MoonEP and VeOmni.",
+    "DeepSeek-V3.2/V4, Kimi K2/K3, GLM-4.5/5, Megatron Core, TransformerEngine, DeepEP, DeepGEMM, HPC-Ops, MoonEP, VeOmni and MagiAttention.",
     "",
     "Each deck is an ~8-minute talk in the USENIX OSDI/NSDI house style: a measured pain number, one insight, the "
     "mechanism walked through with redrawn diagrams, results charts whose numbers trace to the primary source, and a "

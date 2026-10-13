@@ -73,6 +73,7 @@ Parallelism Strategy|Context Parallelism / Dynamic CP|82d104d9bcc74fab931db687fe
 Parallelism Strategy|KDA Context Parallelism (KCP)|a5e78a14357748deb3032985bef70062|https://arxiv.org/abs/2607.24653|Kimi K3
 Parallelism Strategy|Megatron-FSDP / HSDP (with EP support)|bbdbb22301864a05bcbc8e4097a6b284|https://github.com/NVIDIA/Megatron-LM/blob/main/megatron/core/transformer/moe/README.md|Megatron-LM / MCore
 Parallelism Strategy|MoE Parallel Folding|ef4d75b8eee841a79ada63b79bff78d8|https://arxiv.org/abs/2603.07685|Megatron-LM / MCore
+Frameworks & Platform Stacks|MagiAttention (distributed attention for ultra-long, heterogeneous-mask training)|3f895647fb2a81aa8f07fc1ab10670bb|https://github.com/SandAI-org/MagiAttention|MagiAttention, MAGI-1
 """
 
 def slugify(s, n=48):
@@ -83,14 +84,17 @@ def slugify(s, n=48):
         s = s[:n + 1].rsplit("-", 1)[0]  # cut at a word boundary
     return s
 
+root = pathlib.Path(__file__).resolve().parents[1]
+mpath = root / "data" / "manifest.json"
+# Slugs are folder names: once assigned, keep them even if a row's title is later corrected.
+old_slugs = {e["notion_page_id"]: e["slug"] for e in json.loads(mpath.read_text())} if mpath.exists() else {}
 out = []
 for i, line in enumerate(l for l in ROWS.splitlines() if l.strip()):
     cat, tech, pid, ref, src = line.split("|")
     nn = f"{i+1:02d}"
-    out.append({"id": nn, "slug": f"{nn}-{slugify(tech)}", "technique": tech, "category": cat,
+    out.append({"id": nn, "slug": old_slugs.get(pid, f"{nn}-{slugify(tech)}"), "technique": tech, "category": cat,
                 "notion_page_id": pid, "notion_url": f"https://app.notion.com/p/{pid}",
                 "reference": ref, "source": [x.strip() for x in src.split(",")]})
-root = pathlib.Path(__file__).resolve().parents[1]
-(root / "data" / "manifest.json").write_text(json.dumps(out, indent=2, ensure_ascii=False) + "\n")
+mpath.write_text(json.dumps(out, indent=2, ensure_ascii=False) + "\n")
 print(len(out))
 for e in out: print(e["slug"])
